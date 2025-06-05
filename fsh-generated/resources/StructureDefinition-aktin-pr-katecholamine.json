@@ -1,0 +1,143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-katecholamine",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-katecholamine",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_katecholamine",
+  "title": "Katecholamine",
+  "status": "active",
+  "experimental": true,
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Profile for documenting a medication administration: Katecholamine",
+  "purpose": "**Hinweis**: Dieses Profil ist nicht dazu gedacht, implementiert zu werden. Es macht deutlich, welche (zusätzlichen) AKTIN-spezifischen Eigenschaften ein existierendes Profil (bekannter Baustein 'MedicationAdministration') zu diesem Typ haben muss und welche Constraints gelten. Es dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Das Profil wird nach Festlegung der bekannten Bausteine als formale Restriktion profilert.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": true,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration",
+        "path": "MedicationAdministration",
+        "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
+      },
+      {
+        "id": "MedicationAdministration.id",
+        "path": "MedicationAdministration.id",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.identifier",
+        "path": "MedicationAdministration.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.status",
+        "path": "MedicationAdministration.status",
+        "patternCode": "completed",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.category",
+        "path": "MedicationAdministration.category",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]",
+        "path": "MedicationAdministration.medication[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x].coding",
+        "path": "MedicationAdministration.medication[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x].coding:SNOMED-CT",
+        "path": "MedicationAdministration.medication[x].coding",
+        "sliceName": "SNOMED-CT",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "34582008",
+          "system": "http://snomed.info/sct",
+          "display": "Catecholamine (substance)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x].coding:ATCWHO",
+        "path": "MedicationAdministration.medication[x].coding",
+        "sliceName": "ATCWHO",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "C01CA",
+          "system": "http://www.whocc.no/atc",
+          "display": "Adrenergic and dopaminergic agents"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.subject",
+        "path": "MedicationAdministration.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x]",
+        "path": "MedicationAdministration.effective[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage",
+        "path": "MedicationAdministration.dosage",
+        "mustSupport": true
+      }
+    ]
+  }
+}

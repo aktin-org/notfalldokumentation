@@ -1,0 +1,92 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-rontgenthorax-durchgefuhrt",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-rontgenthorax-durchgefuhrt",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_rontgenthorax_durchgefuhrt",
+  "title": "Röntgen-Thorax durchgeführt",
+  "status": "active",
+  "experimental": true,
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Wurde ein Röntgen-Thorax durchgeführt?",
+  "purpose": "**Hinweis**: Dieses Profil ist nicht dazu gedacht, implementiert zu werden. Es macht deutlich, welche (zusätzlichen) AKTIN-spezifischen Eigenschaften ein existierendes Profil (bekannter Baustein 'Procedure') zu diesem Typ haben muss und welche Constraints gelten. Es dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Das Profil wird nach Festlegung der bekannten Bausteine als formale Restriktion profilert.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": true,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure",
+        "definition": "Wurde ein Röntgen-Thorax durchgeführt?",
+        "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
+      },
+      {
+        "id": "Procedure.identifier",
+        "path": "Procedure.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "patternCode": "completed",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "patternCoding": {
+          "code": "415232002",
+          "system": "http://snomed.info/sct",
+          "display": "Radiographic procedure of chest (procedure)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "short": "Zeitpunkt, wann Maßnahme durchgeführt wurde",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+ "name": "artdecor",
+ "version": "0.1",
+ "type": "fhir.template",
+ "license": "CC0-1.0",
+ "description": "My FHIR Template",
+ "base": "fhir.base.template",
+ "dependencies": {
+    "fhir.base.template": "current"
+ }
+}

@@ -1,0 +1,83 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-edis",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-edis",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_edis",
+  "title": "EDIS",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Name der lokal verwendeten Software zur primären Datenerfassung (EDIS, emergency department information system) sowie Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS; wenn keine ED-Spezialanwendung verwendet wird: KIS.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Device",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device",
+        "path": "Device",
+        "definition": "Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS; wenn keine ED-Spezialanwendung verwendet wird: KIS."
+      },
+      {
+        "id": "Device.manufacturer",
+        "path": "Device.manufacturer",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.deviceName",
+        "path": "Device.deviceName",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Device.deviceName.name",
+        "path": "Device.deviceName.name",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.deviceName.type",
+        "path": "Device.deviceName.type",
+        "patternCode": "manufacturer-name",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.version",
+        "path": "Device.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Device.version.type",
+        "path": "Device.version.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "software"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Device.version.value",
+        "path": "Device.version.value",
+        "mustSupport": true
+      }
+    ]
+  }
+}

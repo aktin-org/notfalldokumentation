@@ -1,0 +1,87 @@
+{
+    "resourceType": "ValueSet",
+    "id": "1.2.276.0.76.3.1.195.11.12--20240722152032",
+    "meta": {
+        "lastUpdated": "2024-07-22T15:20:32Z",
+        "source": "https://art-decor.org/fhir/4.0/aktin-",
+        "profile": ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"],
+        "tag": [
+            {
+                "system": "http://hl7.org/fhir/FHIR-version",
+                "code": "4.0.1"
+            }
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+            "valuePeriod": {"start": "2024-07-22T15:20:32+02:00"}
+        }
+    ],
+    "url": "http://aktin.org/fhir/ValueSet/aktin-vs-used-triage-system",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.2.276.0.76.3.1.195.11.12"
+        }
+    ],
+    "version": "2024-07-22T15:20:32",
+    "name": "Used_triage_system",
+    "title": "Used Triage System",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "AKTIN e. V.",
+    "contact": [
+        {
+            "name": "AKTIN e. V.",
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "Tel. +49 391 67 28186"
+                },
+                {
+                    "system": "email",
+                    "value": "office@aktin.org"
+                }
+            ]
+        }
+    ],
+    "description": "Used Triage System",
+    "immutable": false,
+    "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-other-triage-systems",
+                "concept": [
+                    {
+                        "code": "smed",
+                        "display": "SmED"
+                    }
+                ]
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "713009001",
+                        "display": "Manchester Triage System (assessment scale)"
+                    },
+                    {
+                        "code": "713010006",
+                        "display": "Emergency Severity Index (assessment scale)"
+                    },
+                    {
+                        "code": "74964007",
+                        "display": "Other (qualifier value)"
+                    },
+                    {
+                        "code": "260413007",
+                        "display": "None (qualifier value)"
+                    }
+                ]
+            }
+        ]
+    }
+}

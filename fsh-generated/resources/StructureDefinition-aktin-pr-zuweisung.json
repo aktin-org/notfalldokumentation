@@ -1,0 +1,97 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-zuweisung",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zuweisung",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_zuweisung",
+  "title": "Zuweisung",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Art der Zuweisung des Patienten. Von welchem medizinischen Fachpersonal ist der Patient ins Krankenhaus geschickt worden?",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "definition": "Art der Zuweisung des Patienten. Von welchem medizinischen Fachpersonal ist der Patient ins Krankenhaus geschickt worden?"
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-referral-setting"
+        }
+      }
+    ]
+  }
+}

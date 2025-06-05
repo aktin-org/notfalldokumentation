@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-stunde-beginn-patientenbezogene-dokumentation",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_stunde_beginn_patientenbezogene_dokumentation",
+  "title": "Stunde Beginn patientenbezogene Dokumentation",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "definition": "Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde"
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:CS-1",
+        "path": "Observation.code.coding",
+        "sliceName": "CS-1",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "FLN-127",
+          "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs",
+          "display": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "patternString": "Stunde Beginn patientenbezogene Dokumentation"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Stunde Beginn patientenbezogene Dokumentation",
+        "definition": "Stunde Beginn patientenbezogene Dokumentation",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

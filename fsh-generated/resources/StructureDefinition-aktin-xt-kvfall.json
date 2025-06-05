@@ -1,0 +1,65 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-xt-kvfall",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-xt-kvfall",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_extension_kvfall",
+  "title": "KV-Fall",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Wurde der Fall über die Kassenärztliche Vereinigung abgerechnet?",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Coverage"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "KV-Fall",
+        "definition": "Wurde der Fall über die Kassenärztliche Vereinigung abgerechnet?"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://www.aktin.org/fhir/StructureDefinition/aktin-xt-kvfall"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Fall über die Kassenärztliche Vereinigung abgerechnet",
+        "definition": "true = wenn Fall über die Kassenärztliche Vereinigung abgerechnet",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

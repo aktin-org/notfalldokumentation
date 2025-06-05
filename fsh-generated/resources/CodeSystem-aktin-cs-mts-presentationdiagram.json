@@ -1,0 +1,1375 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Mts_presentationdiagram",
+  "id": "aktin-cs-mts-presentationdiagram",
+  "title": "MTS-Präsentationsdiagramm",
+  "description": "MTS-Präsentationsdiagramm",
+  "url": "http://aktin.org/fhir/ig/notfalldokumentation/CodeSystem/aktin-cs-mts-presentationdiagram",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Abdominelle Schmerzen bei Erwachsenen",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Abdominal pain in adults"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "display": "Abdominelle Schmerzen bei Kindern",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Abdominal pain in children"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "display": "Abszesse und lokale Infektionen",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Abscesses and local infections"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "display": "Allergie",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Allergy"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "display": "Angriff (Zustand nach)",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Assault"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "display": "Asthma",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Asthma"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "display": "Atemproblem bei Erwachsenen",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Shortness of breath in adults"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "display": "Atemproblem bei Kindern",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Shortness of breath in children"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "display": "Auffälliges Verhalten",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Behaving strangely"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "display": "Augenprobleme",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Eye problems"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "Besorgte Eltern",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Worried parents"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "Betrunkener Eindruck",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Apparently drunk"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "display": "Bisse und Stiche",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Bites and stings"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "Chemikalienkontakt",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Chemical exposure"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "Diabetes",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Diabetes"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "Durchfälle und Erbrechen",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Diarrhoea and vomiting"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "Extremitätenprobleme",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Limb problems"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "display": "Fremdkörper",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Foreign body"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "display": "Gastrointestinale Blutung",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Gastrointestinal bleeding"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "display": "Gesichtsprobleme",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Facial problems"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "display": "Halsschmerz",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Sore throat"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "display": "Hautausschläge",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Rashes"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "display": "Herzklopfen",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Palpitations"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "display": "Hinkendes Kind",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Limping child"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "display": "Hodenschmerz",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Testicular pain"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "display": "Irritables (erregbares/reizbares) Kind ",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Irritable child"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "display": "Körperstammverletzung",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Torso injury"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "display": "Kollaps",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Collapse"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "display": "Kopfschmerz",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Headache"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "display": "Kopfverletzung",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Head injury"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "display": "Krampfanfall",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Fit"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "32",
+      "display": "Nackenschmerz",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Neck pain"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "33",
+      "display": "Ohrenprobleme",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Ear problems"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "display": "Psychiatrische Erkrankung",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Mental illness"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "display": "Rückenschmerz",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Back pain"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "36",
+      "display": "Schreiendes Baby",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Crying baby"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "display": "Schwangerschaftsproblem",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Pregnancy"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "38",
+      "display": "Schweres Trauma",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Major trauma"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "39",
+      "display": "Selbstverletzung",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Self-harm"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "display": "Sexualinfektion",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Sexually acquired infection"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "41",
+      "display": "Stürze",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Falls"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "42",
+      "display": "Thoraxschmerz",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Chest pain"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "43",
+      "display": "Überdosierung und Vergiftung",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Overdose and poisoning"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "44",
+      "display": "Unwohlsein bei Erwachsenen",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Unwell adult"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "45",
+      "display": "Unwohlsein bei Kindern",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Unwell child"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "display": "Unwohlsein bei Neugeborenen",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Unwell newborn"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "display": "Unwohlsein bei Säuglingen",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Unwell baby"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "display": "Urologische Probleme",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Urinary problems"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "49",
+      "display": "Vaginale Blutung",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "PV bleeding"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "display": "Verbrennungen und Verbrühungen",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Burns and scalds"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "51",
+      "display": "Wunden",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Wounds"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "display": "Zahnprobleme",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Dental problems"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    },
+    {
+      "code": "53",
+      "display": "Generelle Indikatoren",
+      "designation": [
+        {
+          "language": "en-US",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct",
+            "display": "Synonym"
+          },
+          "value": "General indicators"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "effectiveDate",
+          "valueDateTime": "2019-08-16"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "language": "de-DE",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2019-08-16T00:00:00+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.276.0.76.3.1.195.5.101"
+    }
+  ],
+  "version": "2019-08-16T00:00:00",
+  "experimental": false,
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties",
+      "description": "A code that indicates the status of the concept. Values found in this version of the code system are: active",
+      "type": "code"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties",
+      "description": "The date at which the concept was status was last changed. This is calculated based on the highest of 'creation date', 'expiration date', and 'official release date'",
+      "type": "dateTime"
+    }
+  ],
+  "count": 53
+}

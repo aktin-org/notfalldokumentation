@@ -1,0 +1,779 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "AKTIN_CS_cedis30",
+  "id": "aktin-cs-cedis30",
+  "title": "CEDIS Presenting Complaint List 3.0",
+  "description": "CEDIS Presenting Complaint List 3.0 (URI 1.2.276.0.76.11.61--20160221000000)\nLeganda\n* CEDIS = Canadian Emergency Department Information System;\n* ICD-10 = International Classification of Diseases and Related Health Problems, 10th revision;\n* ENT = ear, nose and throat;\n* URTI = upper respiratory tract infection;\n* NOS = not otherwise specified;\n* UTI = urinary tract infection;\n* CVA = congenital ventricular aneurysm.",
+  "url": "http://aktin.org/fhir/ig/notfalldokumentation/CodeSystem/aktin-cs-cedis30",
+  "concept": [
+    {
+      "code": "CV",
+      "display": "Kardiovaskulär"
+    },
+    {
+      "code": "001",
+      "display": "Herzstillstand (nicht traumatisch)"
+    },
+    {
+      "code": "002",
+      "display": "Herzstillstand (traumatisch)"
+    },
+    {
+      "code": "003",
+      "display": "Brustschmerz (kardial)"
+    },
+    {
+      "code": "004",
+      "display": "Brustschmerz (nicht kardial)"
+    },
+    {
+      "code": "005",
+      "display": "Palpitationen/unregelmäßiger Herzschlag"
+    },
+    {
+      "code": "006",
+      "display": "Hypertonie"
+    },
+    {
+      "code": "007",
+      "display": "Allgemeine Schwäche"
+    },
+    {
+      "code": "008",
+      "display": "Synkope/Präsynkope"
+    },
+    {
+      "code": "009",
+      "display": "Ödem, generalisiert"
+    },
+    {
+      "code": "010",
+      "display": "Beinschwellung/Ödem"
+    },
+    {
+      "code": "011",
+      "display": "Kühle, pulslose Extremität"
+    },
+    {
+      "code": "012",
+      "display": "Eine Extremität gerötet, überwärmt"
+    },
+    {
+      "code": "HNE",
+      "display": "HNO (Ohren)"
+    },
+    {
+      "code": "051",
+      "display": "Ohrenschmerzen"
+    },
+    {
+      "code": "052",
+      "display": "Fremdkörper im Ohr"
+    },
+    {
+      "code": "053",
+      "display": "Hörverlust"
+    },
+    {
+      "code": "054",
+      "display": "Tinnitus"
+    },
+    {
+      "code": "055",
+      "display": "Ausfluss aus dem Ohr"
+    },
+    {
+      "code": "056",
+      "display": "Ohrverletzung"
+    },
+    {
+      "code": "HNM",
+      "display": "HNO (Mund, Rachen, Hals)"
+    },
+    {
+      "code": "101",
+      "display": "Zahn-/Zahnfleischprobleme"
+    },
+    {
+      "code": "102",
+      "display": "Trauma Gesicht"
+    },
+    {
+      "code": "103",
+      "display": "Halsschmerzen (wunder Rachen)"
+    },
+    {
+      "code": "104",
+      "display": "Halsschwellung/-schmerzen"
+    },
+    {
+      "code": "105",
+      "display": "Trauma Hals"
+    },
+    {
+      "code": "106",
+      "display": "Schluckbeschwerden/Dysphagie"
+    },
+    {
+      "code": "107",
+      "display": "Schmerzen im Gesicht (nicht traumatisch, nicht dental)"
+    },
+    {
+      "code": "HNN",
+      "display": "HNO (Nase)"
+    },
+    {
+      "code": "151",
+      "display": "Nasenbluten"
+    },
+    {
+      "code": "152",
+      "display": "Verstopfte Nase/Heuschnupfen"
+    },
+    {
+      "code": "153",
+      "display": "Fremdkörper in der Nase"
+    },
+    {
+      "code": "154",
+      "display": "Beschwerden eines Infektes der oberen Luftwege"
+    },
+    {
+      "code": "155",
+      "display": "Trauma Nase"
+    },
+    {
+      "code": "EV",
+      "display": "Umweltbedingt"
+    },
+    {
+      "code": "201",
+      "display": "Erfrierung/Kälteverletzung"
+    },
+    {
+      "code": "202",
+      "display": "Schädliche Inhalation"
+    },
+    {
+      "code": "203",
+      "display": "Stromunfall"
+    },
+    {
+      "code": "204",
+      "display": "Exposition gegenüber Chemikalien"
+    },
+    {
+      "code": "205",
+      "display": "Unterkühlung"
+    },
+    {
+      "code": "206",
+      "display": "Beinahe-Ertrinken"
+    },
+    {
+      "code": "GI",
+      "display": "Gastrointestinal"
+    },
+    {
+      "code": "251",
+      "display": "Bauchschmerzen"
+    },
+    {
+      "code": "252",
+      "display": "Appetitlosigkeit"
+    },
+    {
+      "code": "253",
+      "display": "Verstopfung"
+    },
+    {
+      "code": "254",
+      "display": "Durchfall"
+    },
+    {
+      "code": "255",
+      "display": "Fremdkörper im Rektum"
+    },
+    {
+      "code": "256",
+      "display": "Leistenschmerzen/-schwellung"
+    },
+    {
+      "code": "257",
+      "display": "Übelkeit und/oder Erbrechen"
+    },
+    {
+      "code": "258",
+      "display": "Rektale/perineale Schmerzen"
+    },
+    {
+      "code": "259",
+      "display": "Bluterbrechen"
+    },
+    {
+      "code": "260",
+      "display": "Peranaler Blutabgang/Teerstuhl"
+    },
+    {
+      "code": "261",
+      "display": "Ikterus"
+    },
+    {
+      "code": "262",
+      "display": "Schluckauf"
+    },
+    {
+      "code": "263",
+      "display": "Abdominelle Raumforderung/gespanntes Abdomen"
+    },
+    {
+      "code": "264",
+      "display": "Trauma anal/rektal"
+    },
+    {
+      "code": "265",
+      "display": "Fremdkörper oral/ösophageal"
+    },
+    {
+      "code": "266",
+      "display": "Trinkstörung des Neugeborenen"
+    },
+    {
+      "code": "267",
+      "display": "Neugeborenenikterus"
+    },
+    {
+      "code": "GU",
+      "display": "Urogenital"
+    },
+    {
+      "code": "301",
+      "display": "Flankenschmerz"
+    },
+    {
+      "code": "302",
+      "display": "Hämaturie"
+    },
+    {
+      "code": "303",
+      "display": "Genitaler Ausfluss/Läsion"
+    },
+    {
+      "code": "304",
+      "display": "Penisschwellung"
+    },
+    {
+      "code": "305",
+      "display": "Skrotale Schmerzen und/oder Schwellung"
+    },
+    {
+      "code": "306",
+      "display": "Harnverhalt"
+    },
+    {
+      "code": "307",
+      "display": "Beschwerden eines Harnwegsinfektes"
+    },
+    {
+      "code": "308",
+      "display": "Oligurie"
+    },
+    {
+      "code": "309",
+      "display": "Polyurie"
+    },
+    {
+      "code": "310",
+      "display": "Trauma genital"
+    },
+    {
+      "code": "MH",
+      "display": "Psychische Verfassung"
+    },
+    {
+      "code": "351",
+      "display": "Depression/Suizidalität/absichtliche Selbstschädigung"
+    },
+    {
+      "code": "352",
+      "display": "Angst/situationsbezogene Krise"
+    },
+    {
+      "code": "353",
+      "display": "Halluzinationen/Wahnvorstellungen"
+    },
+    {
+      "code": "354",
+      "display": "Schlafstörung"
+    },
+    {
+      "code": "355",
+      "display": "Gewalttätiges Verhalten/Fremdgefährdung"
+    },
+    {
+      "code": "356",
+      "display": "Soziales Problem"
+    },
+    {
+      "code": "358",
+      "display": "Sonderbares Verhalten"
+    },
+    {
+      "code": "359",
+      "display": "Sorge um das Wohlergehen des Patienten"
+    },
+    {
+      "code": "360",
+      "display": "Kindliche Verhaltensauffälligkeit"
+    },
+    {
+      "code": "NC",
+      "display": "Neurologisch"
+    },
+    {
+      "code": "401",
+      "display": "Veränderter Bewußtseinszustand"
+    },
+    {
+      "code": "402",
+      "display": "Verwirrtheit"
+    },
+    {
+      "code": "403",
+      "display": "Schwindel"
+    },
+    {
+      "code": "404",
+      "display": "Kopfschmerz"
+    },
+    {
+      "code": "405",
+      "display": "Krampfanfall"
+    },
+    {
+      "code": "406",
+      "display": "Gangstörung/Ataxie"
+    },
+    {
+      "code": "407",
+      "display": "Kopfverletzung"
+    },
+    {
+      "code": "408",
+      "display": "Zittern"
+    },
+    {
+      "code": "409",
+      "display": "Schwäche in den Extremitäten/Symptome eines Schlaganfalls oder TIA"
+    },
+    {
+      "code": "410",
+      "display": "Sensibilitätsstörung/Parästhesie"
+    },
+    {
+      "code": "411",
+      "display": "Schlaffes Kind"
+    },
+    {
+      "code": "OGY",
+      "display": "Geburtshilfe/Gynäkologie"
+    },
+    {
+      "code": "451",
+      "display": "Menstruationsbeschwerden"
+    },
+    {
+      "code": "452",
+      "display": "Fremdkörper in der Vagina"
+    },
+    {
+      "code": "453",
+      "display": "Vaginaler Ausfluss"
+    },
+    {
+      "code": "454",
+      "display": "Sexueller Übergriff"
+    },
+    {
+      "code": "455",
+      "display": "Vaginale Blutung"
+    },
+    {
+      "code": "456",
+      "display": "Schamlippenschwellung"
+    },
+    {
+      "code": "457",
+      "display": "Schwangerschaftsprobleme ≤ 20. SSW"
+    },
+    {
+      "code": "458",
+      "display": "Schwangerschaftsprobleme > 20. SSW"
+    },
+    {
+      "code": "460",
+      "display": "Vaginale Schmerzen/Schmerzen beim Geschlechtsverkehr"
+    },
+    {
+      "code": "EC",
+      "display": "Augenheilkunde"
+    },
+    {
+      "code": "502",
+      "display": "Exposition des Auges gegenüber Chemikalien"
+    },
+    {
+      "code": "503",
+      "display": "Fremdkörper im Auge"
+    },
+    {
+      "code": "504",
+      "display": "Sehstörung"
+    },
+    {
+      "code": "505",
+      "display": "Augenschmerzen"
+    },
+    {
+      "code": "506",
+      "display": "Rote Augen, Ausfluss aus dem Auge"
+    },
+    {
+      "code": "507",
+      "display": "Lichtscheu"
+    },
+    {
+      "code": "508",
+      "display": "Doppelbilder"
+    },
+    {
+      "code": "509",
+      "display": "Periorbitale Schwellung"
+    },
+    {
+      "code": "510",
+      "display": "Trauma Auge"
+    },
+    {
+      "code": "511",
+      "display": "Kontrolluntersuchung der Augen"
+    },
+    {
+      "code": "OC",
+      "display": "Orthopädisch/Unfall-chirurgisch"
+    },
+    {
+      "code": "551",
+      "display": "Rückenschmerzen"
+    },
+    {
+      "code": "552",
+      "display": "Traumatische Rücken-/Wirbelsäulenverletzung"
+    },
+    {
+      "code": "553",
+      "display": "Amputation"
+    },
+    {
+      "code": "554",
+      "display": "Schmerzen obere Extremität"
+    },
+    {
+      "code": "555",
+      "display": "Schmerzen untere Extremität"
+    },
+    {
+      "code": "556",
+      "display": "Verletzung obere Extremität"
+    },
+    {
+      "code": "557",
+      "display": "Verletzung untere Extremität"
+    },
+    {
+      "code": "558",
+      "display": "Gelenkschwellung"
+    },
+    {
+      "code": "559",
+      "display": "Kindliche Gangstörung/Schmerzen beim Gehen"
+    },
+    {
+      "code": "RC",
+      "display": "Respiratorisch"
+    },
+    {
+      "code": "651",
+      "display": "Luftnot"
+    },
+    {
+      "code": "652",
+      "display": "Atemstillstand"
+    },
+    {
+      "code": "653",
+      "display": "Husten/Verschleimung"
+    },
+    {
+      "code": "654",
+      "display": "Hyperventilation"
+    },
+    {
+      "code": "655",
+      "display": "Bluthusten"
+    },
+    {
+      "code": "656",
+      "display": "Fremdkörper in den Atemwegen"
+    },
+    {
+      "code": "657",
+      "display": "Allergische Reaktion"
+    },
+    {
+      "code": "658",
+      "display": "Stridor"
+    },
+    {
+      "code": "659",
+      "display": "Giemen ohne weitere Beschwerden"
+    },
+    {
+      "code": "660",
+      "display": "Apnoeanfälle bei Säuglingen"
+    },
+    {
+      "code": "661",
+      "display": "Grippeähnliche Erkrankung"
+    },
+    {
+      "code": "SK",
+      "display": "Haut"
+    },
+    {
+      "code": "701",
+      "display": "Biss"
+    },
+    {
+      "code": "702",
+      "display": "Insektenstich"
+    },
+    {
+      "code": "703",
+      "display": "Abschürfung"
+    },
+    {
+      "code": "704",
+      "display": "Riss-/Quetsch-/Schnitt-/Stichwunde"
+    },
+    {
+      "code": "705",
+      "display": "Verbrennung"
+    },
+    {
+      "code": "706",
+      "display": "Kontakt mit Blut oder Körperflüssigkeiten"
+    },
+    {
+      "code": "707",
+      "display": "Juckreiz"
+    },
+    {
+      "code": "708",
+      "display": "Hautausschlag"
+    },
+    {
+      "code": "709",
+      "display": "Lokalisierte Schwellung/Rötung"
+    },
+    {
+      "code": "710",
+      "display": "Wundkontrolle"
+    },
+    {
+      "code": "711",
+      "display": "Sonstige Hautprobleme"
+    },
+    {
+      "code": "712",
+      "display": "Schwellung/Beule/Schwiele"
+    },
+    {
+      "code": "713",
+      "display": "Rötung/Spannungsgefühl in der Brust"
+    },
+    {
+      "code": "714",
+      "display": "Ausschluß eines Parasitenbefalls"
+    },
+    {
+      "code": "715",
+      "display": "Zyanose"
+    },
+    {
+      "code": "716",
+      "display": "Spontane Hauteinblutungen"
+    },
+    {
+      "code": "717",
+      "display": "Fremdkörper in der Haut"
+    },
+    {
+      "code": "718",
+      "display": "Nagelprobleme"
+    },
+    {
+      "code": "SA",
+      "display": "Substanzmissbrauch"
+    },
+    {
+      "code": "751",
+      "display": "Substanzmissbrauch/Intoxikation"
+    },
+    {
+      "code": "752",
+      "display": "Einnahme einer Überdosierung"
+    },
+    {
+      "code": "753",
+      "display": "Substanzentzug"
+    },
+    {
+      "code": "TR",
+      "display": "Trauma"
+    },
+    {
+      "code": "801",
+      "display": "Schweres Trauma - penetrierend"
+    },
+    {
+      "code": "802",
+      "display": "Schweres Trauma - stumpf"
+    },
+    {
+      "code": "803",
+      "display": "Isoliertes Thoraxtrauma - penetrierend"
+    },
+    {
+      "code": "804",
+      "display": "Isoliertes Thoraxtrauma - stumpf"
+    },
+    {
+      "code": "805",
+      "display": "Isoliertes Abdominaltrauma - penetrierend"
+    },
+    {
+      "code": "806",
+      "display": "Isoliertes Abdominaltrauma - stumpf"
+    },
+    {
+      "code": "MC",
+      "display": "Allgemeine und sonstige Beschwerden"
+    },
+    {
+      "code": "851",
+      "display": "Exposition gegenüber einer übertragbaren Krankheit"
+    },
+    {
+      "code": "852",
+      "display": "Fieber"
+    },
+    {
+      "code": "853",
+      "display": "Hyperglykämie"
+    },
+    {
+      "code": "854",
+      "display": "Hypoglykämie"
+    },
+    {
+      "code": "855",
+      "display": "Direkte Überweisung/Weiterleitung"
+    },
+    {
+      "code": "856",
+      "display": "Verbandswechsel"
+    },
+    {
+      "code": "857",
+      "display": "Entfernung von Klammern/Nähten"
+    },
+    {
+      "code": "858",
+      "display": "Gipskontrolle"
+    },
+    {
+      "code": "859",
+      "display": "Bildgebung/Blutuntersuchung"
+    },
+    {
+      "code": "860",
+      "display": "Problem mit Medizinprodukt"
+    },
+    {
+      "code": "861",
+      "display": "Verschreibung/Bedarf an Medikamenten"
+    },
+    {
+      "code": "862",
+      "display": "Entfernung Ring"
+    },
+    {
+      "code": "863",
+      "display": "Auffällige Ergebnisse Labor/Bildgebung"
+    },
+    {
+      "code": "864",
+      "display": "Blässe/Anämie"
+    },
+    {
+      "code": "865",
+      "display": "Postoperative Komplikationen"
+    },
+    {
+      "code": "866",
+      "display": "Geringfügige unspezifische Beschwerden"
+    },
+    {
+      "code": "867",
+      "display": "Unstillbares Schreien"
+    },
+    {
+      "code": "868",
+      "display": "Angeborene Probleme bei Kindern"
+    },
+    {
+      "code": "869",
+      "display": "Neugeborenes"
+    },
+    {
+      "code": "870",
+      "display": "Intravenöse Therapie"
+    },
+    {
+      "code": "998",
+      "display": "Patient aufgenommen und vor Ersteinschätzung wieder gegangen"
+    }
+  ],
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "version": "3.0.0",
+  "experimental": false,
+  "count": 187
+}

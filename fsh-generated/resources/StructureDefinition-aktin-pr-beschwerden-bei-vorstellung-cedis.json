@@ -1,0 +1,105 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-beschwerden-bei-vorstellung-cedis",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_beschwerden_bei_vorstellung_cedis",
+  "title": "Beschwerden bei Vorstellung (CEDIS)",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Die Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme nach dem Katalog CEDIS vorbringt. Version CEDIS-PCL Version 5.1",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition",
+        "definition": "Genauer Zeitpunkt des Ereigniseintritts bzw. Symptombeginns bei Schlaganfall, Herzinfarkt, Unfall, Reanimation, etc. (minimal Angabe des Datums und der Uhrzeit) – oder – auf der Basis der Angabe einer Symptomdauer ausgerechnetes Datum (minimal Angabe des Datums)"
+      },
+      {
+        "id": "Condition.identifier",
+        "path": "Condition.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category",
+        "path": "Condition.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category.coding",
+        "path": "Condition.category.coding",
+        "patternCoding": {
+          "code": "1269489004",
+          "system": "http://snomed.info/sct",
+          "display": "Chief complaint (observable entity)"
+        }
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding",
+        "path": "Condition.code.coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-cedis30"
+        }
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

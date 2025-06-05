@@ -1,0 +1,125 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-transportmittel",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-transportmittel",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_transportmittel",
+  "title": "Transportmittel",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Mit welchem Transportmittel des Gesundheitswesens wird der Patient in die Notaufnahme transportiert",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "definition": "Mit welchem Transportmittel des Gesundheitswesens wird der Patient in die Notaufnahme transportiert"
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:SNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "424483007",
+          "system": "http://snomed.info/sct",
+          "display": "Transportation details (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "patternString": "Transportmittel"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://www.aktin.org/fhir/ValueSet/aktin-vs-transportmethod"
+        }
+      }
+    ]
+  }
+}

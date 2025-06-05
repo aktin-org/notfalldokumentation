@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-rontgenthorax-angefordert",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-rontgenthorax-angefordert",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_rontgenthorax_angefordert",
+  "title": "Röntgenthorax angefordert",
+  "status": "active",
+  "experimental": true,
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Wurde ein Röntgenthorax angefordert?",
+  "purpose": "**Hinweis**: Dieses Profil ist nicht dazu gedacht, implementiert zu werden. Es macht deutlich, welche (zusätzlichen) AKTIN-spezifischen Eigenschaften ein existierendes Profil (bekannter Baustein 'ServiceRequest') zu diesem Typ haben muss und welche Constraints gelten. Es dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Das Profil wird nach Festlegung der bekannten Bausteine als formale Restriktion profilert.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": true,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest",
+        "path": "ServiceRequest",
+        "definition": "Wurde ein Röntgenthorax angefordert?",
+        "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
+      },
+      {
+        "id": "ServiceRequest.identifier",
+        "path": "ServiceRequest.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "patternCode": "order",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.code.coding",
+        "path": "ServiceRequest.code.coding",
+        "patternCoding": {
+          "code": "415232002",
+          "system": "http://snomed.info/sct",
+          "display": "Radiographic procedure of chest (procedure)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.authoredOn",
+        "path": "ServiceRequest.authoredOn",
+        "short": "Zeitpunkt, wann Maßnahme angefordert wurde",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

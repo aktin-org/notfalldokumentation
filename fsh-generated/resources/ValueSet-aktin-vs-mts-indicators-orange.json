@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AKTIN_VS_mts_indicators_orange",
+  "id": "aktin-vs-mts-indicators-orange",
+  "title": "MTS-Indikatoren ORANGE",
+  "description": "MTS-Indikatoren ORANGE",
+  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-orange",
+  "version": "2025.0.3-ci",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "orange"
+          }
+        ]
+      }
+    ]
+  }
+}

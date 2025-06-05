@@ -1,0 +1,245 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "aktin-cs-esi-triage-factors",
+    "meta": {
+        "profile": ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+    },
+    "language": "de-DE",
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+            "valuePeriod": {"start": "2019-08-15T00:00:00+02:00"}
+        }
+    ],
+    "url": "http://aktin.org/fhir/CodeSystem/aktin-cs-esi-triage-factors",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.2.276.0.76.3.1.195.5.103"
+        }
+    ],
+    "version": "2019-08-15T00:00:00",
+    "name": "Esi_triage_factors",
+    "title": "ESI-Triagefaktoren",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "AKTIN e. V.",
+    "contact": [
+        {
+            "name": "AKTIN e. V.",
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "Tel. +49 391 67 28186"
+                },
+                {
+                    "system": "email",
+                    "value": "office@aktin.org"
+                }
+            ]
+        }
+    ],
+    "description": "ESI-Triage",
+    "caseSensitive": false,
+    "content": "complete",
+    "count": 13,
+    "property": [
+        {
+            "code": "status",
+            "uri": "http://hl7.org/fhir/concept-properties",
+            "description": "A code that indicates the status of the concept. Values found in this version of the code system are: active",
+            "type": "code"
+        },
+        {
+            "code": "effectiveDate",
+            "uri": "http://hl7.org/fhir/concept-properties",
+            "description": "The date at which the concept was status was last changed. This is calculated based on the highest of 'creation date', 'expiration date', and 'official release date'",
+            "type": "dateTime"
+        }
+    ],
+    "concept": [
+        {
+            "code": "1",
+            "display": "sofortige lebensrettende Maßnahme notwendig",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "2",
+            "display": "Hochrisikosituation",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "3",
+            "display": "verwirrt",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "4",
+            "display": "lethargisch",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "5",
+            "display": "desorientiert",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "6",
+            "display": "starke Schmerzen",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "7",
+            "display": "starkes Unwohlsein",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "8",
+            "display": "großes kindliches Leid",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "9",
+            "display": "mehr als eine Ressource benötigt",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "10",
+            "display": "Vitalzeichen in der Gefahrenzone",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "11",
+            "display": "Vitalzeichen nicht in der Gefahrenzone",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "12",
+            "display": "eine Ressource benötigt",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        },
+        {
+            "code": "13",
+            "display": "keine Ressourcen benötigt",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2019-08-15"
+                }
+            ]
+        }
+    ]
+}

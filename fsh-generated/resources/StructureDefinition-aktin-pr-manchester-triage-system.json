@@ -1,0 +1,385 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-manchester-triage-system",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-manchester_triage_system",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_manchester_triage_system",
+  "title": "Manchester Triage System",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Triage nach Manchester Triage System",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:SNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "1255867001",
+          "system": "http://snomed.info/sct",
+          "display": "Manchester Triage System (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "patternString": "Manchester Triage System"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Nutzung von AKTIN_PR_Patient",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-manchestertriagesystem"
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 5
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsprasentationsdiagramm",
+        "path": "Observation.component",
+        "sliceName": "aktin-pr-mtsprasentationsdiagramm",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsprasentationsdiagramm.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SCTPOCC-1269489004",
+              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "display": "MTS-Präsentationsdiagramm"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsprasentationsdiagramm.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsprasentationsdiagramm.value[x]:valueCodeableConcept",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-presenting-diagram"
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_rot",
+        "path": "Observation.component",
+        "sliceName": "aktin-pr-mtsindikatoren_rot",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_rot.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SCTPOCC-49499008",
+              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "display": "MTS-Indikatoren ROT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_rot.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_rot.value[x]:valueCodeableConcept",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-red"
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_orange",
+        "path": "Observation.component",
+        "sliceName": "aktin-pr-mtsindikatoren_orange",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_orange.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SCTPOCC-25876001",
+              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "display": "MTS-Indikatoren ORANGE"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_orange.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_orange.value[x]:valueCodeableConcept",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-orange"
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_gelb",
+        "path": "Observation.component",
+        "sliceName": "aktin-pr-mtsindikatoren_gelb",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_gelb.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SCTPOCC-103391001",
+              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "display": "MTS-Indikatoren GELB"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_gelb.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_gelb.value[x]:valueCodeableConcept",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-yellow"
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_grun",
+        "path": "Observation.component",
+        "sliceName": "aktin-pr-mtsindikatoren_grun",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_grun.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SCTPOCC-394848005",
+              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "display": "MTS-Indikatoren GRÜN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_grun.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:aktin-pr-mtsindikatoren_grun.value[x]:valueCodeableConcept",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-green"
+        }
+      }
+    ]
+  }
+}

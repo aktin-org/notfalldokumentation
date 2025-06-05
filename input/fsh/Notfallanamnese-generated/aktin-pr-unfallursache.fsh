@@ -1,0 +1,43 @@
+// AKTIN Profil - Unfallursache 
+// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-unfallursache
+// FHIR Core Type: Observation
+// ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.20156
+Profile: AKTIN_PR_unfallursache
+Parent:  Observation
+Id:      aktin-pr-unfallursache
+Title:   "Unfallursache "
+Description: "Ursache des Unfalles"
+* . ^definition = "Ursache des Unfalles"
+* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-unfallursache"
+* insert Meta
+* insert Version
+* insert Publisher
+
+
+* identifier MS
+
+* category MS
+
+* code MS
+* code.coding MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    SNOMED 1..1 MS and
+    LOINC 1..1 MS
+* code.coding[SNOMED] = $SCT#213769004 "Causes of injury and poisoning"
+* code.coding[LOINC] = $LOINC#69543-7 "Cause of injury NEMSIS"
+* code.text =  "Unfallursache"
+
+* value[x] MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-accident-reason-snomed (required)
+* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+
+* subject 1..1 MS
+* subject only Reference(Patient)
+
+* effective[x] 1..1 MS
+* effective[x] only dateTime
+

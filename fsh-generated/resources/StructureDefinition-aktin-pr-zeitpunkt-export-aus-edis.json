@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-zeitpunkt-export-aus-edis",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-export-aus-edis",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_zeitpunkt_export_aus_edis",
+  "title": "Zeitpunkt Export aus EDIS",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "definition": "Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde"
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:CS-1",
+        "path": "Observation.code.coding",
+        "sliceName": "CS-1",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "FLN-137",
+          "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs",
+          "display": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "patternString": "Zeitpunkt Export aus EDIS"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Zeitpunkt Export aus EDIS",
+        "definition": "Zeitpunkt Export aus EDIS",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

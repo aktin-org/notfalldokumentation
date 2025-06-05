@@ -1,0 +1,1060 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "org.aktin.notfalldokumentation",
+  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ImplementationGuide/org.aktin.notfalldokumentation",
+  "version": "0.6.0",
+  "name": "AKTIN_Notfalldokumentation",
+  "title": "AKTIN Notfalldokumentation",
+  "status": "draft",
+  "date": "2025-05-26",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "name": "AKTIN e.V.",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    },
+    {
+      "name": "AKTIN e.V.",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org/"
+        }
+      ]
+    }
+  ],
+  "description": "FHIR-Artefakte für die AKTIN Notfalldokumentation und einem kommenden FHIR Implementation Guide",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DEU",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "packageId": "org.aktin.notfalldokumentation",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.basisprofil.r4",
+      "version": "1.5.0-ballot2",
+      "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+      "id": "de_basisprofil_r4"
+    },
+    {
+      "packageId": "de.gematik.isik-basismodul",
+      "version": "4.0.0-rc2",
+      "uri": "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Basismodul",
+      "id": "de_gematik_isik_basismodul"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-lm-notaufnahmeregister"
+        },
+        "name": "AKTIN LogicalModel Notaufnahmeregister",
+        "description": "AKTIN LogicalModel Notaufnahmeregister, direkt abgeleitet aus ART-DECOR®",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/aktin-cm-epiznota"
+        },
+        "name": "AKTIN Mapping Episodenzusammenfassung Notfallaufnahme",
+        "description": "AKTIN Mapping der logischen Modellelement aus dem Szenario in ART-DECOR zur Episodenzusammenfassung Notfallaufnahme nach FHIR Profilen und Elementen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-age-in-categories"
+        },
+        "name": "Alter in Kategorien",
+        "description": "Alter in Kategorien",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-alter-in-kategorien"
+        },
+        "name": "Alter in Kategorien",
+        "description": "Alter in Kategorien",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-alter-patient"
+        },
+        "name": "Alter Patient",
+        "description": "Alter des Patienten zum Stichtag",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-andere-entlassungsarten"
+        },
+        "description": "Entlassungsart (discharge disposition code) für \"kein Arztkontakt\" - AKTIN Notfalldokumentation",
+        "exampleBoolean": false,
+        "name": "Andere Entlassungsarten"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-other-triage-systems"
+        },
+        "description": "Liste und Codes nicht internationaler Triagesysteme",
+        "exampleBoolean": false,
+        "name": "Andere Triagesysteme"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-atemfrequenz"
+        },
+        "name": "Atemfrequenz",
+        "description": "Atemzüge des Patienten pro Minute",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-aufenthalt"
+        },
+        "name": "Aufenthalt",
+        "description": "Aufenthalt in der Notaufnahme.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.5.11.28--20240916152134"
+        },
+        "description": "Aufenthaltsorte",
+        "exampleBoolean": false,
+        "name": "Aufenthaltsorte"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.3--20240214115917"
+        },
+        "description": "Beschwerdedynamik",
+        "exampleBoolean": false,
+        "name": "Beschwerdedynamik"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis"
+        },
+        "name": "Beschwerden bei Vorstellung (CEDIS)",
+        "description": "Die Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme nach dem Katalog CEDIS vorbringt. Version CEDIS-PCL Version 5.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-bga-angefordert"
+        },
+        "name": "BGA angefordert",
+        "description": "Wurde eine BGA angefordert?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-blutdruck"
+        },
+        "name": "Blutdruck",
+        "description": "Datenelemente des Blutdrucks",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-cedis30"
+        },
+        "name": "CEDIS Presenting Complaint List 3.0",
+        "description": "CEDIS Presenting Complaint List 3.0",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-cedis30"
+        },
+        "name": "CEDIS Presenting Complaint List 3.0",
+        "description": "CEDIS Presenting Complaint List 3.0 (URI 1.2.276.0.76.11.61--20160221000000)\nLeganda\n* CEDIS = Canadian Emergency Department Information System;\n* ICD-10 = International Classification of Diseases and Related Health Problems, 10th revision;\n* ENT = ear, nose and throat;\n* URTI = upper respiratory tract infection;\n* NOS = not otherwise specified;\n* UTI = urinary tract infection;\n* CVA = congenital ventricular aneurysm.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister"
+        },
+        "name": "Composition (Episodenzusammenfassung Notaufnahmeregister)",
+        "description": "Informationen zu einer Behandlungsepisode in der Notaufnahme. Zusammenfassung im Rahmen des Notaufnahmeregisters von AKTIN als FHIR Dokument.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt"
+        },
+        "name": "CT Abdomen durchgeführt",
+        "description": "Wurde ein selektives CT des Abdomens durchgführt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-ct-extremitaten-durchgefuhrt"
+        },
+        "name": "CT Extremitäten durchgeführt",
+        "description": "Wurde ein selektives CT der Extremitäten durchgeführt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-ct-hws-durchgefuhrt"
+        },
+        "name": "CT HWS durchgeführt",
+        "description": "Wurde ein selektives CT der Halswirbelsäule durchgeführt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-isolation"
+        },
+        "name": "CT HWS durchgeführt",
+        "description": "Patient muss aufgrund einer (z.B. möglicherweise übertragbaren Erkrankung) isoliert werden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-ct-kopf-durchgefuhrt"
+        },
+        "name": "CT Kopf durchgeführt",
+        "description": "Wurde ein selektives Kopf-CT durchgeführt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-ct-thorax-durchgefuhrt"
+        },
+        "name": "CT Thorax durchgeführt",
+        "description": "Wurde ein CT des Thorax durchgeführt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-ct-bzw-mr-bzw-dsangiographie"
+        },
+        "name": "CT- bzw. MR- bzw. DS-Angiographie",
+        "description": "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-datum-beginn-patientenbezogene-dokumentation"
+        },
+        "name": "Datum Beginn patientenbezogene Dokumentation",
+        "description": "Datum des Beginns der patientenbezogenen Dokumentation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-diastolischer-blutdruck"
+        },
+        "name": "Diastolischer Blutdruck",
+        "description": "Diastolischer Blutdruckwert",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-edis"
+        },
+        "name": "EDIS",
+        "description": "Name der lokal verwendeten Software zur primären Datenerfassung (EDIS, emergency department information system) sowie Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS; wenn keine ED-Spezialanwendung verwendet wird: KIS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-ekg-angefordert"
+        },
+        "name": "EKG angefordert",
+        "description": "Wurde ein 12-Kanal-EKG angefordert?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-emergencyseverityindex"
+        },
+        "description": "Emergency Severity Index",
+        "exampleBoolean": false,
+        "name": "Emergency Severity Index"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.11.45--20240816174700"
+        },
+        "description": "Emergency Severity Index",
+        "exampleBoolean": false,
+        "name": "Emergency Severity Index"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-ergebnis-der-ersteinschatzung"
+        },
+        "name": "Ergebnis der Ersteinschätzung",
+        "description": "Ergebnis der Ersteinschätzung in einem standardisierten 5-stufigen System",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-schmerz"
+        },
+        "name": "Erste Schmerzmessung",
+        "description": "Erste Schmerzmessung mit NRS oder VAS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-erythrozytenkonzentrat"
+        },
+        "name": "Erythrozyten-Konzentrat",
+        "description": "Profile for documenting a medication administration: Erythrozyten-Konzentrat",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.20--20240722165110"
+        },
+        "description": "ESI Triage-Faktoren",
+        "exampleBoolean": false,
+        "name": "ESI Triage-Faktoren"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-esitriage"
+        },
+        "name": "ESI-Triage",
+        "description": "Triage nach Emergency severity index [ESI]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-esi-triage-factors"
+        },
+        "description": "ESI-Triage",
+        "exampleBoolean": false,
+        "name": "ESI-Triagefaktoren"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-fahrzeug-des-verunfallten"
+        },
+        "name": "Fahrzeug des Verunfallten",
+        "description": "Welches Fahrzeug hat die verunfallte Person gefahren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.8--20240626132930"
+        },
+        "description": "Fahrzeug des Verunfallten",
+        "exampleBoolean": false,
+        "name": "Fahrzeug des Verunfallten"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-faktor-xiii"
+        },
+        "name": "Faktor XIII",
+        "description": "Profile for documenting a medication administration: Faktor XIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt"
+        },
+        "name": "Ganzkörper-CT durchgeführt",
+        "description": "Wurde ein Ganzkörper-CT durchgeführt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-generic-5level-triage-system"
+        },
+        "name": "Generic five level triage system",
+        "description": "Generic five level triage system",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-herzfrequenz"
+        },
+        "name": "Herzfrequenz",
+        "description": "Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-isolation-reason"
+        },
+        "name": "Isolationsgrund",
+        "description": "Isolationsgrund",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.25--20240219125534"
+        },
+        "description": "Isolationsgrund",
+        "exampleBoolean": false,
+        "name": "Isolationsgrund"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.11.54--20240724214410"
+        },
+        "description": "Isolationstypen",
+        "exampleBoolean": false,
+        "name": "Isolationstypen"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-katecholamine"
+        },
+        "name": "Katecholamine",
+        "description": "Profile for documenting a medication administration: Katecholamine",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-kolloidale-infusionslosungen"
+        },
+        "name": "Kolloidale Infusionslösungen",
+        "description": "Profile for documenting a medication administration: Kolloidale Infusionslösungen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-kombination-typen-verlegung-und-entlassung"
+        },
+        "name": "Kombination Typen Verlegung und Entlassung",
+        "description": "Kombination der Typ Verlegung und Typ Entlassung für NoKeda",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-kostentrager"
+        },
+        "name": "Kostenträger",
+        "description": "Versicherungsgesellschaft, Amt oder sonstige Organisation, Selbstzahler, der die Kosten des Falles übernimmt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-kristalloide-infusionslosungen"
+        },
+        "name": "Kristalloide Infusionslösungen",
+        "description": "Profile for documenting a medication administration: Kristalloide Infusionslösungen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-xt-kvfall"
+        },
+        "name": "KV-Fall",
+        "description": "Wurde der Fall über die Kassenärztliche Vereinigung abgerechnet?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-korperkerntemperatur"
+        },
+        "name": "Körperkerntemperatur",
+        "description": "Gemessene Temperatur bei Aufnahme in die Notaufnahme [°C]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.11.81--20240724214339"
+        },
+        "description": "Körperregionen der Verletzung",
+        "exampleBoolean": false,
+        "name": "Körperregionen der Verletzung"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-laboruntersuchung-angefordert"
+        },
+        "name": "Laboruntersuchung angefordert",
+        "description": "Wurde eine Laboruntersuchung angefordert?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-manchester-triage-system"
+        },
+        "name": "Manchester Triage System",
+        "description": "Triage nach Manchester Triage System",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-manchestertriagesystem"
+        },
+        "name": "Manchester-Triage-System",
+        "description": "Manchester-Triage-System",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-manchestertriagesystem"
+        },
+        "name": "Manchestertriagesystem",
+        "description": "manchestertriagesystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-medizinische-begleitung"
+        },
+        "name": "Medizinische Begleitung",
+        "description": "Mit welcher medizinischen Begleitung war das Transportmittel des Gesundheitswesen besetzt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-mikrobiologie-angefordert"
+        },
+        "name": "Mikrobiologie angefordert",
+        "description": "Wurde ein Mikrobiologische Untersuchung angefordert?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-mrt-durchgefuhrt"
+        },
+        "name": "MRT durchgeführt",
+        "description": "Wurde ein MRT im Rahmen der Schockraumversorgung durchgeführt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-mts-indicators"
+        },
+        "name": "MTS-Indikatoren",
+        "description": "MTS-Indikatoren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-mts-indicators-yellow"
+        },
+        "name": "MTS-Indikatoren GELB",
+        "description": "MTS-Indikatoren GELB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-mts-indicators-green"
+        },
+        "name": "MTS-Indikatoren GRÜN",
+        "description": "MTS-Indikatoren GRÜN",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-mts-indicators-orange"
+        },
+        "name": "MTS-Indikatoren ORANGE",
+        "description": "MTS-Indikatoren ORANGE",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-mts-indicators-red"
+        },
+        "name": "MTS-Indikatoren ROT",
+        "description": "MTS-Indikatoren ROT",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-mts-presenting-diagram"
+        },
+        "name": "MTS-Präsentationsdiagramm",
+        "description": "MTS-Präsentationsdiagramm",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-mts-presentationdiagram"
+        },
+        "name": "MTS-Präsentationsdiagramm",
+        "description": "MTS-Präsentationsdiagramm",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/aktin-qq-ersteinschatzung"
+        },
+        "name": "Notaufnahmeregister - Ersteinschätzung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-patient"
+        },
+        "name": "Patient",
+        "description": "Demografische Informationen zum Patienten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.2--20240214112351"
+        },
+        "description": "Patientenbegleitung",
+        "exampleBoolean": false,
+        "name": "Patientenbegleitung"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.1--20240219125534"
+        },
+        "description": "Liste der entsprechenden Zweige in SNOMED-CT zur Angabe von Gesundheitsproblemen (Conditions). Diese Zusammenstellung ist identisch mit dem Value Set *IPS Problems* (2.16.840.1.113883.11.22.73) der International Patient Summary (IPS)",
+        "exampleBoolean": false,
+        "name": "Problems (SNOMED)"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-pulsfrequenz"
+        },
+        "name": "Pulsfrequenz",
+        "description": "Pulsfrequenz des Patienten per manuellem Auszählen, Pulsoximeter oder invasiver Druckmessung gemessen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung"
+        },
+        "name": "Pulsoximetrische Sauerstoffsättigung",
+        "description": "Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patienten in Prozent  [%]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-referral-actions"
+        },
+        "description": "Referral actions",
+        "exampleBoolean": false,
+        "name": "Referral actions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-practitioner-role-physician"
+        },
+        "name": "Rolle (nur Arzt)",
+        "description": "Rolle des Gesundheitsdienstleistenden in der Notaufnahme, hier: nur vom Typ Arzt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-rontgenbecken-durchgefuhrt"
+        },
+        "name": "Röntgen-Becken durchgeführt",
+        "description": "Wurde ein Röntgen-Becken durchgeführt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-rontgenthorax-durchgefuhrt"
+        },
+        "name": "Röntgen-Thorax durchgeführt",
+        "description": "Wurde ein Röntgen-Thorax durchgeführt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-rontgenwirbelsaule-durchgefuhrt"
+        },
+        "name": "Röntgen-Wirbelsäule durchgeführt",
+        "description": "Wurde ein Röntgen der Wirbelsäule durchgeführt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-rontgenthorax-angefordert"
+        },
+        "name": "Röntgenthorax angefordert",
+        "description": "Wurde ein Röntgenthorax angefordert?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-smallvolume-gabe"
+        },
+        "name": "Small-volume Gabe",
+        "description": "Profile for documenting a medication administration: Small-volume Gabe",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-snomed-postcoordinations"
+        },
+        "description": "Dieses Codessystem umfasst SNOMED-CT Postkoordinierte Terme zur Nutzung in der Notfalldokumentation.\n\n**Hintergrund**\n\nIn der Notfalldokumentation werden SNOMED-CT Postkoordinierte Terme verwendet, was an sich kein problem darstellt, wenn diese als \"String-Konstanten\" in Value Sets oder                     Terminologieassoziationen aufgefasst werden. Allerdings sind die meisten dieser Begriffe Kandidaten, um in SNOMED International als präkoordinierte aufgenommen zu werden. Um eine sofortige Nutzung von SNOMED-CT Postkoordinierten Terme zu gewährleisten und sie dennoch zu einem späteren Zeitpunkt nach der Einführung der präkoordinierten Termen übergangsmäßig zugleich zu verwenden                     und eine Eindeutige Zuordnung zu allen Zeiten zu erlauben, werden die meisten SNOMED-CT Postkoordinierte Terme zur Nutzung in der Notfalldokumentation hier mit einem \"Notfall\"-Code versehen.\n\nDie Ersatz-Terme sind zusammengesetzt aus \"SCT-POCC\" für SNOMED-CT Postkoordiniertes Konzept, einem Bindestrich und dem Fokuskonzept oder Differenzierungskonzept aus dem SNOMED-CT                     Ausdruck.",
+        "exampleBoolean": false,
+        "name": "SNOMED-CT Postkoordinierte Terme"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-sonographie-angefordert"
+        },
+        "name": "Sonographie angefordert",
+        "description": "Wurde eine Sonographie angefordert?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation"
+        },
+        "name": "Stunde Beginn patientenbezogene Dokumentation",
+        "description": "Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-substances-used"
+        },
+        "name": "Substanz-Einfluss",
+        "description": "Patient unter Substanz-Einfluss?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-systolischer-blutdruck"
+        },
+        "name": "Systolischer Blutdruck",
+        "description": "Systolischer Blutdruck des Patienten in der Notaufnahme [mmHg]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-tranexamsaure"
+        },
+        "name": "Tranexamsäure",
+        "description": "Profile for documenting a medication administration: Tranexamsäure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.11.41--20240214094248"
+        },
+        "description": "Transportmethode",
+        "exampleBoolean": false,
+        "name": "Transportmethode"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-transportmittel"
+        },
+        "name": "Transportmittel",
+        "description": "Mit welchem Transportmittel des Gesundheitswesens wird der Patient in die Notaufnahme transportiert",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.7--20240214134346"
+        },
+        "description": "Typ Entlassung",
+        "exampleBoolean": false,
+        "name": "Typ Entlassung"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.26--20240219130853"
+        },
+        "description": "Typ Verlegung",
+        "exampleBoolean": false,
+        "name": "Typ Verlegung"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-unfallart-trauma-register"
+        },
+        "name": "Unfallart TraumaRegister",
+        "description": "Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation von Unfallkinetik und Fahrzeug des Verunfallten und automatisches Mapping auf Unfallart TraumaRegister, oder alleinige Dokumentation Unfallart TraumaRegister in der Notaufnahmedokumentation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-unfallkinetik"
+        },
+        "name": "Unfallkinetik",
+        "description": "Unfallkinetik",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.5--20240214124143"
+        },
+        "description": "Unfallkinetik",
+        "exampleBoolean": false,
+        "name": "Unfallkinetik"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.4--20240214122629"
+        },
+        "description": "Unfallmechanismus (SNOMED)",
+        "exampleBoolean": false,
+        "name": "Unfallmechanismus (SNOMED)"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-unfallursache"
+        },
+        "name": "Unfallursache ",
+        "description": "Ursache des Unfalles",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.6--20240214131928"
+        },
+        "description": "Unfallursache (SNOMED)",
+        "exampleBoolean": false,
+        "name": "Unfallursache (SNOMED)"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage"
+        },
+        "name": "Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen",
+        "description": "Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Leitsymptom) innerhalb von 28 Tagen wieder vorgestellt?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-used-triage-system"
+        },
+        "name": "Used Triage System",
+        "description": "Used Triage System",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.12--20240722152032"
+        },
+        "description": "Used Triage System",
+        "exampleBoolean": false,
+        "name": "Used Triage System"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss"
+        },
+        "name": "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?",
+        "description": "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitamin-k-antagonists"
+        },
+        "name": "Vitamin K Antagonisten",
+        "description": "Profile for documenting a medication administration: Vitamin K Antagonisten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.27--20240820105527"
+        },
+        "description": "Yes | No | Other | Unknown | Not Recorded",
+        "exampleBoolean": false,
+        "name": "Yes No Other Unknown Not Recorded"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeit-bis-zum-export"
+        },
+        "name": "Zeit bis zum Export",
+        "description": "Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export-Zeitpunkt aus dem Primärsystem; Bei mehr als 28 Tagen (=672 Stunden) Maximalwert angeben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund"
+        },
+        "name": "Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund",
+        "description": "Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrund (Leitsymptom) in Stunden oder Tagen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeit-zwischen-ankunft-und-aufnahme"
+        },
+        "name": "Zeit zwischen Ankunft und Aufnahme",
+        "description": "Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und administrativer Aufnahme",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt"
+        },
+        "name": "Zeit zwischen Aufnahme und erstem Arztkontakt",
+        "description": "Zeit zwischen Aufnahme und erstem Arztkontakt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung"
+        },
+        "name": "Zeit zwischen Aufnahme und erster Ersteinschätzung",
+        "description": "Zeit zwischen Aufnahme und erster Ersteinschätzung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten"
+        },
+        "name": "Zeit zwischen Aufnahme und Verlassen des Patienten",
+        "description": "Zeit zwischen Aufnahme und Verlassen des Patienten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeit-aufnahme-verlegungsentlassungsfahigkeit"
+        },
+        "name": "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten",
+        "description": "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung"
+        },
+        "name": "Zeitpunkt Entscheidung zur Verlegung / Entlassung",
+        "description": "Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeitpunkt-erster-arztkontakt"
+        },
+        "name": "Zeitpunkt erster Arztkontakt",
+        "description": "Zeitpunkt des ersten Arztkontaktes in der Notaufnahme",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeitpunkt-export-aus-edis"
+        },
+        "name": "Zeitpunkt Export aus EDIS",
+        "description": "Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach"
+        },
+        "name": "Zeitpunkt Patient verlegt / entlassen nach",
+        "description": "Wann wurde der Patient verlegt oder entlassen?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig"
+        },
+        "name": "Zeitpunkt Patient verlegungs- / entlassungsfähig",
+        "description": "Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde. Ab dann wartet der Patient auf ein Bett bzw. auf die Transportgelegenheit in die ambulante Versorgung, unter Umständen bei weiterer dokumentationswürdigem Monitoring und Therapie. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-future-loincs"
+        },
+        "description": "Dieses Codessystem umfasst zukünftige LOINC Terme zur Nutzung in der Notfalldokumentation.\n\n**Hintergrund**\n\nIn der Notfalldokumentation werden gerade bei Registermeldungen Terme verwendet, die noch nicht in LOINC (oder anderswo) verfügbar sind. Allerdings sind die meisten dieser Begriffe Kandidaten,                     um in LOINC als neue Codes aufgenommen zu werden. Um eine sofortige Nutzung von annotierten Termen zu gewährleisten und sie dennoch zu einem späteren Zeitpunkt nach der Einführung der offiziellen LOINC Codes übergangsmäßig zugleich zu verwenden und eine eindeutige Zuordnung zu allen Zeiten zu erlauben, werden die meisten zukünftige LOINC Terme zur Nutzung in der                     Notfalldokumentation hier mit einem \"Notfall\"-Code versehen.\n\nDie Ersatz-Terme sind zusammengesetzt aus \"FLN\" für \"Future LOINC\", einem Bindestrich und einem Code als Differenzierungskonzept.",
+        "exampleBoolean": false,
+        "name": "Zukünftige LOINC Terme"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aktin-cs-zuweiser"
+        },
+        "description": "Zuweiser",
+        "exampleBoolean": false,
+        "name": "Zuweiser"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.11.42--20240214104801"
+        },
+        "description": "Zuweiser",
+        "exampleBoolean": false,
+        "name": "Zuweiser"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zuweisung"
+        },
+        "name": "Zuweisung",
+        "description": "Art der Zuweisung des Patienten. Von welchem medizinischen Fachpersonal ist der Patient ins Krankenhaus geschickt worden?",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Startseite",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "introduction.html",
+          "title": "Einführung",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "technicalbackground.html",
+          "title": "Technischer Hintergrund",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profile",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "registrymessages.html",
+          "title": "Registermeldungen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminologien",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

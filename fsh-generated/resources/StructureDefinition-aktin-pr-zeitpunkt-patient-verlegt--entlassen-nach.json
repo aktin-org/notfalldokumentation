@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_zeitpunkt_patient_verlegt__entlassen_nach",
+  "title": "Zeitpunkt Patient verlegt / entlassen nach",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Wann wurde der Patient verlegt oder entlassen?",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "definition": "Wann wurde der Patient verlegt oder entlassen?"
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:CS-1",
+        "path": "Observation.code.coding",
+        "sliceName": "CS-1",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "FLN-126",
+          "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs",
+          "display": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Wann wurde der Patient verlegt oder entlassen?"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "patternString": "Zeitpunkt Patient verlegt / entlassen nach"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Zeitpunkt Patient verlegt / entlassen nach",
+        "definition": "Zeitpunkt Patient verlegt / entlassen nach",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "AKTIN_VS_isolation_reason",
+  "id": "aktin-vs-isolation-reason",
+  "title": "Isolationsgrund",
+  "description": "Isolationsgrund",
+  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-isolation-reason",
+  "version": "2024-02-19T12:55:34",
+  "date": "2025-05-26T15:59:54+02:00",
+  "publisher": "AKTIN e. V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2024-02-19T12:55:34+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.276.0.76.3.1.195.11.25"
+    }
+  ],
+  "experimental": false,
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "32811000119109",
+            "display": "Infection caused by multi antimicrobial drug resistant bacteria (disorder)"
+          },
+          {
+            "code": "25374005",
+            "display": "Inflammation of stomach and intestine (disorder)"
+          },
+          {
+            "code": "56717001",
+            "display": "Tuberculosis (disorder)"
+          },
+          {
+            "code": "7180009",
+            "display": "Meningitis (disorder)"
+          },
+          {
+            "code": "6142004",
+            "display": "Influenza (disorder)"
+          },
+          {
+            "code": "840539006",
+            "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "303011007",
+            "display": "Neutropenic disorder (disorder)"
+          },
+          {
+            "code": "409522005",
+            "display": "Standard precautions (procedure)"
+          },
+          {
+            "code": "6415009",
+            "display": "Human respiratory syncytial virus (organism)"
+          },
+          {
+            "code": "74964007",
+            "display": "Other (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

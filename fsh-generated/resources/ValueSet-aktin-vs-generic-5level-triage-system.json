@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AKTIN_VS_generic_5level_triage_system",
+  "id": "aktin-vs-generic-5level-triage-system",
+  "title": "Generic five level triage system",
+  "description": "Generic five level triage system",
+  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-generic-5level-triage-system",
+  "version": "2025.0.3-ci",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA21538-6",
+            "display": "Resuscitation"
+          },
+          {
+            "code": "LA19759-2",
+            "display": "Emergent"
+          },
+          {
+            "code": "LA21544-4",
+            "display": "Urgent"
+          },
+          {
+            "code": "LA21587-3",
+            "display": "Less urgent"
+          },
+          {
+            "code": "LA21545-1",
+            "display": "Nonurgent"
+          }
+        ]
+      }
+    ]
+  }
+}

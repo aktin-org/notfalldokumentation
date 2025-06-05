@@ -1,0 +1,3256 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+   <id value="org.aktin.notfalldokumentation"/>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <p class="res-header-id">
+            <b>Generated Narrative: ImplementationGuide org.aktin.notfalldokumentation</b>
+         </p>
+         <a name="org.aktin.notfalldokumentation"> </a>
+         <a name="hcorg.aktin.notfalldokumentation"> </a>
+         <a name="org.aktin.notfalldokumentation-de-DE"> </a>
+         <h2>AKTIN_Notfalldokumentation</h2>
+         <p>The official URL for this implementation guide is: </p>
+         <pre>http://aktin.org/fhir/ig/notfalldokumentation/ImplementationGuide/org.aktin.notfalldokumentation</pre>
+         <div>
+            <p>FHIR-Artefakte für die AKTIN Notfalldokumentation und einem kommenden FHIR Implementation Guide</p>
+         </div>
+      </div>
+   </text>
+   <url value="http://aktin.org/fhir/ig/notfalldokumentation/ImplementationGuide/org.aktin.notfalldokumentation"/>
+   <version value="0.6.0"/>
+   <name value="AKTIN_Notfalldokumentation"/>
+   <title value="AKTIN Notfalldokumentation"/>
+   <status value="draft"/>
+   <date value="2025-05-26"/>
+   <publisher value="AKTIN e.V."/>
+   <contact>
+      <name value="AKTIN e.V."/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://www.aktin.org"/>
+      </telecom>
+   </contact>
+   <contact>
+      <name value="AKTIN e.V."/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://www.aktin.org/"/>
+      </telecom>
+   </contact>
+   <description value="FHIR-Artefakte für die AKTIN Notfalldokumentation und einem kommenden FHIR Implementation Guide"/>
+   <jurisdiction>
+      <coding>
+         <system value="urn:iso:std:iso:3166"/>
+         <code value="DEU"/>
+      </coding>
+   </jurisdiction>
+   <packageId value="org.aktin.notfalldokumentation"/>
+   <license value="CC0-1.0"/>
+   <fhirVersion value="4.0.1"/>
+   <dependsOn id="hl7tx">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+         <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+      </extension>
+      <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+      <packageId value="hl7.terminology.r4"/>
+      <version value="6.4.0"/>
+   </dependsOn>
+   <dependsOn id="hl7ext">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+         <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+      </extension>
+      <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+      <packageId value="hl7.fhir.uv.extensions.r4"/>
+      <version value="5.2.0"/>
+   </dependsOn>
+   <dependsOn id="de_basisprofil_r4">
+      <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
+      <packageId value="de.basisprofil.r4"/>
+      <version value="1.5.0-ballot2"/>
+   </dependsOn>
+   <dependsOn id="de_gematik_isik_basismodul">
+      <uri value="https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Basismodul"/>
+      <packageId value="de.gematik.isik-basismodul"/>
+      <version value="4.0.0-rc2"/>
+   </dependsOn>
+   <definition>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="copyrightyear"/>
+         </extension>
+         <extension url="value">
+            <valueString value="2024+"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="releaselabel"/>
+         </extension>
+         <extension url="value">
+            <valueString value="ci-build"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="autoload-resources"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-liquid"/>
+         </extension>
+         <extension url="value">
+            <valueString value="template/liquid"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-liquid"/>
+         </extension>
+         <extension url="value">
+            <valueString value="input/liquid"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-qa"/>
+         </extension>
+         <extension url="value">
+            <valueString value="temp/qa"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-temp"/>
+         </extension>
+         <extension url="value">
+            <valueString value="temp/pages"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-output"/>
+         </extension>
+         <extension url="value">
+            <valueString value="output"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-suppressed-warnings"/>
+         </extension>
+         <extension url="value">
+            <valueString value="input/ignoreWarnings.txt"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-history"/>
+         </extension>
+         <extension url="value">
+            <valueString value="http://aktin.org/fhir/ig/notfalldokumentation/history.html"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="template-html"/>
+         </extension>
+         <extension url="value">
+            <valueString value="template-page.html"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="template-md"/>
+         </extension>
+         <extension url="value">
+            <valueString value="template-page-md.html"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-contact"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-context"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-copyright"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-jurisdiction"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-license"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-publisher"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-version"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-wg"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="active-tables"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="fmm-definition"/>
+         </extension>
+         <extension url="value">
+            <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="propagate-status"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="excludelogbinaryformat"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="tabbed-snapshots"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+         <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
+      </extension>
+      <grouping id="-str-logicalmodel">
+         <name value="Structures: Logical Models"/>
+         <description value="These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources."/>
+      </grouping>
+      <grouping id="-str-questionnaire">
+         <name value="Structures: Questionnaires"/>
+         <description value="These define forms used by systems conforming to this implementation guide to capture or expose data to end users."/>
+      </grouping>
+      <grouping id="-str-abstractprofile">
+         <name value="Structures: Abstract Profiles"/>
+         <description value="These are profiles on resources or data types that describe patterns used by other profiles, but cannot be instantiated directly.  I.e. instances can conform to profiles *based* on these abstract profiles, but do not declare conformance to the abstract profiles themselves."/>
+      </grouping>
+      <grouping id="-str-profile">
+         <name value="Structures: Resource Profiles"/>
+         <description value="These define constraints on FHIR resources for systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-str-extension">
+         <name value="Structures: Extension Definitions"/>
+         <description value="These define constraints on FHIR data types for systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-term-valueset">
+         <name value="Terminology: Value Sets"/>
+         <description value="These define sets of codes used by systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-term-codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-map-conceptmap">
+         <name value="Terminology: Concept Maps"/>
+         <description value="These define transformations to convert between codes by systems conforming with this implementation guide."/>
+      </grouping>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-lm-notaufnahmeregister.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-lm-notaufnahmeregister"/>
+         </reference>
+         <name value="AKTIN LogicalModel Notaufnahmeregister"/>
+         <description value="AKTIN LogicalModel Notaufnahmeregister, direkt abgeleitet aus ART-DECOR®"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Questionnaire"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Questionnaire-aktin-qq-ersteinschatzung.html"/>
+         </extension>
+         <reference>
+            <reference value="Questionnaire/aktin-qq-ersteinschatzung"/>
+         </reference>
+         <name value="Notaufnahmeregister - Ersteinschätzung"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-questionnaire"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-vitalsigns-atemfrequenz.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-vitalsigns-atemfrequenz"/>
+         </reference>
+         <name value="Atemfrequenz"/>
+         <description value="Atemzüge des Patienten pro Minute"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-bga-angefordert.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-bga-angefordert"/>
+         </reference>
+         <name value="BGA angefordert"/>
+         <description value="Wurde eine BGA angefordert?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-vitalsigns-blutdruck.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-vitalsigns-blutdruck"/>
+         </reference>
+         <name value="Blutdruck"/>
+         <description value="Datenelemente des Blutdrucks"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-ct-abdomen-durchgefuhrt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt"/>
+         </reference>
+         <name value="CT Abdomen durchgeführt"/>
+         <description value="Wurde ein selektives CT des Abdomens durchgführt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-ct-extremitaten-durchgefuhrt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-ct-extremitaten-durchgefuhrt"/>
+         </reference>
+         <name value="CT Extremitäten durchgeführt"/>
+         <description value="Wurde ein selektives CT der Extremitäten durchgeführt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-ct-hws-durchgefuhrt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-ct-hws-durchgefuhrt"/>
+         </reference>
+         <name value="CT HWS durchgeführt"/>
+         <description value="Wurde ein selektives CT der Halswirbelsäule durchgeführt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-ct-kopf-durchgefuhrt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-ct-kopf-durchgefuhrt"/>
+         </reference>
+         <name value="CT Kopf durchgeführt"/>
+         <description value="Wurde ein selektives Kopf-CT durchgeführt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-ct-thorax-durchgefuhrt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-ct-thorax-durchgefuhrt"/>
+         </reference>
+         <name value="CT Thorax durchgeführt"/>
+         <description value="Wurde ein CT des Thorax durchgeführt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-ct-bzw-mr-bzw-dsangiographie.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-ct-bzw-mr-bzw-dsangiographie"/>
+         </reference>
+         <name value="CT- bzw. MR- bzw. DS-Angiographie"/>
+         <description value="Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-vitalsigns-diastolischer-blutdruck.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-vitalsigns-diastolischer-blutdruck"/>
+         </reference>
+         <name value="Diastolischer Blutdruck"/>
+         <description value="Diastolischer Blutdruckwert"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-ekg-angefordert.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-ekg-angefordert"/>
+         </reference>
+         <name value="EKG angefordert"/>
+         <description value="Wurde ein 12-Kanal-EKG angefordert?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-vitalsigns-schmerz.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-vitalsigns-schmerz"/>
+         </reference>
+         <name value="Erste Schmerzmessung"/>
+         <description value="Erste Schmerzmessung mit NRS oder VAS"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-erythrozytenkonzentrat.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-erythrozytenkonzentrat"/>
+         </reference>
+         <name value="Erythrozyten-Konzentrat"/>
+         <description value="Profile for documenting a medication administration: Erythrozyten-Konzentrat"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-faktor-xiii.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-faktor-xiii"/>
+         </reference>
+         <name value="Faktor XIII"/>
+         <description value="Profile for documenting a medication administration: Faktor XIII"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-ganzkorperct-durchgefuhrt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt"/>
+         </reference>
+         <name value="Ganzkörper-CT durchgeführt"/>
+         <description value="Wurde ein Ganzkörper-CT durchgeführt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-vitalsigns-herzfrequenz.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-vitalsigns-herzfrequenz"/>
+         </reference>
+         <name value="Herzfrequenz"/>
+         <description value="Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-katecholamine.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-katecholamine"/>
+         </reference>
+         <name value="Katecholamine"/>
+         <description value="Profile for documenting a medication administration: Katecholamine"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-kolloidale-infusionslosungen.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-kolloidale-infusionslosungen"/>
+         </reference>
+         <name value="Kolloidale Infusionslösungen"/>
+         <description value="Profile for documenting a medication administration: Kolloidale Infusionslösungen"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-kristalloide-infusionslosungen.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-kristalloide-infusionslosungen"/>
+         </reference>
+         <name value="Kristalloide Infusionslösungen"/>
+         <description value="Profile for documenting a medication administration: Kristalloide Infusionslösungen"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-vitalsigns-korperkerntemperatur.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-vitalsigns-korperkerntemperatur"/>
+         </reference>
+         <name value="Körperkerntemperatur"/>
+         <description value="Gemessene Temperatur bei Aufnahme in die Notaufnahme [°C]"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-laboruntersuchung-angefordert.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-laboruntersuchung-angefordert"/>
+         </reference>
+         <name value="Laboruntersuchung angefordert"/>
+         <description value="Wurde eine Laboruntersuchung angefordert?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-mrt-durchgefuhrt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-mrt-durchgefuhrt"/>
+         </reference>
+         <name value="MRT durchgeführt"/>
+         <description value="Wurde ein MRT im Rahmen der Schockraumversorgung durchgeführt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-mikrobiologie-angefordert.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-mikrobiologie-angefordert"/>
+         </reference>
+         <name value="Mikrobiologie angefordert"/>
+         <description value="Wurde ein Mikrobiologische Untersuchung angefordert?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-vitalsigns-pulsfrequenz.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-vitalsigns-pulsfrequenz"/>
+         </reference>
+         <name value="Pulsfrequenz"/>
+         <description value="Pulsfrequenz des Patienten per manuellem Auszählen, Pulsoximeter oder invasiver Druckmessung gemessen"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung"/>
+         </reference>
+         <name value="Pulsoximetrische Sauerstoffsättigung"/>
+         <description value="Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patienten in Prozent  [%]"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-rontgenbecken-durchgefuhrt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-rontgenbecken-durchgefuhrt"/>
+         </reference>
+         <name value="Röntgen-Becken durchgeführt"/>
+         <description value="Wurde ein Röntgen-Becken durchgeführt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-rontgenthorax-durchgefuhrt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-rontgenthorax-durchgefuhrt"/>
+         </reference>
+         <name value="Röntgen-Thorax durchgeführt"/>
+         <description value="Wurde ein Röntgen-Thorax durchgeführt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-rontgenwirbelsaule-durchgefuhrt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-rontgenwirbelsaule-durchgefuhrt"/>
+         </reference>
+         <name value="Röntgen-Wirbelsäule durchgeführt"/>
+         <description value="Wurde ein Röntgen der Wirbelsäule durchgeführt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-rontgenthorax-angefordert.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-rontgenthorax-angefordert"/>
+         </reference>
+         <name value="Röntgenthorax angefordert"/>
+         <description value="Wurde ein Röntgenthorax angefordert?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-smallvolume-gabe.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-smallvolume-gabe"/>
+         </reference>
+         <name value="Small-volume Gabe"/>
+         <description value="Profile for documenting a medication administration: Small-volume Gabe"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-sonographie-angefordert.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-sonographie-angefordert"/>
+         </reference>
+         <name value="Sonographie angefordert"/>
+         <description value="Wurde eine Sonographie angefordert?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-vitalsigns-systolischer-blutdruck.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-vitalsigns-systolischer-blutdruck"/>
+         </reference>
+         <name value="Systolischer Blutdruck"/>
+         <description value="Systolischer Blutdruck des Patienten in der Notaufnahme [mmHg]"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-tranexamsaure.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-tranexamsaure"/>
+         </reference>
+         <name value="Tranexamsäure"/>
+         <description value="Profile for documenting a medication administration: Tranexamsäure"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-vitamin-k-antagonists.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-vitamin-k-antagonists"/>
+         </reference>
+         <name value="Vitamin K Antagonisten"/>
+         <description value="Profile for documenting a medication administration: Vitamin K Antagonisten"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-alter-patient.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-alter-patient"/>
+         </reference>
+         <name value="Alter Patient"/>
+         <description value="Alter des Patienten zum Stichtag"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-aufenthalt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-aufenthalt"/>
+         </reference>
+         <name value="Aufenthalt"/>
+         <description value="Aufenthalt in der Notaufnahme."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-beschwerden-bei-vorstellung-cedis.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis"/>
+         </reference>
+         <name value="Beschwerden bei Vorstellung (CEDIS)"/>
+         <description value="Die Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme nach dem Katalog CEDIS vorbringt. Version CEDIS-PCL Version 5.1"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-isolation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-isolation"/>
+         </reference>
+         <name value="CT HWS durchgeführt"/>
+         <description value="Patient muss aufgrund einer (z.B. möglicherweise übertragbaren Erkrankung) isoliert werden."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-episodenzusammenfassung-notaufnahmeregister.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister"/>
+         </reference>
+         <name value="Composition (Episodenzusammenfassung Notaufnahmeregister)"/>
+         <description value="Informationen zu einer Behandlungsepisode in der Notaufnahme. Zusammenfassung im Rahmen des Notaufnahmeregisters von AKTIN als FHIR Dokument."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-datum-beginn-patientenbezogene-dokumentation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-datum-beginn-patientenbezogene-dokumentation"/>
+         </reference>
+         <name value="Datum Beginn patientenbezogene Dokumentation"/>
+         <description value="Datum des Beginns der patientenbezogenen Dokumentation"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-edis.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-edis"/>
+         </reference>
+         <name value="EDIS"/>
+         <description value="Name der lokal verwendeten Software zur primären Datenerfassung (EDIS, emergency department information system) sowie Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS; wenn keine ED-Spezialanwendung verwendet wird: KIS."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-esitriage.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-esitriage"/>
+         </reference>
+         <name value="ESI-Triage"/>
+         <description value="Triage nach Emergency severity index [ESI]"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-ergebnis-der-ersteinschatzung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-ergebnis-der-ersteinschatzung"/>
+         </reference>
+         <name value="Ergebnis der Ersteinschätzung"/>
+         <description value="Ergebnis der Ersteinschätzung in einem standardisierten 5-stufigen System"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-fahrzeug-des-verunfallten.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-fahrzeug-des-verunfallten"/>
+         </reference>
+         <name value="Fahrzeug des Verunfallten"/>
+         <description value="Welches Fahrzeug hat die verunfallte Person gefahren"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-kombination-typen-verlegung-und-entlassung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-kombination-typen-verlegung-und-entlassung"/>
+         </reference>
+         <name value="Kombination Typen Verlegung und Entlassung"/>
+         <description value="Kombination der Typ Verlegung und Typ Entlassung für NoKeda"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-kostentrager.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-kostentrager"/>
+         </reference>
+         <name value="Kostenträger"/>
+         <description value="Versicherungsgesellschaft, Amt oder sonstige Organisation, Selbstzahler, der die Kosten des Falles übernimmt"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-manchester-triage-system.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-manchester-triage-system"/>
+         </reference>
+         <name value="Manchester Triage System"/>
+         <description value="Triage nach Manchester Triage System"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-medizinische-begleitung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-medizinische-begleitung"/>
+         </reference>
+         <name value="Medizinische Begleitung"/>
+         <description value="Mit welcher medizinischen Begleitung war das Transportmittel des Gesundheitswesen besetzt"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-patient.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-patient"/>
+         </reference>
+         <name value="Patient"/>
+         <description value="Demografische Informationen zum Patienten"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-practitioner-role-physician.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-practitioner-role-physician"/>
+         </reference>
+         <name value="Rolle (nur Arzt)"/>
+         <description value="Rolle des Gesundheitsdienstleistenden in der Notaufnahme, hier: nur vom Typ Arzt"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-stunde-beginn-patientenbezogene-dokumentation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation"/>
+         </reference>
+         <name value="Stunde Beginn patientenbezogene Dokumentation"/>
+         <description value="Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-transportmittel.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-transportmittel"/>
+         </reference>
+         <name value="Transportmittel"/>
+         <description value="Mit welchem Transportmittel des Gesundheitswesens wird der Patient in die Notaufnahme transportiert"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-unfallart-trauma-register.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-unfallart-trauma-register"/>
+         </reference>
+         <name value="Unfallart TraumaRegister"/>
+         <description value="Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation von Unfallkinetik und Fahrzeug des Verunfallten und automatisches Mapping auf Unfallart TraumaRegister, oder alleinige Dokumentation Unfallart TraumaRegister in der Notaufnahmedokumentation."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-unfallkinetik.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-unfallkinetik"/>
+         </reference>
+         <name value="Unfallkinetik"/>
+         <description value="Unfallkinetik"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-unfallursache.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-unfallursache"/>
+         </reference>
+         <name value="Unfallursache "/>
+         <description value="Ursache des Unfalles"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage"/>
+         </reference>
+         <name value="Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen"/>
+         <description value="Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Leitsymptom) innerhalb von 28 Tagen wieder vorgestellt?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss"/>
+         </reference>
+         <name value="Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?"/>
+         <description value="Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeit-bis-zum-export.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeit-bis-zum-export"/>
+         </reference>
+         <name value="Zeit bis zum Export"/>
+         <description value="Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export-Zeitpunkt aus dem Primärsystem; Bei mehr als 28 Tagen (=672 Stunden) Maximalwert angeben."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund"/>
+         </reference>
+         <name value="Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund"/>
+         <description value="Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrund (Leitsymptom) in Stunden oder Tagen"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeit-zwischen-ankunft-und-aufnahme.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeit-zwischen-ankunft-und-aufnahme"/>
+         </reference>
+         <name value="Zeit zwischen Ankunft und Aufnahme"/>
+         <description value="Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und administrativer Aufnahme"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten"/>
+         </reference>
+         <name value="Zeit zwischen Aufnahme und Verlassen des Patienten"/>
+         <description value="Zeit zwischen Aufnahme und Verlassen des Patienten"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeit-aufnahme-verlegungsentlassungsfahigkeit.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeit-aufnahme-verlegungsentlassungsfahigkeit"/>
+         </reference>
+         <name value="Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten"/>
+         <description value="Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt"/>
+         </reference>
+         <name value="Zeit zwischen Aufnahme und erstem Arztkontakt"/>
+         <description value="Zeit zwischen Aufnahme und erstem Arztkontakt"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung"/>
+         </reference>
+         <name value="Zeit zwischen Aufnahme und erster Ersteinschätzung"/>
+         <description value="Zeit zwischen Aufnahme und erster Ersteinschätzung"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung"/>
+         </reference>
+         <name value="Zeitpunkt Entscheidung zur Verlegung / Entlassung"/>
+         <description value="Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. "/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeitpunkt-export-aus-edis.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeitpunkt-export-aus-edis"/>
+         </reference>
+         <name value="Zeitpunkt Export aus EDIS"/>
+         <description value="Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach"/>
+         </reference>
+         <name value="Zeitpunkt Patient verlegt / entlassen nach"/>
+         <description value="Wann wurde der Patient verlegt oder entlassen?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig"/>
+         </reference>
+         <name value="Zeitpunkt Patient verlegungs- / entlassungsfähig"/>
+         <description value="Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde. Ab dann wartet der Patient auf ein Bett bzw. auf die Transportgelegenheit in die ambulante Versorgung, unter Umständen bei weiterer dokumentationswürdigem Monitoring und Therapie. "/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zeitpunkt-erster-arztkontakt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zeitpunkt-erster-arztkontakt"/>
+         </reference>
+         <name value="Zeitpunkt erster Arztkontakt"/>
+         <description value="Zeitpunkt des ersten Arztkontaktes in der Notaufnahme"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-pr-zuweisung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-pr-zuweisung"/>
+         </reference>
+         <name value="Zuweisung"/>
+         <description value="Art der Zuweisung des Patienten. Von welchem medizinischen Fachpersonal ist der Patient ins Krankenhaus geschickt worden?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-aktin-xt-kvfall.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/aktin-xt-kvfall"/>
+         </reference>
+         <name value="KV-Fall"/>
+         <description value="Wurde der Fall über die Kassenärztliche Vereinigung abgerechnet?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-age-in-categories.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-age-in-categories"/>
+         </reference>
+         <name value="Alter in Kategorien"/>
+         <description value="Alter in Kategorien"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.5.11.28--20240916152134.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.5.11.28--20240916152134"/>
+         </reference>
+         <name value="Aufenthaltsorte"/>
+         <description value="Aufenthaltsorte"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.3--20240214115917.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.3--20240214115917"/>
+         </reference>
+         <name value="Beschwerdedynamik"/>
+         <description value="Beschwerdedynamik"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-cedis30.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-cedis30"/>
+         </reference>
+         <name value="CEDIS Presenting Complaint List 3.0"/>
+         <description value="CEDIS Presenting Complaint List 3.0"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.20--20240722165110.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.20--20240722165110"/>
+         </reference>
+         <name value="ESI Triage-Faktoren"/>
+         <description value="ESI Triage-Faktoren"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.11.45--20240816174700.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.11.45--20240816174700"/>
+         </reference>
+         <name value="Emergency Severity Index"/>
+         <description value="Emergency Severity Index"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.8--20240626132930.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.8--20240626132930"/>
+         </reference>
+         <name value="Fahrzeug des Verunfallten"/>
+         <description value="Fahrzeug des Verunfallten"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-generic-5level-triage-system.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-generic-5level-triage-system"/>
+         </reference>
+         <name value="Generic five level triage system"/>
+         <description value="Generic five level triage system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.25--20240219125534.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.25--20240219125534"/>
+         </reference>
+         <name value="Isolationsgrund"/>
+         <description value="Isolationsgrund"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-isolation-reason.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-isolation-reason"/>
+         </reference>
+         <name value="Isolationsgrund"/>
+         <description value="Isolationsgrund"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.11.54--20240724214410.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.11.54--20240724214410"/>
+         </reference>
+         <name value="Isolationstypen"/>
+         <description value="Isolationstypen"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.11.81--20240724214339.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.11.81--20240724214339"/>
+         </reference>
+         <name value="Körperregionen der Verletzung"/>
+         <description value="Körperregionen der Verletzung"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-mts-indicators-yellow.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-mts-indicators-yellow"/>
+         </reference>
+         <name value="MTS-Indikatoren GELB"/>
+         <description value="MTS-Indikatoren GELB"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-mts-indicators-green.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-mts-indicators-green"/>
+         </reference>
+         <name value="MTS-Indikatoren GRÜN"/>
+         <description value="MTS-Indikatoren GRÜN"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-mts-indicators-orange.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-mts-indicators-orange"/>
+         </reference>
+         <name value="MTS-Indikatoren ORANGE"/>
+         <description value="MTS-Indikatoren ORANGE"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-mts-indicators-red.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-mts-indicators-red"/>
+         </reference>
+         <name value="MTS-Indikatoren ROT"/>
+         <description value="MTS-Indikatoren ROT"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-mts-presenting-diagram.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-mts-presenting-diagram"/>
+         </reference>
+         <name value="MTS-Präsentationsdiagramm"/>
+         <description value="MTS-Präsentationsdiagramm"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-manchestertriagesystem.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-manchestertriagesystem"/>
+         </reference>
+         <name value="Manchestertriagesystem"/>
+         <description value="manchestertriagesystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.2--20240214112351.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.2--20240214112351"/>
+         </reference>
+         <name value="Patientenbegleitung"/>
+         <description value="Patientenbegleitung"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.1--20240219125534.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.1--20240219125534"/>
+         </reference>
+         <name value="Problems (SNOMED)"/>
+         <description value="Liste der entsprechenden Zweige in SNOMED-CT zur Angabe von Gesundheitsproblemen (Conditions). Diese Zusammenstellung ist identisch mit dem Value Set *IPS Problems* (2.16.840.1.113883.11.22.73) der International Patient Summary (IPS)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-substances-used.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-substances-used"/>
+         </reference>
+         <name value="Substanz-Einfluss"/>
+         <description value="Patient unter Substanz-Einfluss?"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.11.41--20240214094248.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.11.41--20240214094248"/>
+         </reference>
+         <name value="Transportmethode"/>
+         <description value="Transportmethode"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.7--20240214134346.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.7--20240214134346"/>
+         </reference>
+         <name value="Typ Entlassung"/>
+         <description value="Typ Entlassung"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.26--20240219130853.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.26--20240219130853"/>
+         </reference>
+         <name value="Typ Verlegung"/>
+         <description value="Typ Verlegung"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.5--20240214124143.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.5--20240214124143"/>
+         </reference>
+         <name value="Unfallkinetik"/>
+         <description value="Unfallkinetik"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.4--20240214122629.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.4--20240214122629"/>
+         </reference>
+         <name value="Unfallmechanismus (SNOMED)"/>
+         <description value="Unfallmechanismus (SNOMED)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.6--20240214131928.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.6--20240214131928"/>
+         </reference>
+         <name value="Unfallursache (SNOMED)"/>
+         <description value="Unfallursache (SNOMED)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.12--20240722152032.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.12--20240722152032"/>
+         </reference>
+         <name value="Used Triage System"/>
+         <description value="Used Triage System"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-aktin-vs-used-triage-system.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/aktin-vs-used-triage-system"/>
+         </reference>
+         <name value="Used Triage System"/>
+         <description value="Used Triage System"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.27--20240820105527.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.27--20240820105527"/>
+         </reference>
+         <name value="Yes No Other Unknown Not Recorded"/>
+         <description value="Yes | No | Other | Unknown | Not Recorded"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.11.42--20240214104801.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.11.42--20240214104801"/>
+         </reference>
+         <name value="Zuweiser"/>
+         <description value="Zuweiser"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-alter-in-kategorien.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-alter-in-kategorien"/>
+         </reference>
+         <name value="Alter in Kategorien"/>
+         <description value="Alter in Kategorien"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-andere-entlassungsarten.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-andere-entlassungsarten"/>
+         </reference>
+         <name value="Andere Entlassungsarten"/>
+         <description value="Entlassungsart (discharge disposition code) für &#34;kein Arztkontakt&#34; - AKTIN Notfalldokumentation"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-other-triage-systems.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-other-triage-systems"/>
+         </reference>
+         <name value="Andere Triagesysteme"/>
+         <description value="Liste und Codes nicht internationaler Triagesysteme"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-cedis30.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-cedis30"/>
+         </reference>
+         <name value="CEDIS Presenting Complaint List 3.0"/>
+         <description value="CEDIS Presenting Complaint List 3.0 (URI 1.2.276.0.76.11.61--20160221000000)&#xA;Leganda&#xA;* CEDIS = Canadian Emergency Department Information System;&#xA;* ICD-10 = International Classification of Diseases and Related Health Problems, 10th revision;&#xA;* ENT = ear, nose and throat;&#xA;* URTI = upper respiratory tract infection;&#xA;* NOS = not otherwise specified;&#xA;* UTI = urinary tract infection;&#xA;* CVA = congenital ventricular aneurysm."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-esi-triage-factors.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-esi-triage-factors"/>
+         </reference>
+         <name value="ESI-Triagefaktoren"/>
+         <description value="ESI-Triage"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-emergencyseverityindex.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-emergencyseverityindex"/>
+         </reference>
+         <name value="Emergency Severity Index"/>
+         <description value="Emergency Severity Index"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-mts-indicators.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-mts-indicators"/>
+         </reference>
+         <name value="MTS-Indikatoren"/>
+         <description value="MTS-Indikatoren"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-mts-presentationdiagram.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-mts-presentationdiagram"/>
+         </reference>
+         <name value="MTS-Präsentationsdiagramm"/>
+         <description value="MTS-Präsentationsdiagramm"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-manchestertriagesystem.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-manchestertriagesystem"/>
+         </reference>
+         <name value="Manchester-Triage-System"/>
+         <description value="Manchester-Triage-System"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-referral-actions.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-referral-actions"/>
+         </reference>
+         <name value="Referral actions"/>
+         <description value="Referral actions"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-snomed-postcoordinations.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-snomed-postcoordinations"/>
+         </reference>
+         <name value="SNOMED-CT Postkoordinierte Terme"/>
+         <description value="Dieses Codessystem umfasst SNOMED-CT Postkoordinierte Terme zur Nutzung in der Notfalldokumentation.&#xA;&#xA;**Hintergrund**&#xA;&#xA;In der Notfalldokumentation werden SNOMED-CT Postkoordinierte Terme verwendet, was an sich kein problem darstellt, wenn diese als &#34;String-Konstanten&#34; in Value Sets oder                     Terminologieassoziationen aufgefasst werden. Allerdings sind die meisten dieser Begriffe Kandidaten, um in SNOMED International als präkoordinierte aufgenommen zu werden. Um eine sofortige Nutzung von SNOMED-CT Postkoordinierten Terme zu gewährleisten und sie dennoch zu einem späteren Zeitpunkt nach der Einführung der präkoordinierten Termen übergangsmäßig zugleich zu verwenden                     und eine Eindeutige Zuordnung zu allen Zeiten zu erlauben, werden die meisten SNOMED-CT Postkoordinierte Terme zur Nutzung in der Notfalldokumentation hier mit einem &#34;Notfall&#34;-Code versehen.&#xA;&#xA;Die Ersatz-Terme sind zusammengesetzt aus &#34;SCT-POCC&#34; für SNOMED-CT Postkoordiniertes Konzept, einem Bindestrich und dem Fokuskonzept oder Differenzierungskonzept aus dem SNOMED-CT                     Ausdruck."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-future-loincs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-future-loincs"/>
+         </reference>
+         <name value="Zukünftige LOINC Terme"/>
+         <description value="Dieses Codessystem umfasst zukünftige LOINC Terme zur Nutzung in der Notfalldokumentation.&#xA;&#xA;**Hintergrund**&#xA;&#xA;In der Notfalldokumentation werden gerade bei Registermeldungen Terme verwendet, die noch nicht in LOINC (oder anderswo) verfügbar sind. Allerdings sind die meisten dieser Begriffe Kandidaten,                     um in LOINC als neue Codes aufgenommen zu werden. Um eine sofortige Nutzung von annotierten Termen zu gewährleisten und sie dennoch zu einem späteren Zeitpunkt nach der Einführung der offiziellen LOINC Codes übergangsmäßig zugleich zu verwenden und eine eindeutige Zuordnung zu allen Zeiten zu erlauben, werden die meisten zukünftige LOINC Terme zur Nutzung in der                     Notfalldokumentation hier mit einem &#34;Notfall&#34;-Code versehen.&#xA;&#xA;Die Ersatz-Terme sind zusammengesetzt aus &#34;FLN&#34; für &#34;Future LOINC&#34;, einem Bindestrich und einem Code als Differenzierungskonzept."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-aktin-cs-zuweiser.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/aktin-cs-zuweiser"/>
+         </reference>
+         <name value="Zuweiser"/>
+         <description value="Zuweiser"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-aktin-cm-epiznota.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/aktin-cm-epiznota"/>
+         </reference>
+         <name value="AKTIN Mapping Episodenzusammenfassung Notfallaufnahme"/>
+         <description value="AKTIN Mapping der logischen Modellelement aus dem Szenario in ART-DECOR zur Episodenzusammenfassung Notfallaufnahme nach FHIR Profilen und Elementen"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-map-conceptmap"/>
+      </resource>
+      <page>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="toc.html"/>
+         </extension>
+         <nameUrl value="toc.html"/>
+         <title value="Table of Contents"/>
+         <generation value="html"/>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="index.html"/>
+            </extension>
+            <nameUrl value="index.html"/>
+            <title value="Startseite"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="introduction.html"/>
+            </extension>
+            <nameUrl value="introduction.html"/>
+            <title value="Einführung"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="technicalbackground.html"/>
+            </extension>
+            <nameUrl value="technicalbackground.html"/>
+            <title value="Technischer Hintergrund"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="profiles.html"/>
+            </extension>
+            <nameUrl value="profiles.html"/>
+            <title value="Profile"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="extensions.html"/>
+            </extension>
+            <nameUrl value="extensions.html"/>
+            <title value="Extensions"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="registrymessages.html"/>
+            </extension>
+            <nameUrl value="registrymessages.html"/>
+            <title value="Registermeldungen"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="terminology.html"/>
+            </extension>
+            <nameUrl value="terminology.html"/>
+            <title value="Terminologien"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="artifacts.html"/>
+            <title value="Artifacts Summary"/>
+            <generation value="html"/>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-lm-notaufnahmeregister.html"/>
+               <title value="AKTIN LogicalModel Notaufnahmeregister"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Questionnaire-aktin-qq-ersteinschatzung.html"/>
+               <title value="Notaufnahmeregister - Ersteinschätzung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-vitalsigns-atemfrequenz.html"/>
+               <title value="Atemfrequenz"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-bga-angefordert.html"/>
+               <title value="BGA angefordert"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-vitalsigns-blutdruck.html"/>
+               <title value="Blutdruck"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-ct-abdomen-durchgefuhrt.html"/>
+               <title value="CT Abdomen durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-ct-extremitaten-durchgefuhrt.html"/>
+               <title value="CT Extremitäten durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-ct-hws-durchgefuhrt.html"/>
+               <title value="CT HWS durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-ct-kopf-durchgefuhrt.html"/>
+               <title value="CT Kopf durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-ct-thorax-durchgefuhrt.html"/>
+               <title value="CT Thorax durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-ct-bzw-mr-bzw-dsangiographie.html"/>
+               <title value="CT- bzw. MR- bzw. DS-Angiographie"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-vitalsigns-diastolischer-blutdruck.html"/>
+               <title value="Diastolischer Blutdruck"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-ekg-angefordert.html"/>
+               <title value="EKG angefordert"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-vitalsigns-schmerz.html"/>
+               <title value="Erste Schmerzmessung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-erythrozytenkonzentrat.html"/>
+               <title value="Erythrozyten-Konzentrat"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-faktor-xiii.html"/>
+               <title value="Faktor XIII"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-ganzkorperct-durchgefuhrt.html"/>
+               <title value="Ganzkörper-CT durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-vitalsigns-herzfrequenz.html"/>
+               <title value="Herzfrequenz"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-katecholamine.html"/>
+               <title value="Katecholamine"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-kolloidale-infusionslosungen.html"/>
+               <title value="Kolloidale Infusionslösungen"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-kristalloide-infusionslosungen.html"/>
+               <title value="Kristalloide Infusionslösungen"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-vitalsigns-korperkerntemperatur.html"/>
+               <title value="Körperkerntemperatur"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-laboruntersuchung-angefordert.html"/>
+               <title value="Laboruntersuchung angefordert"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-mikrobiologie-angefordert.html"/>
+               <title value="Mikrobiologie angefordert"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-mrt-durchgefuhrt.html"/>
+               <title value="MRT durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-vitalsigns-pulsfrequenz.html"/>
+               <title value="Pulsfrequenz"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung.html"/>
+               <title value="Pulsoximetrische Sauerstoffsättigung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-rontgenbecken-durchgefuhrt.html"/>
+               <title value="Röntgen-Becken durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-rontgenthorax-durchgefuhrt.html"/>
+               <title value="Röntgen-Thorax durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-rontgenwirbelsaule-durchgefuhrt.html"/>
+               <title value="Röntgen-Wirbelsäule durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-rontgenthorax-angefordert.html"/>
+               <title value="Röntgenthorax angefordert"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-smallvolume-gabe.html"/>
+               <title value="Small-volume Gabe"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-sonographie-angefordert.html"/>
+               <title value="Sonographie angefordert"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-vitalsigns-systolischer-blutdruck.html"/>
+               <title value="Systolischer Blutdruck"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-tranexamsaure.html"/>
+               <title value="Tranexamsäure"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-vitamin-k-antagonists.html"/>
+               <title value="Vitamin K Antagonisten"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-alter-patient.html"/>
+               <title value="Alter Patient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-aufenthalt.html"/>
+               <title value="Aufenthalt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-beschwerden-bei-vorstellung-cedis.html"/>
+               <title value="Beschwerden bei Vorstellung (CEDIS)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-episodenzusammenfassung-notaufnahmeregister.html"/>
+               <title value="Composition (Episodenzusammenfassung Notaufnahmeregister)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-isolation.html"/>
+               <title value="CT HWS durchgeführt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-datum-beginn-patientenbezogene-dokumentation.html"/>
+               <title value="Datum Beginn patientenbezogene Dokumentation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-edis.html"/>
+               <title value="EDIS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-ergebnis-der-ersteinschatzung.html"/>
+               <title value="Ergebnis der Ersteinschätzung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-esitriage.html"/>
+               <title value="ESI-Triage"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-fahrzeug-des-verunfallten.html"/>
+               <title value="Fahrzeug des Verunfallten"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-kombination-typen-verlegung-und-entlassung.html"/>
+               <title value="Kombination Typen Verlegung und Entlassung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-kostentrager.html"/>
+               <title value="Kostenträger"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-manchester-triage-system.html"/>
+               <title value="Manchester Triage System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-medizinische-begleitung.html"/>
+               <title value="Medizinische Begleitung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-patient.html"/>
+               <title value="Patient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-practitioner-role-physician.html"/>
+               <title value="Rolle (nur Arzt)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-stunde-beginn-patientenbezogene-dokumentation.html"/>
+               <title value="Stunde Beginn patientenbezogene Dokumentation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-transportmittel.html"/>
+               <title value="Transportmittel"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-unfallart-trauma-register.html"/>
+               <title value="Unfallart TraumaRegister"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-unfallkinetik.html"/>
+               <title value="Unfallkinetik"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-unfallursache.html"/>
+               <title value="Unfallursache "/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage.html"/>
+               <title value="Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss.html"/>
+               <title value="Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeit-bis-zum-export.html"/>
+               <title value="Zeit bis zum Export"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund.html"/>
+               <title value="Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeit-zwischen-ankunft-und-aufnahme.html"/>
+               <title value="Zeit zwischen Ankunft und Aufnahme"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt.html"/>
+               <title value="Zeit zwischen Aufnahme und erstem Arztkontakt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung.html"/>
+               <title value="Zeit zwischen Aufnahme und erster Ersteinschätzung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten.html"/>
+               <title value="Zeit zwischen Aufnahme und Verlassen des Patienten"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeit-aufnahme-verlegungsentlassungsfahigkeit.html"/>
+               <title value="Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung.html"/>
+               <title value="Zeitpunkt Entscheidung zur Verlegung / Entlassung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeitpunkt-erster-arztkontakt.html"/>
+               <title value="Zeitpunkt erster Arztkontakt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeitpunkt-export-aus-edis.html"/>
+               <title value="Zeitpunkt Export aus EDIS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach.html"/>
+               <title value="Zeitpunkt Patient verlegt / entlassen nach"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig.html"/>
+               <title value="Zeitpunkt Patient verlegungs- / entlassungsfähig"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-pr-zuweisung.html"/>
+               <title value="Zuweisung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-aktin-xt-kvfall.html"/>
+               <title value="KV-Fall"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-age-in-categories.html"/>
+               <title value="Alter in Kategorien"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.5.11.28--20240916152134.html"/>
+               <title value="Aufenthaltsorte"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.3--20240214115917.html"/>
+               <title value="Beschwerdedynamik"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-cedis30.html"/>
+               <title value="CEDIS Presenting Complaint List 3.0"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.11.45--20240816174700.html"/>
+               <title value="Emergency Severity Index"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.20--20240722165110.html"/>
+               <title value="ESI Triage-Faktoren"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.8--20240626132930.html"/>
+               <title value="Fahrzeug des Verunfallten"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-generic-5level-triage-system.html"/>
+               <title value="Generic five level triage system"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-isolation-reason.html"/>
+               <title value="Isolationsgrund"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.25--20240219125534.html"/>
+               <title value="Isolationsgrund"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.11.54--20240724214410.html"/>
+               <title value="Isolationstypen"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.11.81--20240724214339.html"/>
+               <title value="Körperregionen der Verletzung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-manchestertriagesystem.html"/>
+               <title value="Manchestertriagesystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-mts-indicators-yellow.html"/>
+               <title value="MTS-Indikatoren GELB"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-mts-indicators-green.html"/>
+               <title value="MTS-Indikatoren GRÜN"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-mts-indicators-orange.html"/>
+               <title value="MTS-Indikatoren ORANGE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-mts-indicators-red.html"/>
+               <title value="MTS-Indikatoren ROT"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-mts-presenting-diagram.html"/>
+               <title value="MTS-Präsentationsdiagramm"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.2--20240214112351.html"/>
+               <title value="Patientenbegleitung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.1--20240219125534.html"/>
+               <title value="Problems (SNOMED)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-substances-used.html"/>
+               <title value="Substanz-Einfluss"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.11.41--20240214094248.html"/>
+               <title value="Transportmethode"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.7--20240214134346.html"/>
+               <title value="Typ Entlassung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.26--20240219130853.html"/>
+               <title value="Typ Verlegung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.5--20240214124143.html"/>
+               <title value="Unfallkinetik"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.4--20240214122629.html"/>
+               <title value="Unfallmechanismus (SNOMED)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.6--20240214131928.html"/>
+               <title value="Unfallursache (SNOMED)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-aktin-vs-used-triage-system.html"/>
+               <title value="Used Triage System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.12--20240722152032.html"/>
+               <title value="Used Triage System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.27--20240820105527.html"/>
+               <title value="Yes No Other Unknown Not Recorded"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.11.42--20240214104801.html"/>
+               <title value="Zuweiser"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-alter-in-kategorien.html"/>
+               <title value="Alter in Kategorien"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-andere-entlassungsarten.html"/>
+               <title value="Andere Entlassungsarten"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-other-triage-systems.html"/>
+               <title value="Andere Triagesysteme"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-cedis30.html"/>
+               <title value="CEDIS Presenting Complaint List 3.0"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-emergencyseverityindex.html"/>
+               <title value="Emergency Severity Index"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-esi-triage-factors.html"/>
+               <title value="ESI-Triagefaktoren"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-manchestertriagesystem.html"/>
+               <title value="Manchester-Triage-System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-mts-indicators.html"/>
+               <title value="MTS-Indikatoren"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-mts-presentationdiagram.html"/>
+               <title value="MTS-Präsentationsdiagramm"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-referral-actions.html"/>
+               <title value="Referral actions"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-snomed-postcoordinations.html"/>
+               <title value="SNOMED-CT Postkoordinierte Terme"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-future-loincs.html"/>
+               <title value="Zukünftige LOINC Terme"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-aktin-cs-zuweiser.html"/>
+               <title value="Zuweiser"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ConceptMap-aktin-cm-epiznota.html"/>
+               <title value="AKTIN Mapping Episodenzusammenfassung Notfallaufnahme"/>
+               <generation value="generated"/>
+            </page>
+         </page>
+      </page>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/capabilities"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/examples"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/extensions"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/models"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/operations"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/profiles"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/vocabulary"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/maps"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/testing"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/history"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="fsh-generated/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="template/config"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="input/images"/>
+      </parameter>
+      <parameter>
+         <code value="path-tx-cache"/>
+         <value value="input-cache/txcache"/>
+      </parameter>
+      <parameter>
+         <code value="copyrightyear"/>
+         <value value="2024+"/>
+      </parameter>
+      <parameter>
+         <code value="releaselabel"/>
+         <value value="ci-build"/>
+      </parameter>
+      <parameter>
+         <code value="autoload-resources"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="template/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="input/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-qa"/>
+         <value value="temp/qa"/>
+      </parameter>
+      <parameter>
+         <code value="path-temp"/>
+         <value value="temp/pages"/>
+      </parameter>
+      <parameter>
+         <code value="path-output"/>
+         <value value="output"/>
+      </parameter>
+      <parameter>
+         <code value="path-suppressed-warnings"/>
+         <value value="input/ignoreWarnings.txt"/>
+      </parameter>
+      <parameter>
+         <code value="path-history"/>
+         <value value="http://aktin.org/fhir/ig/notfalldokumentation/history.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-html"/>
+         <value value="template-page.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-md"/>
+         <value value="template-page-md.html"/>
+      </parameter>
+      <parameter>
+         <code value="apply-contact"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-context"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-copyright"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-jurisdiction"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-license"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-publisher"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-version"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-wg"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="active-tables"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="fmm-definition"/>
+         <value value="http://hl7.org/fhir/versions.html#maturity"/>
+      </parameter>
+      <parameter>
+         <code value="propagate-status"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="excludelogbinaryformat"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="tabbed-snapshots"/>
+         <value value="true"/>
+      </parameter>
+   </definition>
+</ImplementationGuide>

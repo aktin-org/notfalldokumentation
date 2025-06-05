@@ -1,0 +1,194 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-lm-notaufnahmeregister",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_LM_Notaufnahmeregister",
+  "title": "AKTIN LogicalModel Notaufnahmeregister",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "AKTIN LogicalModel Notaufnahmeregister, direkt abgeleitet aus ART-DECOR®",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://www.aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "aktin-lm-notaufnahmeregister",
+        "path": "aktin-lm-notaufnahmeregister",
+        "short": "AKTIN LogicalModel Notaufnahmeregister",
+        "definition": "AKTIN LogicalModel Notaufnahmeregister, direkt abgeleitet aus ART-DECOR®"
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.patient",
+        "path": "aktin-lm-notaufnahmeregister.patient",
+        "short": "10002 Demografische Informationen zum Patienten",
+        "definition": "10002 Demografische Informationen zum Patienten",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.hauptkostentrager",
+        "path": "aktin-lm-notaufnahmeregister.hauptkostentrager",
+        "short": "20096 Kostenträger, der fallbezogen die Kosten übernimmt = Hauptkostenträger",
+        "definition": "20096 Kostenträger, der fallbezogen die Kosten übernimmt = Hauptkostenträger",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.administrativeAufnahmeinformationen",
+        "path": "aktin-lm-notaufnahmeregister.administrativeAufnahmeinformationen",
+        "short": "20099 Administrative Aufnahmeinformationen",
+        "definition": "20099 Administrative Aufnahmeinformationen",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.ersteinschatzung",
+        "path": "aktin-lm-notaufnahmeregister.ersteinschatzung",
+        "short": "10029 Ersteinschätzung",
+        "definition": "10029 Ersteinschätzung",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.notfallanamnese",
+        "path": "aktin-lm-notaufnahmeregister.notfallanamnese",
+        "short": "10030 Notfallanamnese",
+        "definition": "10030 Notfallanamnese",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.vitalparameter",
+        "path": "aktin-lm-notaufnahmeregister.vitalparameter",
+        "short": "10006 Vitalparameter",
+        "definition": "10006 Vitalparameter",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.scores",
+        "path": "aktin-lm-notaufnahmeregister.scores",
+        "short": "20207 Scores",
+        "definition": "20207 Scores",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.diagnostik",
+        "path": "aktin-lm-notaufnahmeregister.diagnostik",
+        "short": "10011 Diagnostik",
+        "definition": "10011 Diagnostik",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.masnahmen",
+        "path": "aktin-lm-notaufnahmeregister.masnahmen",
+        "short": "22159 Maßnahmen",
+        "definition": "22159 Maßnahmen",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.abschlussdiagnosen",
+        "path": "aktin-lm-notaufnahmeregister.abschlussdiagnosen",
+        "short": "10018 Abschlussdiagnosen",
+        "definition": "10018 Abschlussdiagnosen",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.administrativeVerlegungsentlassungsinformationen",
+        "path": "aktin-lm-notaufnahmeregister.administrativeVerlegungsentlassungsinformationen",
+        "short": "21607 Administrative Verlegungs-/Entlassungsinformationen",
+        "definition": "21607 Administrative Verlegungs-/Entlassungsinformationen",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "aktin-lm-notaufnahmeregister.dokumentationsinformationen",
+        "path": "aktin-lm-notaufnahmeregister.dokumentationsinformationen",
+        "short": "21743 Dokumentationsinformationen",
+        "definition": "21743 Dokumentationsinformationen",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      }
+    ]
+  }
+}

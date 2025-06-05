@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AKTIN_VS_mts_indicators_red",
+  "id": "aktin-vs-mts-indicators-red",
+  "title": "MTS-Indikatoren ROT",
+  "description": "MTS-Indikatoren ROT",
+  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-red",
+  "version": "2025.0.3-ci",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "red"
+          }
+        ]
+      }
+    ]
+  }
+}

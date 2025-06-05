@@ -1,0 +1,211 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "aktin-qq-ersteinschatzung",
+  "meta": {
+    "lastUpdated": "2024-07-26T14:26:10Z",
+    "source": "https://art-decor.org/fhir/4.0/aktin-",
+    "tag": [
+      {
+        "code": "4.0.1",
+        "system": "http://hl7.org/fhir/FHIR-version"
+      }
+    ]
+  },
+  "url": "http://art-decor.org/fhir/Questionnaire/aktin-qq-ersteinschatzung",
+  "language": "de-DE",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.2.6.60.3.26.1"
+    }
+  ],
+  "name": "Notaufnahmeregister_Ersteinschatzung",
+  "title": "Notaufnahmeregister - Ersteinschätzung",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-07-26T14:06:55Z",
+  "publisher": "AKTIN e. V.",
+  "contact": [
+    {
+      "name": "AKTIN e. V.",
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "Tel. +49 391 67 28186"
+        },
+        {
+          "system": "email",
+          "value": "office@aktin.org"
+        }
+      ]
+    }
+  ],
+  "effectivePeriod": {
+    "start": "2024-07-26T14:06:55Z"
+  },
+  "item": [
+    {
+      "linkId": "2.16.840.1.113883.2.6.60.3.2.9.10029",
+      "text": "Ersteinschätzung",
+      "type": "group",
+      "required": true,
+      "repeats": true,
+      "readOnly": false,
+      "item": [
+        {
+          "linkId": "2.16.840.1.113883.2.6.60.3.2.9.21559",
+          "text": "Direkter Arztkontakt",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
+          "readOnly": false
+        },
+        {
+          "linkId": "2.16.840.1.113883.2.6.60.3.2.9.29249",
+          "text": "Parameter der Ersteinschätzung",
+          "type": "group",
+          "required": true,
+          "repeats": false,
+          "readOnly": false,
+          "item": [
+            {
+              "linkId": "2.16.840.1.113883.2.6.60.3.2.9.21746",
+              "text": "Ergebnis der Ersteinschätzung",
+              "type": "choice",
+              "required": true,
+              "repeats": false,
+              "readOnly": false,
+              "answerValueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-generic-5level-triage-system"
+            },
+            {
+              "linkId": "2.16.840.1.113883.2.6.60.3.2.9.770",
+              "text": "Zeitpunkt der Ersteinschätzung",
+              "type": "dateTime",
+              "required": true,
+              "repeats": false,
+              "readOnly": false
+            },
+            {
+              "linkId": "2.16.840.1.113883.2.6.60.3.2.9.804",
+              "text": "Verwendetes Ersteinschätzungssystem",
+              "type": "choice",
+              "enableBehavior": "all",
+              "required": true,
+              "repeats": false,
+              "readOnly": false,
+              "answerValueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-used-triage-system"
+            },
+            {
+              "linkId": "2.16.840.1.113883.2.6.60.3.2.9.21560",
+              "text": "Version Ersteinschätzungssystem",
+              "type": "string",
+              "enableBehavior": "all",
+              "required": false,
+              "repeats": false,
+              "readOnly": false
+            }
+          ]
+        },
+        {
+          "linkId": "2.16.840.1.113883.2.6.60.3.2.9.21715",
+          "text": "Manchester Triage System",
+          "type": "group",
+          "required": false,
+          "repeats": false,
+          "readOnly": false,
+          "enableWhen": [
+            {
+              "question": "2.16.840.1.113883.2.6.60.3.2.9.804",
+              "operator": "=",
+              "answerCoding": {
+                "code": "713009001",
+                "system": "http://snomed.info/sct",
+                "display": "Manchester Triage System (assessment scale)"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "2.16.840.1.113883.2.6.60.3.2.9.21074",
+              "text": "MTS-Präsentationsdiagramm",
+              "type": "choice",
+              "enableBehavior": "all",
+              "required": false,
+              "repeats": false,
+              "readOnly": false,
+              "answerValueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-presenting-diagram"
+            },
+            {
+              "linkId": "2.16.840.1.113883.2.6.60.3.2.9.22156",
+              "text": "MTS-Indikator",
+              "type": "group",
+              "required": false,
+              "repeats": false,
+              "readOnly": false,
+              "item": [
+                {
+                  "linkId": "2.16.840.1.113883.2.6.60.3.2.9.21047",
+                  "text": "MTS-Indikatoren ROT",
+                  "type": "choice",
+                  "enableBehavior": "all",
+                  "required": false,
+                  "repeats": false,
+                  "readOnly": false,
+                  "answerValueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-red"
+                },
+                {
+                  "linkId": "2.16.840.1.113883.2.6.60.3.2.9.21048",
+                  "text": "MTS-Indikatoren ORANGE",
+                  "type": "choice",
+                  "required": false,
+                  "repeats": false,
+                  "readOnly": false,
+                  "answerValueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-orange"
+                },
+                {
+                  "linkId": "2.16.840.1.113883.2.6.60.3.2.9.21049",
+                  "text": "MTS-Indikatoren GELB",
+                  "type": "choice",
+                  "required": false,
+                  "repeats": false,
+                  "readOnly": false,
+                  "answerValueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-yellow"
+                },
+                {
+                  "linkId": "2.16.840.1.113883.2.6.60.3.2.9.21050",
+                  "text": "MTS-Indikatoren GRÜN",
+                  "type": "choice",
+                  "required": false,
+                  "repeats": false,
+                  "readOnly": false,
+                  "answerValueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "2.16.840.1.113883.2.6.60.3.2.9.21073",
+          "text": "ESI-Triage",
+          "type": "choice",
+          "enableBehavior": "all",
+          "required": false,
+          "repeats": false,
+          "readOnly": false,
+          "answerValueSet": "http://aktin.org/fhir/CodeSystem/aktin-vs-esi-triage-factors",
+          "enableWhen": [
+            {
+              "question": "2.16.840.1.113883.2.6.60.3.2.9.804",
+              "operator": "=",
+              "answerCoding": {
+                "code": "713010006",
+                "system": "http://snomed.info/sct",
+                "display": "Emergency Severity Index (assessment scale)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

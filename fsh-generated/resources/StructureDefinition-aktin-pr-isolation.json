@@ -1,0 +1,91 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-isolation",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-aktin-pr-isolation",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_isolation",
+  "title": "CT HWS durchgeführt",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Patient muss aufgrund einer (z.B. möglicherweise übertragbaren Erkrankung) isoliert werden.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure",
+        "definition": "Patient muss aufgrund einer (z.B. möglicherweise übertragbaren Erkrankung) isoliert werden."
+      },
+      {
+        "id": "Procedure.identifier",
+        "path": "Procedure.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "patternCoding": {
+          "code": "40174006",
+          "system": "http://snomed.info/sct",
+          "display": "Isolation procedure (procedure)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.reasonCode",
+        "path": "Procedure.reasonCode",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.reasonCode.coding",
+        "path": "Procedure.reasonCode.coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-isolation-reason"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,730 @@
+[
+  {
+    "outputFile": "CodeSystem-aktin-cs-alter-in-kategorien.json",
+    "fshName": "AKTIN_CS_alter_in_kategorien",
+    "fshType": "CodeSystem",
+    "fshFile": "Terminologie-exported/aktin-cs-alter-in-kategorien.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "CodeSystem-aktin-cs-cedis30.json",
+    "fshName": "AKTIN_CS_cedis30",
+    "fshType": "CodeSystem",
+    "fshFile": "Terminologie-exported/aktin-cs-cedis30.fsh",
+    "startLine": 1,
+    "endLine": 206
+  },
+  {
+    "outputFile": "CodeSystem-aktin-cs-manchestertriagesystem.json",
+    "fshName": "Manchestertriagesystem",
+    "fshType": "CodeSystem",
+    "fshFile": "Terminologie-exported/aktin-cs-manchestertriagesystem.fsh",
+    "startLine": 1,
+    "endLine": 48
+  },
+  {
+    "outputFile": "CodeSystem-aktin-cs-mts-indicators.json",
+    "fshName": "Mts_indicators",
+    "fshType": "CodeSystem",
+    "fshFile": "Terminologie-exported/aktin-cs-mts-indicators.fsh",
+    "startLine": 1,
+    "endLine": 3726
+  },
+  {
+    "outputFile": "CodeSystem-aktin-cs-mts-presentationdiagram.json",
+    "fshName": "Mts_presentationdiagram",
+    "fshType": "CodeSystem",
+    "fshFile": "Terminologie-exported/aktin-cs-mts-presentationdiagram.fsh",
+    "startLine": 1,
+    "endLine": 550
+  },
+  {
+    "outputFile": "ConceptMap-aktin-cm-epiznota.json",
+    "fshName": "aktin-cm-epiznota",
+    "fshType": "Instance",
+    "fshFile": "Mappings-generated/aktin-cm-epiznota.fsh",
+    "startLine": 3,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Questionnaire-aktin-qq-ersteinschatzung.json",
+    "fshName": "aktin-qq-ersteinschatzung",
+    "fshType": "Instance",
+    "fshFile": "Questionnaires-generated/aktin-qq-ersteinschatzung.fsh",
+    "startLine": 5,
+    "endLine": 168
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-kostentrager.json",
+    "fshName": "AKTIN_PR_kostentrager",
+    "fshType": "Profile",
+    "fshFile": "Kostentrager-crafted/aktin-kostentrager.fsh",
+    "startLine": 4,
+    "endLine": 46
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-lm-notaufnahmeregister.json",
+    "fshName": "AKTIN_LM_Notaufnahmeregister",
+    "fshType": "Logical",
+    "fshFile": "LogicalModels-generated/aktin-lm-notaufnahmeregister.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-alter-patient.json",
+    "fshName": "AKTIN_PR_alter_patient",
+    "fshType": "Profile",
+    "fshFile": "Demografie-crafted/aktin-pr-alter.fsh",
+    "startLine": 6,
+    "endLine": 45
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-aufenthalt.json",
+    "fshName": "AKTIN_PR_aufenthalt",
+    "fshType": "Profile",
+    "fshFile": "Aufenthalt-crafted/aktin-aufenthalt.fsh",
+    "startLine": 4,
+    "endLine": 59
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-beschwerden-bei-vorstellung-cedis.json",
+    "fshName": "AKTIN_PR_beschwerden_bei_vorstellung_cedis",
+    "fshType": "Profile",
+    "fshFile": "Notfallanamnese-generated/aktin-pr-beschwerden-bei-vorstellung-cedis.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-bga-angefordert.json",
+    "fshName": "AKTIN_PR_bga_angefordert",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-bga-angefordert.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-ct-abdomen-durchgefuhrt.json",
+    "fshName": "AKTIN_PR_ct_abdomen_durchgefuhrt",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-ct-abdomen-durchgefuhrt.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-ct-bzw-mr-bzw-dsangiographie.json",
+    "fshName": "AKTIN_PR_ct_bzw_mr_bzw_dsangiographie",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-ct-bzw-mr-bzw-dsangiographie.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-ct-extremitaten-durchgefuhrt.json",
+    "fshName": "AKTIN_PR_ct_extremitaten_durchgefuhrt",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-ct-extremitaten-durchgefuhrt.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-ct-hws-durchgefuhrt.json",
+    "fshName": "AKTIN_PR_ct_hws_durchgefuhrt",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-ct-hws-durchgefuhrt.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-ct-kopf-durchgefuhrt.json",
+    "fshName": "AKTIN_PR_ct_kopf_durchgefuhrt",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-ct-kopf-durchgefuhrt.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-ct-thorax-durchgefuhrt.json",
+    "fshName": "AKTIN_PR_ct_thorax_durchgefuhrt",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-ct-thorax-durchgefuhrt.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-datum-beginn-patientenbezogene-dokumentation.json",
+    "fshName": "AKTIN_PR_datum_beginn_patientenbezogene_dokumentation",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-datum-beginn-patientenbezogene-dokumentation.fsh",
+    "startLine": 5,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-edis.json",
+    "fshName": "AKTIN_PR_edis",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-edis.fsh",
+    "startLine": 6,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-ekg-angefordert.json",
+    "fshName": "AKTIN_PR_ekg_angefordert",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-ekg-angefordert.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-episodenzusammenfassung-notaufnahmeregister.json",
+    "fshName": "AKTIN_PR_episodenzusammenfassung_notaufnahmeregister",
+    "fshType": "Profile",
+    "fshFile": "Composition-crafted/aktin-pr-composition.fsh",
+    "startLine": 1,
+    "endLine": 112
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-ergebnis-der-ersteinschatzung.json",
+    "fshName": "AKTIN_PR_ergebnis_der_ersteinschatzung",
+    "fshType": "Profile",
+    "fshFile": "Ersteinschatzung-crafted/aktin-pr-ergebnis_der_ersteinschatzung.fsh",
+    "startLine": 5,
+    "endLine": 46
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-erythrozytenkonzentrat.json",
+    "fshName": "AKTIN_PR_erythrozytenkonzentrat",
+    "fshType": "Profile",
+    "fshFile": "Medikation-generated/aktin-pr-erythrozytenkonzentrat.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-esitriage.json",
+    "fshName": "AKTIN_PR_esitriage",
+    "fshType": "Profile",
+    "fshFile": "Ersteinschatzung-crafted/aktin-pr-esitriage.fsh",
+    "startLine": 5,
+    "endLine": 49
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-fahrzeug-des-verunfallten.json",
+    "fshName": "AKTIN_PR_fahrzeug_des_verunfallten",
+    "fshType": "Profile",
+    "fshFile": "Notfallanamnese-generated/aktin-pr-fahrzeug-des-verunfallten.fsh",
+    "startLine": 5,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-faktor-xiii.json",
+    "fshName": "AKTIN_PR_faktor_xiii",
+    "fshType": "Profile",
+    "fshFile": "Medikation-generated/aktin-pr-faktor-xiii.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-ganzkorperct-durchgefuhrt.json",
+    "fshName": "AKTIN_PR_ganzkorperct_durchgefuhrt",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-ganzkorperct-durchgefuhrt.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-isolation.json",
+    "fshName": "AKTIN_PR_isolation",
+    "fshType": "Profile",
+    "fshFile": "Maßnahmen-generated/aktin-pr-isolation.fsh",
+    "startLine": 5,
+    "endLine": 28
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-katecholamine.json",
+    "fshName": "AKTIN_PR_katecholamine",
+    "fshType": "Profile",
+    "fshFile": "Medikation-generated/aktin-pr-katecholamine.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-kolloidale-infusionslosungen.json",
+    "fshName": "AKTIN_PR_kolloidale_infusionslosungen",
+    "fshType": "Profile",
+    "fshFile": "Medikation-generated/aktin-pr-kolloidale-infusionslosungen.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-kombination-typen-verlegung-und-entlassung.json",
+    "fshName": "AKTIN_PR_kombination_typen_verlegung_und_entlassung",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-kombination-typen-verlegung-und-entlassung.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-kristalloide-infusionslosungen.json",
+    "fshName": "AKTIN_PR_kristalloide_infusionslosungen",
+    "fshType": "Profile",
+    "fshFile": "Medikation-generated/aktin-pr-kristalloide-infusionslosungen.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-laboruntersuchung-angefordert.json",
+    "fshName": "AKTIN_PR_laboruntersuchung_angefordert",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-laboruntersuchung-angefordert.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-manchester-triage-system.json",
+    "fshName": "AKTIN_PR_manchester_triage_system",
+    "fshType": "Profile",
+    "fshFile": "Ersteinschatzung-crafted/aktin-pr-manchester_triage_system.fsh",
+    "startLine": 5,
+    "endLine": 59
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-medizinische-begleitung.json",
+    "fshName": "AKTIN_PR_medizinische_begleitung",
+    "fshType": "Profile",
+    "fshFile": "Transport-generated/aktin-pr-medizinische-begleitung.fsh",
+    "startLine": 5,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-mikrobiologie-angefordert.json",
+    "fshName": "AKTIN_PR_mikrobiologie_angefordert",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-mikrobiologie-angefordert.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-mrt-durchgefuhrt.json",
+    "fshName": "AKTIN_PR_mrt_durchgefuhrt",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-mrt-durchgefuhrt.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-patient.json",
+    "fshName": "AKTIN_PR_Patient",
+    "fshType": "Profile",
+    "fshFile": "Patient-crafted/aktin-pr-patient.fsh",
+    "startLine": 4,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-practitioner-role-physician.json",
+    "fshName": "AKTIN_PR_practitioner_role_physician",
+    "fshType": "Profile",
+    "fshFile": "Aufenthalt-crafted/aktin-aufenthalt.fsh",
+    "startLine": 63,
+    "endLine": 73
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-rontgenbecken-durchgefuhrt.json",
+    "fshName": "AKTIN_PR_rontgenbecken_durchgefuhrt",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-rontgenbecken-durchgefuhrt.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-rontgenthorax-angefordert.json",
+    "fshName": "AKTIN_PR_rontgenthorax_angefordert",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-rontgenthorax-angefordert.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-rontgenthorax-durchgefuhrt.json",
+    "fshName": "AKTIN_PR_rontgenthorax_durchgefuhrt",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-rontgenthorax-durchgefuhrt.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-rontgenwirbelsaule-durchgefuhrt.json",
+    "fshName": "AKTIN_PR_rontgenwirbelsaule_durchgefuhrt",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-rontgenwirbelsaule-durchgefuhrt.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-smallvolume-gabe.json",
+    "fshName": "AKTIN_PR_smallvolume_gabe",
+    "fshType": "Profile",
+    "fshFile": "Medikation-generated/aktin-pr-smallvolume-gabe.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-sonographie-angefordert.json",
+    "fshName": "AKTIN_PR_sonographie_angefordert",
+    "fshType": "Profile",
+    "fshFile": "Diagnostik-generated/aktin-pr-sonographie-angefordert.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-stunde-beginn-patientenbezogene-dokumentation.json",
+    "fshName": "AKTIN_PR_stunde_beginn_patientenbezogene_dokumentation",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-stunde-beginn-patientenbezogene-dokumentation.fsh",
+    "startLine": 5,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-tranexamsaure.json",
+    "fshName": "AKTIN_PR_tranexamsaure",
+    "fshType": "Profile",
+    "fshFile": "Medikation-generated/aktin-pr-tranexamsaure.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-transportmittel.json",
+    "fshName": "AKTIN_PR_transportmittel",
+    "fshType": "Profile",
+    "fshFile": "Transport-generated/aktin-pr-transportmittel.fsh",
+    "startLine": 5,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-unfallart-trauma-register.json",
+    "fshName": "AKTIN_PR_unfallart_trauma_register",
+    "fshType": "Profile",
+    "fshFile": "Notfallanamnese-generated/aktin-pr-unfallart-trauma-register.fsh",
+    "startLine": 5,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-unfallkinetik.json",
+    "fshName": "AKTIN_PR_unfallkinetik",
+    "fshType": "Profile",
+    "fshFile": "Notfallanamnese-generated/aktin-pr-unfallkinetik.fsh",
+    "startLine": 5,
+    "endLine": 39
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-unfallursache.json",
+    "fshName": "AKTIN_PR_unfallursache",
+    "fshType": "Profile",
+    "fshFile": "Notfallanamnese-generated/aktin-pr-unfallursache.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage.json",
+    "fshName": "AKTIN_PR_ungeplante_vorstellung_gleicher_grund_28_tage",
+    "fshType": "Profile",
+    "fshFile": "Wiedervorstellung-generated/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage.fsh",
+    "startLine": 5,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss.json",
+    "fshName": "AKTIN_PR_verdacht_auf_alkohol_drogen_medikamenteneinfluss",
+    "fshType": "Profile",
+    "fshFile": "Notfallanamnese-generated/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinflussq.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-atemfrequenz.json",
+    "fshName": "AKTIN_PR_vitalsigns_atemfrequenz",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-atemfrequenz.fsh",
+    "startLine": 5,
+    "endLine": 47
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-blutdruck.json",
+    "fshName": "AKTIN_PR_vitalsigns_blutdruck",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-blutdruck.fsh",
+    "startLine": 5,
+    "endLine": 55
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-diastolischer-blutdruck.json",
+    "fshName": "AKTIN_PR_vitalsigns_diastolischer_blutdruck",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-diastolischer-blutdruck.fsh",
+    "startLine": 5,
+    "endLine": 49
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-herzfrequenz.json",
+    "fshName": "AKTIN_PR_vitalsigns_herzfrequenz",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-herzfrequenz.fsh",
+    "startLine": 5,
+    "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-korperkerntemperatur.json",
+    "fshName": "AKTIN_PR_vitalsigns_korperkerntemperatur",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-korperkerntemperatur.fsh",
+    "startLine": 5,
+    "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-pulsfrequenz.json",
+    "fshName": "AKTIN_PR_vitalsigns_pulsfrequenz",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-pulsfrequenz.fsh",
+    "startLine": 5,
+    "endLine": 49
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung.json",
+    "fshName": "AKTIN_PR_vitalsigns_pulsoximetrische_sauerstoffsattigung",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung.fsh",
+    "startLine": 5,
+    "endLine": 53
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-schmerz.json",
+    "fshName": "AKTIN_PR_vitalsigns_schmerz",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-schmerz.fsh",
+    "startLine": 5,
+    "endLine": 49
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-systolischer-blutdruck.json",
+    "fshName": "AKTIN_PR_vitalsigns_systolischer_blutdruck",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-systolischer-blutdruck.fsh",
+    "startLine": 5,
+    "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitamin-k-antagonists.json",
+    "fshName": "AKTIN_PR_vitamin_k_antagonists",
+    "fshType": "Profile",
+    "fshFile": "Medikation-generated/aktin-pr-vitamin-k-antagonists.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeit-aufnahme-verlegungsentlassungsfahigkeit.json",
+    "fshName": "AKTIN_PR_zeit_aufnahme_verlegungsentlassungsfahigkeit",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-aufnahme-verlegungsentlassungsfahigkeit.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeit-bis-zum-export.json",
+    "fshName": "AKTIN_PR_zeit_bis_zum_export",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-bis-zum-export.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund.json",
+    "fshName": "AKTIN_PR_zeit_seit_letzter_vorstellung_zum_gleichen_grund",
+    "fshType": "Profile",
+    "fshFile": "Wiedervorstellung-generated/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund.fsh",
+    "startLine": 5,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeit-zwischen-ankunft-und-aufnahme.json",
+    "fshName": "AKTIN_PR_zeit_zwischen_ankunft_und_aufnahme",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-zwischen-ankunft-und-aufnahme.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt.json",
+    "fshName": "AKTIN_PR_zeit_zwischen_aufnahme_und_erstem_arztkontakt",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung.json",
+    "fshName": "AKTIN_PR_zeit_zwischen_aufnahme_und_erster_ersteinschatzung",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten.json",
+    "fshName": "AKTIN_PR_zeit_zwischen_aufnahme_und_verlassen_des_patienten",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung.json",
+    "fshName": "AKTIN_PR_zeitpunkt_entscheidung_zur_verlegung__entlassung",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung.fsh",
+    "startLine": 5,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeitpunkt-erster-arztkontakt.json",
+    "fshName": "AKTIN_PR_zeitpunkt_erster_arztkontakt",
+    "fshType": "Profile",
+    "fshFile": "Notfallanamnese-generated/aktin-pr-zeitpunkt-erster-arztkontakt.fsh",
+    "startLine": 5,
+    "endLine": 30
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeitpunkt-export-aus-edis.json",
+    "fshName": "AKTIN_PR_zeitpunkt_export_aus_edis",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeitpunkt-export-aus-edis.fsh",
+    "startLine": 5,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach.json",
+    "fshName": "AKTIN_PR_zeitpunkt_patient_verlegt__entlassen_nach",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach.fsh",
+    "startLine": 5,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig.json",
+    "fshName": "AKTIN_PR_zeitpunkt_patient_verlegungs__entlassungsfahig",
+    "fshType": "Profile",
+    "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig.fsh",
+    "startLine": 5,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-zuweisung.json",
+    "fshName": "AKTIN_PR_zuweisung",
+    "fshType": "Profile",
+    "fshFile": "Zuweisung-generated/aktin-pr-zuweisung.fsh",
+    "startLine": 5,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-xt-kvfall.json",
+    "fshName": "AKTIN_extension_kvfall",
+    "fshType": "Extension",
+    "fshFile": "extensions-crafted/aktin-xt-kvfall.fsh",
+    "startLine": 4,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-age-in-categories.json",
+    "fshName": "AKTIN_VS_age_in_categories",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-age-in-categories.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-cedis30.json",
+    "fshName": "AKTIN_VS_cedis30",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-cedis30.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-generic-5level-triage-system.json",
+    "fshName": "AKTIN_VS_generic_5level_triage_system",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-generic-5level-triage-system.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-isolation-reason.json",
+    "fshName": "AKTIN_VS_isolation_reason",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-cs-isolationsgrund.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-manchestertriagesystem.json",
+    "fshName": "AKTIN_VS_manchestertriagesystem",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-manchestertriagesystem.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-mts-indicators-green.json",
+    "fshName": "AKTIN_VS_mts_indicators_green",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-mts-indicators-green.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-mts-indicators-orange.json",
+    "fshName": "AKTIN_VS_mts_indicators_orange",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-mts-indicators-orange.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-mts-indicators-red.json",
+    "fshName": "AKTIN_VS_mts_indicators_red",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-mts-indicators-red.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-mts-indicators-yellow.json",
+    "fshName": "AKTIN_VS_mts_indicators_yellow",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-mts-indicators-yellow.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-mts-presenting-diagram.json",
+    "fshName": "AKTIN_VS_mts_presenting_diagram",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-mts-presenting-diagram.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-substances-used.json",
+    "fshName": "Substance_used",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-substanzeinfluss.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-aktin-vs-used-triage-system.json",
+    "fshName": "Used_triage_system",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie-exported/aktin-vs-used-triage-system.fsh",
+    "startLine": 3,
+    "endLine": 25
+  }
+]

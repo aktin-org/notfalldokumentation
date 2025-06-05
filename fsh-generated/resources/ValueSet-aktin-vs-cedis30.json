@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AKTIN_VS_cedis30",
+  "id": "aktin-vs-cedis30",
+  "title": "CEDIS Presenting Complaint List 3.0",
+  "description": "CEDIS Presenting Complaint List 3.0",
+  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-cedis30",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-cedis30"
+      },
+      {
+        "system": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "concept": [
+          {
+            "code": "OTH",
+            "display": "Sonstiges"
+          },
+          {
+            "code": "UNK",
+            "display": "Unbekannt"
+          }
+        ]
+      }
+    ]
+  }
+}

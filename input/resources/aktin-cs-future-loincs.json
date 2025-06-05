@@ -1,0 +1,408 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "aktin-cs-future-loincs",
+    "meta": {
+        "profile": ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+    },
+    "language": "de-DE",
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+            "valuePeriod": {"start": "2023-12-28T00:00:00+02:00"}
+        }
+    ],
+    "url": "http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.2.276.0.76.3.1.195.5.98"
+        }
+    ],
+    "version": "2023-12-28T00:00:00",
+    "name": "Future_loincs",
+    "title": "Zukünftige LOINC Terme",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "AKTIN e. V.",
+    "contact": [
+        {
+            "name": "AKTIN e. V.",
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "Tel. +49 391 67 28186"
+                },
+                {
+                    "system": "email",
+                    "value": "office@aktin.org"
+                }
+            ]
+        }
+    ],
+    "description": "Dieses Codessystem umfasst zukünftige LOINC Terme zur Nutzung in der Notfalldokumentation.\n\n**Hintergrund**\n\nIn der Notfalldokumentation werden gerade bei Registermeldungen Terme verwendet, die noch nicht in LOINC (oder anderswo) verfügbar sind. Allerdings sind die meisten dieser Begriffe Kandidaten,                     um in LOINC als neue Codes aufgenommen zu werden. Um eine sofortige Nutzung von annotierten Termen zu gewährleisten und sie dennoch zu einem späteren Zeitpunkt nach der Einführung der offiziellen LOINC Codes übergangsmäßig zugleich zu verwenden und eine eindeutige Zuordnung zu allen Zeiten zu erlauben, werden die meisten zukünftige LOINC Terme zur Nutzung in der                     Notfalldokumentation hier mit einem \"Notfall\"-Code versehen.\n\nDie Ersatz-Terme sind zusammengesetzt aus \"FLN\" für \"Future LOINC\", einem Bindestrich und einem Code als Differenzierungskonzept.",
+    "caseSensitive": false,
+    "content": "complete",
+    "count": 23,
+    "property": [
+        {
+            "code": "status",
+            "uri": "http://hl7.org/fhir/concept-properties",
+            "description": "A code that indicates the status of the concept. Values found in this version of the code system are: draft",
+            "type": "code"
+        },
+        {
+            "code": "effectiveDate",
+            "uri": "http://hl7.org/fhir/concept-properties",
+            "description": "The date at which the concept was status was last changed. This is calculated based on the highest of 'creation date', 'expiration date', and 'official release date'",
+            "type": "dateTime"
+        }
+    ],
+    "concept": [
+        {
+            "code": "FLN-11",
+            "display": "Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen",
+            "definition": "Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Leitsymptom) innerhalb von 28 Tagen wieder vorgestellt?",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-12",
+            "display": "Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund",
+            "definition": "Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrund (Leitsymptom) in Stunden oder Tagen",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-13",
+            "display": "Direkter Arztkontakt",
+            "definition": "Wurde keine Ersteinschätzung durchgeführt, da ein direkter Arztkontakt erfolgt ist?",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-14",
+            "display": "Niedrigste GCS-Summe",
+            "definition": "Die niedrigste GCS-Summe während der Dokumentation",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-15",
+            "display": "Erste Schmerzmessung",
+            "definition": "Die niedrigste GCS-Summe während der Dokumentation",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-122",
+            "display": "CT-/MR-/DS-Angiographie",
+            "definition": "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-123",
+            "display": "Kombination Typen Verlegung und Entlassung",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Kombination der Typ Verlegung und Typ Entlassung für NoKeda",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-124",
+            "display": "Zeitpunkt Entscheidung zur Verlegung / Entlassung",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. ",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-125",
+            "display": "Zeitpunkt Patient verlegungs- / entlassungsfähig",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde. Ab dann wartet der Patient auf ein Bett bzw. auf die Transportgelegenheit in die ambulante Versorgung, unter Umständen bei\n                        weiterer dokumentationswürdigem Monitoring und Therapie. ",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-126",
+            "display": "Zeitpunkt Patient verlegt / entlassen nach",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Wann wurde der Patient verlegt oder entlassen?",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-127",
+            "display": "Stunde Beginn patientenbezogene Dokumentation",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-128",
+            "display": "Datum Beginn patientenbezogene Dokumentation",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Datum des Beginns der patientenbezogenen Dokumentation",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-129",
+            "display": "Zeit zwischen Ankunft und Aufnahme",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und administrativer Aufnahme",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-130",
+            "display": "Zeit zwischen Aufnahme und erster Ersteinschätzung",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und erster Ersteinschätzung",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-131",
+            "display": "Zeit zwischen Aufnahme und erstem Arztkontakt",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und erstem Arztkontakt",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-132",
+            "display": "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-133",
+            "display": "Zeit zwischen Aufnahme und Verlassen des Patienten",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und Verlassen des Patienten",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-134",
+            "display": "Zeit bis zum Export",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export-Zeitpunkt aus dem Primärsystem; Bei mehr als 28 Tagen (=672 Stunden) Maximalwert angeben.",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-135",
+            "display": "Name des EDIS",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Name der lokal verwendeten Software zur primären Datenerfassung (EDIS, emergency department information system); wenn keine ED-Spezialanwendung verwendet wird, das KIS.",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-136",
+            "display": "Version des EDIS",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS (ggf. KIS)",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-137",
+            "display": "Zeitpunkt Export aus EDIS",
+            "definition": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-138",
+            "display": "Auslandsreise innerhalb der letzten 12 Monate",
+            "definition": "War der Patient innerhalb der letzten 12 Monate außerhalb Deutschlands",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        },
+        {
+            "code": "FLN-139",
+            "display": "Besuchte Länder",
+            "definition": "Besuchte Länder in den letzten 12 Monaten",
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "draft"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2024-04-30"
+                }
+            ]
+        }
+    ]
+}

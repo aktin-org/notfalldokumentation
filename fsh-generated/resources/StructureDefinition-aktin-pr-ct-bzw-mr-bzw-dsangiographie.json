@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-ct-bzw-mr-bzw-dsangiographie",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-bzw-mr-bzw-dsangiographie",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_ct_bzw_mr_bzw_dsangiographie",
+  "title": "CT- bzw. MR- bzw. DS-Angiographie",
+  "status": "active",
+  "experimental": true,
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?",
+  "purpose": "**Hinweis**: Dieses Profil ist nicht dazu gedacht, implementiert zu werden. Es macht deutlich, welche (zusätzlichen) AKTIN-spezifischen Eigenschaften ein existierendes Profil (bekannter Baustein 'Procedure') zu diesem Typ haben muss und welche Constraints gelten. Es dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Das Profil wird nach Festlegung der bekannten Bausteine als formale Restriktion profilert.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": true,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure",
+        "definition": "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?",
+        "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
+      },
+      {
+        "id": "Procedure.identifier",
+        "path": "Procedure.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "patternCode": "completed",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "short": "Zeitpunkt, wann Maßnahme durchgeführt wurde",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss",
+  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinflussq",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_verdacht_auf_alkohol_drogen_medikamenteneinfluss",
+  "title": "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "definition": "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?"
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "patternCoding": {
+          "code": "88068-2",
+          "system": "http://loinc.org",
+          "display": "Cause of intoxication"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-substances-used"
+        }
+      }
+    ]
+  }
+}

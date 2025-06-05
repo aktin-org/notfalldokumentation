@@ -16,6 +16,18 @@ E-Mail: [office@aktin.org](mailto:Office@aktin.org)
 
 Telefon: +49-391-6728186
 
+## HL7 Deutschland e. V.
+
+Dr. Kai U. Heitmann
+
+Rahel Hirsch Center
+
+Luisenstraße 65
+
+10117 Berlin
+
+E-Mail: [info@hl7.de](info@hl7.de)
+
 # Kontributoren
 
 ## DIVI e.V.

@@ -1,0 +1,48 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-practitioner-role-physician",
+  "url": "http://aktin.org/fhir/ig/notfalldokumentation/StructureDefinition/aktin-pr-practitioner-role-physician",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_practitioner_role_physician",
+  "title": "Rolle (nur Arzt)",
+  "status": "active",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Rolle des Gesundheitsdienstleistenden in der Notaufnahme, hier: nur vom Typ Arzt",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "309343006",
+              "system": "http://snomed.info/sct",
+              "display": "Physician"
+            }
+          ]
+        },
+        "mustSupport": true
+      }
+    ]
+  }
+}

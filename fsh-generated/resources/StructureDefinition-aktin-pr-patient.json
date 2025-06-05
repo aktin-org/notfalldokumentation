@@ -1,0 +1,66 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-patient",
+  "url": "http://aktin.org/fhir/ig/notfalldokumentation/StructureDefinition/aktin-pr-patient",
+  "version": "2025.0.3-ci",
+  "name": "AKTIN_PR_Patient",
+  "title": "Patient",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "Demografische Informationen zum Patienten",
+  "purpose": "Hinweise, bitte beachten\n\nDieses AKTIN-Profil zu 'Patient' ist direkt abgeleitet vom Profil des bekannten Bausteins 'ISiKPatient'.\nEs gibt die formalen Erfordernisse an, welche die AKTIN-spezifischen Eigenschaften\nzum existierendes Profil zusätzlich vorhanden sein müssen und welche Constraints gelten.\nDiese sind im 'Differential View' direkt ersichtlich.\n\nEs dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung\nder Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "definition": "Demografische Informationen zum Patienten",
+        "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
+      },
+      {
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Anschrift",
+        "path": "Patient.address",
+        "sliceName": "Anschrift",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://fhir.de/StructureDefinition/address-de-basis"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Anschrift.postalCode",
+        "path": "Patient.address.postalCode",
+        "mustSupport": true
+      }
+    ]
+  }
+}
