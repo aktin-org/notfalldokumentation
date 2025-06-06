@@ -2,15 +2,18 @@ RuleSet: SetFmmandStatusRule ( fmm, status )
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = {fmm}
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #{status}
 
-RuleSet: SectionCommonRules (short, def, code)
-// * insert (Health Concern Section, test, http://loinc.org#75310-3 "display name")
+RuleSet: SectionCommonRules (short, def, title, code)
+// * insert (Health Concern Section, test, title, http://loinc.org#75310-3 "display name")
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * ^extension[0].valueString = "Section"
 * ^short = "{short}"
 * ^definition = "{def}"
 * title 1..
+* title = {title}
 * code 1..
-* code = {code} (exactly)
+* code.coding 1..
+* code.coding = {code} (exactly)
+* code.text = {title}
 * text 1..
 * text only Narrative
 * emptyReason ..0
