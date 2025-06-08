@@ -7,4 +7,4 @@ Description: "MTS-Präsentationsdiagramm"
 * insert Publisher
 * ^meta.profile = $shareablevalueset
 
-* include codes from system https://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram
+* include codes from system http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram

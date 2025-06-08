@@ -7,4 +7,4 @@ Description: "Alter in Kategorien"
 * insert Publisher
 * ^meta.profile = $shareablevalueset
 
-* include codes from system https://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien
+* include codes from system http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien

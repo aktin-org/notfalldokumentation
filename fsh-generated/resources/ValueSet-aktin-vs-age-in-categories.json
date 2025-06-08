@@ -27,7 +27,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien"
+        "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien"
       }
     ]
   }

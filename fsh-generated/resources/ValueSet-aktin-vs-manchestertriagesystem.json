@@ -27,7 +27,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem"
+        "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem"
       }
     ]
   }

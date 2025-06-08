@@ -6,6 +6,6 @@ Description: "CEDIS Presenting Complaint List 3.0"
 * insert Publisher
 * ^meta.profile = $shareablevalueset
 
-* include codes from system https://aktin.org/fhir/CodeSystem/aktin-cs-cedis30
+* include codes from system http://aktin.org/fhir/CodeSystem/aktin-cs-cedis30
 * $data-absent-reason#OTH "Sonstiges"
 * $data-absent-reason#UNK "Unbekannt"

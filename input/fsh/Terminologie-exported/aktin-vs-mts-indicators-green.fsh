@@ -7,4 +7,4 @@ Description: "MTS-Indikatoren GRÜN"
 * insert Publisher
 * ^meta.profile = $shareablevalueset
 
-* include codes from system https://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators where concept is-a #green
+* include codes from system http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators where concept is-a #green
