@@ -1,5 +1,5 @@
 // AKTIN Profil - MRT durchgeführt
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-mrt-durchgefuhrt
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-mrt-durchgefuhrt
 // FHIR Core Type: Procedure
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21982
 Profile: AKTIN_PR_mrt_durchgefuhrt
@@ -8,7 +8,7 @@ Id:      aktin-pr-mrt-durchgefuhrt
 Title:   "MRT durchgeführt"
 Description: "Wurde ein MRT im Rahmen der Schockraumversorgung durchgeführt?"
 * . ^definition = "Wurde ein MRT im Rahmen der Schockraumversorgung durchgeführt?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-mrt-durchgefuhrt"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-mrt-durchgefuhrt"
 * insert Notaprofile ( Procedure )
 * insert Meta
 * insert Version

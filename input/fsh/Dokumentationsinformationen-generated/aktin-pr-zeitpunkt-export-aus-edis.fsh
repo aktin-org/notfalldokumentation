@@ -1,5 +1,5 @@
 // AKTIN Profil - Zeitpunkt Export aus EDIS
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-export-aus-edis
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-export-aus-edis
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21741
 Profile: AKTIN_PR_zeitpunkt_export_aus_edis
@@ -8,7 +8,7 @@ Id:      aktin-pr-zeitpunkt-export-aus-edis
 Title:   "Zeitpunkt Export aus EDIS"
 Description: "Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde"
 * . ^definition = "Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-export-aus-edis"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-export-aus-edis"
 * insert Meta
 * insert Version
 * insert Publisher

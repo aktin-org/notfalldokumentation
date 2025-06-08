@@ -1,5 +1,5 @@
 // AKTIN Profil - Blutdruck
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-blutdruck
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-blutdruck
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.20141
 Profile: AKTIN_PR_vitalsigns_blutdruck
@@ -8,7 +8,7 @@ Id:      aktin-pr-vitalsigns-blutdruck
 Title:   "Blutdruck"
 Description: "Datenelemente des Blutdrucks"
 * . ^definition = "Datenelemente des Blutdrucks"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-blutdruck"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-blutdruck"
 * insert Notaprofile ( Vitalparameter/Scores )
 * insert Meta
 * insert Version

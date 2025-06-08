@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-kostentrager",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/StructureDefinition/aktin-kostentrager",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-kostentrager",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_kostentrager",
   "title": "Kostenträger",
@@ -43,7 +43,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://www.aktin.org/fhir/StructureDefinition/aktin-xt-kvfall"
+              "http://aktin.org/fhir/StructureDefinition/aktin-xt-kvfall"
             ]
           }
         ]

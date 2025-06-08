@@ -3,7 +3,7 @@ Parent: MedicationAdministration
 Id: aktin-pr-kristalloide-infusionslosungen
 Title: "Kristalloide Infusionslösungen"
 Description: "Profile for documenting a medication administration: Kristalloide Infusionslösungen"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-kristalloide-infusionslosungen"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-kristalloide-infusionslosungen"
 * insert Notaprofile ( MedicationAdministration )
 * insert Meta
 * insert Version

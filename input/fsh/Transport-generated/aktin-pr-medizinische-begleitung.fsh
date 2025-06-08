@@ -1,5 +1,5 @@
 // AKTIN Profil - Medizinische Begleitung
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-medizinische-begleitung
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-medizinische-begleitung
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.20140
 Profile: AKTIN_PR_medizinische_begleitung
@@ -8,7 +8,7 @@ Id:      aktin-pr-medizinische-begleitung
 Title:   "Medizinische Begleitung"
 Description: "Mit welcher medizinischen Begleitung war das Transportmittel des Gesundheitswesen besetzt"
 * . ^definition = "Mit welcher medizinischen Begleitung war das Transportmittel des Gesundheitswesen besetzt"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-medizinische-begleitung"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-medizinische-begleitung"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -31,7 +31,6 @@ Description: "Mit welcher medizinischen Begleitung war das Transportmittel des G
 * value[x] MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-patient-escort (required)
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-unfallkinetik",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-unfallkinetik",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallkinetik",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_unfallkinetik",
   "title": "Unfallkinetik",
@@ -103,7 +103,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "sliceName": "valueCodeableConcept",
         "type": [
           {
             "code": "CodeableConcept"

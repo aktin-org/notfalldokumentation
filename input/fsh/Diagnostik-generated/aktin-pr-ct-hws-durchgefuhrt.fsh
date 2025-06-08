@@ -1,5 +1,5 @@
 // AKTIN Profil - CT HWS durchgeführt
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-hws-durchgefuhrt
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-hws-durchgefuhrt
 // FHIR Core Type: Procedure
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21974
 Profile: AKTIN_PR_ct_hws_durchgefuhrt
@@ -8,7 +8,7 @@ Id:      aktin-pr-ct-hws-durchgefuhrt
 Title:   "CT HWS durchgeführt"
 Description: "Wurde ein selektives CT der Halswirbelsäule durchgeführt?"
 * . ^definition = "Wurde ein selektives CT der Halswirbelsäule durchgeführt?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-hws-durchgefuhrt"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-hws-durchgefuhrt"
 * insert Notaprofile ( Procedure )
 * insert Meta
 * insert Version

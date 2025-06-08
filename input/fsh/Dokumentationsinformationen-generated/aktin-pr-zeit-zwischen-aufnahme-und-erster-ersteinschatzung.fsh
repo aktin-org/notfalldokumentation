@@ -1,5 +1,5 @@
 // AKTIN Profil - Zeit zwischen Aufnahme und erster Ersteinschätzung
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21756
 Profile: AKTIN_PR_zeit_zwischen_aufnahme_und_erster_ersteinschatzung
@@ -8,7 +8,7 @@ Id:      aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung
 Title:   "Zeit zwischen Aufnahme und erster Ersteinschätzung"
 Description: "Zeit zwischen Aufnahme und erster Ersteinschätzung"
 * . ^definition = "Zeit zwischen Aufnahme und erster Ersteinschätzung"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -33,7 +33,6 @@ Description: "Zeit zwischen Aufnahme und erster Ersteinschätzung"
 * value[x] ^short = "Zeit zwischen Aufnahme und erster Ersteinschätzung"
 * value[x] ^definition = "Zeit zwischen Aufnahme und erster Ersteinschätzung"
 * valueQuantity = http://unitsofmeasure.org#min
-* valueQuantity ^sliceName = "valueQuantity"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

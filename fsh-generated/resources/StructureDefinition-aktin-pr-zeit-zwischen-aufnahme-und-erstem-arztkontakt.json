@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_zeit_zwischen_aufnahme_und_erstem_arztkontakt",
   "title": "Zeit zwischen Aufnahme und erstem Arztkontakt",
@@ -108,7 +108,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "sliceName": "valueQuantity",
         "short": "Zeit zwischen Aufnahme und erstem Arztkontakt",
         "definition": "Zeit zwischen Aufnahme und erstem Arztkontakt",
         "min": 1,

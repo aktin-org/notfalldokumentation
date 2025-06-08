@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-ekg-angefordert",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ekg-angefordert",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-ekg-angefordert",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_ekg_angefordert",
   "title": "EKG angefordert",

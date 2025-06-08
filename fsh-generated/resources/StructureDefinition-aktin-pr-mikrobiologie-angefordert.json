@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-mikrobiologie-angefordert",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-mikrobiologie-angefordert",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-mikrobiologie-angefordert",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_mikrobiologie_angefordert",
   "title": "Mikrobiologie angefordert",

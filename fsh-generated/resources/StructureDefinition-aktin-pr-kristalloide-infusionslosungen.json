@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-kristalloide-infusionslosungen",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-kristalloide-infusionslosungen",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-kristalloide-infusionslosungen",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_kristalloide_infusionslosungen",
   "title": "Kristalloide Infusionslösungen",

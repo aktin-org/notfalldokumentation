@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "aktin-cm-epiznota",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ConceptMap/aktin-cm-epiznota",
+  "url": "http://aktin.org/fhir/ConceptMap/aktin-cm-epiznota",
   "name": "AktinConceptMapEpiznota",
   "title": "AKTIN Mapping Episodenzusammenfassung Notfallaufnahme",
   "status": "draft",
@@ -9,8 +9,8 @@
   "description": "AKTIN Mapping der logischen Modellelement aus dem Szenario in ART-DECOR zur Episodenzusammenfassung Notfallaufnahme nach FHIR Profilen und Elementen",
   "group": [
     {
-      "source": "https://www.aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister",
-      "target": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister",
+      "source": "http://aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister",
+      "target": "http://aktin.org/fhir/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister",
       "element": [
         {
           "code": "AKTIN_LM_Notaufnahmeregister.patient",

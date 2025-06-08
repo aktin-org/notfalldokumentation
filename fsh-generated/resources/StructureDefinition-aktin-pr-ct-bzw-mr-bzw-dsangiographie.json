@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-ct-bzw-mr-bzw-dsangiographie",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-bzw-mr-bzw-dsangiographie",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-bzw-mr-bzw-dsangiographie",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_ct_bzw_mr_bzw_dsangiographie",
   "title": "CT- bzw. MR- bzw. DS-Angiographie",

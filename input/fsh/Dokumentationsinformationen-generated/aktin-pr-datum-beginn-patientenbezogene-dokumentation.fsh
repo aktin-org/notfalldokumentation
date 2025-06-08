@@ -1,5 +1,5 @@
 // AKTIN Profil - Datum Beginn patientenbezogene Dokumentation
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-datum-beginn-patientenbezogene-dokumentation
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-datum-beginn-patientenbezogene-dokumentation
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21754
 Profile: AKTIN_PR_datum_beginn_patientenbezogene_dokumentation
@@ -8,7 +8,7 @@ Id:      aktin-pr-datum-beginn-patientenbezogene-dokumentation
 Title:   "Datum Beginn patientenbezogene Dokumentation"
 Description: "Datum des Beginns der patientenbezogenen Dokumentation"
 * . ^definition = "Datum des Beginns der patientenbezogenen Dokumentation"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-datum-beginn-patientenbezogene-dokumentation"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-datum-beginn-patientenbezogene-dokumentation"
 * insert Meta
 * insert Version
 * insert Publisher

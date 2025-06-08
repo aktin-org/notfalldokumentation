@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-beschwerden-bei-vorstellung-cedis",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_beschwerden_bei_vorstellung_cedis",
   "title": "Beschwerden bei Vorstellung (CEDIS)",
@@ -73,7 +73,7 @@
         "path": "Condition.code.coding",
         "binding": {
           "strength": "required",
-          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-cedis30"
+          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-cedis30"
         }
       },
       {

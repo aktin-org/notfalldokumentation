@@ -249,6 +249,7 @@ Ressource die Composition ist.
       "Informationen zur medikamentösen Therapie",
       http://loinc.org#29549-3 "Medication administered Narrative"
     )
+  * entry only Reference(ISiKMedikationsVerabreichung)
 
 // Abschlussdiagnosen
 // - Abschlussdiagnose
@@ -264,6 +265,7 @@ Ressource die Composition ist.
       "Abschlussdiagnosen",
       http://loinc.org#11300-1 "ED diagnosis"
     )
+  * entry only Reference(ISiKDiagnose)
 
 // Verlegungs-/Entlassungsinformationen
 // - Verlegung

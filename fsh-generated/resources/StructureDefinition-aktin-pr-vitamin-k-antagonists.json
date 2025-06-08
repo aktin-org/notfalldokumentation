@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-vitamin-k-antagonists",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitamin-k-antagonists",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitamin-k-antagonists",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_vitamin_k_antagonists",
   "title": "Vitamin K Antagonisten",

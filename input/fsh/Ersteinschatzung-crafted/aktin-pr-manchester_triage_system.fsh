@@ -1,5 +1,5 @@
 // AKTIN Profil - Manchester Triage System
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-manchester_triage_system
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-manchester_triage_system
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21715
 Profile: AKTIN_PR_manchester_triage_system

@@ -1,5 +1,5 @@
 // AKTIN Profil - Zeit zwischen Ankunft und Aufnahme
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-ankunft-und-aufnahme
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-ankunft-und-aufnahme
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.29262
 Profile: AKTIN_PR_zeit_zwischen_ankunft_und_aufnahme
@@ -8,7 +8,7 @@ Id:      aktin-pr-zeit-zwischen-ankunft-und-aufnahme
 Title:   "Zeit zwischen Ankunft und Aufnahme"
 Description: "Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und administrativer Aufnahme"
 * . ^definition = "Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und administrativer Aufnahme"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-ankunft-und-aufnahme"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-ankunft-und-aufnahme"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -33,7 +33,6 @@ Description: "Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und admi
 * value[x] ^short = "Zeit zwischen Ankunft und Aufnahme"
 * value[x] ^definition = "Zeit zwischen Ankunft und Aufnahme"
 * valueQuantity = http://unitsofmeasure.org#min
-* valueQuantity ^sliceName = "valueQuantity"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

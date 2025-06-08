@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_zeitpunkt_entscheidung_zur_verlegung__entlassung",
   "title": "Zeitpunkt Entscheidung zur Verlegung / Entlassung",

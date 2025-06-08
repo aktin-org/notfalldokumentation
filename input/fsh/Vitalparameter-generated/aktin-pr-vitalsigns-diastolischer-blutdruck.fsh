@@ -1,5 +1,5 @@
 // AKTIN Profil - Diastolischer Blutdruck
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-diastolischer-blutdruck
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-diastolischer-blutdruck
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.20143
 Profile: AKTIN_PR_vitalsigns_diastolischer_blutdruck
@@ -8,7 +8,7 @@ Id:      aktin-pr-vitalsigns-diastolischer-blutdruck
 Title:   "Diastolischer Blutdruck"
 Description: "Diastolischer Blutdruckwert"
 * . ^definition = "Diastolischer Blutdruckwert"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-diastolischer-blutdruck"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-diastolischer-blutdruck"
 * insert Notaprofile ( Vitalparameter/Scores )
 * insert Meta
 * insert Version
@@ -40,7 +40,6 @@ Description: "Diastolischer Blutdruckwert"
 * value[x] MS
 * value[x] only Quantity
 * valueQuantity = http://unitsofmeasure.org#mm[Hg]
-* valueQuantity ^sliceName = "valueQuantity"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

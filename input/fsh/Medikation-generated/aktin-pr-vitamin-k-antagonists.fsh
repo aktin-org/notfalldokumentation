@@ -3,7 +3,7 @@ Parent: MedicationAdministration
 Id: aktin-pr-vitamin-k-antagonists
 Title: "Vitamin K Antagonisten"
 Description: "Profile for documenting a medication administration: Vitamin K Antagonisten"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitamin-k-antagonists"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitamin-k-antagonists"
 * insert Notaprofile ( MedicationAdministration )
 * insert Meta
 * insert Version

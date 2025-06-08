@@ -1,5 +1,5 @@
 // AKTIN Profil - Körperkerntemperatur
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-korperkerntemperatur
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-korperkerntemperatur
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.20050
 Profile: AKTIN_PR_vitalsigns_korperkerntemperatur
@@ -8,7 +8,7 @@ Id:      aktin-pr-vitalsigns-korperkerntemperatur
 Title:   "Körperkerntemperatur"
 Description: "Gemessene Temperatur bei Aufnahme in die Notaufnahme [°C]"
 * . ^definition = "Gemessene Temperatur bei Aufnahme in die Notaufnahme [°C]"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-korperkerntemperatur"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-korperkerntemperatur"
 * insert Notaprofile ( Vitalparameter/Scores )
 * insert Meta
 * insert Version
@@ -42,7 +42,6 @@ Description: "Gemessene Temperatur bei Aufnahme in die Notaufnahme [°C]"
 * value[x] MS
 * value[x] only Quantity
 * valueQuantity = http://unitsofmeasure.org#Cel
-* valueQuantity ^sliceName = "valueQuantity"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

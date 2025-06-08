@@ -1,5 +1,5 @@
 // AKTIN Profil - Unfallursache 
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-unfallursache
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallursache
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.20156
 Profile: AKTIN_PR_unfallursache
@@ -8,7 +8,7 @@ Id:      aktin-pr-unfallursache
 Title:   "Unfallursache "
 Description: "Ursache des Unfalles"
 * . ^definition = "Ursache des Unfalles"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-unfallursache"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallursache"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -33,7 +33,6 @@ Description: "Ursache des Unfalles"
 * value[x] MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-accident-reason-snomed (required)
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

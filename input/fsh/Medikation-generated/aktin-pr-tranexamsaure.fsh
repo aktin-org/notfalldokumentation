@@ -3,7 +3,7 @@ Parent: MedicationAdministration
 Id: aktin-pr-tranexamsaure
 Title: "Tranexamsäure"
 Description: "Profile for documenting a medication administration: Tranexamsäure"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-tranexamsaure"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-tranexamsaure"
 * insert Notaprofile ( MedicationAdministration )
 * insert Meta
 * insert Version

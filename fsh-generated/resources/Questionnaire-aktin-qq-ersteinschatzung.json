@@ -21,6 +21,7 @@
   ],
   "name": "Notaufnahmeregister_Ersteinschatzung",
   "title": "Notaufnahmeregister - Ersteinschätzung",
+  "description": "AKTIN Questionnaire - Notaufnahmeregister - Ersteinschätzung",
   "status": "draft",
   "experimental": false,
   "date": "2024-07-26T14:06:55Z",

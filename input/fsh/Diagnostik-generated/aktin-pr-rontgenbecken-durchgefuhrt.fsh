@@ -1,5 +1,5 @@
 // AKTIN Profil - Röntgen-Becken durchgeführt
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-rontgenbecken-durchgefuhrt
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenbecken-durchgefuhrt
 // FHIR Core Type: Procedure
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21966
 Profile: AKTIN_PR_rontgenbecken_durchgefuhrt
@@ -8,7 +8,7 @@ Id:      aktin-pr-rontgenbecken-durchgefuhrt
 Title:   "Röntgen-Becken durchgeführt"
 Description: "Wurde ein Röntgen-Becken durchgeführt?"
 * . ^definition = "Wurde ein Röntgen-Becken durchgeführt?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-rontgenbecken-durchgefuhrt"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenbecken-durchgefuhrt"
 * insert Notaprofile ( Procedure )
 * insert Meta
 * insert Version

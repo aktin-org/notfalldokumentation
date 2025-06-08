@@ -1,5 +1,5 @@
 // AKTIN Profil - Ganzkörper-CT durchgeführt
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt
 // FHIR Core Type: Procedure
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21970
 Profile: AKTIN_PR_ganzkorperct_durchgefuhrt
@@ -8,7 +8,7 @@ Id:      aktin-pr-ganzkorperct-durchgefuhrt
 Title:   "Ganzkörper-CT durchgeführt"
 Description: "Wurde ein Ganzkörper-CT durchgeführt?"
 * . ^definition = "Wurde ein Ganzkörper-CT durchgeführt?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt"
 * insert Notaprofile ( Procedure )
 * insert Meta
 * insert Version

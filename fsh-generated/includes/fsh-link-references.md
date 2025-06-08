@@ -89,6 +89,7 @@
 [Discharge_disposition]: ValueSet-1.2.276.0.76.3.1.195.11.7--20240214134346.html
 [Referral_actions]: ValueSet-1.2.276.0.76.3.1.195.11.26--20240219130853.html
 [AKTIN_PR_unfallart_trauma_register]: StructureDefinition-aktin-pr-unfallart-trauma-register.html
+[Unfallart_traumaregister]: ValueSet-1.2.276.0.76.3.1.195.11.18--20240808203301.html
 [AKTIN_PR_unfallkinetik]: StructureDefinition-aktin-pr-unfallkinetik.html
 [Accident_type]: ValueSet-1.2.276.0.76.3.1.195.11.5--20240214124143.html
 [Accident_mechanism]: ValueSet-1.2.276.0.76.3.1.195.11.4--20240214122629.html

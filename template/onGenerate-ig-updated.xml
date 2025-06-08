@@ -1,23 +1,27 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
    <id value="org.aktin.notfalldokumentation"/>
+   <language value="en-US"/>
    <text>
       <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
          <p class="res-header-id">
             <b>Generated Narrative: ImplementationGuide org.aktin.notfalldokumentation</b>
          </p>
          <a name="org.aktin.notfalldokumentation"> </a>
          <a name="hcorg.aktin.notfalldokumentation"> </a>
-         <a name="org.aktin.notfalldokumentation-de-DE"> </a>
+         <a name="org.aktin.notfalldokumentation-en-US"> </a>
+         <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+            <p style="margin-bottom: 0px">Language: en-US</p>
+         </div>
          <h2>AKTIN_Notfalldokumentation</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>http://aktin.org/fhir/ig/notfalldokumentation/ImplementationGuide/org.aktin.notfalldokumentation</pre>
+         <pre>http://aktin.org/fhir/ImplementationGuide/org.aktin.notfalldokumentation</pre>
          <div>
             <p>FHIR-Artefakte für die AKTIN Notfalldokumentation und einem kommenden FHIR Implementation Guide</p>
          </div>
       </div>
    </text>
-   <url value="http://aktin.org/fhir/ig/notfalldokumentation/ImplementationGuide/org.aktin.notfalldokumentation"/>
+   <url value="http://aktin.org/fhir/ImplementationGuide/org.aktin.notfalldokumentation"/>
    <version value="0.6.0"/>
    <name value="AKTIN_Notfalldokumentation"/>
    <title value="AKTIN Notfalldokumentation"/>
@@ -74,6 +78,11 @@
       <packageId value="de.gematik.isik-basismodul"/>
       <version value="4.0.0-rc2"/>
    </dependsOn>
+   <dependsOn id="de_gematik_isik_medikation">
+      <uri value="http://fhir.org/packages/de.gematik.isik-medikation/ImplementationGuide/de.gematik.isik-medikation"/>
+      <packageId value="de.gematik.isik-medikation"/>
+      <version value="4.0.0-rc2"/>
+   </dependsOn>
    <definition>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
          <extension url="code">
@@ -89,6 +98,30 @@
          </extension>
          <extension url="value">
             <valueString value="ci-build"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="excludettl"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="display-warnings"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="validation"/>
+         </extension>
+         <extension url="value">
+            <valueString value="check-must-support"/>
          </extension>
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -152,7 +185,7 @@
             <valueString value="path-history"/>
          </extension>
          <extension url="value">
-            <valueString value="http://aktin.org/fhir/ig/notfalldokumentation/history.html"/>
+            <valueString value="http://aktin.org/fhir/history.html"/>
          </extension>
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -342,6 +375,7 @@
             <reference value="Questionnaire/aktin-qq-ersteinschatzung"/>
          </reference>
          <name value="Notaufnahmeregister - Ersteinschätzung"/>
+         <description value="AKTIN Questionnaire - Notaufnahmeregister - Ersteinschätzung"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-questionnaire"/>
       </resource>
@@ -2063,6 +2097,24 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.18--20240808203301.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/1.2.276.0.76.3.1.195.11.18--20240808203301"/>
+         </reference>
+         <name value="Unfallart Traumaregister"/>
+         <description value="Unfallart Traumaregister"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ValueSet-1.2.276.0.76.3.1.195.11.5--20240214124143.html"/>
          </extension>
          <reference>
@@ -2986,6 +3038,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.18--20240808203301.html"/>
+               <title value="Unfallart Traumaregister"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-1.2.276.0.76.3.1.195.11.5--20240214124143.html"/>
                <title value="Unfallkinetik"/>
                <generation value="generated"/>
@@ -3161,6 +3218,18 @@
          <value value="ci-build"/>
       </parameter>
       <parameter>
+         <code value="excludettl"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="display-warnings"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="validation"/>
+         <value value="check-must-support"/>
+      </parameter>
+      <parameter>
          <code value="autoload-resources"/>
          <value value="true"/>
       </parameter>
@@ -3190,7 +3259,7 @@
       </parameter>
       <parameter>
          <code value="path-history"/>
-         <value value="http://aktin.org/fhir/ig/notfalldokumentation/history.html"/>
+         <value value="http://aktin.org/fhir/history.html"/>
       </parameter>
       <parameter>
          <code value="template-html"/>

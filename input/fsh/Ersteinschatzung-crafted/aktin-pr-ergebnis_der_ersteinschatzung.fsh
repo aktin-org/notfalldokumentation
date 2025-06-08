@@ -1,5 +1,5 @@
 // AKTIN Profil - Ergebnis der Ersteinschätzung
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ergebnis_der_ersteinschatzung
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-ergebnis_der_ersteinschatzung
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21746
 Profile: AKTIN_PR_ergebnis_der_ersteinschatzung

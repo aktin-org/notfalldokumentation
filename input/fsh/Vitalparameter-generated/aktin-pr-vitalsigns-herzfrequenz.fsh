@@ -1,5 +1,5 @@
 // AKTIN Profil - Herzfrequenz
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-herzfrequenz
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-herzfrequenz
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.12
 Profile: AKTIN_PR_vitalsigns_herzfrequenz
@@ -8,7 +8,7 @@ Id:      aktin-pr-vitalsigns-herzfrequenz
 Title:   "Herzfrequenz"
 Description: "Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet"
 * . ^definition = "Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-herzfrequenz"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-herzfrequenz"
 * insert Notaprofile ( Vitalparameter/Scores )
 * insert Meta
 * insert Version
@@ -42,7 +42,6 @@ Description: "Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet"
 * value[x] MS
 * value[x] only Quantity
 * valueQuantity = http://unitsofmeasure.org#/min
-* valueQuantity ^sliceName = "valueQuantity"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-zeitpunkt-erster-arztkontakt",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-erster-arztkontakt",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-erster-arztkontakt",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_zeitpunkt_erster_arztkontakt",
   "title": "Zeitpunkt erster Arztkontakt",

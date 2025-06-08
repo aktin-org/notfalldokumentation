@@ -1,5 +1,5 @@
 // AKTIN Profil - CT Thorax durchgeführt
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-thorax-durchgefuhrt
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-thorax-durchgefuhrt
 // FHIR Core Type: Procedure
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21976
 Profile: AKTIN_PR_ct_thorax_durchgefuhrt
@@ -8,7 +8,7 @@ Id:      aktin-pr-ct-thorax-durchgefuhrt
 Title:   "CT Thorax durchgeführt"
 Description: "Wurde ein CT des Thorax durchgeführt?"
 * . ^definition = "Wurde ein CT des Thorax durchgeführt?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-thorax-durchgefuhrt"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-thorax-durchgefuhrt"
 * insert Notaprofile ( Procedure )
 * insert Meta
 * insert Version

@@ -1,0 +1,8 @@
+== Suppressed Messages ==
+# Slicing problem supressed
+The element Observation.value[x]:valueCodeableConcept launches straight into slicing without the slicing being set up properly first
+# Need to be checked
+Unknown CodeSystem Property 'http://hl7.org/fhir/concept-properties'. If you are creating your own property, do not create it in the HL7 namespace
+# Need to be checked
+A property is already defined with the URI 'http://hl7.org/fhir/concept-properties'
+# Need to be checked

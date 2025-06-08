@@ -6,7 +6,7 @@
   "id": "aktin-cs-manchestertriagesystem",
   "title": "Manchester-Triage-System",
   "description": "Manchester-Triage-System",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/CodeSystem/aktin-cs-manchestertriagesystem",
+  "url": "http://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem",
   "concept": [
     {
       "code": "1",

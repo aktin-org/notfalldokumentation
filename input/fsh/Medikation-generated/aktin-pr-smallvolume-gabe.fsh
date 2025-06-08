@@ -3,7 +3,7 @@ Parent: MedicationAdministration
 Id: aktin-pr-smallvolume-gabe
 Title: "Small-volume Gabe"
 Description: "Profile for documenting a medication administration: Small-volume Gabe"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-smallvolume-gabe"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-smallvolume-gabe"
 * insert Notaprofile ( MedicationAdministration )
 * insert Meta
 * insert Version

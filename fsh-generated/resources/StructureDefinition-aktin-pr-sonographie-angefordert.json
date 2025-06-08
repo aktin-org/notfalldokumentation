@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-sonographie-angefordert",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-sonographie-angefordert",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-sonographie-angefordert",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_sonographie_angefordert",
   "title": "Sonographie angefordert",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-zeit-bis-zum-export",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeit-bis-zum-export",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-bis-zum-export",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_zeit_bis_zum_export",
   "title": "Zeit bis zum Export",
@@ -108,7 +108,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "sliceName": "valueQuantity",
         "short": "Zeit bis zum Export",
         "definition": "Zeit bis zum Export",
         "min": 1,

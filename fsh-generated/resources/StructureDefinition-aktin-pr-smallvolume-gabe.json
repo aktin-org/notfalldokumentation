@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-smallvolume-gabe",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-smallvolume-gabe",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-smallvolume-gabe",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_smallvolume_gabe",
   "title": "Small-volume Gabe",

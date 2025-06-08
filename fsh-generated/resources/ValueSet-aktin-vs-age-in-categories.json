@@ -5,7 +5,7 @@
   "id": "aktin-vs-age-in-categories",
   "title": "Alter in Kategorien",
   "description": "Alter in Kategorien",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-age-in-categories",
+  "url": "http://aktin.org/fhir/ValueSet/aktin-vs-age-in-categories",
   "version": "2025.0.3-ci",
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",

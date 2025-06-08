@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinflussq",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinflussq",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_verdacht_auf_alkohol_drogen_medikamenteneinfluss",
   "title": "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?",
@@ -109,7 +109,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-substances-used"
+          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-substances-used"
         }
       }
     ]

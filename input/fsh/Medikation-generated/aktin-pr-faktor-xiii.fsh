@@ -3,7 +3,7 @@ Parent: MedicationAdministration
 Id: aktin-pr-faktor-xiii
 Title: "Faktor XIII"
 Description: "Profile for documenting a medication administration: Faktor XIII"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-faktor-xiii"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-faktor-xiii"
 * insert Notaprofile ( MedicationAdministration )
 * insert Meta
 * insert Version

@@ -1,5 +1,5 @@
 // AKTIN Profil - BGA angefordert
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-bga-angefordert
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-bga-angefordert
 // FHIR Core Type: ServiceRequest
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.29264
 Profile: AKTIN_PR_bga_angefordert
@@ -8,7 +8,7 @@ Id:      aktin-pr-bga-angefordert
 Title:   "BGA angefordert"
 Description: "Wurde eine BGA angefordert?"
 * . ^definition = "Wurde eine BGA angefordert?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-bga-angefordert"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-bga-angefordert"
 * insert Notaprofile ( ServiceRequest )
 * insert Meta
 * insert Version

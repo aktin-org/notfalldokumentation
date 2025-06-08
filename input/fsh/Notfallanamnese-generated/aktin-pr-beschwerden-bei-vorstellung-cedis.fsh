@@ -1,5 +1,5 @@
 // AKTIN Profil - Beschwerden bei Vorstellung (CEDIS)
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.805
 Profile: AKTIN_PR_beschwerden_bei_vorstellung_cedis
@@ -8,7 +8,7 @@ Id:      aktin-pr-beschwerden-bei-vorstellung-cedis
 Title:   "Beschwerden bei Vorstellung (CEDIS)"
 Description: "Die Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme nach dem Katalog CEDIS vorbringt. Version CEDIS-PCL Version 5.1"
 * . ^definition = "Die Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme nach dem Katalog CEDIS vorbringt. Version CEDIS-PCL Version 5.1"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis"
 * insert Meta
 * insert Version
 * insert Publisher

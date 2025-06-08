@@ -4,8 +4,8 @@ RuleSet: SetFmmandStatusRule ( fmm, status )
 
 RuleSet: SectionCommonRules (short, def, title, code)
 // * insert (Health Concern Section, test, title, http://loinc.org#75310-3 "display name")
-* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
-* ^extension[0].valueString = "Section"
+// * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+// * ^extension[0].valueString = "Section"
 * ^short = "{short}"
 * ^definition = "{def}"
 * title 1..

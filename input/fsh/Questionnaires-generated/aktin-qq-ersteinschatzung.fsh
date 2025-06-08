@@ -15,6 +15,7 @@ Usage: #definition
 * identifier.value = "urn:oid:2.16.840.1.113883.2.6.60.3.26.1"
 * name = "Notaufnahmeregister_Ersteinschatzung"
 * title = "Notaufnahmeregister - Ersteinschätzung"
+* description = "AKTIN Questionnaire - Notaufnahmeregister - Ersteinschätzung"
 * status = #draft
 * experimental = false
 * date = "2024-07-26T14:06:55Z"

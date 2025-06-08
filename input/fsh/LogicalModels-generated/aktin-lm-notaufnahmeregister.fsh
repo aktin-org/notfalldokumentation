@@ -7,7 +7,7 @@ Description: "AKTIN LogicalModel Notaufnahmeregister, direkt abgeleitet aus ART-
 * insert Version
 * insert Publisher
 
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister"
 
 * patient 1..1 BackboneElement "10002 Demografische Informationen zum Patienten"
 * hauptkostentrager 1..1 BackboneElement "20096 Kostenträger, der fallbezogen die Kosten übernimmt = Hauptkostenträger"

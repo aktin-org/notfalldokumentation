@@ -6,7 +6,7 @@
   "id": "aktin-cs-cedis30",
   "title": "CEDIS Presenting Complaint List 3.0",
   "description": "CEDIS Presenting Complaint List 3.0 (URI 1.2.276.0.76.11.61--20160221000000)\nLeganda\n* CEDIS = Canadian Emergency Department Information System;\n* ICD-10 = International Classification of Diseases and Related Health Problems, 10th revision;\n* ENT = ear, nose and throat;\n* URTI = upper respiratory tract infection;\n* NOS = not otherwise specified;\n* UTI = urinary tract infection;\n* CVA = congenital ventricular aneurysm.",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/CodeSystem/aktin-cs-cedis30",
+  "url": "http://aktin.org/fhir/CodeSystem/aktin-cs-cedis30",
   "concept": [
     {
       "code": "CV",

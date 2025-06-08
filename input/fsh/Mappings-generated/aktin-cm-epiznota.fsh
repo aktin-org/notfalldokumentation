@@ -1,5 +1,5 @@
 // AKTIN Mapping Episodenzusammenfassung Notfallaufnahme
-// http://www.aktin.org/fhir/StructureDefinition/aktin-cm-epiznota
+// http://aktin.org/fhir/StructureDefinition/aktin-cm-epiznota
 Instance: aktin-cm-epiznota
 InstanceOf: ConceptMap
 Usage: #definition
@@ -14,8 +14,8 @@ Usage: #definition
 
 * description = """AKTIN Mapping der logischen Modellelement aus dem Szenario in ART-DECOR zur Episodenzusammenfassung Notfallaufnahme nach FHIR Profilen und Elementen"""
 
-* group[+].source = "https://www.aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister"
-* group[=].target = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister"
+* group[+].source = "http://aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister"
+* group[=].target = "http://aktin.org/fhir/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister"
 
 * group[=].element[+].code = #AKTIN_LM_Notaufnahmeregister.patient
 * group[=].element[=].display = "10002 Demografische Informationen zum Patienten"

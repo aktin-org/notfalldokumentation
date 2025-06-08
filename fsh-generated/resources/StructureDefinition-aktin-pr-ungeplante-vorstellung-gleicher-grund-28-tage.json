@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_ungeplante_vorstellung_gleicher_grund_28_tage",
   "title": "Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen",

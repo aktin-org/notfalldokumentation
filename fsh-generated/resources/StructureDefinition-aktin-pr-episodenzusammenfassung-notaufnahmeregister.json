@@ -11,7 +11,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister",
   "name": "AKTIN_PR_episodenzusammenfassung_notaufnahmeregister",
   "title": "Composition (Episodenzusammenfassung Notaufnahmeregister)",
   "status": "draft",
@@ -65,7 +65,19 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://aktin.org/fhir/ig/notfalldokumentation/StructureDefinition/aktin-pr-patient"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-aufenthalt"
             ]
           }
         ]
@@ -93,8 +105,9 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "short": "Episodenzusammenfassung Notaufnahmeregister",
-        "definition": "Offizielle, menschenlesbare Bezeichnung für die Zusammensetzung.\r\n\r\nFür dieses Dokument sollte \"Episode Notaufnahmeregister\" oder eine gleichwertige Übersetzung verwendet werden."
+        "short": "Episodenzusammenfassung Notaufnahmeregister als Abschluss-Dokument",
+        "definition": "Offizielle, menschenlesbare Bezeichnung für die Zusammensetzung.\r\n\r\nFür dieses Dokument sollte \"Episodenzusammenfassung Notaufnahmeregister\" oder eine gleichwertige Übersetzung verwendet werden.",
+        "patternString": "Episodenzusammenfassung Notaufnahmeregister"
       },
       {
         "id": "Composition.attester.mode",
@@ -119,21 +132,6 @@
       },
       {
         "id": "Composition.section:sectionDemografischeInformationen",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueCode": "normative",
-            "valueString": "Section"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Section"
-          }
-        ],
         "path": "Composition.section",
         "sliceName": "sectionDemografischeInformationen",
         "short": "Demografische Informationen Section",
@@ -144,21 +142,28 @@
       {
         "id": "Composition.section:sectionDemografischeInformationen.title",
         "path": "Composition.section.title",
-        "min": 1
+        "min": 1,
+        "patternString": "Demographische Informationen"
       },
       {
         "id": "Composition.section:sectionDemografischeInformationen.code",
         "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionDemografischeInformationen.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "45970-1",
-              "system": "http://loinc.org",
-              "display": "Demographic information section"
-            }
-          ]
+        "fixedCoding": {
+          "code": "45970-1",
+          "system": "http://loinc.org",
+          "display": "Demographic information section"
         }
+      },
+      {
+        "id": "Composition.section:sectionDemografischeInformationen.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Demographische Informationen"
       },
       {
         "id": "Composition.section:sectionDemografischeInformationen.text",
@@ -172,7 +177,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-alter-patient"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-alter-patient"
             ]
           }
         ]
@@ -185,46 +190,38 @@
       },
       {
         "id": "Composition.section:sectionZuweisung",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueCode": "normative",
-            "valueString": "Section"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Section"
-          }
-        ],
         "path": "Composition.section",
         "sliceName": "sectionZuweisung",
         "short": "Zuweisung Section",
-        "definition": "Zusätzliche demografische Informationen zum Patienten",
+        "definition": "Informationen zur Zuweisung",
         "min": 0,
         "max": "1"
       },
       {
         "id": "Composition.section:sectionZuweisung.title",
         "path": "Composition.section.title",
-        "min": 1
+        "min": 1,
+        "patternString": "Zuweisung"
       },
       {
         "id": "Composition.section:sectionZuweisung.code",
         "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionZuweisung.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "11293-8",
-              "system": "http://loinc.org",
-              "display": "Type of Referral source"
-            }
-          ]
+        "fixedCoding": {
+          "code": "11293-8",
+          "system": "http://loinc.org",
+          "display": "Type of Referral source"
         }
+      },
+      {
+        "id": "Composition.section:sectionZuweisung.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Zuweisung"
       },
       {
         "id": "Composition.section:sectionZuweisung.text",
@@ -238,7 +235,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zuweisung"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zuweisung"
             ]
           }
         ]
@@ -251,46 +248,38 @@
       },
       {
         "id": "Composition.section:sectionTransportmittel",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueCode": "normative",
-            "valueString": "Section"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Section"
-          }
-        ],
         "path": "Composition.section",
         "sliceName": "sectionTransportmittel",
-        "short": "Zuweisung Section",
-        "definition": "Zusätzliche demografische Informationen zum Patienten",
+        "short": "Transportmittel Section",
+        "definition": "Informationen zum Transportmittel",
         "min": 0,
         "max": "1"
       },
       {
         "id": "Composition.section:sectionTransportmittel.title",
         "path": "Composition.section.title",
-        "min": 1
+        "min": 1,
+        "patternString": "Transportmittel"
       },
       {
         "id": "Composition.section:sectionTransportmittel.code",
         "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionTransportmittel.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "11459-5",
-              "system": "http://loinc.org",
-              "display": "Transport mode EMS system"
-            }
-          ]
+        "fixedCoding": {
+          "code": "11459-5",
+          "system": "http://loinc.org",
+          "display": "Transport mode EMS system"
         }
+      },
+      {
+        "id": "Composition.section:sectionTransportmittel.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Transportmittel"
       },
       {
         "id": "Composition.section:sectionTransportmittel.text",
@@ -327,7 +316,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-transportmittel"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-transportmittel"
             ]
           }
         ]
@@ -344,13 +333,497 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-medizinische-begleitung"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-medizinische-begleitung"
             ]
           }
         ]
       },
       {
         "id": "Composition.section:sectionTransportmittel.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0",
+        "mustSupport": false
+      },
+      {
+        "id": "Composition.section:sectionWiedervorstellung",
+        "path": "Composition.section",
+        "sliceName": "sectionWiedervorstellung",
+        "short": "Wiedervorstellung Section",
+        "definition": "Informationen zur Wiedervorstellung",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionWiedervorstellung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Wiedervorstellung"
+      },
+      {
+        "id": "Composition.section:sectionWiedervorstellung.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionWiedervorstellung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "fixedCoding": {
+          "code": "LA21590-7",
+          "system": "http://loinc.org",
+          "display": "Follow-up visit"
+        }
+      },
+      {
+        "id": "Composition.section:sectionWiedervorstellung.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Wiedervorstellung"
+      },
+      {
+        "id": "Composition.section:sectionWiedervorstellung.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionWiedervorstellung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0",
+        "mustSupport": false
+      },
+      {
+        "id": "Composition.section:sectionErsteinschatzung",
+        "path": "Composition.section",
+        "sliceName": "sectionErsteinschatzung",
+        "short": "Ersteinschätzung Section",
+        "definition": "Informationen zur Ersteinschätzung",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionErsteinschatzung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Ersteinschätzung"
+      },
+      {
+        "id": "Composition.section:sectionErsteinschatzung.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionErsteinschatzung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "fixedCoding": {
+          "code": "11283-9",
+          "system": "http://loinc.org",
+          "display": "Acuity assessment [Function] at First encounter"
+        }
+      },
+      {
+        "id": "Composition.section:sectionErsteinschatzung.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Ersteinschätzung"
+      },
+      {
+        "id": "Composition.section:sectionErsteinschatzung.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionErsteinschatzung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0",
+        "mustSupport": false
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese",
+        "path": "Composition.section",
+        "sliceName": "sectionNotfallanamnese",
+        "short": "Notfallanamnese Section",
+        "definition": "Notfallanamnese",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Notfallanamnese"
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "fixedCoding": {
+          "code": "10164-2",
+          "system": "http://loinc.org",
+          "display": "History of Present illness Narrative"
+        }
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Notfallanamnese"
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0",
+        "mustSupport": false
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter",
+        "path": "Composition.section",
+        "sliceName": "sectionVitalparameter",
+        "short": "Vitalparameter/Scores Section",
+        "definition": "Vitalparameter und Scores",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Vitalparameter/Scores"
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "fixedCoding": {
+          "code": "8716-3",
+          "system": "http://loinc.org",
+          "display": "Vital signs"
+        }
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Vitalparameter/Scores"
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0",
+        "mustSupport": false
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik",
+        "path": "Composition.section",
+        "sliceName": "sectionDiagnostik",
+        "short": "Diagnostik Section",
+        "definition": "Angeforderte oder durchgeführte Diagnostik",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Diagnostik"
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "fixedCoding": {
+          "code": "30954-2",
+          "system": "http://loinc.org",
+          "display": "Relevant diagnostic tests/laboratory data Narrative"
+        }
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Diagnostik"
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0",
+        "mustSupport": false
+      },
+      {
+        "id": "Composition.section:sectionMassnahmen",
+        "path": "Composition.section",
+        "sliceName": "sectionMassnahmen",
+        "short": "Maßnahmen Section",
+        "definition": "Durchgeführte Maßnahmen",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionMassnahmen.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Prozeduren und Maßnahmen"
+      },
+      {
+        "id": "Composition.section:sectionMassnahmen.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionMassnahmen.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "fixedCoding": {
+          "code": "29554-3",
+          "system": "http://loinc.org",
+          "display": "Procedure Narrative"
+        }
+      },
+      {
+        "id": "Composition.section:sectionMassnahmen.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Prozeduren und Maßnahmen"
+      },
+      {
+        "id": "Composition.section:sectionMassnahmen.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionMassnahmen.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0",
+        "mustSupport": false
+      },
+      {
+        "id": "Composition.section:sectionPharmakotherapie",
+        "path": "Composition.section",
+        "sliceName": "sectionPharmakotherapie",
+        "short": "Pharmakotherapie Section",
+        "definition": "Medikamentöse Therapie",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionPharmakotherapie.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Informationen zur medikamentösen Therapie"
+      },
+      {
+        "id": "Composition.section:sectionPharmakotherapie.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionPharmakotherapie.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "fixedCoding": {
+          "code": "29549-3",
+          "system": "http://loinc.org",
+          "display": "Medication administered Narrative"
+        }
+      },
+      {
+        "id": "Composition.section:sectionPharmakotherapie.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Informationen zur medikamentösen Therapie"
+      },
+      {
+        "id": "Composition.section:sectionPharmakotherapie.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionPharmakotherapie.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerabreichung"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionPharmakotherapie.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0",
+        "mustSupport": false
+      },
+      {
+        "id": "Composition.section:sectionAbschlussdiagnosen",
+        "path": "Composition.section",
+        "sliceName": "sectionAbschlussdiagnosen",
+        "short": "Abschlussdiagnosen Section",
+        "definition": "Abschlussdiagnosen",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionAbschlussdiagnosen.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Abschlussdiagnosen"
+      },
+      {
+        "id": "Composition.section:sectionAbschlussdiagnosen.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionAbschlussdiagnosen.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "fixedCoding": {
+          "code": "11300-1",
+          "system": "http://loinc.org",
+          "display": "ED diagnosis"
+        }
+      },
+      {
+        "id": "Composition.section:sectionAbschlussdiagnosen.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Abschlussdiagnosen"
+      },
+      {
+        "id": "Composition.section:sectionAbschlussdiagnosen.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionAbschlussdiagnosen.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAbschlussdiagnosen.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0",
+        "mustSupport": false
+      },
+      {
+        "id": "Composition.section:sectionVerlegungEntlassung",
+        "path": "Composition.section",
+        "sliceName": "sectionVerlegungEntlassung",
+        "short": "Verlegungs-/Entlassungsinformationen Section",
+        "definition": "Verlegungs-/Entlassungsinformationen",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionVerlegungEntlassung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Verlegungs-/Entlassungsinformationen"
+      },
+      {
+        "id": "Composition.section:sectionVerlegungEntlassung.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionVerlegungEntlassung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "fixedCoding": {
+          "code": "67661-9",
+          "system": "http://loinc.org",
+          "display": "EMS disposition Narrative NEMSIS"
+        }
+      },
+      {
+        "id": "Composition.section:sectionVerlegungEntlassung.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Verlegungs-/Entlassungsinformationen"
+      },
+      {
+        "id": "Composition.section:sectionVerlegungEntlassung.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionVerlegungEntlassung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0",
+        "mustSupport": false
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument",
+        "path": "Composition.section",
+        "sliceName": "sectionAddendumDokument",
+        "short": "Addendum Dokumentationsinformationen Section",
+        "definition": "Addendum Dokumentationsinformationen",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Addendum Dokumentationsinformationen"
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "fixedCoding": {
+          "code": "55107-7",
+          "system": "http://loinc.org",
+          "display": "Addendum Document"
+        }
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "Addendum Dokumentationsinformationen"
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.emptyReason",
         "path": "Composition.section.emptyReason",
         "max": "0",
         "mustSupport": false

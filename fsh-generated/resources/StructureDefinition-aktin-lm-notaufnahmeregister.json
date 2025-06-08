@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-lm-notaufnahmeregister",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister",
   "version": "2025.0.3-ci",
   "name": "AKTIN_LM_Notaufnahmeregister",
   "title": "AKTIN LogicalModel Notaufnahmeregister",
@@ -22,7 +22,7 @@
   "fhirVersion": "4.0.1",
   "kind": "logical",
   "abstract": false,
-  "type": "http://www.aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister",
+  "type": "http://aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {

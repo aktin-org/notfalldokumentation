@@ -1,5 +1,5 @@
 // AKTIN Profil - Röntgen-Wirbelsäule durchgeführt
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-rontgenwirbelsaule-durchgefuhrt
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenwirbelsaule-durchgefuhrt
 // FHIR Core Type: Procedure
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21968
 Profile: AKTIN_PR_rontgenwirbelsaule_durchgefuhrt
@@ -8,7 +8,7 @@ Id:      aktin-pr-rontgenwirbelsaule-durchgefuhrt
 Title:   "Röntgen-Wirbelsäule durchgeführt"
 Description: "Wurde ein Röntgen der Wirbelsäule durchgeführt?"
 * . ^definition = "Wurde ein Röntgen der Wirbelsäule durchgeführt?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-rontgenwirbelsaule-durchgefuhrt"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenwirbelsaule-durchgefuhrt"
 * insert Notaprofile ( Procedure )
 * insert Meta
 * insert Version

@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Andere_entlassungsarten",
+  "id": "aktin-cs-andere-entlassungsarten",
+  "title": "Andere Entlassungsarten",
+  "description": "Entlassungsart (discharge disposition code) für \"kein Arztkontakt\" - AKTIN Notfalldokumentation",
+  "url": "http://aktin.org/fhir/CodeSystem/aktin-cs-andere-entlassungsarten",
+  "concept": [
+    {
+      "code": "6",
+      "display": "Entlassung gegen ärztlichen Rat"
+    }
+  ],
+  "version": "2015-09-18T00:00:00",
+  "date": "2025-06-12",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2015-09-18T00:00:00+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.276.0.76.3.1.195.5.56"
+    }
+  ],
+  "caseSensitive": false,
+  "count": 1
+}

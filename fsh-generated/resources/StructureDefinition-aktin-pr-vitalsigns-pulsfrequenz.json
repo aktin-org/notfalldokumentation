@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-vitalsigns-pulsfrequenz",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsfrequenz",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsfrequenz",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_vitalsigns_pulsfrequenz",
   "title": "Pulsfrequenz",
@@ -154,7 +154,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "sliceName": "valueQuantity",
         "type": [
           {
             "code": "Quantity"

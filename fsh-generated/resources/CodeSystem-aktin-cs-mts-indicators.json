@@ -6,7 +6,7 @@
   "id": "aktin-cs-mts-indicators",
   "title": "MTS-Indikatoren",
   "description": "MTS-Indikatoren",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/CodeSystem/aktin-cs-mts-indicators",
+  "url": "http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators",
   "concept": [
     {
       "code": "red",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-ct-kopf-durchgefuhrt",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-kopf-durchgefuhrt",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-kopf-durchgefuhrt",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_ct_kopf_durchgefuhrt",
   "title": "CT Kopf durchgeführt",

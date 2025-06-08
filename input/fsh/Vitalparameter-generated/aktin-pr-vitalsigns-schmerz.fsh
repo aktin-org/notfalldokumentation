@@ -1,5 +1,5 @@
 // AKTIN Profil - Herzfrequenz
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-schmerz
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-schmerz
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21761
 Profile: AKTIN_PR_vitalsigns_schmerz
@@ -8,7 +8,7 @@ Id:      aktin-pr-vitalsigns-schmerz
 Title:   "Erste Schmerzmessung"
 Description: "Erste Schmerzmessung mit NRS oder VAS"
 * . ^definition = "Erste Schmerzmessung mit NRS oder VAS"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-schmerz"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-schmerz"
 * insert Notaprofile ( Vitalparameter/Scores )
 * insert Meta
 * insert Version
@@ -40,7 +40,6 @@ Description: "Erste Schmerzmessung mit NRS oder VAS"
 * value[x] MS
 * value[x] only Quantity
 * valueQuantity = http://unitsofmeasure.org#{score}
-* valueQuantity ^sliceName = "valueQuantity"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

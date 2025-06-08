@@ -1,5 +1,5 @@
 // AKTIN Profil - Kombination Typen Verlegung und Entlassung
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-kombination-typen-verlegung-und-entlassung
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-kombination-typen-verlegung-und-entlassung
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21760
 Profile: AKTIN_PR_kombination_typen_verlegung_und_entlassung
@@ -8,7 +8,7 @@ Id:      aktin-pr-kombination-typen-verlegung-und-entlassung
 Title:   "Kombination Typen Verlegung und Entlassung"
 Description: "Kombination der Typ Verlegung und Typ Entlassung für NoKeda"
 * . ^definition = "Kombination der Typ Verlegung und Typ Entlassung für NoKeda"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-kombination-typen-verlegung-und-entlassung"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-kombination-typen-verlegung-und-entlassung"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -33,7 +33,6 @@ Description: "Kombination der Typ Verlegung und Typ Entlassung für NoKeda"
 * value[x] ^short = "Kombination Typen Verlegung und Entlassung"
 * value[x] ^definition = "Kombination Typen Verlegung und Entlassung"
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-referral-actions (required)
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-aufenthalt",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/StructureDefinition/aktin-pr-aufenthalt",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-aufenthalt",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_aufenthalt",
   "title": "Aufenthalt",
@@ -121,7 +121,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://aktin.org/fhir/ig/notfalldokumentation/StructureDefinition/aktin-pr-practitioner-role-physician"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-practitioner-role-physician"
             ]
           }
         ]

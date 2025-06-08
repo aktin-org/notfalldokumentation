@@ -7,6 +7,7 @@ Description: "Alter in Kategorien"
 * insert Publisher
 * ^meta.profile = $shareablecodesystem
 * ^content = #complete
+* ^experimental = false
 * #0 "0 Jahre"
 * #1 "1 Jahr"
 * #2 "2 Jahre"

@@ -1,5 +1,5 @@
 // AKTIN Profil - Transportmittel
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-transportmittel
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-transportmittel
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.20139
 Profile: AKTIN_PR_transportmittel
@@ -8,7 +8,7 @@ Id:      aktin-pr-transportmittel
 Title:   "Transportmittel"
 Description: "Mit welchem Transportmittel des Gesundheitswesens wird der Patient in die Notaufnahme transportiert"
 * . ^definition = "Mit welchem Transportmittel des Gesundheitswesens wird der Patient in die Notaufnahme transportiert"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-transportmittel"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-transportmittel"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -30,8 +30,7 @@ Description: "Mit welchem Transportmittel des Gesundheitswesens wird der Patient
 
 * value[x] MS
 * value[x] only CodeableConcept
-* valueCodeableConcept from http://www.aktin.org/fhir/ValueSet/aktin-vs-transportmethod (required)
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+* valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-transportmethod (required)
 
 * subject 1..1 MS
 * subject only Reference(Patient)

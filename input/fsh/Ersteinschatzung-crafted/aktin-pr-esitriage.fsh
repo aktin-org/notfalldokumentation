@@ -1,5 +1,5 @@
 // AKTIN Profil - ESI-Triage
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-esitriage
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-esitriage
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21073
 Profile: AKTIN_PR_esitriage

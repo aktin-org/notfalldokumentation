@@ -1,5 +1,5 @@
 // AKTIN Profil - EKG angefordert
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ekg-angefordert
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-ekg-angefordert
 // FHIR Core Type: ServiceRequest
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.29265
 Profile: AKTIN_PR_ekg_angefordert
@@ -8,7 +8,7 @@ Id:      aktin-pr-ekg-angefordert
 Title:   "EKG angefordert"
 Description: "Wurde ein 12-Kanal-EKG angefordert?"
 * . ^definition = "Wurde ein 12-Kanal-EKG angefordert?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ekg-angefordert"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ekg-angefordert"
 * insert Notaprofile ( ServiceRequest )
 * insert Meta
 * insert Version

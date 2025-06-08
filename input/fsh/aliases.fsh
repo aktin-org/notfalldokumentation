@@ -16,7 +16,7 @@ Alias: $aktin-vs-mts-presenting-diagram       = https://aktin.org/fhir/ValueSet/
 Alias: $aktin-vs-condition-category           = http://aktin.org/fhir/ValueSet/aktin-vs-condition-category
 
 // Extensions
-Alias: $kvfall = http://www.aktin.org/fhir/StructureDefinition/aktin-xt-kvfall
+Alias: $kvfall = http://aktin.org/fhir/StructureDefinition/aktin-xt-kvfall
 
 // ValueSets
 

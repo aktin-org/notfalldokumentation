@@ -5,7 +5,7 @@
   "id": "aktin-vs-generic-5level-triage-system",
   "title": "Generic five level triage system",
   "description": "Generic five level triage system",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-generic-5level-triage-system",
+  "url": "http://aktin.org/fhir/ValueSet/aktin-vs-generic-5level-triage-system",
   "version": "2025.0.3-ci",
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",

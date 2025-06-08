@@ -1,5 +1,5 @@
 // AKTIN Profil - Aufenthalt
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-aufenthalt
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-aufenthalt
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.10002
 Profile: AKTIN_PR_aufenthalt
 Parent:  Encounter
@@ -59,7 +59,7 @@ Description: "Aufenthalt in der Notaufnahme."
     * end MS
 
 // AKTIN Profil - Aufenthalt
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-practitioner-role-physician
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-practitioner-role-physician
 Profile: AKTIN_PR_practitioner_role_physician
 Parent:  PractitionerRole
 Id:      aktin-pr-practitioner-role-physician

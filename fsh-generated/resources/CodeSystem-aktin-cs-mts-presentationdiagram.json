@@ -6,7 +6,7 @@
   "id": "aktin-cs-mts-presentationdiagram",
   "title": "MTS-Präsentationsdiagramm",
   "description": "MTS-Präsentationsdiagramm",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/CodeSystem/aktin-cs-mts-presentationdiagram",
+  "url": "http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram",
   "concept": [
     {
       "code": "1",

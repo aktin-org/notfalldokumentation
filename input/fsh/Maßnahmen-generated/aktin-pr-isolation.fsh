@@ -1,5 +1,5 @@
 // AKTIN Profil - CT HWS durchgeführt
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-hws-durchgefuhrt
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-hws-durchgefuhrt
 // FHIR Core Type: Procedure
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21974
 Profile: AKTIN_PR_isolation
@@ -8,7 +8,7 @@ Id:      aktin-pr-isolation
 Title:   "CT HWS durchgeführt"
 Description: "Patient muss aufgrund einer (z.B. möglicherweise übertragbaren Erkrankung) isoliert werden."
 * . ^definition = "Patient muss aufgrund einer (z.B. möglicherweise übertragbaren Erkrankung) isoliert werden."
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-aktin-pr-isolation"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-aktin-pr-isolation"
 * insert Meta
 * insert Version
 * insert Publisher

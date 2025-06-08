@@ -1,5 +1,5 @@
 // AKTIN Profil - Alter in Jahren
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-alter
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-alter
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21727
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21735
@@ -9,7 +9,7 @@ Id:      aktin-pr-alter-patient
 Title:   "Alter Patient"
 Description: "Alter des Patienten zum Stichtag"
 * . ^definition = "Alter des Patienten zum Stichtag"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-alter-patient"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-alter-patient"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -28,18 +28,16 @@ Description: "Alter des Patienten zum Stichtag"
 * code.coding[SNOMED-CT] = $SCT#424144002 "Current chronological age (observable entity)"
 * code.text =  "Alter"
 
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #closed
+* value[x] 1..1 MS
+* value[x] only Quantity
 * valueQuantity only Quantity
-* valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity = http://unitsofmeasure.org#y
-* valueCodeableConcept only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
-* valueCodeableConcept from aktin-vs-age-in-categories
+// * valueCodeableConcept only CodeableConcept
+// * valueCodeableConcept ^sliceName = "valueCodeableConcept"
+// * valueCodeableConcept from aktin-vs-age-in-categories
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_Patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

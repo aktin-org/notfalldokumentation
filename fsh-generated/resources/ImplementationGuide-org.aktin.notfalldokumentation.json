@@ -1,7 +1,8 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "org.aktin.notfalldokumentation",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ImplementationGuide/org.aktin.notfalldokumentation",
+  "language": "en-US",
+  "url": "http://aktin.org/fhir/ImplementationGuide/org.aktin.notfalldokumentation",
   "version": "0.6.0",
   "name": "AKTIN_Notfalldokumentation",
   "title": "AKTIN Notfalldokumentation",
@@ -56,6 +57,12 @@
       "version": "4.0.0-rc2",
       "uri": "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Basismodul",
       "id": "de_gematik_isik_basismodul"
+    },
+    {
+      "packageId": "de.gematik.isik-medikation",
+      "version": "4.0.0-rc2",
+      "uri": "http://fhir.org/packages/de.gematik.isik-medikation/ImplementationGuide/de.gematik.isik-medikation",
+      "id": "de_gematik_isik_medikation"
     }
   ],
   "definition": {
@@ -104,9 +111,9 @@
         "reference": {
           "reference": "CodeSystem/aktin-cs-andere-entlassungsarten"
         },
+        "name": "Andere Entlassungsarten",
         "description": "Entlassungsart (discharge disposition code) für \"kein Arztkontakt\" - AKTIN Notfalldokumentation",
-        "exampleBoolean": false,
-        "name": "Andere Entlassungsarten"
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -601,6 +608,7 @@
           "reference": "Questionnaire/aktin-qq-ersteinschatzung"
         },
         "name": "Notaufnahmeregister - Ersteinschätzung",
+        "description": "AKTIN Questionnaire - Notaufnahmeregister - Ersteinschätzung",
         "exampleBoolean": false
       },
       {
@@ -786,6 +794,14 @@
         "name": "Unfallart TraumaRegister",
         "description": "Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation von Unfallkinetik und Fahrzeug des Verunfallten und automatisches Mapping auf Unfallart TraumaRegister, oder alleinige Dokumentation Unfallart TraumaRegister in der Notaufnahmedokumentation.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.18--20240808203301"
+        },
+        "description": "Unfallart Traumaregister",
+        "exampleBoolean": false,
+        "name": "Unfallart Traumaregister"
       },
       {
         "reference": {
@@ -1054,6 +1070,18 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "display-warnings",
+        "value": "true"
+      },
+      {
+        "code": "validation",
+        "value": "check-must-support"
       }
     ]
   }

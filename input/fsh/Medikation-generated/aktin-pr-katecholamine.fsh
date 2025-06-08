@@ -3,7 +3,7 @@ Parent: MedicationAdministration
 Id: aktin-pr-katecholamine
 Title: "Katecholamine"
 Description: "Profile for documenting a medication administration: Katecholamine"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-katecholamine"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-katecholamine"
 * insert Notaprofile ( MedicationAdministration )
 * insert Meta
 * insert Version

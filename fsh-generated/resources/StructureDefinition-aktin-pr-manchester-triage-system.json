@@ -113,7 +113,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-manchestertriagesystem"
+          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-manchestertriagesystem"
         }
       },
       {
@@ -177,7 +177,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-presenting-diagram"
+          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-presenting-diagram"
         }
       },
       {
@@ -227,7 +227,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-red"
+          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-red"
         }
       },
       {
@@ -277,7 +277,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-orange"
+          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-orange"
         }
       },
       {
@@ -327,7 +327,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-yellow"
+          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-yellow"
         }
       },
       {
@@ -377,7 +377,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-green"
+          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-green"
         }
       }
     ]

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-tranexamsaure",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-tranexamsaure",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-tranexamsaure",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_tranexamsaure",
   "title": "Tranexamsäure",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-erythrozytenkonzentrat",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-erythrozytenkonzentrat",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-erythrozytenkonzentrat",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_erythrozytenkonzentrat",
   "title": "Erythrozyten-Konzentrat",

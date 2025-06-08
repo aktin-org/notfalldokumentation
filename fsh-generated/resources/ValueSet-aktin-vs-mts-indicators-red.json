@@ -5,7 +5,7 @@
   "id": "aktin-vs-mts-indicators-red",
   "title": "MTS-Indikatoren ROT",
   "description": "MTS-Indikatoren ROT",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/ValueSet/aktin-vs-mts-indicators-red",
+  "url": "http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-red",
   "version": "2025.0.3-ci",
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",

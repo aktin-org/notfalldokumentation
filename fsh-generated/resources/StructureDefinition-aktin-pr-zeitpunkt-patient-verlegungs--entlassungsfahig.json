@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_zeitpunkt_patient_verlegungs__entlassungsfahig",
   "title": "Zeitpunkt Patient verlegungs- / entlassungsfähig",

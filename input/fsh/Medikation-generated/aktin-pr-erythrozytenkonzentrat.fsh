@@ -3,7 +3,7 @@ Parent: MedicationAdministration
 Id: aktin-pr-erythrozytenkonzentrat
 Title: "Erythrozyten-Konzentrat"
 Description: "Profile for documenting a medication administration: Erythrozyten-Konzentrat"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-erythrozytenkonzentrat"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-erythrozytenkonzentrat"
 * insert Notaprofile ( MedicationAdministration )
 * insert Meta
 * insert Version

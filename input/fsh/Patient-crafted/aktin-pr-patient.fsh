@@ -1,5 +1,5 @@
 // AKTIN Profil - Patient
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-patient
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-patient
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.10002
 Profile: AKTIN_PR_Patient
 Parent:  ISiKPatient

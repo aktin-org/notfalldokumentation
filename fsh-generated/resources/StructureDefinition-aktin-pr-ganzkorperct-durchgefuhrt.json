@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-ganzkorperct-durchgefuhrt",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_ganzkorperct_durchgefuhrt",
   "title": "Ganzkörper-CT durchgeführt",

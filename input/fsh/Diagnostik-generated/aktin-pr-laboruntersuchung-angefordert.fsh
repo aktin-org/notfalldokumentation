@@ -1,5 +1,5 @@
 // AKTIN Profil - Laboruntersuchung angefordert
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-laboruntersuchung-angefordert
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-laboruntersuchung-angefordert
 // FHIR Core Type: ServiceRequest
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21763
 Profile: AKTIN_PR_laboruntersuchung_angefordert
@@ -8,7 +8,7 @@ Id:      aktin-pr-laboruntersuchung-angefordert
 Title:   "Laboruntersuchung angefordert"
 Description: "Wurde eine Laboruntersuchung angefordert?"
 * . ^definition = "Wurde eine Laboruntersuchung angefordert?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-laboruntersuchung-angefordert"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-laboruntersuchung-angefordert"
 * insert Notaprofile ( ServiceRequest )
 * insert Meta
 * insert Version

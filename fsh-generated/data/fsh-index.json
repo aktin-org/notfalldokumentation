@@ -5,6 +5,14 @@
     "fshType": "CodeSystem",
     "fshFile": "Terminologie-exported/aktin-cs-alter-in-kategorien.fsh",
     "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "CodeSystem-aktin-cs-andere-entlassungsarten.json",
+    "fshName": "Andere_entlassungsarten",
+    "fshType": "CodeSystem",
+    "fshFile": "Terminologie-exported/aktin-cs-andere-entlassungsarten.fsh",
+    "startLine": 1,
     "endLine": 30
   },
   {
@@ -53,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaires-generated/aktin-qq-ersteinschatzung.fsh",
     "startLine": 5,
-    "endLine": 168
+    "endLine": 169
   },
   {
     "outputFile": "StructureDefinition-aktin-kostentrager.json",
@@ -77,7 +85,7 @@
     "fshType": "Profile",
     "fshFile": "Demografie-crafted/aktin-pr-alter.fsh",
     "startLine": 6,
-    "endLine": 45
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-aufenthalt.json",
@@ -181,7 +189,7 @@
     "fshType": "Profile",
     "fshFile": "Composition-crafted/aktin-pr-composition.fsh",
     "startLine": 1,
-    "endLine": 112
+    "endLine": 307
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-ergebnis-der-ersteinschatzung.json",
@@ -213,7 +221,7 @@
     "fshType": "Profile",
     "fshFile": "Notfallanamnese-generated/aktin-pr-fahrzeug-des-verunfallten.fsh",
     "startLine": 5,
-    "endLine": 33
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-faktor-xiii.json",
@@ -261,7 +269,7 @@
     "fshType": "Profile",
     "fshFile": "Dokumentationsinformationen-generated/aktin-pr-kombination-typen-verlegung-und-entlassung.fsh",
     "startLine": 5,
-    "endLine": 42
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-kristalloide-infusionslosungen.json",
@@ -293,7 +301,7 @@
     "fshType": "Profile",
     "fshFile": "Transport-generated/aktin-pr-medizinische-begleitung.fsh",
     "startLine": 5,
-    "endLine": 40
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-mikrobiologie-angefordert.json",
@@ -397,7 +405,7 @@
     "fshType": "Profile",
     "fshFile": "Transport-generated/aktin-pr-transportmittel.fsh",
     "startLine": 5,
-    "endLine": 40
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-unfallart-trauma-register.json",
@@ -405,7 +413,7 @@
     "fshType": "Profile",
     "fshFile": "Notfallanamnese-generated/aktin-pr-unfallart-trauma-register.fsh",
     "startLine": 5,
-    "endLine": 33
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-unfallkinetik.json",
@@ -413,7 +421,7 @@
     "fshType": "Profile",
     "fshFile": "Notfallanamnese-generated/aktin-pr-unfallkinetik.fsh",
     "startLine": 5,
-    "endLine": 39
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-unfallursache.json",
@@ -421,7 +429,7 @@
     "fshType": "Profile",
     "fshFile": "Notfallanamnese-generated/aktin-pr-unfallursache.fsh",
     "startLine": 5,
-    "endLine": 42
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage.json",
@@ -461,7 +469,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-diastolischer-blutdruck.fsh",
     "startLine": 5,
-    "endLine": 49
+    "endLine": 48
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-herzfrequenz.json",
@@ -469,7 +477,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-herzfrequenz.fsh",
     "startLine": 5,
-    "endLine": 51
+    "endLine": 50
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-korperkerntemperatur.json",
@@ -477,7 +485,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-korperkerntemperatur.fsh",
     "startLine": 5,
-    "endLine": 51
+    "endLine": 50
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-pulsfrequenz.json",
@@ -485,7 +493,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-pulsfrequenz.fsh",
     "startLine": 5,
-    "endLine": 49
+    "endLine": 48
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung.json",
@@ -493,7 +501,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung.fsh",
     "startLine": 5,
-    "endLine": 53
+    "endLine": 52
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-schmerz.json",
@@ -501,7 +509,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-schmerz.fsh",
     "startLine": 5,
-    "endLine": 49
+    "endLine": 48
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-systolischer-blutdruck.json",
@@ -509,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-systolischer-blutdruck.fsh",
     "startLine": 5,
-    "endLine": 51
+    "endLine": 50
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitamin-k-antagonists.json",
@@ -525,7 +533,7 @@
     "fshType": "Profile",
     "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-aufnahme-verlegungsentlassungsfahigkeit.fsh",
     "startLine": 5,
-    "endLine": 42
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-zeit-bis-zum-export.json",
@@ -533,7 +541,7 @@
     "fshType": "Profile",
     "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-bis-zum-export.fsh",
     "startLine": 5,
-    "endLine": 42
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund.json",
@@ -541,7 +549,7 @@
     "fshType": "Profile",
     "fshFile": "Wiedervorstellung-generated/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund.fsh",
     "startLine": 5,
-    "endLine": 40
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-zeit-zwischen-ankunft-und-aufnahme.json",
@@ -549,7 +557,7 @@
     "fshType": "Profile",
     "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-zwischen-ankunft-und-aufnahme.fsh",
     "startLine": 5,
-    "endLine": 42
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt.json",
@@ -557,7 +565,7 @@
     "fshType": "Profile",
     "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt.fsh",
     "startLine": 5,
-    "endLine": 42
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung.json",
@@ -565,7 +573,7 @@
     "fshType": "Profile",
     "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung.fsh",
     "startLine": 5,
-    "endLine": 42
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten.json",
@@ -573,7 +581,7 @@
     "fshType": "Profile",
     "fshFile": "Dokumentationsinformationen-generated/aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten.fsh",
     "startLine": 5,
-    "endLine": 42
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung.json",
@@ -621,7 +629,7 @@
     "fshType": "Profile",
     "fshFile": "Zuweisung-generated/aktin-pr-zuweisung.fsh",
     "startLine": 5,
-    "endLine": 33
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-aktin-xt-kvfall.json",

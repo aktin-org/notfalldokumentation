@@ -1,5 +1,5 @@
 // AKTIN Profil - Unfallart TraumaRegister
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-unfallart-trauma-register
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallart-trauma-register
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21748
 Profile: AKTIN_PR_unfallart_trauma_register
@@ -8,7 +8,7 @@ Id:      aktin-pr-unfallart-trauma-register
 Title:   "Unfallart TraumaRegister"
 Description: "Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation von Unfallkinetik und Fahrzeug des Verunfallten und automatisches Mapping auf Unfallart TraumaRegister, oder alleinige Dokumentation Unfallart TraumaRegister in der Notaufnahmedokumentation."
 * . ^definition = "Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation von Unfallkinetik und Fahrzeug des Verunfallten und automatisches Mapping auf Unfallart TraumaRegister, oder alleinige Dokumentation Unfallart TraumaRegister in der Notaufnahmedokumentation."
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-unfallart-trauma-register"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallart-trauma-register"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -24,7 +24,6 @@ Description: "Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation
 * value[x] MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-unfallart-traumaregister (required)
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

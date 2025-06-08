@@ -1,5 +1,5 @@
 // AKTIN Profil - Zeitpunkt Patient verlegungs- / entlassungsfähig
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.20814
 Profile: AKTIN_PR_zeitpunkt_patient_verlegungs__entlassungsfahig
@@ -8,7 +8,7 @@ Id:      aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig
 Title:   "Zeitpunkt Patient verlegungs- / entlassungsfähig"
 Description: "Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde. Ab dann wartet der Patient auf ein Bett bzw. auf die Transportgelegenheit in die ambulante Versorgung, unter Umständen bei weiterer dokumentationswürdigem Monitoring und Therapie. "
 * . ^definition = "Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde. Ab dann wartet der Patient auf ein Bett bzw. auf die Transportgelegenheit in die ambulante Versorgung, unter Umständen bei weiterer dokumentationswürdigem Monitoring und Therapie. "
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig"
 * insert Meta
 * insert Version
 * insert Publisher

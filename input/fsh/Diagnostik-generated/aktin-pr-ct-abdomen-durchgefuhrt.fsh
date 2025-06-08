@@ -1,5 +1,5 @@
 // AKTIN Profil - CT Abdomen durchgeführt
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt
 // FHIR Core Type: Procedure
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21978
 Profile: AKTIN_PR_ct_abdomen_durchgefuhrt
@@ -8,7 +8,7 @@ Id:      aktin-pr-ct-abdomen-durchgefuhrt
 Title:   "CT Abdomen durchgeführt"
 Description: "Wurde ein selektives CT des Abdomens durchgführt?"
 * . ^definition = "Wurde ein selektives CT des Abdomens durchgführt?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt"
 * insert Notaprofile ( Procedure )
 * insert Meta
 * insert Version

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-ct-abdomen-durchgefuhrt",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_ct_abdomen_durchgefuhrt",
   "title": "CT Abdomen durchgeführt",

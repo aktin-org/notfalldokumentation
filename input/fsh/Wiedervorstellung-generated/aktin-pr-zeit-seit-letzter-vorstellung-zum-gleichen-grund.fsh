@@ -1,5 +1,5 @@
 // AKTIN Profil - Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21733
 Profile: AKTIN_PR_zeit_seit_letzter_vorstellung_zum_gleichen_grund
@@ -8,7 +8,7 @@ Id:      aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund
 Title:   "Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund"
 Description: "Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrund (Leitsymptom) in Stunden oder Tagen"
 * . ^definition = "Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrund (Leitsymptom) in Stunden oder Tagen"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -31,7 +31,6 @@ Description: "Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrun
 * value[x] MS
 * value[x] only Quantity
 * valueQuantity = http://unitsofmeasure.org#h
-* valueQuantity ^sliceName = "valueQuantity"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

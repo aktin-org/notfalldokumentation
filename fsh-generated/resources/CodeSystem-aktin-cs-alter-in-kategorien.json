@@ -6,7 +6,7 @@
   "id": "aktin-cs-alter-in-kategorien",
   "title": "Alter in Kategorien",
   "description": "Alter in Kategorien",
-  "url": "http://aktin.org/fhir/ig/notfalldokumentation/CodeSystem/aktin-cs-alter-in-kategorien",
+  "url": "http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien",
   "concept": [
     {
       "code": "0",
@@ -111,5 +111,6 @@
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
     ]
   },
+  "experimental": false,
   "count": 21
 }

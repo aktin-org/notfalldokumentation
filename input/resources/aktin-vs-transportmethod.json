@@ -1,1 +1,78 @@
-{"resourceType":"ValueSet","id":"1.2.276.0.76.11.41--20240214094248","meta":{"lastUpdated":"2024-08-20T19:22:01Z","source":"https://art-decor.org/fhir/4.0/aktin-","profile":["http://hl7.org/fhir/StructureDefinition/shareablevalueset"],"tag":[{"system":"http://hl7.org/fhir/FHIR-version","code":"4.0.1"}]},"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod","valuePeriod":{"start":"2024-02-14T09:42:48+02:00"}}],"url":"http://www.aktin.org/fhir/ValueSet/aktin-vs-transportmethod","identifier":[{"use":"official","system":"urn:ietf:rfc:3986","value":"urn:oid:1.2.276.0.76.11.41"}],"version":"2024-02-14T09:42:48","name":"Transportmethod","title":"Transportmethode","status":"draft","experimental":false,"publisher":"AKTIN e. V.","contact":[{"name":"AKTIN e. V.","telecom":[{"system":"phone","value":"Tel. +49 391 67 28186"},{"system":"email","value":"office@aktin.org"}]}],"description":"Transportmethode","immutable":false,"copyright":"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.","compose":{"include":[{"system":"http://snomed.info/sct","concept":[{"code":"73957001","display":"Air transport ambulance, device (physical object)"},{"code":"44613004","display":"Ground transport ambulance (physical object)"},{"code":"260413007","display":"None (qualifier value)"},{"code":"74964007","display":"Other (qualifier value)"}]}]}}
+{
+    "resourceType": "ValueSet",
+    "id": "1.2.276.0.76.11.41--20240214094248",
+    "meta": {
+        "lastUpdated": "2024-08-20T19:22:01Z",
+        "source": "https://art-decor.org/fhir/4.0/aktin-",
+        "profile": ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"],
+        "tag": [
+            {
+                "system": "http://hl7.org/fhir/FHIR-version",
+                "code": "4.0.1"
+            }
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+            "valuePeriod": {"start": "2024-02-14T09:42:48+02:00"}
+        }
+    ],
+    "url": "http://aktin.org/fhir/ValueSet/aktin-vs-transportmethod",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.2.276.0.76.11.41"
+        }
+    ],
+    "version": "2024-02-14T09:42:48",
+    "name": "Transportmethod",
+    "title": "Transportmethode",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "AKTIN e. V.",
+    "contact": [
+        {
+            "name": "AKTIN e. V.",
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "Tel. +49 391 67 28186"
+                },
+                {
+                    "system": "email",
+                    "value": "office@aktin.org"
+                }
+            ]
+        }
+    ],
+    "description": "Transportmethode",
+    "immutable": false,
+    "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "73957001",
+                        "display": "Air transport ambulance, device (physical object)"
+                    },
+                    {
+                        "code": "44613004",
+                        "display": "Ground transport ambulance (physical object)"
+                    },
+                    {
+                        "code": "260413007",
+                        "display": "None (qualifier value)"
+                    },
+                    {
+                        "code": "74964007",
+                        "display": "Other (qualifier value)"
+                    }
+                ]
+            }
+        ]
+    }
+}

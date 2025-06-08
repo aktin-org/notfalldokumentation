@@ -1,5 +1,5 @@
 // AKTIN Profil - Stunde Beginn patientenbezogene Dokumentation
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21753
 Profile: AKTIN_PR_stunde_beginn_patientenbezogene_dokumentation
@@ -8,7 +8,7 @@ Id:      aktin-pr-stunde-beginn-patientenbezogene-dokumentation
 Title:   "Stunde Beginn patientenbezogene Dokumentation"
 Description: "Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde"
 * . ^definition = "Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation"
 * insert Meta
 * insert Version
 * insert Publisher

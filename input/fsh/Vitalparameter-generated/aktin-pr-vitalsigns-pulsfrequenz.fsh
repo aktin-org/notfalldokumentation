@@ -1,5 +1,5 @@
 // AKTIN Profil - Pulsfrequenz
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsfrequenz
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsfrequenz
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.20282
 Profile: AKTIN_PR_vitalsigns_pulsfrequenz
@@ -8,7 +8,7 @@ Id:      aktin-pr-vitalsigns-pulsfrequenz
 Title:   "Pulsfrequenz"
 Description: "Pulsfrequenz des Patienten per manuellem Auszählen, Pulsoximeter oder invasiver Druckmessung gemessen"
 * . ^definition = "Pulsfrequenz des Patienten per manuellem Auszählen, Pulsoximeter oder invasiver Druckmessung gemessen"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsfrequenz"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsfrequenz"
 * insert Notaprofile ( Vitalparameter/Scores )
 * insert Meta
 * insert Version
@@ -40,7 +40,6 @@ Description: "Pulsfrequenz des Patienten per manuellem Auszählen, Pulsoximeter 
 * value[x] MS
 * value[x] only Quantity
 * valueQuantity = http://unitsofmeasure.org#/min
-* valueQuantity ^sliceName = "valueQuantity"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

@@ -1,5 +1,5 @@
 // AKTIN Profil - Pulsoximetrische Sauerstoffsättigung
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.10
 Profile: AKTIN_PR_vitalsigns_pulsoximetrische_sauerstoffsattigung
@@ -8,7 +8,7 @@ Id:      aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung
 Title:   "Pulsoximetrische Sauerstoffsättigung"
 Description: "Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patienten in Prozent  [%]"
 * . ^definition = "Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patienten in Prozent  [%]"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung"
 * insert Notaprofile ( Vitalparameter/Scores )
 * insert Meta
 * insert Version
@@ -44,7 +44,6 @@ Description: "Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patie
 * value[x] MS
 * value[x] only Quantity
 * valueQuantity = http://unitsofmeasure.org#%
-* valueQuantity ^sliceName = "valueQuantity"
 
 * subject 1..1 MS
 * subject only Reference(Patient)

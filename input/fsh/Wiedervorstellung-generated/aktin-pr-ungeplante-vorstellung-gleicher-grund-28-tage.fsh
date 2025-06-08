@@ -1,5 +1,5 @@
 // AKTIN Profil - Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen
-// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21731
 Profile: AKTIN_PR_ungeplante_vorstellung_gleicher_grund_28_tage
@@ -8,7 +8,7 @@ Id:      aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage
 Title:   "Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen"
 Description: "Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Leitsymptom) innerhalb von 28 Tagen wieder vorgestellt?"
 * . ^definition = "Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Leitsymptom) innerhalb von 28 Tagen wieder vorgestellt?"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage"
 * insert Meta
 * insert Version
 * insert Publisher

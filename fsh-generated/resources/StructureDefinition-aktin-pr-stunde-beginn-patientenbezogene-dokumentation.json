@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-stunde-beginn-patientenbezogene-dokumentation",
-  "url": "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_stunde_beginn_patientenbezogene_dokumentation",
   "title": "Stunde Beginn patientenbezogene Dokumentation",

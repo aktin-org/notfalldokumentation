@@ -3,7 +3,7 @@ Parent: MedicationAdministration
 Id: aktin-pr-kolloidale-infusionslosungen
 Title: "Kolloidale Infusionslösungen"
 Description: "Profile for documenting a medication administration: Kolloidale Infusionslösungen"
-* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-kolloidale-infusionslosungen"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-kolloidale-infusionslosungen"
 * insert Notaprofile ( MedicationAdministration )
 * insert Meta
 * insert Version
