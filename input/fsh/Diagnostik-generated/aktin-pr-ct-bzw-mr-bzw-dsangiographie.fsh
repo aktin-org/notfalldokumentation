@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_ct_bzw_mr_bzw_dsangiographie
 Parent:  Procedure
 Id:      aktin-pr-ct-bzw-mr-bzw-dsangiographie
-Title:   "CT- bzw. MR- bzw. DS-Angiographie"
+Title:   "CT- bzw. MR- bzw. DS-Angiographie (AKTIN)"
 Description: "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?"
 * . ^definition = "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-bzw-mr-bzw-dsangiographie"
@@ -25,7 +25,7 @@ Description: "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich
 
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * performed[x] 1..1 MS
 * performed[x] only dateTime

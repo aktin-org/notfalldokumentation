@@ -4,7 +4,7 @@
 Profile: AKTIN_PR_kostentrager
 Parent:  Coverage
 Id:      aktin-kostentrager
-Title:   "Kostenträger"
+Title:   "Kostenträger (AKTIN)"
 Description: "Versicherungsgesellschaft, Amt oder sonstige Organisation, Selbstzahler, der die Kosten des Falles übernimmt"
 * insert Meta
 * insert Version
@@ -35,8 +35,8 @@ Description: "Versicherungsgesellschaft, Amt oder sonstige Organisation, Selbstz
   AKTIN_extension_kvfall named kvfall 0..1
 
 * beneficiary 1..1 MS
-  * ^short = "Nutzung von AKTIN_PR_Patient"
-* beneficiary only Reference(Patient)
+  * ^short = "Nutzung von AKTIN_PR_patient"
+* beneficiary only Reference(AKTIN_PR_patient)
 
 * type ..0
 * policyHolder ..0

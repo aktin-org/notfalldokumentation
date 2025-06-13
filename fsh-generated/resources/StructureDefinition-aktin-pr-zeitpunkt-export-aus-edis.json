@@ -4,7 +4,7 @@
   "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-export-aus-edis",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_zeitpunkt_export_aus_edis",
-  "title": "Zeitpunkt Export aus EDIS",
+  "title": "Zeitpunkt Export aus EDIS (AKTIN)",
   "status": "active",
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
@@ -88,7 +88,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-patient"
             ]
           }
         ],

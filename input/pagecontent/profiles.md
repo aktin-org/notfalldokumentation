@@ -128,15 +128,25 @@ Diese ist die Liste der AKTIN-spezifischen FHIR-Profile, die nicht oder nicht vo
 {%- endfor -%}
 </tbody>
 </table>
-### Data Type Profile
+### Beispiel-Instanzen
 
-<ul>
-{% for sd_hash in site.data.structuredefinitions -%} {%- assign sd = sd_hash[1] -%} 
-{%- if sd.kind == "complex-type" and sd.type != "Extension" -%}
-<li><a href="{{sd.path}}"><strong>{{sd.title}}</strong></a> – {{sd.description}}</li>
-{%- endif -%}
-{%- endfor -%}  
-</ul>
+<table style="border-collapse: collapse; width: 100%" border="1" >
+<thead>
+<tr style="text-align: left;">
+  <td><strong>Name</strong></td>
+  <td><strong>Beschreibung</strong></td>
+</tr>
+</thead>
+<tbody>
+{% for in_hash in site.data.instances -%} {%- assign in = in_hash[1] -%} 
+<tr>
+  <td><a href="{{sd.path}}">{{in.name}}</a></td>
+  <td><strong>{{in.title}}</strong><p></p>{{in.description}}</td>
+</tr>
+{%- endfor -%}
+</tbody>
+</table>
+
 
 <p> </p>
 

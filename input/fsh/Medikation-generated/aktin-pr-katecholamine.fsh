@@ -1,7 +1,7 @@
 Profile: AKTIN_PR_katecholamine
 Parent: MedicationAdministration
 Id: aktin-pr-katecholamine
-Title: "Katecholamine"
+Title: "Katecholamine (AKTIN)"
 Description: "Profile for documenting a medication administration: Katecholamine"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-katecholamine"
 * insert Notaprofile ( MedicationAdministration )
@@ -33,7 +33,7 @@ Description: "Profile for documenting a medication administration: Katecholamine
 * medicationCodeableConcept.coding[ATCWHO] = $ATCWHO#C01CA "Adrenergic and dopaminergic agents"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] MS
 

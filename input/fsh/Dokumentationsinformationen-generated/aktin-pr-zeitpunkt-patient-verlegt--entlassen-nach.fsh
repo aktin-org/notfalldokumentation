@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeitpunkt_patient_verlegt__entlassen_nach
 Parent:  Observation
 Id:      aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach
-Title:   "Zeitpunkt Patient verlegt / entlassen nach"
+Title:   "Zeitpunkt Patient verlegt / entlassen nach (AKTIN)"
 Description: "Wann wurde der Patient verlegt oder entlassen?"
 * . ^definition = "Wann wurde der Patient verlegt oder entlassen?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach"
@@ -29,7 +29,7 @@ Description: "Wann wurde der Patient verlegt oder entlassen?"
 * code.text =  "Zeitpunkt Patient verlegt / entlassen nach"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

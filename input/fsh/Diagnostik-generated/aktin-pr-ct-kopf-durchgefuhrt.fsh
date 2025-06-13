@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_ct_kopf_durchgefuhrt
 Parent:  Procedure
 Id:      aktin-pr-ct-kopf-durchgefuhrt
-Title:   "CT Kopf durchgeführt"
+Title:   "CT Kopf durchgeführt (AKTIN)"
 Description: "Wurde ein selektives Kopf-CT durchgeführt?"
 * . ^definition = "Wurde ein selektives Kopf-CT durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-kopf-durchgefuhrt"
@@ -25,7 +25,7 @@ Description: "Wurde ein selektives Kopf-CT durchgeführt?"
 * code.coding = $SCT#303653007 "Computed tomography of head (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * performed[x] 1..1 MS
 * performed[x] only dateTime

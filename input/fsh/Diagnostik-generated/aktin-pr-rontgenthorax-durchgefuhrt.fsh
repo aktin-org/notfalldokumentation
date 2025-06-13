@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_rontgenthorax_durchgefuhrt
 Parent:  Procedure
 Id:      aktin-pr-rontgenthorax-durchgefuhrt
-Title:   "Röntgen-Thorax durchgeführt"
+Title:   "Röntgen-Thorax durchgeführt (AKTIN)"
 Description: "Wurde ein Röntgen-Thorax durchgeführt?"
 * . ^definition = "Wurde ein Röntgen-Thorax durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenthorax-durchgefuhrt"
@@ -25,7 +25,7 @@ Description: "Wurde ein Röntgen-Thorax durchgeführt?"
 * code.coding = $SCT#415232002 "Radiographic procedure of chest (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * performed[x] 1..1 MS
 * performed[x] only dateTime

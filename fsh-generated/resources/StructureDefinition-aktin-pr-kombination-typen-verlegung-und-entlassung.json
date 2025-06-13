@@ -4,7 +4,7 @@
   "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-kombination-typen-verlegung-und-entlassung",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_kombination_typen_verlegung_und_entlassung",
-  "title": "Kombination Typen Verlegung und Entlassung",
+  "title": "Kombination Typen Verlegung und Entlassung (AKTIN)",
   "status": "active",
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
@@ -88,7 +88,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-patient"
             ]
           }
         ],

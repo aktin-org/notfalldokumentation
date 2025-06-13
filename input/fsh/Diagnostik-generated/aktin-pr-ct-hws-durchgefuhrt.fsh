@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_ct_hws_durchgefuhrt
 Parent:  Procedure
 Id:      aktin-pr-ct-hws-durchgefuhrt
-Title:   "CT HWS durchgeführt"
+Title:   "CT HWS durchgeführt (AKTIN)"
 Description: "Wurde ein selektives CT der Halswirbelsäule durchgeführt?"
 * . ^definition = "Wurde ein selektives CT der Halswirbelsäule durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-hws-durchgefuhrt"
@@ -25,7 +25,7 @@ Description: "Wurde ein selektives CT der Halswirbelsäule durchgeführt?"
 * code.coding = $SCT#241578008 "Computed tomography of cervical spine (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * performed[x] 1..1 MS
 * performed[x] only dateTime

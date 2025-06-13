@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_transportmittel
 Parent:  Observation
 Id:      aktin-pr-transportmittel
-Title:   "Transportmittel"
+Title:   "Transportmittel (AKTIN)"
 Description: "Mit welchem Transportmittel des Gesundheitswesens wird der Patient in die Notaufnahme transportiert"
 * . ^definition = "Mit welchem Transportmittel des Gesundheitswesens wird der Patient in die Notaufnahme transportiert"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-transportmittel"
@@ -33,7 +33,7 @@ Description: "Mit welchem Transportmittel des Gesundheitswesens wird der Patient
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-transportmethod (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

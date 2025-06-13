@@ -107,7 +107,7 @@
         "path": "Composition.title",
         "short": "Episodenzusammenfassung Notaufnahmeregister als Abschluss-Dokument",
         "definition": "Offizielle, menschenlesbare Bezeichnung für die Zusammensetzung.\r\n\r\nFür dieses Dokument sollte \"Episodenzusammenfassung Notaufnahmeregister\" oder eine gleichwertige Übersetzung verwendet werden.",
-        "patternString": "Episodenzusammenfassung Notaufnahmeregister"
+        "mustSupport": true
       },
       {
         "id": "Composition.attester.mode",
@@ -521,6 +521,193 @@
         "id": "Composition.section:sectionVitalparameter.text",
         "path": "Composition.section.text",
         "min": 1
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resolve()"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Vitalparameter",
+        "definition": "Vitalparameter",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry:Atemfrequenz",
+        "path": "Composition.section.entry",
+        "sliceName": "Atemfrequenz",
+        "short": "Atemfrequenz",
+        "definition": "Atemfrequenz",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-atemfrequenz"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry:PulsoximetrischeSauerstoffsättigung",
+        "path": "Composition.section.entry",
+        "sliceName": "PulsoximetrischeSauerstoffsättigung",
+        "short": "Pulsoximetrische Sauerstoffsättigung",
+        "definition": "Pulsoximetrische Sauerstoffsättigung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry:Blutdruck",
+        "path": "Composition.section.entry",
+        "sliceName": "Blutdruck",
+        "short": "Blutdruck",
+        "definition": "Blutdruck",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-blutdruck"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry:Herzfrequenz",
+        "path": "Composition.section.entry",
+        "sliceName": "Herzfrequenz",
+        "short": "Herzfrequenz",
+        "definition": "Herzfrequenz",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-herzfrequenz"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry:Pulsfrequenz",
+        "path": "Composition.section.entry",
+        "sliceName": "Pulsfrequenz",
+        "short": "Pulsfrequenz",
+        "definition": "Pulsfrequenz",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsfrequenz"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry:Körperkerntemperatur",
+        "path": "Composition.section.entry",
+        "sliceName": "Körperkerntemperatur",
+        "short": "Körperkerntemperatur",
+        "definition": "Körperkerntemperatur",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-korperkerntemperatur"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry:GlasgowComaScale",
+        "path": "Composition.section.entry",
+        "sliceName": "GlasgowComaScale",
+        "short": "Glasgow Coma Scale",
+        "definition": "Glasgow Coma Scale",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-glasgow-coma-scale"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry:Schmerz",
+        "path": "Composition.section.entry",
+        "sliceName": "Schmerz",
+        "short": "Schmerz",
+        "definition": "Schmerz",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-schmerz"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry:NiedrigsteGCSSumme",
+        "path": "Composition.section.entry",
+        "sliceName": "NiedrigsteGCSSumme",
+        "short": "Niedrigste GCS-Summe",
+        "definition": "Niedrigste GCS-Summe",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-niedrigster-gcs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionVitalparameter.entry:ErsteSchmerzmessung",
+        "path": "Composition.section.entry",
+        "sliceName": "ErsteSchmerzmessung",
+        "short": "Erste Schmerzmessung",
+        "definition": "Erste Schmerzmessung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-erster-schmerz"
+            ]
+          }
+        ]
       },
       {
         "id": "Composition.section:sectionVitalparameter.emptyReason",

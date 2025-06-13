@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_datum_beginn_patientenbezogene_dokumentation
 Parent:  Observation
 Id:      aktin-pr-datum-beginn-patientenbezogene-dokumentation
-Title:   "Datum Beginn patientenbezogene Dokumentation"
+Title:   "Datum Beginn patientenbezogene Dokumentation (AKTIN)"
 Description: "Datum des Beginns der patientenbezogenen Dokumentation"
 * . ^definition = "Datum des Beginns der patientenbezogenen Dokumentation"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-datum-beginn-patientenbezogene-dokumentation"
@@ -29,7 +29,7 @@ Description: "Datum des Beginns der patientenbezogenen Dokumentation"
 * code.text =  "Datum Beginn patientenbezogene Dokumentation"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

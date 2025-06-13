@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_laboruntersuchung_angefordert
 Parent:  ServiceRequest
 Id:      aktin-pr-laboruntersuchung-angefordert
-Title:   "Laboruntersuchung angefordert"
+Title:   "Laboruntersuchung angefordert (AKTIN)"
 Description: "Wurde eine Laboruntersuchung angefordert?"
 * . ^definition = "Wurde eine Laboruntersuchung angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-laboruntersuchung-angefordert"
@@ -25,7 +25,7 @@ Description: "Wurde eine Laboruntersuchung angefordert?"
 * code.coding = $SCT#15220000 "Laboratory test (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * authoredOn 1..1 MS
   * ^short = "Zeitpunkt, wann Maßnahme angefordert wurde"

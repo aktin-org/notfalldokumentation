@@ -1,7 +1,7 @@
 Profile: AKTIN_PR_erythrozytenkonzentrat
 Parent: MedicationAdministration
 Id: aktin-pr-erythrozytenkonzentrat
-Title: "Erythrozyten-Konzentrat"
+Title: "Erythrozyten-Konzentrat (AKTIN)"
 Description: "Profile for documenting a medication administration: Erythrozyten-Konzentrat"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-erythrozytenkonzentrat"
 * insert Notaprofile ( MedicationAdministration )
@@ -33,7 +33,7 @@ Description: "Profile for documenting a medication administration: Erythrozyten-
 * medicationCodeableConcept.coding[ATCWHO] = $ATCWHO#B05AX01 "Erythrocytes"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] MS
 

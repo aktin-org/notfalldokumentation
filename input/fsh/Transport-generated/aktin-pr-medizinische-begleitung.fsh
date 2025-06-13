@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_medizinische_begleitung
 Parent:  Observation
 Id:      aktin-pr-medizinische-begleitung
-Title:   "Medizinische Begleitung"
+Title:   "Medizinische Begleitung (AKTIN)"
 Description: "Mit welcher medizinischen Begleitung war das Transportmittel des Gesundheitswesen besetzt"
 * . ^definition = "Mit welcher medizinischen Begleitung war das Transportmittel des Gesundheitswesen besetzt"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-medizinische-begleitung"
@@ -33,7 +33,7 @@ Description: "Mit welcher medizinischen Begleitung war das Transportmittel des G
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-patient-escort (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

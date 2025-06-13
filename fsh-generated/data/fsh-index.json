@@ -48,6 +48,14 @@
     "endLine": 550
   },
   {
+    "outputFile": "Composition-28e0d287-18f4-4274-8433-3726248294f9.json",
+    "fshName": "Instance-Composition-28e0d287-18f4-4274-8433-3726248294f9",
+    "fshType": "Instance",
+    "fshFile": "Beispielinstanzen-crafted/example1.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
     "outputFile": "ConceptMap-aktin-cm-epiznota.json",
     "fshName": "aktin-cm-epiznota",
     "fshType": "Instance",
@@ -189,7 +197,7 @@
     "fshType": "Profile",
     "fshFile": "Composition-crafted/aktin-pr-composition.fsh",
     "startLine": 1,
-    "endLine": 307
+    "endLine": 370
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-ergebnis-der-ersteinschatzung.json",
@@ -321,7 +329,7 @@
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-patient.json",
-    "fshName": "AKTIN_PR_Patient",
+    "fshName": "AKTIN_PR_patient",
     "fshType": "Profile",
     "fshFile": "Patient-crafted/aktin-pr-patient.fsh",
     "startLine": 4,
@@ -453,7 +461,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-atemfrequenz.fsh",
     "startLine": 5,
-    "endLine": 47
+    "endLine": 18
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-blutdruck.json",
@@ -461,15 +469,23 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-blutdruck.fsh",
     "startLine": 5,
-    "endLine": 55
+    "endLine": 19
   },
   {
-    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-diastolischer-blutdruck.json",
-    "fshName": "AKTIN_PR_vitalsigns_diastolischer_blutdruck",
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-erster-schmerz.json",
+    "fshName": "AKTIN_PR_vitalsigns_erster_schmerz",
     "fshType": "Profile",
-    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-diastolischer-blutdruck.fsh",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-erster-schmerz.fsh",
     "startLine": 5,
-    "endLine": 48
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-glasgow-coma-scale.json",
+    "fshName": "AKTIN_PR_vitalsigns_glasgow_coma_scale",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-glasgow-coma-scale.fsh",
+    "startLine": 5,
+    "endLine": 18
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-herzfrequenz.json",
@@ -477,7 +493,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-herzfrequenz.fsh",
     "startLine": 5,
-    "endLine": 50
+    "endLine": 18
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-korperkerntemperatur.json",
@@ -485,7 +501,15 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-korperkerntemperatur.fsh",
     "startLine": 5,
-    "endLine": 50
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-niedrigster-gcs.json",
+    "fshName": "AKTIN_PR_vitalsigns_niedrigster_gcs",
+    "fshType": "Profile",
+    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-niedrigster-gcs.fsh",
+    "startLine": 5,
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-pulsfrequenz.json",
@@ -493,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-pulsfrequenz.fsh",
     "startLine": 5,
-    "endLine": 48
+    "endLine": 46
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung.json",
@@ -501,7 +525,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung.fsh",
     "startLine": 5,
-    "endLine": 52
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitalsigns-schmerz.json",
@@ -509,15 +533,7 @@
     "fshType": "Profile",
     "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-schmerz.fsh",
     "startLine": 5,
-    "endLine": 48
-  },
-  {
-    "outputFile": "StructureDefinition-aktin-pr-vitalsigns-systolischer-blutdruck.json",
-    "fshName": "AKTIN_PR_vitalsigns_systolischer_blutdruck",
-    "fshType": "Profile",
-    "fshFile": "Vitalparameter-generated/aktin-pr-vitalsigns-systolischer-blutdruck.fsh",
-    "startLine": 5,
-    "endLine": 50
+    "endLine": 46
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-vitamin-k-antagonists.json",

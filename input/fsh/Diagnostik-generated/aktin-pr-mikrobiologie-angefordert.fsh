@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_mikrobiologie_angefordert
 Parent:  ServiceRequest
 Id:      aktin-pr-mikrobiologie-angefordert
-Title:   "Mikrobiologie angefordert"
+Title:   "Mikrobiologie angefordert (AKTIN)"
 Description: "Wurde ein Mikrobiologische Untersuchung angefordert?"
 * . ^definition = "Wurde ein Mikrobiologische Untersuchung angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-mikrobiologie-angefordert"
@@ -25,7 +25,7 @@ Description: "Wurde ein Mikrobiologische Untersuchung angefordert?"
 * code.coding = $SCT#19851009 "Microbiology procedure (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * authoredOn 1..1 MS
   * ^short = "Zeitpunkt, wann Maßnahme angefordert wurde"

@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_ungeplante_vorstellung_gleicher_grund_28_tage
 Parent:  Observation
 Id:      aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage
-Title:   "Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen"
+Title:   "Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen (AKTIN)"
 Description: "Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Leitsymptom) innerhalb von 28 Tagen wieder vorgestellt?"
 * . ^definition = "Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Leitsymptom) innerhalb von 28 Tagen wieder vorgestellt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage"
@@ -32,7 +32,7 @@ Description: "Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Lei
 * value[x] only boolean
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

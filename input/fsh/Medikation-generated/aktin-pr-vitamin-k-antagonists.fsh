@@ -1,7 +1,7 @@
 Profile: AKTIN_PR_vitamin_k_antagonists
 Parent: MedicationAdministration
 Id: aktin-pr-vitamin-k-antagonists
-Title: "Vitamin K Antagonisten"
+Title: "Vitamin K Antagonisten (AKTIN)"
 Description: "Profile for documenting a medication administration: Vitamin K Antagonisten"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitamin-k-antagonists"
 * insert Notaprofile ( MedicationAdministration )
@@ -26,7 +26,7 @@ Description: "Profile for documenting a medication administration: Vitamin K Ant
 * medicationCodeableConcept.coding = $ATCWHO#B01AA "Vitamin K antagonists"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] MS
 

@@ -4,7 +4,7 @@
   "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_zeit_seit_letzter_vorstellung_zum_gleichen_grund",
-  "title": "Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund",
+  "title": "Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund (AKTIN)",
   "status": "active",
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
@@ -88,7 +88,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-patient"
             ]
           }
         ],

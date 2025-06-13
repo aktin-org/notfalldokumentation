@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_unfallart_trauma_register
 Parent:  Observation
 Id:      aktin-pr-unfallart-trauma-register
-Title:   "Unfallart TraumaRegister"
+Title:   "Unfallart TraumaRegister (AKTIN)"
 Description: "Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation von Unfallkinetik und Fahrzeug des Verunfallten und automatisches Mapping auf Unfallart TraumaRegister, oder alleinige Dokumentation Unfallart TraumaRegister in der Notaufnahmedokumentation."
 * . ^definition = "Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation von Unfallkinetik und Fahrzeug des Verunfallten und automatisches Mapping auf Unfallart TraumaRegister, oder alleinige Dokumentation Unfallart TraumaRegister in der Notaufnahmedokumentation."
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallart-trauma-register"
@@ -26,7 +26,7 @@ Description: "Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-unfallart-traumaregister (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

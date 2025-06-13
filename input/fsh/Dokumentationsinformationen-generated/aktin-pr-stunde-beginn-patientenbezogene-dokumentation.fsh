@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_stunde_beginn_patientenbezogene_dokumentation
 Parent:  Observation
 Id:      aktin-pr-stunde-beginn-patientenbezogene-dokumentation
-Title:   "Stunde Beginn patientenbezogene Dokumentation"
+Title:   "Stunde Beginn patientenbezogene Dokumentation (AKTIN)"
 Description: "Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde"
 * . ^definition = "Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation"
@@ -29,7 +29,7 @@ Description: "Volle Stunde, zu der die patientenbezogene Dokumentation begonnen 
 * code.text =  "Stunde Beginn patientenbezogene Dokumentation"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

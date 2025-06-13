@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_verdacht_auf_alkohol_drogen_medikamenteneinfluss
 Parent:  Observation
 Id:      aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss
-Title:   "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?"
+Title:   "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss? (AKTIN)"
 Description: "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?"
 * . ^definition = "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinflussq"
@@ -25,7 +25,7 @@ Description: "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?"
 * valueCodeableConcept from aktin-vs-substances-used (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

@@ -6,7 +6,7 @@
   "name": "AKTIN_PR_vitalsigns_pulsoximetrische_sauerstoffsattigung",
   "title": "Pulsoximetrische Sauerstoffsättigung",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
   "contact": [
@@ -19,177 +19,46 @@
       ]
     }
   ],
-  "description": "Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patienten in Prozent  [%]",
-  "purpose": "**Hinweis**: Dieses Profil ist nicht dazu gedacht, implementiert zu werden. Es macht deutlich, welche (zusätzlichen) AKTIN-spezifischen Eigenschaften ein existierendes Profil (bekannter Baustein 'Vitalparameter/Scores') zu diesem Typ haben muss und welche Constraints gelten. Es dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Das Profil wird nach Festlegung der bekannten Bausteine als formale Restriktion profilert.",
+  "description": "Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patienten in Prozent [%]",
+  "purpose": "Hinweise, bitte beachten\n\nDieses AKTIN-Profil zu 'Observation' ist direkt abgeleitet vom Profil des bekannten Bausteins 'ISiKSauerstoffsaettigungArteriell'.\nEs gibt die formalen Erfordernisse an, welche die AKTIN-spezifischen Eigenschaften\nzum existierendes Profil zusätzlich vorhanden sein müssen und welche Constraints gelten.\nDiese sind im 'Differential View' direkt ersichtlich.\n\nEs dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung\nder Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
-  "abstract": true,
+  "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation",
         "path": "Observation",
-        "definition": "Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patienten in Prozent  [%]",
+        "definition": "Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patienten in Prozent [%]",
         "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
       },
       {
-        "id": "Observation.identifier",
-        "path": "Observation.identifier",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.category:thisCat",
-        "path": "Observation.category",
-        "sliceName": "thisCat",
-        "min": 1,
-        "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "vital-signs",
-              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-              "display": "Vital Signs"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.category:thisCat.text",
-        "path": "Observation.category.text",
-        "patternString": "Vital Signs"
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding",
+        "id": "Observation.code.coding:snomed",
         "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 4,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:LOINC-1",
-        "path": "Observation.code.coding",
-        "sliceName": "LOINC-1",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "20564-1",
-          "system": "http://loinc.org",
-          "display": "Oxygen saturation in Blood"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:LOINC-2",
-        "path": "Observation.code.coding",
-        "sliceName": "LOINC-2",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "59408-5",
-          "system": "http://loinc.org",
-          "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:SNOMED-CT-1",
-        "path": "Observation.code.coding",
-        "sliceName": "SNOMED-CT-1",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "103228002",
-          "system": "http://snomed.info/sct",
-          "display": "Hemoglobin saturation with oxygen (observable entity)"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:SNOMED-CT-2",
-        "path": "Observation.code.coding",
-        "sliceName": "SNOMED-CT-2",
-        "min": 1,
-        "max": "1",
+        "sliceName": "snomed",
         "patternCoding": {
           "code": "442476006",
           "system": "http://snomed.info/sct",
           "display": "Arterial oxygen saturation (observable entity)"
-        },
-        "mustSupport": true
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc-zusatzcode",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc-zusatzcode",
+        "patternCoding": {
+          "code": "59408-5",
+          "system": "http://loinc.org",
+          "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+        }
       },
       {
         "id": "Observation.code.text",
         "path": "Observation.code.text",
         "patternString": "Pulsoximetrische Sauerstoffsättigung"
-      },
-      {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ],
-        "patternQuantity": {
-          "code": "%",
-          "system": "http://unitsofmeasure.org"
-        },
-        "mustSupport": true
       }
     ]
   }

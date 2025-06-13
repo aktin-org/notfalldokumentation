@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_bga_angefordert
 Parent:  ServiceRequest
 Id:      aktin-pr-bga-angefordert
-Title:   "BGA angefordert"
+Title:   "BGA angefordert (AKTIN)"
 Description: "Wurde eine BGA angefordert?"
 * . ^definition = "Wurde eine BGA angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-bga-angefordert"
@@ -25,7 +25,7 @@ Description: "Wurde eine BGA angefordert?"
 * code.coding = $SCT#278297009 "Blood gas analysis (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * authoredOn 1..1 MS
   * ^short = "Zeitpunkt, wann Maßnahme angefordert wurde"

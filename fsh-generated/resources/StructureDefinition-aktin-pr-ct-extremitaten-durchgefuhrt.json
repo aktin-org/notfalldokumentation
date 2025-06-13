@@ -4,7 +4,7 @@
   "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-extremitaten-durchgefuhrt",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_ct_extremitaten_durchgefuhrt",
-  "title": "CT Extremitäten durchgeführt",
+  "title": "CT Extremitäten durchgeführt (AKTIN)",
   "status": "active",
   "experimental": true,
   "date": "2025-06-12",
@@ -69,7 +69,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-patient"
             ]
           }
         ],

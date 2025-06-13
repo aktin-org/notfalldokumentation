@@ -1,7 +1,7 @@
 Profile: AKTIN_PR_faktor_xiii
 Parent: MedicationAdministration
 Id: aktin-pr-faktor-xiii
-Title: "Faktor XIII"
+Title: "Faktor XIII (AKTIN)"
 Description: "Profile for documenting a medication administration: Faktor XIII"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-faktor-xiii"
 * insert Notaprofile ( MedicationAdministration )
@@ -33,7 +33,7 @@ Description: "Profile for documenting a medication administration: Faktor XIII"
 * medicationCodeableConcept.coding[ATCWHO] = $ATCWHO#B02BD07 "Coagulation factor XIII"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] MS
 

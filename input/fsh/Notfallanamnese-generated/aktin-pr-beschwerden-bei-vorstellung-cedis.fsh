@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_beschwerden_bei_vorstellung_cedis
 Parent:  Condition
 Id:      aktin-pr-beschwerden-bei-vorstellung-cedis
-Title:   "Beschwerden bei Vorstellung (CEDIS)"
+Title:   "Beschwerden bei Vorstellung CEDIS (AKTIN)"
 Description: "Die Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme nach dem Katalog CEDIS vorbringt. Version CEDIS-PCL Version 5.1"
 * . ^definition = "Die Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme nach dem Katalog CEDIS vorbringt. Version CEDIS-PCL Version 5.1"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis"
@@ -25,7 +25,7 @@ Description: "Die Beschwerden, die der Patient bei der Vorstellung in der Notauf
 * code.coding from aktin-vs-cedis30 (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * onset[x] 1..1 MS
 * onset[x] only dateTime

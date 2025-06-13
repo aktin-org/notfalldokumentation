@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_rontgenthorax_angefordert
 Parent:  ServiceRequest
 Id:      aktin-pr-rontgenthorax-angefordert
-Title:   "Röntgenthorax angefordert"
+Title:   "Röntgenthorax angefordert (AKTIN)"
 Description: "Wurde ein Röntgenthorax angefordert?"
 * . ^definition = "Wurde ein Röntgenthorax angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenthorax-angefordert"
@@ -25,7 +25,7 @@ Description: "Wurde ein Röntgenthorax angefordert?"
 * code.coding = $SCT#415232002 "Radiographic procedure of chest (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * authoredOn 1..1 MS
   * ^short = "Zeitpunkt, wann Maßnahme angefordert wurde"

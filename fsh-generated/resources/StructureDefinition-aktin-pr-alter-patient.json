@@ -4,7 +4,7 @@
   "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-alter-patient",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_alter_patient",
-  "title": "Alter Patient",
+  "title": "Alter Patient (AKTIN)",
   "status": "active",
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",

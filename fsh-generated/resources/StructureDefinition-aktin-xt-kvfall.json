@@ -4,7 +4,7 @@
   "url": "http://aktin.org/fhir/StructureDefinition/aktin-xt-kvfall",
   "version": "2025.0.3-ci",
   "name": "AKTIN_extension_kvfall",
-  "title": "KV-Fall",
+  "title": "KV-Fall (AKTIN)",
   "status": "active",
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
@@ -36,7 +36,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "KV-Fall",
+        "short": "KV-Fall (AKTIN)",
         "definition": "Wurde der Fall über die Kassenärztliche Vereinigung abgerechnet?"
       },
       {

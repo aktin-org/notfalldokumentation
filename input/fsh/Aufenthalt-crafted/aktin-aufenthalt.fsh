@@ -4,7 +4,7 @@
 Profile: AKTIN_PR_aufenthalt
 Parent:  Encounter
 Id:      aktin-pr-aufenthalt
-Title:   "Aufenthalt"
+Title:   "Aufenthalt (AKTIN)"
 Description: "Aufenthalt in der Notaufnahme."
 * . ^definition = "Aufenthalt in der Notaufnahme"
 * insert Meta
@@ -24,7 +24,7 @@ Description: "Aufenthalt in der Notaufnahme."
 * class MS
 * class.code = $v3-act-encounter-code#EMER
 
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * serviceType 1.. MS
   * coding = $SCT#182813001 "Emergency treatment (procedure)"

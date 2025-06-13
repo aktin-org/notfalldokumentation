@@ -33,6 +33,7 @@ Alias: $v3-act-encounter-code = http://terminology.hl7.org/CodeSystem/v3-ActEnco
 Alias: $service-type = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $shareablevalueset = http://hl7.org/fhir/StructureDefinition/shareablevalueset
 Alias: $shareablecodesystem = http://hl7.org/fhir/StructureDefinition/shareablecodesystem
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 
 // DE Basisprofile
 Alias: $DeIcdSeitenlokalisation = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION

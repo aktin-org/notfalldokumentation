@@ -4,7 +4,7 @@
   "url": "http://aktin.org/fhir/StructureDefinition/aktin-kostentrager",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_kostentrager",
-  "title": "Kostenträger",
+  "title": "Kostenträger (AKTIN)",
   "status": "active",
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
@@ -71,7 +71,15 @@
       {
         "id": "Coverage.beneficiary",
         "path": "Coverage.beneficiary",
-        "short": "Nutzung von AKTIN_PR_Patient",
+        "short": "Nutzung von AKTIN_PR_patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-patient"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

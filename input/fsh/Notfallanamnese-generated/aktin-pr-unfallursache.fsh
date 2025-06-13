@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_unfallursache
 Parent:  Observation
 Id:      aktin-pr-unfallursache
-Title:   "Unfallursache "
+Title:   "Unfallursache (AKTIN)"
 Description: "Ursache des Unfalles"
 * . ^definition = "Ursache des Unfalles"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallursache"
@@ -35,7 +35,7 @@ Description: "Ursache des Unfalles"
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-accident-reason-snomed (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

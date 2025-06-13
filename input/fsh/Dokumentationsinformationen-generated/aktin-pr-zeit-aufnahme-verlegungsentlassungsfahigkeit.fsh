@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeit_aufnahme_verlegungsentlassungsfahigkeit
 Parent:  Observation
 Id:      aktin-pr-zeit-aufnahme-verlegungsentlassungsfahigkeit
-Title:   "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten"
+Title:   "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten (AKTIN)"
 Description: "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten"
 * . ^definition = "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-aufnahme-verlegungsentlassungsfahigkeit"
@@ -35,7 +35,7 @@ Description: "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des P
 * valueQuantity = http://unitsofmeasure.org#min
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

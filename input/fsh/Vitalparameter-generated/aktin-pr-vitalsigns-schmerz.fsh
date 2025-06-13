@@ -5,15 +5,13 @@
 Profile: AKTIN_PR_vitalsigns_schmerz
 Parent:  Observation
 Id:      aktin-pr-vitalsigns-schmerz
-Title:   "Erste Schmerzmessung"
-Description: "Erste Schmerzmessung mit NRS oder VAS"
-* . ^definition = "Erste Schmerzmessung mit NRS oder VAS"
+Title:   "Schmerzmessung"
+Description: "Schmerzmessung mit NRS oder VAS"
+* . ^definition = "Schmerzmessung mit NRS oder VAS"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-schmerz"
-* insert Notaprofile ( Vitalparameter/Scores )
 * insert Meta
 * insert Version
 * insert Publisher
-
 
 * identifier MS
 
@@ -42,7 +40,7 @@ Description: "Erste Schmerzmessung mit NRS oder VAS"
 * valueQuantity = http://unitsofmeasure.org#{score}
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

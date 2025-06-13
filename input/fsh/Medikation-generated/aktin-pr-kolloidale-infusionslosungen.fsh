@@ -1,7 +1,7 @@
 Profile: AKTIN_PR_kolloidale_infusionslosungen
 Parent: MedicationAdministration
 Id: aktin-pr-kolloidale-infusionslosungen
-Title: "Kolloidale Infusionslösungen"
+Title: "Kolloidale Infusionslösungen (AKTIN)"
 Description: "Profile for documenting a medication administration: Kolloidale Infusionslösungen"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-kolloidale-infusionslosungen"
 * insert Notaprofile ( MedicationAdministration )
@@ -33,7 +33,7 @@ Description: "Profile for documenting a medication administration: Kolloidale In
 * medicationCodeableConcept.coding[ATCWHO] = $ATCWHO#B05BC "Solutions producing osmotic diuresis"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] MS
 

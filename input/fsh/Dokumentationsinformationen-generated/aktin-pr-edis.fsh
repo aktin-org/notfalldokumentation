@@ -6,7 +6,7 @@
 Profile: AKTIN_PR_edis
 Parent: Device
 Id: aktin-pr-edis
-Title: "EDIS"
+Title: "EDIS (AKTIN)"
 Description: "Name der lokal verwendeten Software zur primären Datenerfassung (EDIS, emergency department information system) sowie Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS; wenn keine ED-Spezialanwendung verwendet wird: KIS."
 * . ^definition = "Name der lokal verwendeten Software zur primären Datenerfassung (EDIS, emergency department information system) sowie Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS; wenn keine ED-Spezialanwendung verwendet wird: KIS."
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-edis"

@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeit_zwischen_aufnahme_und_verlassen_des_patienten
 Parent:  Observation
 Id:      aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten
-Title:   "Zeit zwischen Aufnahme und Verlassen des Patienten"
+Title:   "Zeit zwischen Aufnahme und Verlassen des Patienten (AKTIN)"
 Description: "Zeit zwischen Aufnahme und Verlassen des Patienten"
 * . ^definition = "Zeit zwischen Aufnahme und Verlassen des Patienten"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten"
@@ -35,7 +35,7 @@ Description: "Zeit zwischen Aufnahme und Verlassen des Patienten"
 * valueQuantity = http://unitsofmeasure.org#min
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

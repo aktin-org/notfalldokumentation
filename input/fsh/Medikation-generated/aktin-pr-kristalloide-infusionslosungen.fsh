@@ -1,7 +1,7 @@
 Profile: AKTIN_PR_kristalloide_infusionslosungen
 Parent: MedicationAdministration
 Id: aktin-pr-kristalloide-infusionslosungen
-Title: "Kristalloide Infusionslösungen"
+Title: "Kristalloide Infusionslösungen (AKTIN)"
 Description: "Profile for documenting a medication administration: Kristalloide Infusionslösungen"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-kristalloide-infusionslosungen"
 * insert Notaprofile ( MedicationAdministration )
@@ -33,7 +33,7 @@ Description: "Profile for documenting a medication administration: Kristalloide 
 * medicationCodeableConcept.coding[ATCWHO] = $ATCWHO#B05BB "Solutions affecting the electrolyte balance"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] MS
 

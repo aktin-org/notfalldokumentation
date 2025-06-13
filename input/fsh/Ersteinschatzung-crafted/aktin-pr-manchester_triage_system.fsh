@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_manchester_triage_system
 Parent:  Observation
 Id:      aktin-pr-manchester-triage-system
-Title:   "Manchester Triage System"
+Title:   "Manchester Triage System (AKTIN)"
 Description:   "Triage nach Manchester Triage System"
 * insert Meta
 * insert Version
@@ -28,8 +28,8 @@ Description:   "Triage nach Manchester Triage System"
 * code.text =  "Manchester Triage System"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
-  * ^short = "Nutzung von AKTIN_PR_Patient"
+* subject only Reference(AKTIN_PR_patient)
+  * ^short = "Nutzung von AKTIN_PR_patient"
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

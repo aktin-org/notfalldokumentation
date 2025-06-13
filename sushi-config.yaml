@@ -67,6 +67,7 @@ dependencies:
   de.basisprofil.r4: 1.5.0-ballot2
   de.gematik.isik-basismodul: 4.0.0-rc2
   de.gematik.isik-medikation: 4.0.0-rc2
+  de.gematik.isik-vitalparameter: 4.0.2
 
 # dependencies:
 #   hl7.fhir.us.core: 3.1.0

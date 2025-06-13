@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeit_zwischen_ankunft_und_aufnahme
 Parent:  Observation
 Id:      aktin-pr-zeit-zwischen-ankunft-und-aufnahme
-Title:   "Zeit zwischen Ankunft und Aufnahme"
+Title:   "Zeit zwischen Ankunft und Aufnahme (AKTIN)"
 Description: "Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und administrativer Aufnahme"
 * . ^definition = "Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und administrativer Aufnahme"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-ankunft-und-aufnahme"
@@ -35,7 +35,7 @@ Description: "Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und admi
 * valueQuantity = http://unitsofmeasure.org#min
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

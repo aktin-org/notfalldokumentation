@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_ct_abdomen_durchgefuhrt
 Parent:  Procedure
 Id:      aktin-pr-ct-abdomen-durchgefuhrt
-Title:   "CT Abdomen durchgeführt"
+Title:   "CT Abdomen durchgeführt (AKTIN)"
 Description: "Wurde ein selektives CT des Abdomens durchgführt?"
 * . ^definition = "Wurde ein selektives CT des Abdomens durchgführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt"
@@ -25,7 +25,7 @@ Description: "Wurde ein selektives CT des Abdomens durchgführt?"
 * code.coding = $SCT#169070004 "Computed tomography of abdomen (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * performed[x] 1..1 MS
 * performed[x] only dateTime

@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_kombination_typen_verlegung_und_entlassung
 Parent:  Observation
 Id:      aktin-pr-kombination-typen-verlegung-und-entlassung
-Title:   "Kombination Typen Verlegung und Entlassung"
+Title:   "Kombination Typen Verlegung und Entlassung (AKTIN)"
 Description: "Kombination der Typ Verlegung und Typ Entlassung für NoKeda"
 * . ^definition = "Kombination der Typ Verlegung und Typ Entlassung für NoKeda"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-kombination-typen-verlegung-und-entlassung"
@@ -35,7 +35,7 @@ Description: "Kombination der Typ Verlegung und Typ Entlassung für NoKeda"
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-referral-actions (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

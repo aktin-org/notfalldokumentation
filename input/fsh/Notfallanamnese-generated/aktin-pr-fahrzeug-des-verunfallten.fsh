@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_fahrzeug_des_verunfallten
 Parent:  Observation
 Id:      aktin-pr-fahrzeug-des-verunfallten
-Title:   "Fahrzeug des Verunfallten"
+Title:   "Fahrzeug des Verunfallten (AKTIN)"
 Description: "Welches Fahrzeug hat die verunfallte Person gefahren"
 * . ^definition = "Welches Fahrzeug hat die verunfallte Person gefahren"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-fahrzeug-des-verunfallten"
@@ -26,7 +26,7 @@ Description: "Welches Fahrzeug hat die verunfallte Person gefahren"
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-fahrzeug-des-verunfallten (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

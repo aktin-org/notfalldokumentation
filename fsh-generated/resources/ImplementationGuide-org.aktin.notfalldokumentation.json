@@ -63,6 +63,12 @@
       "version": "4.0.0-rc2",
       "uri": "http://fhir.org/packages/de.gematik.isik-medikation/ImplementationGuide/de.gematik.isik-medikation",
       "id": "de_gematik_isik_medikation"
+    },
+    {
+      "packageId": "de.gematik.isik-vitalparameter",
+      "version": "4.0.2",
+      "uri": "http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter",
+      "id": "de_gematik_isik_vitalparameter"
     }
   ],
   "definition": {
@@ -103,7 +109,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-alter-patient"
         },
-        "name": "Alter Patient",
+        "name": "Alter Patient (AKTIN)",
         "description": "Alter des Patienten zum Stichtag",
         "exampleBoolean": false
       },
@@ -135,7 +141,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-aufenthalt"
         },
-        "name": "Aufenthalt",
+        "name": "Aufenthalt (AKTIN)",
         "description": "Aufenthalt in der Notaufnahme.",
         "exampleBoolean": false
       },
@@ -159,7 +165,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis"
         },
-        "name": "Beschwerden bei Vorstellung (CEDIS)",
+        "name": "Beschwerden bei Vorstellung CEDIS (AKTIN)",
         "description": "Die Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme nach dem Katalog CEDIS vorbringt. Version CEDIS-PCL Version 5.1",
         "exampleBoolean": false
       },
@@ -167,7 +173,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-bga-angefordert"
         },
-        "name": "BGA angefordert",
+        "name": "BGA angefordert (AKTIN)",
         "description": "Wurde eine BGA angefordert?",
         "exampleBoolean": false
       },
@@ -207,7 +213,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt"
         },
-        "name": "CT Abdomen durchgeführt",
+        "name": "CT Abdomen durchgeführt (AKTIN)",
         "description": "Wurde ein selektives CT des Abdomens durchgführt?",
         "exampleBoolean": false
       },
@@ -215,7 +221,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-ct-extremitaten-durchgefuhrt"
         },
-        "name": "CT Extremitäten durchgeführt",
+        "name": "CT Extremitäten durchgeführt (AKTIN)",
         "description": "Wurde ein selektives CT der Extremitäten durchgeführt?",
         "exampleBoolean": false
       },
@@ -223,23 +229,15 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-ct-hws-durchgefuhrt"
         },
-        "name": "CT HWS durchgeführt",
+        "name": "CT HWS durchgeführt (AKTIN)",
         "description": "Wurde ein selektives CT der Halswirbelsäule durchgeführt?",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/aktin-pr-isolation"
-        },
-        "name": "CT HWS durchgeführt",
-        "description": "Patient muss aufgrund einer (z.B. möglicherweise übertragbaren Erkrankung) isoliert werden.",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/aktin-pr-ct-kopf-durchgefuhrt"
         },
-        "name": "CT Kopf durchgeführt",
+        "name": "CT Kopf durchgeführt (AKTIN)",
         "description": "Wurde ein selektives Kopf-CT durchgeführt?",
         "exampleBoolean": false
       },
@@ -247,7 +245,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-ct-thorax-durchgefuhrt"
         },
-        "name": "CT Thorax durchgeführt",
+        "name": "CT Thorax durchgeführt (AKTIN)",
         "description": "Wurde ein CT des Thorax durchgeführt?",
         "exampleBoolean": false
       },
@@ -255,7 +253,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-ct-bzw-mr-bzw-dsangiographie"
         },
-        "name": "CT- bzw. MR- bzw. DS-Angiographie",
+        "name": "CT- bzw. MR- bzw. DS-Angiographie (AKTIN)",
         "description": "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?",
         "exampleBoolean": false
       },
@@ -263,23 +261,15 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-datum-beginn-patientenbezogene-dokumentation"
         },
-        "name": "Datum Beginn patientenbezogene Dokumentation",
+        "name": "Datum Beginn patientenbezogene Dokumentation (AKTIN)",
         "description": "Datum des Beginns der patientenbezogenen Dokumentation",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/aktin-pr-vitalsigns-diastolischer-blutdruck"
-        },
-        "name": "Diastolischer Blutdruck",
-        "description": "Diastolischer Blutdruckwert",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/aktin-pr-edis"
         },
-        "name": "EDIS",
+        "name": "EDIS (AKTIN)",
         "description": "Name der lokal verwendeten Software zur primären Datenerfassung (EDIS, emergency department information system) sowie Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS; wenn keine ED-Spezialanwendung verwendet wird: KIS.",
         "exampleBoolean": false
       },
@@ -287,7 +277,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-ekg-angefordert"
         },
-        "name": "EKG angefordert",
+        "name": "EKG angefordert (AKTIN)",
         "description": "Wurde ein 12-Kanal-EKG angefordert?",
         "exampleBoolean": false
       },
@@ -309,15 +299,22 @@
       },
       {
         "reference": {
+          "reference": "Composition/28e0d287-18f4-4274-8433-3726248294f9"
+        },
+        "name": "Entlassbericht Notaufnahme (Registermeldung) 17. Januar 2024 17:35 Uhr",
+        "exampleCanonical": "http://aktin.org/fhir/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/aktin-pr-ergebnis-der-ersteinschatzung"
         },
-        "name": "Ergebnis der Ersteinschätzung",
+        "name": "Ergebnis der Ersteinschätzung (AKTIN)",
         "description": "Ergebnis der Ersteinschätzung in einem standardisierten 5-stufigen System",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aktin-pr-vitalsigns-schmerz"
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-erster-schmerz"
         },
         "name": "Erste Schmerzmessung",
         "description": "Erste Schmerzmessung mit NRS oder VAS",
@@ -327,7 +324,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-erythrozytenkonzentrat"
         },
-        "name": "Erythrozyten-Konzentrat",
+        "name": "Erythrozyten-Konzentrat (AKTIN)",
         "description": "Profile for documenting a medication administration: Erythrozyten-Konzentrat",
         "exampleBoolean": false
       },
@@ -343,7 +340,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-esitriage"
         },
-        "name": "ESI-Triage",
+        "name": "ESI-Triage (AKTIN)",
         "description": "Triage nach Emergency severity index [ESI]",
         "exampleBoolean": false
       },
@@ -357,14 +354,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aktin-pr-fahrzeug-des-verunfallten"
-        },
-        "name": "Fahrzeug des Verunfallten",
-        "description": "Welches Fahrzeug hat die verunfallte Person gefahren",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/1.2.276.0.76.3.1.195.11.8--20240626132930"
         },
         "description": "Fahrzeug des Verunfallten",
@@ -373,9 +362,17 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/aktin-pr-fahrzeug-des-verunfallten"
+        },
+        "name": "Fahrzeug des Verunfallten (AKTIN)",
+        "description": "Welches Fahrzeug hat die verunfallte Person gefahren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/aktin-pr-faktor-xiii"
         },
-        "name": "Faktor XIII",
+        "name": "Faktor XIII (AKTIN)",
         "description": "Profile for documenting a medication administration: Faktor XIII",
         "exampleBoolean": false
       },
@@ -383,7 +380,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt"
         },
-        "name": "Ganzkörper-CT durchgeführt",
+        "name": "Ganzkörper-CT durchgeführt (AKTIN)",
         "description": "Wurde ein Ganzkörper-CT durchgeführt?",
         "exampleBoolean": false
       },
@@ -397,10 +394,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-glasgow-coma-scale"
+        },
+        "name": "Glasgow Coma Scale (GCS)",
+        "description": "Glasgow Coma Scale (GCS)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/aktin-pr-vitalsigns-herzfrequenz"
         },
         "name": "Herzfrequenz",
         "description": "Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-isolation"
+        },
+        "name": "Isolation (AKTIN)",
+        "description": "Patient muss aufgrund einer (z.B. möglicherweise übertragbaren Erkrankung) isoliert werden.",
         "exampleBoolean": false
       },
       {
@@ -431,7 +444,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-katecholamine"
         },
-        "name": "Katecholamine",
+        "name": "Katecholamine (AKTIN)",
         "description": "Profile for documenting a medication administration: Katecholamine",
         "exampleBoolean": false
       },
@@ -439,7 +452,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-kolloidale-infusionslosungen"
         },
-        "name": "Kolloidale Infusionslösungen",
+        "name": "Kolloidale Infusionslösungen (AKTIN)",
         "description": "Profile for documenting a medication administration: Kolloidale Infusionslösungen",
         "exampleBoolean": false
       },
@@ -447,7 +460,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-kombination-typen-verlegung-und-entlassung"
         },
-        "name": "Kombination Typen Verlegung und Entlassung",
+        "name": "Kombination Typen Verlegung und Entlassung (AKTIN)",
         "description": "Kombination der Typ Verlegung und Typ Entlassung für NoKeda",
         "exampleBoolean": false
       },
@@ -455,7 +468,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-kostentrager"
         },
-        "name": "Kostenträger",
+        "name": "Kostenträger (AKTIN)",
         "description": "Versicherungsgesellschaft, Amt oder sonstige Organisation, Selbstzahler, der die Kosten des Falles übernimmt",
         "exampleBoolean": false
       },
@@ -463,7 +476,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-kristalloide-infusionslosungen"
         },
-        "name": "Kristalloide Infusionslösungen",
+        "name": "Kristalloide Infusionslösungen (AKTIN)",
         "description": "Profile for documenting a medication administration: Kristalloide Infusionslösungen",
         "exampleBoolean": false
       },
@@ -471,7 +484,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-xt-kvfall"
         },
-        "name": "KV-Fall",
+        "name": "KV-Fall (AKTIN)",
         "description": "Wurde der Fall über die Kassenärztliche Vereinigung abgerechnet?",
         "exampleBoolean": false
       },
@@ -495,7 +508,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-laboruntersuchung-angefordert"
         },
-        "name": "Laboruntersuchung angefordert",
+        "name": "Laboruntersuchung angefordert (AKTIN)",
         "description": "Wurde eine Laboruntersuchung angefordert?",
         "exampleBoolean": false
       },
@@ -503,7 +516,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-manchester-triage-system"
         },
-        "name": "Manchester Triage System",
+        "name": "Manchester Triage System (AKTIN)",
         "description": "Triage nach Manchester Triage System",
         "exampleBoolean": false
       },
@@ -527,7 +540,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-medizinische-begleitung"
         },
-        "name": "Medizinische Begleitung",
+        "name": "Medizinische Begleitung (AKTIN)",
         "description": "Mit welcher medizinischen Begleitung war das Transportmittel des Gesundheitswesen besetzt",
         "exampleBoolean": false
       },
@@ -535,7 +548,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-mikrobiologie-angefordert"
         },
-        "name": "Mikrobiologie angefordert",
+        "name": "Mikrobiologie angefordert (AKTIN)",
         "description": "Wurde ein Mikrobiologische Untersuchung angefordert?",
         "exampleBoolean": false
       },
@@ -543,7 +556,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-mrt-durchgefuhrt"
         },
-        "name": "MRT durchgeführt",
+        "name": "MRT durchgeführt (AKTIN)",
         "description": "Wurde ein MRT im Rahmen der Schockraumversorgung durchgeführt?",
         "exampleBoolean": false
       },
@@ -605,6 +618,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-niedrigster-gcs"
+        },
+        "name": "Niedrigste GCS-Summe",
+        "description": "Niedrigste GCS-Summe",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/aktin-qq-ersteinschatzung"
         },
         "name": "Notaufnahmeregister - Ersteinschätzung",
@@ -615,7 +636,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-patient"
         },
-        "name": "Patient",
+        "name": "Patient (AKTIN)",
         "description": "Demografische Informationen zum Patienten",
         "exampleBoolean": false
       },
@@ -648,7 +669,7 @@
           "reference": "StructureDefinition/aktin-pr-vitalsigns-pulsoximetrische-sauerstoffsattigung"
         },
         "name": "Pulsoximetrische Sauerstoffsättigung",
-        "description": "Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patienten in Prozent  [%]",
+        "description": "Pulsoximetrisch bestimmte periphere Sauerstoffsättigung des Patienten in Prozent [%]",
         "exampleBoolean": false
       },
       {
@@ -671,7 +692,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-rontgenbecken-durchgefuhrt"
         },
-        "name": "Röntgen-Becken durchgeführt",
+        "name": "Röntgen-Becken durchgeführt (AKTIN)",
         "description": "Wurde ein Röntgen-Becken durchgeführt?",
         "exampleBoolean": false
       },
@@ -679,7 +700,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-rontgenthorax-durchgefuhrt"
         },
-        "name": "Röntgen-Thorax durchgeführt",
+        "name": "Röntgen-Thorax durchgeführt (AKTIN)",
         "description": "Wurde ein Röntgen-Thorax durchgeführt?",
         "exampleBoolean": false
       },
@@ -687,7 +708,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-rontgenwirbelsaule-durchgefuhrt"
         },
-        "name": "Röntgen-Wirbelsäule durchgeführt",
+        "name": "Röntgen-Wirbelsäule durchgeführt (AKTIN)",
         "description": "Wurde ein Röntgen der Wirbelsäule durchgeführt?",
         "exampleBoolean": false
       },
@@ -695,15 +716,23 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-rontgenthorax-angefordert"
         },
-        "name": "Röntgenthorax angefordert",
+        "name": "Röntgenthorax angefordert (AKTIN)",
         "description": "Wurde ein Röntgenthorax angefordert?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-vitalsigns-schmerz"
+        },
+        "name": "Schmerzmessung",
+        "description": "Schmerzmessung mit NRS oder VAS",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/aktin-pr-smallvolume-gabe"
         },
-        "name": "Small-volume Gabe",
+        "name": "Small-volume Gabe (AKTIN)",
         "description": "Profile for documenting a medication administration: Small-volume Gabe",
         "exampleBoolean": false
       },
@@ -719,7 +748,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-sonographie-angefordert"
         },
-        "name": "Sonographie angefordert",
+        "name": "Sonographie angefordert (AKTIN)",
         "description": "Wurde eine Sonographie angefordert?",
         "exampleBoolean": false
       },
@@ -727,7 +756,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-stunde-beginn-patientenbezogene-dokumentation"
         },
-        "name": "Stunde Beginn patientenbezogene Dokumentation",
+        "name": "Stunde Beginn patientenbezogene Dokumentation (AKTIN)",
         "description": "Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde",
         "exampleBoolean": false
       },
@@ -741,17 +770,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aktin-pr-vitalsigns-systolischer-blutdruck"
-        },
-        "name": "Systolischer Blutdruck",
-        "description": "Systolischer Blutdruck des Patienten in der Notaufnahme [mmHg]",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/aktin-pr-tranexamsaure"
         },
-        "name": "Tranexamsäure",
+        "name": "Tranexamsäure (AKTIN)",
         "description": "Profile for documenting a medication administration: Tranexamsäure",
         "exampleBoolean": false
       },
@@ -767,7 +788,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-transportmittel"
         },
-        "name": "Transportmittel",
+        "name": "Transportmittel (AKTIN)",
         "description": "Mit welchem Transportmittel des Gesundheitswesens wird der Patient in die Notaufnahme transportiert",
         "exampleBoolean": false
       },
@@ -789,14 +810,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aktin-pr-unfallart-trauma-register"
-        },
-        "name": "Unfallart TraumaRegister",
-        "description": "Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation von Unfallkinetik und Fahrzeug des Verunfallten und automatisches Mapping auf Unfallart TraumaRegister, oder alleinige Dokumentation Unfallart TraumaRegister in der Notaufnahmedokumentation.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/1.2.276.0.76.3.1.195.11.18--20240808203301"
         },
         "description": "Unfallart Traumaregister",
@@ -805,10 +818,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aktin-pr-unfallkinetik"
+          "reference": "StructureDefinition/aktin-pr-unfallart-trauma-register"
         },
-        "name": "Unfallkinetik",
-        "description": "Unfallkinetik",
+        "name": "Unfallart TraumaRegister (AKTIN)",
+        "description": "Unfallart kategorisiert wie TraumaRegister. Entweder Dokumentation von Unfallkinetik und Fahrzeug des Verunfallten und automatisches Mapping auf Unfallart TraumaRegister, oder alleinige Dokumentation Unfallart TraumaRegister in der Notaufnahmedokumentation.",
         "exampleBoolean": false
       },
       {
@@ -818,6 +831,14 @@
         "description": "Unfallkinetik",
         "exampleBoolean": false,
         "name": "Unfallkinetik"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-unfallkinetik"
+        },
+        "name": "Unfallkinetik (AKTIN)",
+        "description": "Unfallkinetik",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -831,7 +852,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-unfallursache"
         },
-        "name": "Unfallursache ",
+        "name": "Unfallursache (AKTIN)",
         "description": "Ursache des Unfalles",
         "exampleBoolean": false
       },
@@ -847,7 +868,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage"
         },
-        "name": "Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen",
+        "name": "Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen (AKTIN)",
         "description": "Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Leitsymptom) innerhalb von 28 Tagen wieder vorgestellt?",
         "exampleBoolean": false
       },
@@ -871,7 +892,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss"
         },
-        "name": "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?",
+        "name": "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss? (AKTIN)",
         "description": "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?",
         "exampleBoolean": false
       },
@@ -879,7 +900,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-vitamin-k-antagonists"
         },
-        "name": "Vitamin K Antagonisten",
+        "name": "Vitamin K Antagonisten (AKTIN)",
         "description": "Profile for documenting a medication administration: Vitamin K Antagonisten",
         "exampleBoolean": false
       },
@@ -895,7 +916,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeit-bis-zum-export"
         },
-        "name": "Zeit bis zum Export",
+        "name": "Zeit bis zum Export (AKTIN)",
         "description": "Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export-Zeitpunkt aus dem Primärsystem; Bei mehr als 28 Tagen (=672 Stunden) Maximalwert angeben.",
         "exampleBoolean": false
       },
@@ -903,7 +924,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund"
         },
-        "name": "Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund",
+        "name": "Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund (AKTIN)",
         "description": "Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrund (Leitsymptom) in Stunden oder Tagen",
         "exampleBoolean": false
       },
@@ -911,7 +932,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeit-zwischen-ankunft-und-aufnahme"
         },
-        "name": "Zeit zwischen Ankunft und Aufnahme",
+        "name": "Zeit zwischen Ankunft und Aufnahme (AKTIN)",
         "description": "Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und administrativer Aufnahme",
         "exampleBoolean": false
       },
@@ -919,7 +940,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt"
         },
-        "name": "Zeit zwischen Aufnahme und erstem Arztkontakt",
+        "name": "Zeit zwischen Aufnahme und erstem Arztkontakt (AKTIN)",
         "description": "Zeit zwischen Aufnahme und erstem Arztkontakt",
         "exampleBoolean": false
       },
@@ -927,7 +948,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung"
         },
-        "name": "Zeit zwischen Aufnahme und erster Ersteinschätzung",
+        "name": "Zeit zwischen Aufnahme und erster Ersteinschätzung (AKTIN)",
         "description": "Zeit zwischen Aufnahme und erster Ersteinschätzung",
         "exampleBoolean": false
       },
@@ -935,7 +956,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten"
         },
-        "name": "Zeit zwischen Aufnahme und Verlassen des Patienten",
+        "name": "Zeit zwischen Aufnahme und Verlassen des Patienten (AKTIN)",
         "description": "Zeit zwischen Aufnahme und Verlassen des Patienten",
         "exampleBoolean": false
       },
@@ -943,7 +964,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeit-aufnahme-verlegungsentlassungsfahigkeit"
         },
-        "name": "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten",
+        "name": "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten (AKTIN)",
         "description": "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten",
         "exampleBoolean": false
       },
@@ -951,7 +972,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung"
         },
-        "name": "Zeitpunkt Entscheidung zur Verlegung / Entlassung",
+        "name": "Zeitpunkt Entscheidung zur Verlegung / Entlassung (AKTIN)",
         "description": "Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. ",
         "exampleBoolean": false
       },
@@ -959,7 +980,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeitpunkt-erster-arztkontakt"
         },
-        "name": "Zeitpunkt erster Arztkontakt",
+        "name": "Zeitpunkt erster Arztkontakt (AKTIN)",
         "description": "Zeitpunkt des ersten Arztkontaktes in der Notaufnahme",
         "exampleBoolean": false
       },
@@ -967,7 +988,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeitpunkt-export-aus-edis"
         },
-        "name": "Zeitpunkt Export aus EDIS",
+        "name": "Zeitpunkt Export aus EDIS (AKTIN)",
         "description": "Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde",
         "exampleBoolean": false
       },
@@ -975,7 +996,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach"
         },
-        "name": "Zeitpunkt Patient verlegt / entlassen nach",
+        "name": "Zeitpunkt Patient verlegt / entlassen nach (AKTIN)",
         "description": "Wann wurde der Patient verlegt oder entlassen?",
         "exampleBoolean": false
       },
@@ -983,7 +1004,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig"
         },
-        "name": "Zeitpunkt Patient verlegungs- / entlassungsfähig",
+        "name": "Zeitpunkt Patient verlegungs- / entlassungsfähig (AKTIN)",
         "description": "Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde. Ab dann wartet der Patient auf ein Bett bzw. auf die Transportgelegenheit in die ambulante Versorgung, unter Umständen bei weiterer dokumentationswürdigem Monitoring und Therapie. ",
         "exampleBoolean": false
       },
@@ -1015,7 +1036,7 @@
         "reference": {
           "reference": "StructureDefinition/aktin-pr-zuweisung"
         },
-        "name": "Zuweisung",
+        "name": "Zuweisung (AKTIN)",
         "description": "Art der Zuweisung des Patienten. Von welchem medizinischen Fachpersonal ist der Patient ins Krankenhaus geschickt worden?",
         "exampleBoolean": false
       }

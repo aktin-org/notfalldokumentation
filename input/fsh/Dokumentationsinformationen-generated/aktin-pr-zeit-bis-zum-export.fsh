@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeit_bis_zum_export
 Parent:  Observation
 Id:      aktin-pr-zeit-bis-zum-export
-Title:   "Zeit bis zum Export"
+Title:   "Zeit bis zum Export (AKTIN)"
 Description: "Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export-Zeitpunkt aus dem Primärsystem; Bei mehr als 28 Tagen (=672 Stunden) Maximalwert angeben."
 * . ^definition = "Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export-Zeitpunkt aus dem Primärsystem; Bei mehr als 28 Tagen (=672 Stunden) Maximalwert angeben."
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-bis-zum-export"
@@ -35,7 +35,7 @@ Description: "Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export
 * valueQuantity = http://unitsofmeasure.org#Stunden
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

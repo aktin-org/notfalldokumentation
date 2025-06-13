@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeit_seit_letzter_vorstellung_zum_gleichen_grund
 Parent:  Observation
 Id:      aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund
-Title:   "Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund"
+Title:   "Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund (AKTIN)"
 Description: "Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrund (Leitsymptom) in Stunden oder Tagen"
 * . ^definition = "Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrund (Leitsymptom) in Stunden oder Tagen"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-seit-letzter-vorstellung-zum-gleichen-grund"
@@ -33,7 +33,7 @@ Description: "Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrun
 * valueQuantity = http://unitsofmeasure.org#h
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

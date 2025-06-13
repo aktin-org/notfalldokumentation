@@ -92,5 +92,8 @@ Als Beispiele für Pre-Population aus der AKTIN Akte für die summarischen, spez
 
 <p> </p>
 
+##### Terminologie-Auswahl
 
+Bei vielen Beobachtungen sind LOINC-Codes vorgesehen, vor allem in den bekannten Bausteinen. So wird Atemfrequenz mit LOINC 9279-1 "Respiratory rate" annotiert. Im Zuge der Förderung der Nutzung von SNOMED-CT wird in den AKTIN-Profilen vielerorts ebenfalls fixe SNOMED-CT Codes zur Annotation genutzt, die sich regelhaft auch in den fachinhaltlichen ART-DECOR Definitionen als Terminologie-Assoziationen wiederfinden.
 
+{% include img.html img="TermAssocBeispiel.png" caption="Mehrere Terminologie-Assoziationen am Beispiel der Atemfrequenz" width="70%" %}

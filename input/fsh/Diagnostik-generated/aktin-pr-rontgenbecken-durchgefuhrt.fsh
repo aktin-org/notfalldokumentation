@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_rontgenbecken_durchgefuhrt
 Parent:  Procedure
 Id:      aktin-pr-rontgenbecken-durchgefuhrt
-Title:   "Röntgen-Becken durchgeführt"
+Title:   "Röntgen-Becken durchgeführt (AKTIN)"
 Description: "Wurde ein Röntgen-Becken durchgeführt?"
 * . ^definition = "Wurde ein Röntgen-Becken durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenbecken-durchgefuhrt"
@@ -25,7 +25,7 @@ Description: "Wurde ein Röntgen-Becken durchgeführt?"
 * code.coding = $SCT#268425006 "Pelvis X-ray (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * performed[x] 1..1 MS
 * performed[x] only dateTime

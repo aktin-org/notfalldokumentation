@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeitpunkt_patient_verlegungs__entlassungsfahig
 Parent:  Observation
 Id:      aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig
-Title:   "Zeitpunkt Patient verlegungs- / entlassungsfähig"
+Title:   "Zeitpunkt Patient verlegungs- / entlassungsfähig (AKTIN)"
 Description: "Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde. Ab dann wartet der Patient auf ein Bett bzw. auf die Transportgelegenheit in die ambulante Versorgung, unter Umständen bei weiterer dokumentationswürdigem Monitoring und Therapie. "
 * . ^definition = "Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde. Ab dann wartet der Patient auf ein Bett bzw. auf die Transportgelegenheit in die ambulante Versorgung, unter Umständen bei weiterer dokumentationswürdigem Monitoring und Therapie. "
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig"
@@ -29,7 +29,7 @@ Description: "Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist un
 * code.text =  "Zeitpunkt Patient verlegungs- / entlassungsfähig"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

@@ -9,11 +9,9 @@ Title:   "Pulsfrequenz"
 Description: "Pulsfrequenz des Patienten per manuellem Auszählen, Pulsoximeter oder invasiver Druckmessung gemessen"
 * . ^definition = "Pulsfrequenz des Patienten per manuellem Auszählen, Pulsoximeter oder invasiver Druckmessung gemessen"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-pulsfrequenz"
-* insert Notaprofile ( Vitalparameter/Scores )
 * insert Meta
 * insert Version
 * insert Publisher
-
 
 * identifier MS
 
@@ -33,7 +31,7 @@ Description: "Pulsfrequenz des Patienten per manuellem Auszählen, Pulsoximeter 
 * code.coding contains
     LOINC 1..1 MS and
     SNOMED-CT 1..1 MS
-* code.coding[LOINC] = $LOINC#8867-4 "Heart rate"
+* code.coding[LOINC] = $LOINC#8893-0 "Heart rate Peripheral artery by palpation"
 * code.coding[SNOMED-CT] = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)"
 * code.text =  "Pulsfrequenz"
 
@@ -42,7 +40,7 @@ Description: "Pulsfrequenz des Patienten per manuellem Auszählen, Pulsoximeter 
 * valueQuantity = http://unitsofmeasure.org#/min
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

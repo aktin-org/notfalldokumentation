@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_ergebnis_der_ersteinschatzung
 Parent:  Observation
 Id:      aktin-pr-ergebnis-der-ersteinschatzung
-Title:   "Ergebnis der Ersteinschätzung"
+Title:   "Ergebnis der Ersteinschätzung (AKTIN)"
 Description: "Ergebnis der Ersteinschätzung in einem standardisierten 5-stufigen System"
 * insert Meta
 * insert Version
@@ -33,8 +33,8 @@ Description: "Ergebnis der Ersteinschätzung in einem standardisierten 5-stufige
 * valueCodeableConcept from aktin-vs-generic-5level-triage-system (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
-  * ^short = "Nutzung von AKTIN_PR_Patient"
+* subject only Reference(AKTIN_PR_patient)
+  * ^short = "Nutzung von AKTIN_PR_patient"
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

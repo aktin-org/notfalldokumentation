@@ -6,7 +6,7 @@
 Profile: AKTIN_PR_alter_patient
 Parent:  Observation
 Id:      aktin-pr-alter-patient
-Title:   "Alter Patient"
+Title:   "Alter Patient (AKTIN)"
 Description: "Alter des Patienten zum Stichtag"
 * . ^definition = "Alter des Patienten zum Stichtag"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-alter-patient"
@@ -37,7 +37,7 @@ Description: "Alter des Patienten zum Stichtag"
 // * valueCodeableConcept from aktin-vs-age-in-categories
 
 * subject 1..1 MS
-* subject only Reference(AKTIN_PR_Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

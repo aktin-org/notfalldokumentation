@@ -6,7 +6,27 @@ Die [Einleitung](introduction.html) gibt Aufschluss über das Rationale der AKTI
 
 Der [Technische Hintergrund](technicalbackground.html) erläutert die momentane Zielsetzung dieser Sammlung von FHIR-Artefakten.
 
-Schließlich finden sich die bisherigen [Profile](profiles.html), [Extensions](extensions.html), [Registermeldungsbeispiele](registrymessages.html) und [Terminologien](terminology.html) auf weiteren zusammenfassenden Seiten.
+Schließlich finden sich die [Profile und Beispiele](profiles.html), [Extensions](extensions.html), [Registermeldungsbeispiele](registrymessages.html) und [Terminologien](terminology.html) auf weiteren zusammenfassenden Seiten.
+
+<div class="new-content">bla blah new-content</div>
+
+<div class="modified-content">bla blah modified-content</div>
+
+<div class="feedback">bla blah feedback</div>
+
+<div class="note-to-balloters">bla blah note-to-balloters</div>
+
+<div class="dragon">bla blah dragon</div>
+
+```HTML
+<div class="mermaid">
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+```
 
 ### Autoren
 

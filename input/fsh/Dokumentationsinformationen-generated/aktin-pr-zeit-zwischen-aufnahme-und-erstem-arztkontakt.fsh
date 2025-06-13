@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeit_zwischen_aufnahme_und_erstem_arztkontakt
 Parent:  Observation
 Id:      aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt
-Title:   "Zeit zwischen Aufnahme und erstem Arztkontakt"
+Title:   "Zeit zwischen Aufnahme und erstem Arztkontakt (AKTIN)"
 Description: "Zeit zwischen Aufnahme und erstem Arztkontakt"
 * . ^definition = "Zeit zwischen Aufnahme und erstem Arztkontakt"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt"
@@ -29,7 +29,7 @@ Description: "Zeit zwischen Aufnahme und erstem Arztkontakt"
 * code.text =  "Zeit zwischen Aufnahme und erstem Arztkontakt"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

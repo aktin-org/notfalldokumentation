@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_ekg_angefordert
 Parent:  ServiceRequest
 Id:      aktin-pr-ekg-angefordert
-Title:   "EKG angefordert"
+Title:   "EKG angefordert (AKTIN)"
 Description: "Wurde ein 12-Kanal-EKG angefordert?"
 * . ^definition = "Wurde ein 12-Kanal-EKG angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ekg-angefordert"
@@ -25,7 +25,7 @@ Description: "Wurde ein 12-Kanal-EKG angefordert?"
 * code.coding = $SCT#29303009 "Electrocardiographic procedure (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * authoredOn 1..1 MS
   * ^short = "Zeitpunkt, wann Maßnahme angefordert wurde"

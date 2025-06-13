@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeitpunkt_entscheidung_zur_verlegung__entlassung
 Parent:  Observation
 Id:      aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung
-Title:   "Zeitpunkt Entscheidung zur Verlegung / Entlassung"
+Title:   "Zeitpunkt Entscheidung zur Verlegung / Entlassung (AKTIN)"
 Description: "Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. "
 * . ^definition = "Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. "
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung"
@@ -29,7 +29,7 @@ Description: "Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung 
 * code.text =  "Zeitpunkt Entscheidung zur Verlegung / Entlassung"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

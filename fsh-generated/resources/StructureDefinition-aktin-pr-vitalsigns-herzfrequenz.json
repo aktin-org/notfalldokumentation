@@ -6,7 +6,7 @@
   "name": "AKTIN_PR_vitalsigns_herzfrequenz",
   "title": "Herzfrequenz",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
   "contact": [
@@ -20,12 +20,12 @@
     }
   ],
   "description": "Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet",
-  "purpose": "**Hinweis**: Dieses Profil ist nicht dazu gedacht, implementiert zu werden. Es macht deutlich, welche (zusätzlichen) AKTIN-spezifischen Eigenschaften ein existierendes Profil (bekannter Baustein 'Vitalparameter/Scores') zu diesem Typ haben muss und welche Constraints gelten. Es dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Das Profil wird nach Festlegung der bekannten Bausteine als formale Restriktion profilert.",
+  "purpose": "Hinweise, bitte beachten\n\nDieses AKTIN-Profil zu 'Observation' ist direkt abgeleitet vom Profil des bekannten Bausteins 'ISiKHerzfrequenz'.\nEs gibt die formalen Erfordernisse an, welche die AKTIN-spezifischen Eigenschaften\nzum existierendes Profil zusätzlich vorhanden sein müssen und welche Constraints gelten.\nDiese sind im 'Differential View' direkt ersichtlich.\n\nEs dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung\nder Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
-  "abstract": true,
+  "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -36,147 +36,19 @@
         "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
       },
       {
-        "id": "Observation.identifier",
-        "path": "Observation.identifier",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.category:thisCat",
-        "path": "Observation.category",
-        "sliceName": "thisCat",
-        "min": 1,
-        "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "vital-signs",
-              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-              "display": "Vital Signs"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.category:thisCat.text",
-        "path": "Observation.category.text",
-        "patternString": "Vital Signs"
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding",
+        "id": "Observation.code.coding:snomed",
         "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 3,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:LOINC-1",
-        "path": "Observation.code.coding",
-        "sliceName": "LOINC-1",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "8867-4",
-          "system": "http://loinc.org",
-          "display": "Heart rate"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:LOINC-2",
-        "path": "Observation.code.coding",
-        "sliceName": "LOINC-2",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "76282-3",
-          "system": "http://loinc.org",
-          "display": "Heart rate.beat-to-beat by EKG"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:SNOMED-CT",
-        "path": "Observation.code.coding",
-        "sliceName": "SNOMED-CT",
-        "min": 1,
-        "max": "1",
+        "sliceName": "snomed",
         "patternCoding": {
           "code": "364075005",
           "system": "http://snomed.info/sct",
           "display": "Heart rate (observable entity)"
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.code.text",
         "path": "Observation.code.text",
         "patternString": "Herzfrequenz"
-      },
-      {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ],
-        "patternQuantity": {
-          "code": "/min",
-          "system": "http://unitsofmeasure.org"
-        },
-        "mustSupport": true
       }
     ]
   }

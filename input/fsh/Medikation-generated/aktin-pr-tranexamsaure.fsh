@@ -1,7 +1,7 @@
 Profile: AKTIN_PR_tranexamsaure
 Parent: MedicationAdministration
 Id: aktin-pr-tranexamsaure
-Title: "Tranexamsäure"
+Title: "Tranexamsäure (AKTIN)"
 Description: "Profile for documenting a medication administration: Tranexamsäure"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-tranexamsaure"
 * insert Notaprofile ( MedicationAdministration )
@@ -33,7 +33,7 @@ Description: "Profile for documenting a medication administration: Tranexamsäur
 * medicationCodeableConcept.coding[ATCWHO] = $ATCWHO#B02AA02 "tranexamic acid"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] MS
 

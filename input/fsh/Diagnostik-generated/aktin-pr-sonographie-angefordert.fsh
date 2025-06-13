@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_sonographie_angefordert
 Parent:  ServiceRequest
 Id:      aktin-pr-sonographie-angefordert
-Title:   "Sonographie angefordert"
+Title:   "Sonographie angefordert (AKTIN)"
 Description: "Wurde eine Sonographie angefordert?"
 * . ^definition = "Wurde eine Sonographie angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-sonographie-angefordert"
@@ -25,7 +25,7 @@ Description: "Wurde eine Sonographie angefordert?"
 * code.coding = $SCT#16310003 "Ultrasonography (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * authoredOn 1..1 MS
   * ^short = "Zeitpunkt, wann Maßnahme angefordert wurde"

@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_ct_extremitaten_durchgefuhrt
 Parent:  Procedure
 Id:      aktin-pr-ct-extremitaten-durchgefuhrt
-Title:   "CT Extremitäten durchgeführt"
+Title:   "CT Extremitäten durchgeführt (AKTIN)"
 Description: "Wurde ein selektives CT der Extremitäten durchgeführt?"
 * . ^definition = "Wurde ein selektives CT der Extremitäten durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-extremitaten-durchgefuhrt"
@@ -25,7 +25,7 @@ Description: "Wurde ein selektives CT der Extremitäten durchgeführt?"
 * code.coding = $SCT#303681001 "Computed tomography of limb regions (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * performed[x] 1..1 MS
 * performed[x] only dateTime

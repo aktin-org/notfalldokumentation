@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_unfallkinetik
 Parent:  Observation
 Id:      aktin-pr-unfallkinetik
-Title:   "Unfallkinetik"
+Title:   "Unfallkinetik (AKTIN)"
 Description:   "Unfallkinetik"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallkinetik"
 * insert Meta
@@ -32,7 +32,7 @@ Description:   "Unfallkinetik"
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-accident-type (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

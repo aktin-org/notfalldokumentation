@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeitpunkt_export_aus_edis
 Parent:  Observation
 Id:      aktin-pr-zeitpunkt-export-aus-edis
-Title:   "Zeitpunkt Export aus EDIS"
+Title:   "Zeitpunkt Export aus EDIS (AKTIN)"
 Description: "Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde"
 * . ^definition = "Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-export-aus-edis"
@@ -29,7 +29,7 @@ Description: "Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutze
 * code.text =  "Zeitpunkt Export aus EDIS"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

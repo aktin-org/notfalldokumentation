@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zuweisung
 Parent:  Observation
 Id:      aktin-pr-zuweisung
-Title:   "Zuweisung"
+Title:   "Zuweisung (AKTIN)"
 Description: "Art der Zuweisung des Patienten. Von welchem medizinischen Fachpersonal ist der Patient ins Krankenhaus geschickt worden?"
 * . ^definition = "Art der Zuweisung des Patienten. Von welchem medizinischen Fachpersonal ist der Patient ins Krankenhaus geschickt worden?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zuweisung"
@@ -26,7 +26,7 @@ Description: "Art der Zuweisung des Patienten. Von welchem medizinischen Fachper
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-referral-setting (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

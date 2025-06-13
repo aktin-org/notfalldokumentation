@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_esitriage
 Parent:  Observation
 Id:      aktin-pr-esitriage
-Title:   "ESI-Triage"
+Title:   "ESI-Triage (AKTIN)"
 Description:   "Triage nach Emergency severity index [ESI]"
 * insert Meta
 * insert Version
@@ -34,8 +34,8 @@ Description:   "Triage nach Emergency severity index [ESI]"
 * valueCodeableConcept from http://aktin.org/fhir/ValueSet/aktin-vs-emergencyseverityindex (required)
 
 * subject 1..1 MS
-* subject only Reference(Patient)
-  * ^short = "Nutzung von AKTIN_PR_Patient"
+* subject only Reference(AKTIN_PR_patient)
+  * ^short = "Nutzung von AKTIN_PR_patient"
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

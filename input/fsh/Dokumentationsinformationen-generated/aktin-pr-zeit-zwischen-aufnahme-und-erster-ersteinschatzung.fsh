@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeit_zwischen_aufnahme_und_erster_ersteinschatzung
 Parent:  Observation
 Id:      aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung
-Title:   "Zeit zwischen Aufnahme und erster Ersteinschätzung"
+Title:   "Zeit zwischen Aufnahme und erster Ersteinschätzung (AKTIN)"
 Description: "Zeit zwischen Aufnahme und erster Ersteinschätzung"
 * . ^definition = "Zeit zwischen Aufnahme und erster Ersteinschätzung"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung"
@@ -35,7 +35,7 @@ Description: "Zeit zwischen Aufnahme und erster Ersteinschätzung"
 * valueQuantity = http://unitsofmeasure.org#min
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_rontgenwirbelsaule_durchgefuhrt
 Parent:  Procedure
 Id:      aktin-pr-rontgenwirbelsaule-durchgefuhrt
-Title:   "Röntgen-Wirbelsäule durchgeführt"
+Title:   "Röntgen-Wirbelsäule durchgeführt (AKTIN)"
 Description: "Wurde ein Röntgen der Wirbelsäule durchgeführt?"
 * . ^definition = "Wurde ein Röntgen der Wirbelsäule durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenwirbelsaule-durchgefuhrt"
@@ -25,7 +25,7 @@ Description: "Wurde ein Röntgen der Wirbelsäule durchgeführt?"
 * code.coding = $SCT#79760008 "Radiography of spine (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * performed[x] 1..1 MS
 * performed[x] only dateTime

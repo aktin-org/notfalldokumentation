@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_zeitpunkt_erster_arztkontakt
 Parent:  Observation
 Id:      aktin-pr-zeitpunkt-erster-arztkontakt
-Title:   "Zeitpunkt erster Arztkontakt"
+Title:   "Zeitpunkt erster Arztkontakt (AKTIN)"
 Description: "Zeitpunkt des ersten Arztkontaktes in der Notaufnahme"
 * . ^definition = "Zeitpunkt des ersten Arztkontaktes in der Notaufnahme"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-erster-arztkontakt"
@@ -24,7 +24,7 @@ Description: "Zeitpunkt des ersten Arztkontaktes in der Notaufnahme"
 * value[x] MS
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

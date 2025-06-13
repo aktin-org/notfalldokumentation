@@ -5,7 +5,7 @@
 Profile: AKTIN_PR_ct_thorax_durchgefuhrt
 Parent:  Procedure
 Id:      aktin-pr-ct-thorax-durchgefuhrt
-Title:   "CT Thorax durchgeführt"
+Title:   "CT Thorax durchgeführt (AKTIN)"
 Description: "Wurde ein CT des Thorax durchgeführt?"
 * . ^definition = "Wurde ein CT des Thorax durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-thorax-durchgefuhrt"
@@ -25,7 +25,7 @@ Description: "Wurde ein CT des Thorax durchgeführt?"
 * code.coding = $SCT#169069000 "Computed tomography of chest (procedure)"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * performed[x] 1..1 MS
 * performed[x] only dateTime

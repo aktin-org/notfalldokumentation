@@ -1,7 +1,7 @@
 Profile: AKTIN_PR_smallvolume_gabe
 Parent: MedicationAdministration
 Id: aktin-pr-smallvolume-gabe
-Title: "Small-volume Gabe"
+Title: "Small-volume Gabe (AKTIN)"
 Description: "Profile for documenting a medication administration: Small-volume Gabe"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-smallvolume-gabe"
 * insert Notaprofile ( MedicationAdministration )
@@ -33,7 +33,7 @@ Description: "Profile for documenting a medication administration: Small-volume 
 * medicationCodeableConcept.coding[ATCWHO] = $ATCWHO#S01XA03 "sodium chloride, hypertonic"
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(AKTIN_PR_patient)
 
 * effective[x] MS
 

@@ -29,7 +29,7 @@ Ressource die Composition ist.
 * type ^short = "Type der Composition (\"Episodenzusammenfassung Notaufnahmeregister\")"
 * type ^definition = "Gibt an dass diese Composition eine \"Episodenzusammenfassung Notaufnahmeregister\" ist"
 
-* subject only Reference(AKTIN_PR_Patient)
+* subject only Reference(AKTIN_PR_patient)
 * subject 1..1
 * subject ^short = "Patient der Episodenzusammenfassung Notaufnahmeregister"
 * subject ^definition = "Für die Episodenzusammenfassung Notaufnahmeregister ist \"subject\" immer der Patient."
@@ -42,7 +42,7 @@ Ressource die Composition ist.
   * ^short = "Autor der Episodenzusammenfassung Notaufnahmeregister"
   * ^definition = "Gibt an, wer für die Informationen in der Episodenzusammenfassung Notaufnahmeregister verantwortlich ist, nicht unbedingt, wer sie eingegeben hat."
 
-* title = "Episodenzusammenfassung Notaufnahmeregister"
+* title 1..1 MS
 * title ^short = "Episodenzusammenfassung Notaufnahmeregister als Abschluss-Dokument"
 * title ^definition = "Offizielle, menschenlesbare Bezeichnung für die Zusammensetzung.\r\n\r\nFür dieses Dokument sollte \"Episodenzusammenfassung Notaufnahmeregister\" oder eine gleichwertige Übersetzung verwendet werden."
 
@@ -169,15 +169,16 @@ Ressource die Composition ist.
     )
 
 // Vitalparameter/Scores
-// - Atemfrequenz
-// - Pulsoximetrische Sauerstoffsättigung
-// - Blutdruck
-// - Herzfrequenz
-// - Körperkerntemperatur
-// - Glasgow Coma Scale
-// - Schmerz
-// - Niedrigste GCS-Summe
-// - Erste Schmerzmessung
+// - 0..1 Atemfrequenz
+// - 0..1 Pulsoximetrische Sauerstoffsättigung
+// - 0..1 Blutdruck
+// - 0..1 Herzfrequenz
+// - 0..1 Pulsfrequenz
+// - 0..1 Körperkerntemperatur
+// - 0..1 Glasgow Coma Scale
+// - 0..1 Schmerz
+// - 0..1 Niedrigste GCS-Summe Fixed: @code = FLN-14 @codeSystem = 1.2.276.0.76.3.1.195.5.98 @displayName = Die niedrigste GCS-Summe während der Dokumentation
+// - 0..1 Erste Schmerzmessung Fixed: @code = FLN-15 @codeSystem = 1.2.276.0.76.3.1.195.5.98 @displayName = Die niedrigste GCS-Summe während der Dokumentation
 * section contains sectionVitalparameter ..1
 * section[sectionVitalparameter]
   * ^short = "Vitalparameter/Scores"
@@ -190,6 +191,68 @@ Ressource die Composition ist.
       "Vitalparameter/Scores",
       http://loinc.org#8716-3 "Vital signs"
     )
+  * entry MS    
+  * insert SectionEntrySliceCommonRules(Vitalparameter, Vitalparameter)
+  * insert SectionEntrySliceDefRules (
+    Atemfrequenz,
+    0..1,
+    Atemfrequenz,
+    Atemfrequenz,
+    AKTIN_PR_vitalsigns_atemfrequenz)
+  * insert SectionEntrySliceDefRules (
+    PulsoximetrischeSauerstoffsättigung,
+    0..1,
+    Pulsoximetrische Sauerstoffsättigung,
+    Pulsoximetrische Sauerstoffsättigung,
+    AKTIN_PR_vitalsigns_pulsoximetrische_sauerstoffsattigung)
+  * insert SectionEntrySliceDefRules (
+    Blutdruck,
+    0..1,
+    Blutdruck,
+    Blutdruck,
+    AKTIN_PR_vitalsigns_blutdruck)
+  * insert SectionEntrySliceDefRules (
+    Herzfrequenz,
+    0..1,
+    Herzfrequenz,
+    Herzfrequenz,
+    AKTIN_PR_vitalsigns_herzfrequenz)
+  * insert SectionEntrySliceDefRules (
+    Pulsfrequenz,
+    0..1,
+    Pulsfrequenz,
+    Pulsfrequenz,
+    AKTIN_PR_vitalsigns_pulsfrequenz)
+  * insert SectionEntrySliceDefRules (
+    Körperkerntemperatur,
+    0..1,
+    Körperkerntemperatur,
+    Körperkerntemperatur,
+    AKTIN_PR_vitalsigns_korperkerntemperatur)
+  * insert SectionEntrySliceDefRules (
+    GlasgowComaScale,
+    0..1,
+    Glasgow Coma Scale,
+    Glasgow Coma Scale,
+    AKTIN_PR_vitalsigns_glasgow_coma_scale)
+  * insert SectionEntrySliceDefRules (
+    Schmerz,
+    0..1,
+    Schmerz,
+    Schmerz,
+    AKTIN_PR_vitalsigns_schmerz)
+  * insert SectionEntrySliceDefRules (
+    NiedrigsteGCSSumme,
+    0..1,
+    Niedrigste GCS-Summe,
+    Niedrigste GCS-Summe,
+    AKTIN_PR_vitalsigns_niedrigster_gcs)
+  * insert SectionEntrySliceDefRules (
+    ErsteSchmerzmessung,
+    0..1,
+    Erste Schmerzmessung,
+    Erste Schmerzmessung,
+    AKTIN_PR_vitalsigns_erster_schmerz)
 
 // Diagnostik
 // - Laboruntersuchung angefordert

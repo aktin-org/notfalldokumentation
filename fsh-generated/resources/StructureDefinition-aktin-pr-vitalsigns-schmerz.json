@@ -4,9 +4,8 @@
   "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-schmerz",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_vitalsigns_schmerz",
-  "title": "Erste Schmerzmessung",
+  "title": "Schmerzmessung",
   "status": "active",
-  "experimental": true,
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
   "contact": [
@@ -19,11 +18,10 @@
       ]
     }
   ],
-  "description": "Erste Schmerzmessung mit NRS oder VAS",
-  "purpose": "**Hinweis**: Dieses Profil ist nicht dazu gedacht, implementiert zu werden. Es macht deutlich, welche (zusätzlichen) AKTIN-spezifischen Eigenschaften ein existierendes Profil (bekannter Baustein 'Vitalparameter/Scores') zu diesem Typ haben muss und welche Constraints gelten. Es dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Das Profil wird nach Festlegung der bekannten Bausteine als formale Restriktion profilert.",
+  "description": "Schmerzmessung mit NRS oder VAS",
   "fhirVersion": "4.0.1",
   "kind": "resource",
-  "abstract": true,
+  "abstract": false,
   "type": "Observation",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
@@ -32,8 +30,7 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "definition": "Erste Schmerzmessung mit NRS oder VAS",
-        "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
+        "definition": "Schmerzmessung mit NRS oder VAS"
       },
       {
         "id": "Observation.identifier",
@@ -134,7 +131,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-patient"
             ]
           }
         ],
