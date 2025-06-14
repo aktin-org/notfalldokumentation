@@ -20,7 +20,7 @@
     }
   ],
   "description": "Wurde eine Sonographie angefordert?",
-  "purpose": "**Hinweis**: Dieses Profil ist nicht dazu gedacht, implementiert zu werden. Es macht deutlich, welche (zusätzlichen) AKTIN-spezifischen Eigenschaften ein existierendes Profil (bekannter Baustein 'ServiceRequest') zu diesem Typ haben muss und welche Constraints gelten. Es dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Das Profil wird nach Festlegung der bekannten Bausteine als formale Restriktion profilert.",
+  "purpose": "**Hinweis**: Diese Profile gehören noch nicht zu diesem\nImplementerungsleitfaden und sind nicht dazu gedacht,\nimplementiert zu werden. Sie machen deutlich, welche\nweiteren AKTIN-spezifischen Profile vorbereitet sind.\nSie fußen zum Teil auf den bekannten Bausteinen wie ISiKProzedur etc.).\n\nSie dienen dem Aufzeigen der semantischen Annotationen des\nzugrundeliegenden Konzepts und optional der Bindung der Valusets\nan Antwort-Auswahllisten, kodierten Zusatzinformationen und\nMaßeinheiten. Die Profile können in zukünftigen Leitfäden\nformal aufgenommen werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": true,
@@ -33,7 +33,7 @@
         "id": "ServiceRequest",
         "path": "ServiceRequest",
         "definition": "Wurde eine Sonographie angefordert?",
-        "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
+        "comment": "AKTIN-spezifisches Profil, für spätere Nutzung"
       },
       {
         "id": "ServiceRequest.identifier",

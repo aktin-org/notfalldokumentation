@@ -42,17 +42,18 @@ Die Mappings enthalten den Zusammenhang zwischen den Elementen eines ART-DECOR S
 </tbody>
 </table>
 
-### Composition-Profile
+### Bundle- und Composition-Profile
 
-Eine Composition ist ein Satz  Informationen mit Gesundheitsbezug, die in einem einzigen logischen Dokument zusammengefasst sind, das eine einzige zusammenhängende Aussage enthält, seinen eigenen Kontext etabliert und über eine klinische Bestätigung hinsichtlich des Urhebers der Aussage verfügt. 
+Eine **Composition** ist ein Satz  Informationen mit Gesundheitsbezug, die in einem einzigen logischen Dokument zusammengefasst sind, das eine einzige zusammenhängende Aussage enthält, seinen eigenen Kontext etabliert und über eine klinische Bestätigung hinsichtlich des Urhebers der Aussage verfügt. 
 
-Eine Komposition definiert zwar die Struktur, enthält jedoch nicht den Inhalt selbst: Der vollständige Inhalt eines Dokuments ist vielmehr in einem Bundle enthalten, dessen erste enthaltene Ressource die Composition ist.
+Eine Komposition definiert zwar die Struktur, enthält jedoch nicht den Inhalt selbst: Der vollständige Inhalt eines Dokuments ist vielmehr in einem **Bundle** enthalten, dessen erste enthaltene Ressource die Composition ist.
 
 Hier finden sich die Dokument-Spezifikationen für die AKTIN-Akte Notfalldokumentation.
 
 <table style="border-collapse: collapse; width: 100%" border="1" >
 <thead>
 <tr style="text-align: left;">
+<td>Typ</td>
 <td><strong>Name</strong></td>
 <td><strong>Beschreibung</strong></td>
 </tr>
@@ -60,8 +61,19 @@ Hier finden sich die Dokument-Spezifikationen für die AKTIN-Akte Notfalldokumen
 <tbody>
 {% for sd_hash in site.data.structuredefinitions -%}
 {%- assign sd = sd_hash[1] -%} 
+{%- if sd.kind == "resource" and sd.type == "Bundle" -%}
+<tr>
+  <td>Bundle</td>
+  <td><a href="{{sd.path}}">{{sd.name}}</a></td>
+  <td><strong>{{sd.title}}</strong><p></p>{{sd.description}}</td>
+</tr>
+{%- endif -%}
+{%- endfor -%}
+{% for sd_hash in site.data.structuredefinitions -%}
+{%- assign sd = sd_hash[1] -%} 
 {%- if sd.kind == "resource" and sd.type == "Composition" -%}
 <tr>
+  <td>Composition</td>
   <td><a href="{{sd.path}}">{{sd.name}}</a></td>
   <td><strong>{{sd.title}}</strong><p></p>{{sd.description}}</td>
 </tr>
@@ -69,6 +81,7 @@ Hier finden sich die Dokument-Spezifikationen für die AKTIN-Akte Notfalldokumen
 {%- endfor -%}
 </tbody>
 </table>
+
 ### Questionnaire-Profile
 
 Die Questionnaire-Definitionen dienen den Registerauszügen (Exports) und werden aus den verfügbaren Daten der AKTIN-Akte Notfalldokumentation vorbefüllt (pre-populate) und können bei Bedarf interaktiv ergänzt werden.
@@ -108,7 +121,11 @@ Diese ist die Liste der AKTIN-spezifischen FHIR-Profile, die nicht oder nicht vo
 </table>
 ### Prototypen-Profile
 
-**Hinweis**: Diese Profile sind nicht dazu gedacht, implementiert zu werden. Sie machen deutlich, welche (zusätzlichen) AKTIN-spezifischen Eigenschaften ein existierendes Profil (bekannte Bausteine) zu diesem Typ haben muss und welche Constraints gelten. Sie dienen dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Die Profiel können nach Festlegung der bekannten Bausteine als formale Restriktion profilert werden.
+*AKTIN-spezifische Profile, für spätere Nutzung*
+
+**Hinweis**: Diese Profile gehören noch nicht zu diesem Implementerungsleitfaden und sind nicht dazu gedacht, implementiert zu werden. Sie machen deutlich, welche weiteren AKTIN-spezifischen Profile vorbereitet sind. Sie fußen zum Teil auf den bekannten Bausteinen wie ISiKProzedur etc.).
+
+Sie dienen dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Die Profile können in zukünftigen Leitfäden formal aufgenommen werden.
 
 <table style="border-collapse: collapse; width: 100%" border="1" >
 <thead>
@@ -135,18 +152,24 @@ Diese ist die Liste der AKTIN-spezifischen FHIR-Profile, die nicht oder nicht vo
 <tr style="text-align: left;">
   <td><strong>Name</strong></td>
   <td><strong>Beschreibung</strong></td>
+  <td><strong>Instanz von</strong></td>
 </tr>
 </thead>
 <tbody>
-{% for in_hash in site.data.instances -%} {%- assign in = in_hash[1] -%} 
+{% for in_hash in site.data.artifacts -%}
+{%- assign in = in_hash[1] -%}
+{%- assign inname = in_hash[0] -%}
+{%- if in.example == true -%}
 <tr>
-  <td><a href="{{sd.path}}">{{in.name}}</a></td>
+  <td><a href="{{inname}}">{{inname}}</a></td>
   <td><strong>{{in.title}}</strong><p></p>{{in.description}}</td>
+  <td>{{in.exampleOf.name}}</td>
 </tr>
+{%- endif -%}
 {%- endfor -%}
 </tbody>
 </table>
 
 
-<p> </p>
 
+{{site.data.artifacts}}

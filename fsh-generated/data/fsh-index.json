@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "Bundle-Instance-Bundle-ec03e46d-38fc-458f-87c7-c8a4d611d2ae.json",
+    "fshName": "Instance-Bundle-ec03e46d-38fc-458f-87c7-c8a4d611d2ae",
+    "fshType": "Instance",
+    "fshFile": "Beispielinstanzen-crafted/example1.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
     "outputFile": "CodeSystem-aktin-cs-alter-in-kategorien.json",
     "fshName": "AKTIN_CS_alter_in_kategorien",
     "fshType": "CodeSystem",
@@ -46,14 +54,6 @@
     "fshFile": "Terminologie-exported/aktin-cs-mts-presentationdiagram.fsh",
     "startLine": 1,
     "endLine": 550
-  },
-  {
-    "outputFile": "Composition-28e0d287-18f4-4274-8433-3726248294f9.json",
-    "fshName": "Instance-Composition-28e0d287-18f4-4274-8433-3726248294f9",
-    "fshType": "Instance",
-    "fshFile": "Beispielinstanzen-crafted/example1.fsh",
-    "startLine": 1,
-    "endLine": 22
   },
   {
     "outputFile": "ConceptMap-aktin-cm-epiznota.json",
@@ -118,6 +118,14 @@
     "fshFile": "Diagnostik-generated/aktin-pr-bga-angefordert.fsh",
     "startLine": 5,
     "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-aktin-pr-bundle-episodenzusammenfassung-notaufnahmeregister.json",
+    "fshName": "AKTIN_PR_bundle_episodenzusammenfassung_notaufnahmeregister",
+    "fshType": "Profile",
+    "fshFile": "Bundle-Composition-crafted/aktin-pr-bundle.fsh",
+    "startLine": 1,
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-ct-abdomen-durchgefuhrt.json",
@@ -195,7 +203,7 @@
     "outputFile": "StructureDefinition-aktin-pr-episodenzusammenfassung-notaufnahmeregister.json",
     "fshName": "AKTIN_PR_episodenzusammenfassung_notaufnahmeregister",
     "fshType": "Profile",
-    "fshFile": "Composition-crafted/aktin-pr-composition.fsh",
+    "fshFile": "Bundle-Composition-crafted/aktin-pr-composition.fsh",
     "startLine": 1,
     "endLine": 370
   },
@@ -211,7 +219,7 @@
     "outputFile": "StructureDefinition-aktin-pr-erythrozytenkonzentrat.json",
     "fshName": "AKTIN_PR_erythrozytenkonzentrat",
     "fshType": "Profile",
-    "fshFile": "Medikation-generated/aktin-pr-erythrozytenkonzentrat.fsh",
+    "fshFile": "Spezifische-Medikation-generated/aktin-pr-erythrozytenkonzentrat.fsh",
     "startLine": 1,
     "endLine": 40
   },
@@ -235,7 +243,7 @@
     "outputFile": "StructureDefinition-aktin-pr-faktor-xiii.json",
     "fshName": "AKTIN_PR_faktor_xiii",
     "fshType": "Profile",
-    "fshFile": "Medikation-generated/aktin-pr-faktor-xiii.fsh",
+    "fshFile": "Spezifische-Medikation-generated/aktin-pr-faktor-xiii.fsh",
     "startLine": 1,
     "endLine": 40
   },
@@ -259,7 +267,7 @@
     "outputFile": "StructureDefinition-aktin-pr-katecholamine.json",
     "fshName": "AKTIN_PR_katecholamine",
     "fshType": "Profile",
-    "fshFile": "Medikation-generated/aktin-pr-katecholamine.fsh",
+    "fshFile": "Spezifische-Medikation-generated/aktin-pr-katecholamine.fsh",
     "startLine": 1,
     "endLine": 40
   },
@@ -267,7 +275,7 @@
     "outputFile": "StructureDefinition-aktin-pr-kolloidale-infusionslosungen.json",
     "fshName": "AKTIN_PR_kolloidale_infusionslosungen",
     "fshType": "Profile",
-    "fshFile": "Medikation-generated/aktin-pr-kolloidale-infusionslosungen.fsh",
+    "fshFile": "Spezifische-Medikation-generated/aktin-pr-kolloidale-infusionslosungen.fsh",
     "startLine": 1,
     "endLine": 40
   },
@@ -283,7 +291,7 @@
     "outputFile": "StructureDefinition-aktin-pr-kristalloide-infusionslosungen.json",
     "fshName": "AKTIN_PR_kristalloide_infusionslosungen",
     "fshType": "Profile",
-    "fshFile": "Medikation-generated/aktin-pr-kristalloide-infusionslosungen.fsh",
+    "fshFile": "Spezifische-Medikation-generated/aktin-pr-kristalloide-infusionslosungen.fsh",
     "startLine": 1,
     "endLine": 40
   },
@@ -373,13 +381,13 @@
     "fshType": "Profile",
     "fshFile": "Diagnostik-generated/aktin-pr-rontgenwirbelsaule-durchgefuhrt.fsh",
     "startLine": 5,
-    "endLine": 32
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-aktin-pr-smallvolume-gabe.json",
     "fshName": "AKTIN_PR_smallvolume_gabe",
     "fshType": "Profile",
-    "fshFile": "Medikation-generated/aktin-pr-smallvolume-gabe.fsh",
+    "fshFile": "Spezifische-Medikation-generated/aktin-pr-smallvolume-gabe.fsh",
     "startLine": 1,
     "endLine": 40
   },
@@ -403,7 +411,7 @@
     "outputFile": "StructureDefinition-aktin-pr-tranexamsaure.json",
     "fshName": "AKTIN_PR_tranexamsaure",
     "fshType": "Profile",
-    "fshFile": "Medikation-generated/aktin-pr-tranexamsaure.fsh",
+    "fshFile": "Spezifische-Medikation-generated/aktin-pr-tranexamsaure.fsh",
     "startLine": 1,
     "endLine": 40
   },
@@ -539,7 +547,7 @@
     "outputFile": "StructureDefinition-aktin-pr-vitamin-k-antagonists.json",
     "fshName": "AKTIN_PR_vitamin_k_antagonists",
     "fshType": "Profile",
-    "fshFile": "Medikation-generated/aktin-pr-vitamin-k-antagonists.fsh",
+    "fshFile": "Spezifische-Medikation-generated/aktin-pr-vitamin-k-antagonists.fsh",
     "startLine": 1,
     "endLine": 33
   },

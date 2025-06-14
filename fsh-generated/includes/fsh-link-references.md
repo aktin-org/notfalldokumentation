@@ -12,6 +12,7 @@
 [AKTIN_PR_beschwerden_bei_vorstellung_cedis]: StructureDefinition-aktin-pr-beschwerden-bei-vorstellung-cedis.html
 [AKTIN_PR_bga_angefordert]: StructureDefinition-aktin-pr-bga-angefordert.html
 [AKTIN_PR_vitalsigns_blutdruck]: StructureDefinition-aktin-pr-vitalsigns-blutdruck.html
+[AKTIN_PR_bundle_episodenzusammenfassung_notaufnahmeregister]: StructureDefinition-aktin-pr-bundle-episodenzusammenfassung-notaufnahmeregister.html
 [AKTIN_VS_cedis30]: ValueSet-aktin-vs-cedis30.html
 [AKTIN_CS_cedis30]: CodeSystem-aktin-cs-cedis30.html
 [AKTIN_PR_episodenzusammenfassung_notaufnahmeregister]: StructureDefinition-aktin-pr-episodenzusammenfassung-notaufnahmeregister.html
@@ -26,7 +27,6 @@
 [AKTIN_PR_ekg_angefordert]: StructureDefinition-aktin-pr-ekg-angefordert.html
 [Emergencyseverityindex]: CodeSystem-aktin-cs-emergencyseverityindex.html
 [Emergencyseverityindex]: ValueSet-1.2.276.0.76.11.45--20240816174700.html
-[28e0d287-18f4-4274-8433-3726248294f9]: Composition-28e0d287-18f4-4274-8433-3726248294f9.html
 [AKTIN_PR_ergebnis_der_ersteinschatzung]: StructureDefinition-aktin-pr-ergebnis-der-ersteinschatzung.html
 [AKTIN_PR_vitalsigns_erster_schmerz]: StructureDefinition-aktin-pr-vitalsigns-erster-schmerz.html
 [AKTIN_PR_erythrozytenkonzentrat]: StructureDefinition-aktin-pr-erythrozytenkonzentrat.html
@@ -85,6 +85,7 @@
 [AKTIN_PR_sonographie_angefordert]: StructureDefinition-aktin-pr-sonographie-angefordert.html
 [AKTIN_PR_stunde_beginn_patientenbezogene_dokumentation]: StructureDefinition-aktin-pr-stunde-beginn-patientenbezogene-dokumentation.html
 [Substance_used]: ValueSet-aktin-vs-substances-used.html
+[Instance-Bundle-ec03e46d-38fc-458f-87c7-c8a4d611d2ae]: Bundle-Instance-Bundle-ec03e46d-38fc-458f-87c7-c8a4d611d2ae.html
 [AKTIN_PR_tranexamsaure]: StructureDefinition-aktin-pr-tranexamsaure.html
 [Transportmethod]: ValueSet-1.2.276.0.76.11.41--20240214094248.html
 [AKTIN_PR_transportmittel]: StructureDefinition-aktin-pr-transportmittel.html

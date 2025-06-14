@@ -187,6 +187,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/aktin-pr-bundle-episodenzusammenfassung-notaufnahmeregister"
+        },
+        "name": "Bundle (Episodenzusammenfassung Notaufnahmeregister)",
+        "description": "Bundle für Informationen zu einer Behandlungsepisode in der Notaufnahme.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/aktin-vs-cedis30"
         },
         "name": "CEDIS Presenting Complaint List 3.0",
@@ -296,13 +304,6 @@
         "description": "Emergency Severity Index",
         "exampleBoolean": false,
         "name": "Emergency Severity Index"
-      },
-      {
-        "reference": {
-          "reference": "Composition/28e0d287-18f4-4274-8433-3726248294f9"
-        },
-        "name": "Entlassbericht Notaufnahme (Registermeldung) 17. Januar 2024 17:35 Uhr",
-        "exampleCanonical": "http://aktin.org/fhir/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister"
       },
       {
         "reference": {
@@ -767,6 +768,14 @@
         "name": "Substanz-Einfluss",
         "description": "Patient unter Substanz-Einfluss?",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Bundle/Instance-Bundle-ec03e46d-38fc-458f-87c7-c8a4d611d2ae"
+        },
+        "name": "Title1",
+        "description": "Description1",
+        "exampleCanonical": "http://aktin.org/fhir/StructureDefinition/aktin-pr-bundle-episodenzusammenfassung-notaufnahmeregister"
       },
       {
         "reference": {

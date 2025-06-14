@@ -1,0 +1,131 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-pr-bundle-episodenzusammenfassung-notaufnahmeregister",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-bundle-episodenzusammenfassung-notaufnahmeregister",
+  "name": "AKTIN_PR_bundle_episodenzusammenfassung_notaufnahmeregister",
+  "title": "Bundle (Episodenzusammenfassung Notaufnahmeregister)",
+  "status": "draft",
+  "description": "Bundle für Informationen zu einer Behandlungsepisode in der Notaufnahme.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle",
+        "path": "Bundle",
+        "short": "Bundle Episodenzusammenfassung Notaufnahmeregister",
+        "definition": "Bundle Episodenzusammenfassung Notaufnahmeregister."
+      },
+      {
+        "id": "Bundle.identifier",
+        "path": "Bundle.identifier",
+        "short": "Instance identifier des Bundles",
+        "min": 1
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "document"
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "short": "Zeitstempel der Erzeugung des Bundles",
+        "min": 1
+      },
+      {
+        "id": "Bundle.link",
+        "path": "Bundle.link",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resource"
+            },
+            {
+              "type": "profile",
+              "path": "resource"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Entry resource im Bundle Episodenzusammenfassung Notaufnahmeregister",
+        "definition": "Eine Entry resource die im Bundle Episodenzusammenfassung Notaufnahmeregister enthalten ist.",
+        "comment": "Muss das Bundle Episodenzusammenfassung Notaufnahmeregister als estes enthalten. Weitere Constraints sind im Composition-Profil spezifiziert.",
+        "min": 2
+      },
+      {
+        "id": "Bundle.entry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry.search",
+        "path": "Bundle.entry.search",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.request",
+        "path": "Bundle.entry.request",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.response",
+        "path": "Bundle.entry.response",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry:composition",
+        "path": "Bundle.entry",
+        "sliceName": "composition",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:composition.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Composition",
+            "profile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:patient",
+        "path": "Bundle.entry",
+        "sliceName": "patient",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:patient.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-patient"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

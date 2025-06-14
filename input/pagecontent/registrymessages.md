@@ -4,10 +4,21 @@
 
 Hier sind Beispiele von AKTIN-spezifischen FHIR-Questionnaires gelistet.
 
-{% for sd_hash in site.data.questionnaires -%} {%- assign sd = sd_hash[1] -%} 
-
-<li><a href="{{sd.path}}"><strong>{{sd.name}}</strong></a> – {{sd.description}}</li>
-
+<table style="border-collapse: collapse; width: 100%" border="1" >
+<thead>
+<tr style="text-align: left;">
+<td><strong>Name</strong></td>
+<td><strong>Beschreibung</strong></td>
+</tr>
+</thead>
+<tbody>
+{% for qq_hash in site.data.questionnaires -%} {%- assign qq = qq_hash[1] -%} 
+<tr>
+  <td><a href="{{qq.path}}"><strong>{{qq.name}}</strong></a></td>
+  <td>{{qq.description}}</td>
+</tr>
 {%- endfor -%}
+</tbody>
+</table>
 
 <p> </p>

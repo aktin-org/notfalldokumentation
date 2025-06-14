@@ -1,0 +1,126 @@
+{
+  "resourceType": "Bundle",
+  "id": "Instance-Bundle-ec03e46d-38fc-458f-87c7-c8a4d611d2ae",
+  "meta": {
+    "profile": [
+      "http://aktin.org/fhir/StructureDefinition/aktin-pr-bundle-episodenzusammenfassung-notaufnahmeregister"
+    ]
+  },
+  "type": "document",
+  "identifier": {
+    "type": {
+      "coding": [
+        {
+          "code": "PRN",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+        }
+      ]
+    },
+    "system": "http://local.setting.eu/identifier",
+    "value": "5f901356-2bbe-45bb-9a75-7e0d6390c8f7"
+  },
+  "timestamp": "2024-01-17T17:33:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:28e0d287-18f4-4274-8433-3726248294f9",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "28e0d287-18f4-4274-8433-3726248294f9",
+        "meta": {
+          "profile": [
+            "http://aktin.org/fhir/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "97663-9",
+              "system": "http://loinc.org",
+              "display": "Emergency medicine Emergency department Discharge summary"
+            }
+          ],
+          "text": "Episodenzusammenfassung Notaufnahmeregister"
+        },
+        "section": [
+          {
+            "title": "Demographische Informationen",
+            "code": {
+              "coding": [
+                {
+                  "code": "45970-1",
+                  "system": "http://loinc.org",
+                  "display": "Demographic information section"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Demografische Informationen als Beispiel</td><td>2025-06-13</td><td>aktive</td></tr></table></div>"
+            }
+          }
+        ],
+        "identifier": {
+          "system": "urn:oid:2.16.840.1.113883.2.51.999",
+          "value": "2904b05b-45f6-4fee-ae1a-6239a1450571",
+          "assigner": {
+            "display": "AKTIN Zentralkrankenhaus"
+          }
+        },
+        "title": "Entlassbericht Notaufnahme 17. Januar 2024 17:35 Uhr",
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:9fb88a55-4f7e-4f05-91e6-d23d38bb1283"
+        },
+        "author": [
+          {
+            "reference": "urn:uuid:9fb88a55-4f7e-4f05-91e6-d23d38bb1283"
+          }
+        ],
+        "date": "2024-01-17T17:33:00Z",
+        "confidentiality": "N"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9fb88a55-4f7e-4f05-91e6-d23d38bb1283",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9fb88a55-4f7e-4f05-91e6-d23d38bb1283",
+        "meta": {
+          "profile": [
+            "http://aktin.org/fhir/StructureDefinition/aktin-pr-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR"
+                }
+              ]
+            },
+            "system": "http://example.org",
+            "value": "1234567890"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Kicker",
+            "given": [
+              "Timo"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1996-05-31",
+        "address": [
+          {
+            "postalCode": "80636"
+          }
+        ]
+      }
+    }
+  ]
+}

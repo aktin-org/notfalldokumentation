@@ -1,5 +1,17 @@
 RuleSet: Notaprofile ( wkp )
-* . ^comment = "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
+* . ^comment = "AKTIN-spezifisches Profil, für spätere Nutzung"
 * ^experimental = true
 * ^abstract = true
-* ^purpose = "**Hinweis**: Dieses Profil ist nicht dazu gedacht, implementiert zu werden. Es macht deutlich, welche (zusätzlichen) AKTIN-spezifischen Eigenschaften ein existierendes Profil (bekannter Baustein '{wkp}') zu diesem Typ haben muss und welche Constraints gelten. Es dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung der Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten. Das Profil wird nach Festlegung der bekannten Bausteine als formale Restriktion profilert."
+* ^purpose = """
+**Hinweis**: Diese Profile gehören noch nicht zu diesem
+Implementerungsleitfaden und sind nicht dazu gedacht,
+implementiert zu werden. Sie machen deutlich, welche
+weiteren AKTIN-spezifischen Profile vorbereitet sind.
+Sie fußen zum Teil auf den bekannten Bausteinen wie ISiKProzedur etc.).
+
+Sie dienen dem Aufzeigen der semantischen Annotationen des
+zugrundeliegenden Konzepts und optional der Bindung der Valusets
+an Antwort-Auswahllisten, kodierten Zusatzinformationen und
+Maßeinheiten. Die Profile können in zukünftigen Leitfäden
+formal aufgenommen werden.
+"""
