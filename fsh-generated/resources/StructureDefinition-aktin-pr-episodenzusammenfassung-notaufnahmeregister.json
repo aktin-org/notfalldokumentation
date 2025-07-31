@@ -128,7 +128,24 @@
           "rules": "open"
         },
         "short": "Sections für die Episodenzusammenfassung Notaufnahmeregister",
-        "definition": "Sections für die Episodenzusammenfassung Notaufnahmeregister."
+        "definition": "Sections für die Episodenzusammenfassung Notaufnahmeregister.",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.text",
+        "path": "Composition.section.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry",
+        "path": "Composition.section.entry",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:sectionDemografischeInformationen",
@@ -173,6 +190,7 @@
       {
         "id": "Composition.section:sectionDemografischeInformationen.entry",
         "path": "Composition.section.entry",
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -231,6 +249,7 @@
       {
         "id": "Composition.section:sectionZuweisung.entry",
         "path": "Composition.section.entry",
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -301,8 +320,7 @@
         },
         "short": "Transportmittel",
         "definition": "Transportmittel",
-        "min": 2,
-        "mustSupport": true
+        "min": 2
       },
       {
         "id": "Composition.section:sectionTransportmittel.entry:Transportmethode",
@@ -310,7 +328,7 @@
         "sliceName": "Transportmethode",
         "short": "Transportmethode",
         "definition": "Transportmethode",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -327,7 +345,7 @@
         "sliceName": "MedizinischeBegleitung",
         "short": "Medizinische Begleitung",
         "definition": "Medizinische Begleitung",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -385,6 +403,37 @@
         "min": 1
       },
       {
+        "id": "Composition.section:sectionWiedervorstellung.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resolve()"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Wiedervorstellung",
+        "definition": "Wiedervorstellung"
+      },
+      {
+        "id": "Composition.section:sectionWiedervorstellung.entry:Wiedervorstellung",
+        "path": "Composition.section.entry",
+        "sliceName": "Wiedervorstellung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-ungeplante-vorstellung-gleicher-grund-28-tage"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Composition.section:sectionWiedervorstellung.emptyReason",
         "path": "Composition.section.emptyReason",
         "max": "0",
@@ -431,6 +480,74 @@
         "min": 1
       },
       {
+        "id": "Composition.section:sectionErsteinschatzung.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resolve()"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Ersteinschatzung",
+        "definition": "Ersteinschatzung",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:sectionErsteinschatzung.entry:Ersteinschatzung",
+        "path": "Composition.section.entry",
+        "sliceName": "Ersteinschatzung",
+        "short": "Ersteinschätzung",
+        "definition": "Ersteinschätzung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-ergebnis-der-ersteinschatzung"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionErsteinschatzung.entry:Manchester",
+        "path": "Composition.section.entry",
+        "sliceName": "Manchester",
+        "short": "Manchester Triage System",
+        "definition": "Manchester Triage System",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-manchester-triage-system"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionErsteinschatzung.entry:ESITriage",
+        "path": "Composition.section.entry",
+        "sliceName": "ESITriage",
+        "short": "ESI Triage",
+        "definition": "ESI Triage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-esitriage"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Composition.section:sectionErsteinschatzung.emptyReason",
         "path": "Composition.section.emptyReason",
         "max": "0",
@@ -475,6 +592,107 @@
         "id": "Composition.section:sectionNotfallanamnese.text",
         "path": "Composition.section.text",
         "min": 1
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resolve()"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Notfallanamnese",
+        "definition": "Notfallanamnese"
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.entry:Cedis",
+        "path": "Composition.section.entry",
+        "sliceName": "Cedis",
+        "short": "Cedis",
+        "definition": "Cedis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-beschwerden-bei-vorstellung-cedis"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.entry:Unfallursache",
+        "path": "Composition.section.entry",
+        "sliceName": "Unfallursache",
+        "short": "Unfallursache",
+        "definition": "Unfallursache",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallursache"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.entry:Unfallkinetik",
+        "path": "Composition.section.entry",
+        "sliceName": "Unfallkinetik",
+        "short": "Unfallkinetik",
+        "definition": "Unfallkinetik",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallkinetik"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.entry:Unfallart",
+        "path": "Composition.section.entry",
+        "sliceName": "Unfallart",
+        "short": "Unfallart",
+        "definition": "Unfallart",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-unfallart-trauma-register"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionNotfallanamnese.entry:Substanzeinfluss",
+        "path": "Composition.section.entry",
+        "sliceName": "Substanzeinfluss",
+        "short": "Substanzeinfluss",
+        "definition": "Substanzeinfluss",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss"
+            ]
+          }
+        ]
       },
       {
         "id": "Composition.section:sectionNotfallanamnese.emptyReason",
@@ -536,8 +754,7 @@
           "rules": "open"
         },
         "short": "Vitalparameter",
-        "definition": "Vitalparameter",
-        "mustSupport": true
+        "definition": "Vitalparameter"
       },
       {
         "id": "Composition.section:sectionVitalparameter.entry:Atemfrequenz",
@@ -756,6 +973,260 @@
         "min": 1
       },
       {
+        "id": "Composition.section:sectionDiagnostik.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resolve()"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Diagnostik",
+        "definition": "Diagnostik"
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:Laboruntersuchungangefordert",
+        "path": "Composition.section.entry",
+        "sliceName": "Laboruntersuchungangefordert",
+        "short": "Laboruntersuchung angefordert",
+        "definition": "Laboruntersuchung angefordert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-laboruntersuchung-angefordert"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:Mikrobiologieangefordert",
+        "path": "Composition.section.entry",
+        "sliceName": "Mikrobiologieangefordert",
+        "short": "Mikrobiologie angefordert",
+        "definition": "Mikrobiologie angefordert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-mikrobiologie-angefordert"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:BGAangefordert",
+        "path": "Composition.section.entry",
+        "sliceName": "BGAangefordert",
+        "short": "BGA angefordert",
+        "definition": "BGA angefordert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-bga-angefordert"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:EKGangefordert",
+        "path": "Composition.section.entry",
+        "sliceName": "EKGangefordert",
+        "short": "EKG angefordert",
+        "definition": "EKG angefordert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-ekg-angefordert"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:Sonographieangefordert",
+        "path": "Composition.section.entry",
+        "sliceName": "Sonographieangefordert",
+        "short": "Sonographie angefordert",
+        "definition": "Sonographie angefordert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-sonographie-angefordert"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:Rontgenthoraxangefordert",
+        "path": "Composition.section.entry",
+        "sliceName": "Rontgenthoraxangefordert",
+        "short": "Röntgenthorax angefordert",
+        "definition": "Röntgenthorax angefordert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenthorax-angefordert"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:RontgenThoraxdurchgefuhrt",
+        "path": "Composition.section.entry",
+        "sliceName": "RontgenThoraxdurchgefuhrt",
+        "short": "Röntgen-Thorax durchgeführt",
+        "definition": "Röntgen-Thorax durchgeführt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenthorax-durchgefuhrt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:RontgenBeckendurchgefuhrt",
+        "path": "Composition.section.entry",
+        "sliceName": "RontgenBeckendurchgefuhrt",
+        "short": "Röntgen-Becken durchgeführt",
+        "definition": "Röntgen-Becken durchgeführt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenbecken-durchgefuhrt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:RontgenWirbelsauledurchgefuhrt",
+        "path": "Composition.section.entry",
+        "sliceName": "RontgenWirbelsauledurchgefuhrt",
+        "short": "Röntgen-Wirbelsäule durchgeführt",
+        "definition": "Röntgen-Wirbelsäule durchgeführt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenwirbelsaule-durchgefuhrt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:GanzkorperCTdurchgefuhrt",
+        "path": "Composition.section.entry",
+        "sliceName": "GanzkorperCTdurchgefuhrt",
+        "short": "Ganzkörper-CT durchgeführt",
+        "definition": "Ganzkörper-CT durchgeführt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:CTKopfdurchgefuhrt",
+        "path": "Composition.section.entry",
+        "sliceName": "CTKopfdurchgefuhrt",
+        "short": "CT Kopf durchgeführt",
+        "definition": "CT Kopf durchgeführt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-kopf-durchgefuhrt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:CTHWSdurchgefuhrt",
+        "path": "Composition.section.entry",
+        "sliceName": "CTHWSdurchgefuhrt",
+        "short": "CT HWS durchgeführt",
+        "definition": "CT HWS durchgeführt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-hws-durchgefuhrt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:CTThoraxdurchgefuhrt",
+        "path": "Composition.section.entry",
+        "sliceName": "CTThoraxdurchgefuhrt",
+        "short": "CT Thorax durchgeführt",
+        "definition": "CT Thorax durchgeführt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-thorax-durchgefuhrt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionDiagnostik.entry:CTTAbdomendurchgefuhrt",
+        "path": "Composition.section.entry",
+        "sliceName": "CTTAbdomendurchgefuhrt",
+        "short": "CT Abdomen durchgeführt",
+        "definition": "CT Abdomen durchgeführt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-abdomen-durchgefuhrt"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Composition.section:sectionDiagnostik.emptyReason",
         "path": "Composition.section.emptyReason",
         "max": "0",
@@ -800,6 +1271,39 @@
         "id": "Composition.section:sectionMassnahmen.text",
         "path": "Composition.section.text",
         "min": 1
+      },
+      {
+        "id": "Composition.section:sectionMassnahmen.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resolve()"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Masnahmen",
+        "definition": "Masnahmen"
+      },
+      {
+        "id": "Composition.section:sectionMassnahmen.entry:Isolation",
+        "path": "Composition.section.entry",
+        "sliceName": "Isolation",
+        "short": "Isolation",
+        "definition": "Isolation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-isolation"
+            ]
+          }
+        ]
       },
       {
         "id": "Composition.section:sectionMassnahmen.emptyReason",
@@ -850,6 +1354,7 @@
       {
         "id": "Composition.section:sectionPharmakotherapie.entry",
         "path": "Composition.section.entry",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -908,6 +1413,7 @@
       {
         "id": "Composition.section:sectionAbschlussdiagnosen.entry",
         "path": "Composition.section.entry",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -1008,6 +1514,209 @@
         "id": "Composition.section:sectionAddendumDokument.text",
         "path": "Composition.section.text",
         "min": 1
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resolve()"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Dokumentationsinformationen",
+        "definition": "Dokumentationsinformationen"
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:ZeitpunktEntscheidungzurVerlegungEntlassung",
+        "path": "Composition.section.entry",
+        "sliceName": "ZeitpunktEntscheidungzurVerlegungEntlassung",
+        "short": "Zeitpunkt Entscheidung zur Verlegung / Entlassung",
+        "definition": "Zeitpunkt Entscheidung zur Verlegung / Entlassung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-entscheidung-zur-verlegung-entlassung"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:ZeitpunktPatientverlegungsentlassungsfahig",
+        "path": "Composition.section.entry",
+        "sliceName": "ZeitpunktPatientverlegungsentlassungsfahig",
+        "short": "Zeitpunkt Patient verlegungs- / entlassungsfähig",
+        "definition": "Zeitpunkt Patient verlegungs- / entlassungsfähig",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs-entlassungsfahig"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:ZeitpunktPatientverlegtentlassennach",
+        "path": "Composition.section.entry",
+        "sliceName": "ZeitpunktPatientverlegtentlassennach",
+        "short": "Zeitpunkt Patient verlegt / entlassen nach",
+        "definition": "Zeitpunkt Patient verlegt / entlassen nach",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegt-entlassen-nach"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:ZeitpunktBeginnpatientenbezogeneDokumentation",
+        "path": "Composition.section.entry",
+        "sliceName": "ZeitpunktBeginnpatientenbezogeneDokumentation",
+        "short": "Zeitpunkt Beginn patientenbezogene Dokumentation",
+        "definition": "Zeitpunkt Beginn patientenbezogene Dokumentation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-beginn-patientenbezogene-dokumentation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:ZeitAnkunftAufnahme",
+        "path": "Composition.section.entry",
+        "sliceName": "ZeitAnkunftAufnahme",
+        "short": "Zeit zwischen Ankunft und Aufnahme",
+        "definition": "Zeit zwischen Ankunft und Aufnahme",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-ankunft-und-aufnahme"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:ZeitAufnahmeErsteinschatzung",
+        "path": "Composition.section.entry",
+        "sliceName": "ZeitAufnahmeErsteinschatzung",
+        "short": "Zeit zwischen Aufnahme und erster Ersteinschätzung",
+        "definition": "Zeit zwischen Aufnahme und erster Ersteinschätzung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erster-ersteinschatzung"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:ZeitAufnahmeArztkontakt",
+        "path": "Composition.section.entry",
+        "sliceName": "ZeitAufnahmeArztkontakt",
+        "short": "Zeit zwischen Aufnahme und erstem Arztkontakt",
+        "definition": "Zeit zwischen Aufnahme und erstem Arztkontakt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-erstem-arztkontakt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:ZeitEntlassungsfahig",
+        "path": "Composition.section.entry",
+        "sliceName": "ZeitEntlassungsfahig",
+        "short": "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten",
+        "definition": "Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs-entlassungsfahig"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:ZeitbiszEntlassung",
+        "path": "Composition.section.entry",
+        "sliceName": "ZeitbiszEntlassung",
+        "short": "Zeit zwischen Aufnahme und Verlassen des Patienten",
+        "definition": "Zeit zwischen Aufnahme und Verlassen des Patienten",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-zwischen-aufnahme-und-verlassen-des-patienten"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:ZeitbiszumExport",
+        "path": "Composition.section.entry",
+        "sliceName": "ZeitbiszumExport",
+        "short": "Zeit bis zum Export",
+        "definition": "Zeit bis zum Export",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeit-bis-zum-export"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:sectionAddendumDokument.entry:EDIS",
+        "path": "Composition.section.entry",
+        "sliceName": "EDIS",
+        "short": "EDIS",
+        "definition": "EDIS",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aktin.org/fhir/StructureDefinition/aktin-pr-edis"
+            ]
+          }
+        ]
       },
       {
         "id": "Composition.section:sectionAddendumDokument.emptyReason",

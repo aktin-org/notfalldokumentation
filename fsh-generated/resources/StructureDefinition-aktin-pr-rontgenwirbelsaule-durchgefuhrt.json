@@ -6,6 +6,7 @@
   "name": "AKTIN_PR_rontgenwirbelsaule_durchgefuhrt",
   "title": "Röntgen-Wirbelsäule durchgeführt (AKTIN)",
   "status": "active",
+  "experimental": false,
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
   "contact": [
@@ -19,6 +20,7 @@
     }
   ],
   "description": "Wurde ein Röntgen der Wirbelsäule durchgeführt?",
+  "purpose": "Hinweise, bitte beachten\n\nDieses AKTIN-Profil zu 'Procedure' ist direkt abgeleitet vom Profil des bekannten Bausteins 'ISiKProzedur'.\nEs gibt die formalen Erfordernisse an, welche die AKTIN-spezifischen Eigenschaften\nzum existierendes Profil zusätzlich vorhanden sein müssen und welche Constraints gelten.\nDiese sind im 'Differential View' direkt ersichtlich.\n\nEs dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung\nder Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -30,7 +32,8 @@
       {
         "id": "Procedure",
         "path": "Procedure",
-        "definition": "Wurde ein Röntgen der Wirbelsäule durchgeführt?"
+        "definition": "Wurde ein Röntgen der Wirbelsäule durchgeführt?",
+        "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
       },
       {
         "id": "Procedure.identifier",
@@ -41,6 +44,21 @@
         "id": "Procedure.status",
         "path": "Procedure.status",
         "patternCode": "completed"
+      },
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "min": 1
+      },
+      {
+        "id": "Procedure.category.coding:SNOMED-CT",
+        "path": "Procedure.category.coding",
+        "sliceName": "SNOMED-CT",
+        "patternCoding": {
+          "code": "363679005",
+          "system": "http://snomed.info/sct",
+          "display": "Imaging"
+        }
       },
       {
         "id": "Procedure.code",

@@ -1,9 +1,9 @@
 {
  "name": "artdecor",
- "version": "0.1",
+ "version": "0.3",
  "type": "fhir.template",
  "license": "CC0-1.0",
- "description": "My FHIR Template",
+ "description": "ART-DECOR IG Template",
  "base": "fhir.base.template",
  "dependencies": {
     "fhir.base.template": "current"

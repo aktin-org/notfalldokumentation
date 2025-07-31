@@ -9,6 +9,7 @@ Title:   "Röntgen-Wirbelsäule durchgeführt (AKTIN)"
 Description: "Wurde ein Röntgen der Wirbelsäule durchgeführt?"
 * . ^definition = "Wurde ein Röntgen der Wirbelsäule durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenwirbelsaule-durchgefuhrt"
+* insert ProfileOnKnownProfile ( Procedure, ISiKProzedur )
 * insert Meta
 * insert Version
 * insert Publisher
@@ -17,6 +18,9 @@ Description: "Wurde ein Röntgen der Wirbelsäule durchgeführt?"
 
 * status 1..1 MS
 * status = #completed
+
+* category 1..1 MS
+* category.coding[SNOMED-CT] = $SCT#363679005	"Imaging"
 
 * code 1..1 MS
 * code.coding[SNOMED-CT] = $SCT#79760008 "Radiography of spine (procedure)"

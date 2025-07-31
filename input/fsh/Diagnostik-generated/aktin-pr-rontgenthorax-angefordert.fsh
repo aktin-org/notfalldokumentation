@@ -9,7 +9,7 @@ Title:   "Röntgenthorax angefordert (AKTIN)"
 Description: "Wurde ein Röntgenthorax angefordert?"
 * . ^definition = "Wurde ein Röntgenthorax angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenthorax-angefordert"
-* insert Notaprofile ( ServiceRequest )
+* insert ProfileOnKnownProfile ( ServiceRequest, MII_PR_Bildgebung_Anforderung_Bildgebung )
 * insert Meta
 * insert Version
 * insert Publisher

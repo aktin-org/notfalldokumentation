@@ -7,10 +7,10 @@ Description: "Bundle für Informationen zu einer Behandlungsepisode in der Notau
 * . ^short = "Bundle Episodenzusammenfassung Notaufnahmeregister"
 * . ^definition = "Bundle Episodenzusammenfassung Notaufnahmeregister."
 
-* identifier 1.. 
+* identifier 1.. MS
   * ^short = "Instance identifier des Bundles"
 * type = #document (exactly)
-* timestamp 1.. 
+* timestamp 1.. MS 
   * ^short = "Zeitstempel der Erzeugung des Bundles"
 
 * link ..0
@@ -24,18 +24,18 @@ Description: "Bundle für Informationen zu einer Behandlungsepisode in der Notau
 * entry ^short = "Entry resource im Bundle Episodenzusammenfassung Notaufnahmeregister"
 * entry ^definition = "Eine Entry resource die im Bundle Episodenzusammenfassung Notaufnahmeregister enthalten ist."
 * entry ^comment = "Muss das Bundle Episodenzusammenfassung Notaufnahmeregister als estes enthalten. Weitere Constraints sind im Composition-Profil spezifiziert."
-* entry.fullUrl 1..
+* entry.fullUrl 1.. MS
 * entry.search ..0
 * entry.request ..0
 * entry.response ..0
 
-* entry.resource 1..
+* entry.resource 1.. MS
 * entry contains
-    composition 1..1 and
-    patient 1..1
+    composition 1..1 MS and
+    patient 1..1 MS
 
-* entry[composition].resource 1..
+* entry[composition].resource 1.. MS
 * entry[composition].resource only AKTIN_PR_episodenzusammenfassung_notaufnahmeregister
 
-* entry[patient].resource 1..
+* entry[patient].resource 1.. MS
 * entry[patient].resource only AKTIN_PR_patient

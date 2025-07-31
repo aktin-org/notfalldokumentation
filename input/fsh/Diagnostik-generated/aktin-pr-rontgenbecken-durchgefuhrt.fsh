@@ -9,7 +9,7 @@ Title:   "Röntgen-Becken durchgeführt (AKTIN)"
 Description: "Wurde ein Röntgen-Becken durchgeführt?"
 * . ^definition = "Wurde ein Röntgen-Becken durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenbecken-durchgefuhrt"
-* insert Notaprofile ( Procedure )
+* insert ProfileOnKnownProfile ( Procedure, ISiKProzedur )
 * insert Meta
 * insert Version
 * insert Publisher

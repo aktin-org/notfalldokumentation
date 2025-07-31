@@ -35,7 +35,7 @@ Description: "Aufenthalt in der Notaufnahme."
   * ^short = "Arztkontakt (Zeitraum)"
 * participant.period.start 0.. MS
   * ^short = "Zeitpunkt erster Arztkontakt"
-* participant.individual only Reference(aktin-pr-practitioner-role-physician)
+* participant.individual only Reference(AKTIN_PR_practitioner_role_physician)
 
 * period 1.. MS
   * ^short = "Aufnahmezeitraum"
@@ -45,7 +45,7 @@ Description: "Aufenthalt in der Notaufnahme."
   * ^short = "Ende Patientenkontakt (Datum und Zeit) = Zeitpunkt der Verlegung/Entlassung"
 
 * hospitalization MS
-* hospitalization.dischargeDisposition from http://aktin.org/fhir/ValueSet/aktin-vs-discharge-disposition
+* hospitalization.dischargeDisposition from http://aktin.org/fhir/ValueSet/aktin-vs-referral-discharge
 
 * location 1.. MS
   * ^short = "Liste der Aufenthaltsorte"

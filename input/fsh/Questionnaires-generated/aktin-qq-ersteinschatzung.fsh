@@ -9,13 +9,26 @@ Usage: #definition
 * meta.lastUpdated = "2024-07-26T14:26:10Z"
 * meta.source = "https://art-decor.org/fhir/4.0/aktin-"
 * meta.tag = $FHIR-version#4.0.1
+
 * language = #de-DE
-* url = "http://art-decor.org/fhir/Questionnaire/aktin-qq-ersteinschatzung"
+
+* url = "http://aktin.org/fhir/Questionnaire/aktin-qq-ersteinschatzung"
+
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:oid:2.16.840.1.113883.2.6.60.3.26.1"
-* name = "Notaufnahmeregister_Ersteinschatzung"
-* title = "Notaufnahmeregister - Ersteinschätzung"
-* description = "AKTIN Questionnaire - Notaufnahmeregister - Ersteinschätzung"
+
+* name = "Beispiel_Registermeldung_Ersteinschatzung"
+* title = "AKTIN Registermeldung als Questionnaire: Ersteinschätzung"
+* description = """
+AKTIN Registermeldung als Questionnaire: Ersteinschätzung, Beispiel nicht zur Implementierung.
+
+Szenario mit Datenelementen aus dem Datensatz Notfalldokumentation (2025) als kleine Beispiel-Registermeldung.
+
+Entwickelt durch die Sektion Notfalldokumentation der Deutschen Interdisziplinären Vereinigung
+für Intensiv- und Notfallmedizin e.V. (DIVI), das Aktionsbündnis für Informations- und
+Kommunikationstechnologie in Intensiv- und Notfallmedizin (AKTIN), die Universität Magdeburg
+und dem RWTH Aachen, dem Robert-Koch-Institut (RKI) und HL7 Deutschland.
+"""
 * status = #draft
 * experimental = false
 * date = "2024-07-26T14:06:55Z"

@@ -6,5 +6,6 @@ Description: "MTS-Präsentationsdiagramm"
 * insert Version
 * insert Publisher
 * ^meta.profile = $shareablevalueset
+* ^experimental = false
 
 * include codes from system http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram

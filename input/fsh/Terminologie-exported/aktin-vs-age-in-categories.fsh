@@ -6,5 +6,6 @@ Description: "Alter in Kategorien"
 * insert Version
 * insert Publisher
 * ^meta.profile = $shareablevalueset
+* ^experimental = false
 
 * include codes from system http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien

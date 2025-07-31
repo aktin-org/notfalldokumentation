@@ -9,7 +9,7 @@ Title:   "CT Extremitäten durchgeführt (AKTIN)"
 Description: "Wurde ein selektives CT der Extremitäten durchgeführt?"
 * . ^definition = "Wurde ein selektives CT der Extremitäten durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-extremitaten-durchgefuhrt"
-* insert Notaprofile ( Procedure )
+* insert ProfileOnKnownProfile ( Procedure, ISiKProzedur )
 * insert Meta
 * insert Version
 * insert Publisher

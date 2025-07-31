@@ -3,16 +3,16 @@
 // ----------
 
 // CodeSystems
-Alias: $SCTPOOC = https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations
-Alias: $FUTLN   = https://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs
+Alias: $SCTPOOC = http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations
+Alias: $FUTLN   = http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs
 
-Alias: $aktin-vs-age-in-categories            = https://aktin.org/fhir/ValueSet/aktin-vs-age-in-categories
-Alias: $aktin-vs-generic-5level-triage-system = https://aktin.org/fhir/ValueSet/aktin-vs-generic-5level-triage-system
-Alias: $aktin-vs-mts-indicators-green         = https://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-green
-Alias: $aktin-vs-mts-indicators-orange        = https://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-orange
-Alias: $aktin-vs-mts-indicators-red           = https://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-red
-Alias: $aktin-vs-mts-indicators-yellow        = https://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-yellow
-Alias: $aktin-vs-mts-presenting-diagram       = https://aktin.org/fhir/ValueSet/aktin-vs-mts-presenting-diagram
+Alias: $aktin-vs-age-in-categories            = http://aktin.org/fhir/ValueSet/aktin-vs-age-in-categories
+Alias: $aktin-vs-generic-5level-triage-system = http://aktin.org/fhir/ValueSet/aktin-vs-generic-5level-triage-system
+Alias: $aktin-vs-mts-indicators-green         = http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-green
+Alias: $aktin-vs-mts-indicators-orange        = http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-orange
+Alias: $aktin-vs-mts-indicators-red           = http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-red
+Alias: $aktin-vs-mts-indicators-yellow        = http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-yellow
+Alias: $aktin-vs-mts-presenting-diagram       = http://aktin.org/fhir/ValueSet/aktin-vs-mts-presenting-diagram
 Alias: $aktin-vs-condition-category           = http://aktin.org/fhir/ValueSet/aktin-vs-condition-category
 
 // Extensions
@@ -36,14 +36,14 @@ Alias: $shareablecodesystem = http://hl7.org/fhir/StructureDefinition/shareablec
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 
 // DE Basisprofile
-Alias: $DeIcdSeitenlokalisation = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION
-Alias: $DeIcdDiagnosesicherheit = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT
-Alias: $icd-seitenlokalisation = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION
+Alias: $DeIcdSeitenlokalisation = http://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION
+Alias: $DeIcdDiagnosesicherheit = http://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT
+Alias: $icd-seitenlokalisation = http://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION
 Alias: $gender-amtlich-de = http://fhir.de/CodeSystem/gender-amtlich-de
 Alias: $identifier-type-de-basis = http://fhir.de/CodeSystem/identifier-type-de-basis
 
 // MII KDS
-Alias: $mii-procedure  = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure 
+Alias: $mii-procedure  = http://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure 
 
 // FHIR Core
 Alias: $EventStatus = http://hl7.org/fhir/event-status

@@ -78,7 +78,7 @@
         "path": "Observation.code.coding",
         "patternCoding": {
           "code": "FLN-15",
-          "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs",
+          "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs",
           "display": "Erste Schmerzmessung"
         }
       },

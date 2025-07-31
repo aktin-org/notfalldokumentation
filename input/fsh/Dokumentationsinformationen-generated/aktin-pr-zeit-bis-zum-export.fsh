@@ -32,7 +32,7 @@ Description: "Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export
 * value[x] only Quantity
 * value[x] ^short = "Zeit bis zum Export"
 * value[x] ^definition = "Zeit bis zum Export"
-* valueQuantity = http://unitsofmeasure.org#Stunden
+* valueQuantity = http://unitsofmeasure.org#h
 
 * subject 1..1 MS
 * subject only Reference(AKTIN_PR_patient)

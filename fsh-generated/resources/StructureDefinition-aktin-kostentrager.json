@@ -34,6 +34,19 @@
         "definition": "Angaben zur Versicherung oder zur Kostenübernahme durch den Patienten selbst oder durch Dritte"
       },
       {
+        "id": "Coverage.extension",
+        "path": "Coverage.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
         "id": "Coverage.extension:kvfall",
         "path": "Coverage.extension",
         "sliceName": "kvfall",

@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "1.2.276.0.76.11.41--20240214094248",
+    "id": "aktin-vs-transportmethod",
     "meta": {
         "lastUpdated": "2024-08-20T19:22:01Z",
         "source": "https://art-decor.org/fhir/4.0/aktin-",

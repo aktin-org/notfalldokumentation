@@ -6,7 +6,7 @@
   "name": "AKTIN_PR_ct_abdomen_durchgefuhrt",
   "title": "CT Abdomen durchgeführt (AKTIN)",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
   "contact": [
@@ -20,12 +20,12 @@
     }
   ],
   "description": "Wurde ein selektives CT des Abdomens durchgführt?",
-  "purpose": "**Hinweis**: Diese Profile gehören noch nicht zu diesem\nImplementerungsleitfaden und sind nicht dazu gedacht,\nimplementiert zu werden. Sie machen deutlich, welche\nweiteren AKTIN-spezifischen Profile vorbereitet sind.\nSie fußen zum Teil auf den bekannten Bausteinen wie ISiKProzedur etc.).\n\nSie dienen dem Aufzeigen der semantischen Annotationen des\nzugrundeliegenden Konzepts und optional der Bindung der Valusets\nan Antwort-Auswahllisten, kodierten Zusatzinformationen und\nMaßeinheiten. Die Profile können in zukünftigen Leitfäden\nformal aufgenommen werden.",
+  "purpose": "Hinweise, bitte beachten\n\nDieses AKTIN-Profil zu 'Procedure' ist direkt abgeleitet vom Profil des bekannten Bausteins 'ISiKProzedur'.\nEs gibt die formalen Erfordernisse an, welche die AKTIN-spezifischen Eigenschaften\nzum existierendes Profil zusätzlich vorhanden sein müssen und welche Constraints gelten.\nDiese sind im 'Differential View' direkt ersichtlich.\n\nEs dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung\nder Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
-  "abstract": true,
+  "abstract": false,
   "type": "Procedure",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/ISiKProzedur",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -33,7 +33,7 @@
         "id": "Procedure",
         "path": "Procedure",
         "definition": "Wurde ein selektives CT des Abdomens durchgführt?",
-        "comment": "AKTIN-spezifisches Profil, für spätere Nutzung"
+        "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
       },
       {
         "id": "Procedure.identifier",
@@ -43,14 +43,12 @@
       {
         "id": "Procedure.status",
         "path": "Procedure.status",
-        "patternCode": "completed",
-        "mustSupport": true
+        "patternCode": "completed"
       },
       {
         "id": "Procedure.code",
         "path": "Procedure.code",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "Procedure.code.coding",
@@ -59,8 +57,7 @@
           "code": "169070004",
           "system": "http://snomed.info/sct",
           "display": "Computed tomography of abdomen (procedure)"
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Procedure.subject",
@@ -72,20 +69,17 @@
               "http://aktin.org/fhir/StructureDefinition/aktin-pr-patient"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Procedure.performed[x]",
         "path": "Procedure.performed[x]",
         "short": "Zeitpunkt, wann Maßnahme durchgeführt wurde",
-        "min": 1,
         "type": [
           {
             "code": "dateTime"
           }
-        ],
-        "mustSupport": true
+        ]
       }
     ]
   }

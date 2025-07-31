@@ -6,8 +6,8 @@ RuleSet: Notaprofile ( wkp )
 **Hinweis**: Diese Profile gehören noch nicht zu diesem
 Implementerungsleitfaden und sind nicht dazu gedacht,
 implementiert zu werden. Sie machen deutlich, welche
-weiteren AKTIN-spezifischen Profile vorbereitet sind.
-Sie fußen zum Teil auf den bekannten Bausteinen wie ISiKProzedur etc.).
+weiteren AKTIN-spezifischen Profile von {wkp} vorbereitet sind.
+Sie fußen zum Teil auf den bekannten Bausteinen wie ISiKProzedur etc.
 
 Sie dienen dem Aufzeigen der semantischen Annotationen des
 zugrundeliegenden Konzepts und optional der Bindung der Valusets

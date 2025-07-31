@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "1.2.276.0.76.3.1.195.11.4--20240214122629",
+    "id": "aktin-vs-accident-mechanism",
     "meta": {
         "lastUpdated": "2024-02-14T12:30:21Z",
         "source": "https://art-decor.org/fhir/4.0/aktin-",

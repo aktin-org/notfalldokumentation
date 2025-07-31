@@ -5,6 +5,7 @@ Description: "CEDIS Presenting Complaint List 3.0"
 * insert Meta
 * insert Publisher
 * ^meta.profile = $shareablevalueset
+* ^experimental = false
 
 * include codes from system http://aktin.org/fhir/CodeSystem/aktin-cs-cedis30
 * $data-absent-reason#OTH "Sonstiges"

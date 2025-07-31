@@ -158,7 +158,7 @@
           "coding": [
             {
               "code": "SCTPOCC-713012003",
-              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
               "display": "ESI-Triagefaktoren"
             }
           ]

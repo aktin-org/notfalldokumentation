@@ -1,4 +1,4 @@
-### Extensions
+### Liste der AKTIN-spezifischen Extensions
 
 Diese ist die Liste der AKTIN-spezifischen FHIR-Extensions.
 

@@ -9,7 +9,7 @@ Title:   "BGA angefordert (AKTIN)"
 Description: "Wurde eine BGA angefordert?"
 * . ^definition = "Wurde eine BGA angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-bga-angefordert"
-* insert Notaprofile ( ServiceRequest )
+* insert ProfileOnKnownProfile ( ServiceRequest, ServiceRequestLab )
 * insert Meta
 * insert Version
 * insert Publisher

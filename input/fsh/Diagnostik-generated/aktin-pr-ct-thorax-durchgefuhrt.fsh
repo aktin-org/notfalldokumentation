@@ -9,7 +9,7 @@ Title:   "CT Thorax durchgeführt (AKTIN)"
 Description: "Wurde ein CT des Thorax durchgeführt?"
 * . ^definition = "Wurde ein CT des Thorax durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-thorax-durchgefuhrt"
-* insert Notaprofile ( Procedure )
+* insert ProfileOnKnownProfile ( Procedure, ISiKProzedur )
 * insert Meta
 * insert Version
 * insert Publisher

@@ -154,7 +154,7 @@
         "path": "Encounter.hospitalization.dischargeDisposition",
         "binding": {
           "strength": "required",
-          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-discharge-disposition"
+          "valueSet": "http://aktin.org/fhir/ValueSet/aktin-vs-referral-discharge"
         }
       },
       {

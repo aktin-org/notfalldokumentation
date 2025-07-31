@@ -6,6 +6,7 @@ Description: "Generic five level triage system"
 * insert Version
 * insert Publisher
 * ^meta.profile = $shareablevalueset
+* ^experimental = false
 
 * $LOINC#LA21538-6 "Resuscitation"
 * $LOINC#LA19759-2 "Emergent"

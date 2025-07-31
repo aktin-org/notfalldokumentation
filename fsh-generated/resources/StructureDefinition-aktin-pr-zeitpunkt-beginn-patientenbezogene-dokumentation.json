@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung",
-  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung",
+  "id": "aktin-pr-zeitpunkt-beginn-patientenbezogene-dokumentation",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-zeitpunkt-beginn-patientenbezogene-dokumentation",
   "version": "2025.0.3-ci",
-  "name": "AKTIN_PR_zeitpunkt_entscheidung_zur_verlegung__entlassung",
-  "title": "Zeitpunkt Entscheidung zur Verlegung / Entlassung (AKTIN)",
+  "name": "AKTIN_PR_zeitpunkt_beginn_patientenbezogene_dokumentation",
+  "title": "Zeitpunkt Beginn patientenbezogene Dokumentation (AKTIN)",
   "status": "active",
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "description": "Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. ",
+  "description": "Zeitpunkt des Beginns der patientenbezogenen Dokumentation",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -30,7 +30,7 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "definition": "Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. "
+        "definition": "Zeitpunkt des Beginns der patientenbezogenen Dokumentation"
       },
       {
         "id": "Observation.identifier",
@@ -69,16 +69,16 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "FLN-124",
+          "code": "FLN-128",
           "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs",
-          "display": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. "
+          "display": "Abgeleitete Informationen über Diagnostik zur Weitergabe - Datum des Beginns der patientenbezogenen Dokumentation"
         },
         "mustSupport": true
       },
       {
         "id": "Observation.code.text",
         "path": "Observation.code.text",
-        "patternString": "Zeitpunkt Entscheidung zur Verlegung / Entlassung"
+        "patternString": "Datum Beginn patientenbezogene Dokumentation"
       },
       {
         "id": "Observation.subject",
@@ -108,8 +108,8 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Zeitpunkt Entscheidung zur Verlegung / Entlassung",
-        "definition": "Zeitpunkt Entscheidung zur Verlegung / Entlassung",
+        "short": "Zeitpunkt Beginn patientenbezogene Dokumentation",
+        "definition": "Zeitpunkt Beginn patientenbezogene Dokumentation",
         "min": 1,
         "type": [
           {

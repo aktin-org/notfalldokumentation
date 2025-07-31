@@ -9,7 +9,7 @@ Title:   "Mikrobiologie angefordert (AKTIN)"
 Description: "Wurde ein Mikrobiologische Untersuchung angefordert?"
 * . ^definition = "Wurde ein Mikrobiologische Untersuchung angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-mikrobiologie-angefordert"
-* insert Notaprofile ( ServiceRequest )
+* insert ProfileOnKnownProfile ( ServiceRequest, ServiceRequestLab )
 * insert Meta
 * insert Version
 * insert Publisher

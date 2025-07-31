@@ -3,11 +3,11 @@
   "id": "org.aktin.notfalldokumentation",
   "language": "en-US",
   "url": "http://aktin.org/fhir/ImplementationGuide/org.aktin.notfalldokumentation",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "name": "AKTIN_Notfalldokumentation",
   "title": "AKTIN Notfalldokumentation",
   "status": "draft",
-  "date": "2025-05-26",
+  "date": "2025-07-31",
   "publisher": "AKTIN e.V.",
   "contact": [
     {
@@ -91,6 +91,22 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/aktin-qq-ersteinschatzung"
+        },
+        "name": "AKTIN Registermeldung als Questionnaire: Ersteinschätzung",
+        "description": "AKTIN Registermeldung als Questionnaire: Ersteinschätzung, Beispiel nicht zur Implementierung.\n\nSzenario mit Datenelementen aus dem Datensatz Notfalldokumentation (2025) als kleine Beispiel-Registermeldung.\n\nEntwickelt durch die Sektion Notfalldokumentation der Deutschen Interdisziplinären Vereinigung\nfür Intensiv- und Notfallmedizin e.V. (DIVI), das Aktionsbündnis für Informations- und\nKommunikationstechnologie in Intensiv- und Notfallmedizin (AKTIN), die Universität Magdeburg\nund dem RWTH Aachen, dem Robert-Koch-Institut (RKI) und HL7 Deutschland.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/aktin-qq-nokeda"
+        },
+        "name": "AKTIN Registermeldung als Questionnaire: NoKeda",
+        "description": "AKTIN Registermeldung als Questionnaire: NoKeda.\n\nSzenario mit Datenelementen aus dem Datensatz Notfalldokumentation (2025) zur Übermittlung der Daten für NoKeda.\n\nEntwickelt durch die Sektion Notfalldokumentation der Deutschen Interdisziplinären Vereinigung\nfür Intensiv- und Notfallmedizin e.V. (DIVI), das Aktionsbündnis für Informations- und\nKommunikationstechnologie in Intensiv- und Notfallmedizin (AKTIN), die Universität Magdeburg\nund dem RWTH Aachen, dem Robert-Koch-Institut (RKI) und HL7 Deutschland.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/aktin-vs-age-in-categories"
         },
         "name": "Alter in Kategorien",
@@ -147,7 +163,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.5.11.28--20240916152134"
+          "reference": "ValueSet/aktin-vs-aufenthaltsorte"
         },
         "description": "Aufenthaltsorte",
         "exampleBoolean": false,
@@ -155,7 +171,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.3--20240214115917"
+          "reference": "ValueSet/aktin-vs-complaint-dynamics"
         },
         "description": "Beschwerdedynamik",
         "exampleBoolean": false,
@@ -267,14 +283,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aktin-pr-datum-beginn-patientenbezogene-dokumentation"
-        },
-        "name": "Datum Beginn patientenbezogene Dokumentation (AKTIN)",
-        "description": "Datum des Beginns der patientenbezogenen Dokumentation",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/aktin-pr-edis"
         },
         "name": "EDIS (AKTIN)",
@@ -299,7 +307,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.11.45--20240816174700"
+          "reference": "ValueSet/aktin-vs-emergencyseverityindex"
         },
         "description": "Emergency Severity Index",
         "exampleBoolean": false,
@@ -331,7 +339,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.20--20240722165110"
+          "reference": "ValueSet/aktin-vs-esi-triagefactors"
         },
         "description": "ESI Triage-Faktoren",
         "exampleBoolean": false,
@@ -355,7 +363,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.8--20240626132930"
+          "reference": "ValueSet/aktin-vs-fahrzeug-des-verunfallten"
         },
         "description": "Fahrzeug des Verunfallten",
         "exampleBoolean": false,
@@ -427,15 +435,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.25--20240219125534"
-        },
-        "description": "Isolationsgrund",
-        "exampleBoolean": false,
-        "name": "Isolationsgrund"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/1.2.276.0.76.11.54--20240724214410"
+          "reference": "ValueSet/aktin-vs-isolation-procedure-types"
         },
         "description": "Isolationstypen",
         "exampleBoolean": false,
@@ -499,7 +499,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.11.81--20240724214339"
+          "reference": "ValueSet/aktin-vs-injury-body-regions"
         },
         "description": "Körperregionen der Verletzung",
         "exampleBoolean": false,
@@ -627,14 +627,6 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/aktin-qq-ersteinschatzung"
-        },
-        "name": "Notaufnahmeregister - Ersteinschätzung",
-        "description": "AKTIN Questionnaire - Notaufnahmeregister - Ersteinschätzung",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/aktin-pr-patient"
         },
         "name": "Patient (AKTIN)",
@@ -643,7 +635,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.2--20240214112351"
+          "reference": "ValueSet/aktin-vs-patient-escort"
         },
         "description": "Patientenbegleitung",
         "exampleBoolean": false,
@@ -651,7 +643,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.1--20240219125534"
+          "reference": "ValueSet/aktin-vs-problems-snomed"
         },
         "description": "Liste der entsprechenden Zweige in SNOMED-CT zur Angabe von Gesundheitsproblemen (Conditions). Diese Zusammenstellung ist identisch mit dem Value Set *IPS Problems* (2.16.840.1.113883.11.22.73) der International Patient Summary (IPS)",
         "exampleBoolean": false,
@@ -771,14 +763,6 @@
       },
       {
         "reference": {
-          "reference": "Bundle/Instance-Bundle-ec03e46d-38fc-458f-87c7-c8a4d611d2ae"
-        },
-        "name": "Title1",
-        "description": "Description1",
-        "exampleCanonical": "http://aktin.org/fhir/StructureDefinition/aktin-pr-bundle-episodenzusammenfassung-notaufnahmeregister"
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/aktin-pr-tranexamsaure"
         },
         "name": "Tranexamsäure (AKTIN)",
@@ -787,7 +771,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.11.41--20240214094248"
+          "reference": "ValueSet/aktin-vs-transportmethod"
         },
         "description": "Transportmethode",
         "exampleBoolean": false,
@@ -803,7 +787,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.7--20240214134346"
+          "reference": "ValueSet/aktin-vs-discharge-disposition"
         },
         "description": "Typ Entlassung",
         "exampleBoolean": false,
@@ -811,7 +795,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.26--20240219130853"
+          "reference": "ValueSet/aktin-vs-referral-actions"
         },
         "description": "Typ Verlegung",
         "exampleBoolean": false,
@@ -819,7 +803,15 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.18--20240808203301"
+          "reference": "ValueSet/1.2.276.0.76.3.1.195.5.11.30--20250731122301"
+        },
+        "description": "Typ Verlegung Entlassung Kombi aus den beiden Value Sets",
+        "exampleBoolean": false,
+        "name": "Typ Verlegung Entlassung Kombi"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/aktin-vs-unfallart-traumaregister"
         },
         "description": "Unfallart Traumaregister",
         "exampleBoolean": false,
@@ -835,7 +827,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.5--20240214124143"
+          "reference": "ValueSet/aktin-vs-accident-type"
         },
         "description": "Unfallkinetik",
         "exampleBoolean": false,
@@ -851,7 +843,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.4--20240214122629"
+          "reference": "ValueSet/aktin-vs-accident-mechanism"
         },
         "description": "Unfallmechanismus (SNOMED)",
         "exampleBoolean": false,
@@ -867,7 +859,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.6--20240214131928"
+          "reference": "ValueSet/aktin-vs-accident-reason-snomed"
         },
         "description": "Unfallursache (SNOMED)",
         "exampleBoolean": false,
@@ -891,14 +883,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.12--20240722152032"
-        },
-        "description": "Used Triage System",
-        "exampleBoolean": false,
-        "name": "Used Triage System"
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss"
         },
         "name": "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss? (AKTIN)",
@@ -915,7 +899,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.3.1.195.11.27--20240820105527"
+          "reference": "ValueSet/aktin-vs-yes-no-other-unknown-notrecorded"
         },
         "description": "Yes | No | Other | Unknown | Not Recorded",
         "exampleBoolean": false,
@@ -979,7 +963,15 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aktin-pr-zeitpunkt-entscheidung-zur-verlegung--entlassung"
+          "reference": "StructureDefinition/aktin-pr-zeitpunkt-beginn-patientenbezogene-dokumentation"
+        },
+        "name": "Zeitpunkt Beginn patientenbezogene Dokumentation (AKTIN)",
+        "description": "Zeitpunkt des Beginns der patientenbezogenen Dokumentation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-pr-zeitpunkt-entscheidung-zur-verlegung-entlassung"
         },
         "name": "Zeitpunkt Entscheidung zur Verlegung / Entlassung (AKTIN)",
         "description": "Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. ",
@@ -1003,7 +995,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aktin-pr-zeitpunkt-patient-verlegt--entlassen-nach"
+          "reference": "StructureDefinition/aktin-pr-zeitpunkt-patient-verlegt-entlassen-nach"
         },
         "name": "Zeitpunkt Patient verlegt / entlassen nach (AKTIN)",
         "description": "Wann wurde der Patient verlegt oder entlassen?",
@@ -1011,7 +1003,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs--entlassungsfahig"
+          "reference": "StructureDefinition/aktin-pr-zeitpunkt-patient-verlegungs-entlassungsfahig"
         },
         "name": "Zeitpunkt Patient verlegungs- / entlassungsfähig (AKTIN)",
         "description": "Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde. Ab dann wartet der Patient auf ein Bett bzw. auf die Transportgelegenheit in die ambulante Versorgung, unter Umständen bei weiterer dokumentationswürdigem Monitoring und Therapie. ",
@@ -1035,7 +1027,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/1.2.276.0.76.11.42--20240214104801"
+          "reference": "ValueSet/aktin-vs-referral-setting"
         },
         "description": "Zuweiser",
         "exampleBoolean": false,
@@ -1099,7 +1091,7 @@
       },
       {
         "code": "releaselabel",
-        "value": "ci-build"
+        "value": "ballot"
       },
       {
         "code": "excludettl",

@@ -9,7 +9,7 @@ Title:   "CT- bzw. MR- bzw. DS-Angiographie (AKTIN)"
 Description: "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?"
 * . ^definition = "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-bzw-mr-bzw-dsangiographie"
-* insert Notaprofile ( Procedure )
+* insert ProfileOnKnownProfile ( Procedure, ISiKProzedur )
 * insert Meta
 * insert Version
 * insert Publisher

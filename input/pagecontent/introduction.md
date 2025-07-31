@@ -20,7 +20,7 @@ Seinerzeit wurden schließlich **Leitfäden auf der Basis der HL7 Clinical Docum
 
 #### Heutige Implementierungen und Infrastrukturen
 
-Die Spezifikationen sind mittlerweile in etwa 60 universitären und nicht-universitären Notaufnahmen im gesamten Bundesgebiet implementiert. Im Rahmen des Netzwerk Universitätsmedizin (NUM) AKTIN2.0 Vorhabens sind weitere Anbindungen von Notaufnahmen ab 2025 geplant, mit der die Zahl auf über 70 angebundene Notaufnahmen ansteigen soll.
+Die Spezifikationen sind mittlerweile in etwa 60 universitären und nicht-universitären Notaufnahmen im gesamten Bundesgebiet implementiert. Im Rahmen des Netzwerk Universitätsmedizin (NUM) AKTIN2.0 Vorhabens sind weitere Anbindungen von Notaufnahmen ab 2025 geplant, mit der die Zahl auf über 70-90 angebundene Notaufnahmen ansteigen soll.
 
 {% include img.html img="Aktinkarte.png" caption="Übersicht über die an AKTIN angeschlossenen universitären und nicht-universitären Notaufnahmen im gesamten Bundesgebiet" width="50%" %}
 
@@ -44,6 +44,12 @@ Die Sektion Notfalldokumentation der Deutschen Interdisziplinären Vereinigung f
 
 Die neue **Notfalldokumentation 2025** der Deutschen Interdisziplinären Vereinigung für Intensiv- und Notfallmedizin (DIVI) e.V. und des Aktionsbündnis Informations- und Kommunikations-Technologie in Intensiv- und Notfallmedizin (AKTIN) e. V. schließt nun neben der bisher betrachteten Notfallaufnahme inkl. Weiterbehandlung bzw. Verbleib der Patientinnen und Patienten auch den präklinischen Bereich mit ein und umschreibt damit einen umfassenden Datensatz für Notfallbehandlungen.
 
-Als ersten wichtigen Schritt, die Notfalldokumentation 2025 in der Fläche zum Einsatz zu bringen, ist die Bereitstellung der Interoperabilitätsstandards für Datenformate mit den zugehörigen Terminologien für das **Szenario Notaufnahmeregister**.
+Als ersten wichtigen Schritt, die Notfalldokumentation 2025 in der Fläche zum Einsatz zu bringen, ist die Bereitstellung der Interoperabilitätsstandards für Datenformate mit den zugehörigen Terminologien
+
+- für das **Szenario Notaufnahmeregister** als **Episodenzusammenfassung Notaufnahme** als FHIR Document Bundle sowie
+- die aus dem *Szenario Notaufnahmeregister* als **Szenario Nokeda** abgeleitete **Registermeldung Nokeda** für das RKI als Questionnaire/QuestionnaireResponse sowie 
+- eine ebenfalls aus dem *Szenario Notaufnahmeregister* abgeleitete Questionnaire/QuestionnaireResponse zur **Ersteinschätzung**, die zunächst eher eine lehrenden Character hat. 
+
+Es ist geplant, dass die Episodenzusammenfassung Notaufnahme erweitert wird und in den kommenden Monaten und Jahren weitere Registermeldungen folgen.
 
 <p> </p>

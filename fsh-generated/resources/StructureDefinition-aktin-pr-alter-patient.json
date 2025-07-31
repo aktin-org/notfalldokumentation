@@ -115,7 +115,7 @@
           }
         ],
         "patternQuantity": {
-          "code": "y",
+          "code": "a",
           "system": "http://unitsofmeasure.org"
         },
         "mustSupport": true

@@ -9,7 +9,7 @@ Title:   "CT Kopf durchgeführt (AKTIN)"
 Description: "Wurde ein selektives Kopf-CT durchgeführt?"
 * . ^definition = "Wurde ein selektives Kopf-CT durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-kopf-durchgefuhrt"
-* insert Notaprofile ( Procedure )
+* insert ProfileOnKnownProfile ( Procedure, ISiKProzedur )
 * insert Meta
 * insert Version
 * insert Publisher

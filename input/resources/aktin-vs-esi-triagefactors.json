@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "1.2.276.0.76.3.1.195.11.20--20240722165110",
+    "id": "aktin-vs-esi-triagefactors",
     "meta": {
         "lastUpdated": "2024-07-22T16:51:10Z",
         "source": "https://art-decor.org/fhir/4.0/aktin-",

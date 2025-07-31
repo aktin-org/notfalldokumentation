@@ -1,7 +1,43 @@
 == Suppressed Messages ==
-# Slicing problem supressed
+# Slicing problem suppressed
 The element Observation.value[x]:valueCodeableConcept launches straight into slicing without the slicing being set up properly first
 # Need to be checked
 Unknown CodeSystem Property 'http://hl7.org/fhir/concept-properties'. If you are creating your own property, do not create it in the HL7 namespace
 # Need to be checked
 A property is already defined with the URI 'http://hl7.org/fhir/concept-properties'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Kombination der Typ Verlegung und Typ Entlassung für NoKeda' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-123. There are no valid display names found for language(s) 'en-US'. Default display is 'Kombination Typen Verlegung und Entlassung' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-123'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-127. There are no valid display names found for language(s) 'en-US'. Default display is 'Stunde Beginn patientenbezogene Dokumentation' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-127'
+# No en-US displays
+!!Wrong Display Name 'Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Leitsymptom) innerhalb von 28 Tagen wieder vorgestellt?' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-11. There are no valid display names found for language(s) 'en-US'. Default display is 'Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-11'
+# No en-US displays
+!!Wrong Display Name 'Die niedrigste GCS-Summe während der Dokumentation' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-14. There are no valid display names found for language(s) 'en-US'. Default display is 'Niedrigste GCS-Summe' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-14'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-132. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-132'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export-Zeitpunkt aus dem Primärsystem' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-134. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeit bis zum Export' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-134'
+# No en-US displays
+!!Wrong Display Name 'Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrund (Leitsymptom) in Stunden oder Tagen' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-12. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-12'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und administrativer Aufnahme' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-129. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeit zwischen Ankunft und Aufnahme' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-129'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und erstem Arztkontakt' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-131. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeit zwischen Aufnahme und erstem Arztkontakt' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-131'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und erster Ersteinschätzung' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-130. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeit zwischen Aufnahme und erster Ersteinschätzung' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-130'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und Verlassen des Patienten' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-133. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeit zwischen Aufnahme und Verlassen des Patienten' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-133'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Datum des Beginns der patientenbezogenen Dokumentation' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-128. There are no valid display names found for language(s) 'en-US'. Default display is 'Datum Beginn patientenbezogene Dokumentation' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-128'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. ' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-124. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeitpunkt Entscheidung zur Verlegung / Entlassung' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-124'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-137. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeitpunkt Export aus EDIS' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-137'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Wann wurde der Patient verlegt oder entlassen?' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-126. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeitpunkt Patient verlegt / entlassen nach' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-126'
+# No en-US displays
+!!Wrong Display Name 'Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde.' for http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-125. There are no valid display names found for language(s) 'en-US'. Default display is 'Zeitpunkt Patient verlegungs- / entlassungsfähig' für 'http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs#FLN-125'
+# not sufficiently defined source code system
+!!Der Code V29.91 ist im System http://hl7.org/fhir/sid/icd-10 nicht gültig
+# not sufficiently defined source code system
+!!Der Code V29.99 ist im System http://hl7.org/fhir/sid/icd-10 nicht gültig

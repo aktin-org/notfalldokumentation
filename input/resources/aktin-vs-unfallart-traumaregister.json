@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "1.2.276.0.76.3.1.195.11.18--20240808203301",
+    "id": "aktin-vs-unfallart-traumaregister",
     "meta": {
         "lastUpdated": "2024-08-08T20:46:21Z",
         "source": "https://art-decor.org/fhir/4.0/aktin-",

@@ -13,7 +13,6 @@ Leganda
 * insert Meta
 * insert Publisher
 * ^meta.profile = $shareablecodesystem
-* ^content = #complete
 * ^version = "3.0.0"
 * ^status = #draft
 * ^experimental = false

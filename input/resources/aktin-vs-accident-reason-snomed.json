@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "1.2.276.0.76.3.1.195.11.6--20240214131928",
+    "id": "aktin-vs-accident-reason-snomed",
     "meta": {
         "lastUpdated": "2025-05-26T16:20:16Z",
         "source": "https://art-decor.org/fhir/4.0/aktin-",

@@ -5,6 +5,7 @@ Description: "Patient unter Substanz-Einfluss?"
 * insert Meta
 * insert Publisher
 * ^meta.profile = $shareablevalueset
+* ^experimental = false
 
 * LOINC#LA28145-3 "Patient is not influenced by substance use"
 * LOINC#LA28144-6 "Unknown substance"

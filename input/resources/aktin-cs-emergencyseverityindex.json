@@ -1,1 +1,188 @@
-{"resourceType":"CodeSystem","id":"aktin-cs-emergencyseverityindex","meta":{"profile":["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]},"language":"de-DE","extension":[{"url":"http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod","valuePeriod":{"start":"2015-03-03T00:00:00+02:00"}}],"url":"http://aktin.org/fhir/CodeSystem/aktin-cs-emergencyseverityindex","identifier":[{"use":"official","system":"urn:ietf:rfc:3986","value":"urn:oid:1.2.276.0.76.5.437"}],"version":"2015-03-03T00:00:00","name":"Emergencyseverityindex","title":"Emergency Severity Index","status":"draft","experimental":false,"publisher":"AKTIN e. V.","contact":[{"name":"AKTIN e. V.","telecom":[{"system":"phone","value":"Tel. +49 391 67 28186"},{"system":"email","value":"office@aktin.org"}]}],"description":"Emergency Severity Index","caseSensitive":false,"content":"complete","count":5,"property":[{"code":"status","uri":"http://hl7.org/fhir/concept-properties","description":"A code that indicates the status of the concept. Values found in this version of the code system are: active","type":"code"},{"code":"effectiveDate","uri":"http://hl7.org/fhir/concept-properties","description":"The date at which the concept was status was last changed. This is calculated based on the highest of 'creation date', 'expiration date', and 'official release date'","type":"dateTime"}],"concept":[{"code":"1","display":"Resuscitation - Immediate, life-saving intervention required without delay","designation":[{"language":"en-US","use":{"system":"http://snomed.info/sct","code":"900000000000013009","display":"Synonym"},"value":"Resuscitation - Immediate, life-saving intervention required without delay"}],"property":[{"code":"status","valueCode":"active"},{"code":"effectiveDate","valueDateTime":"2015-03-03"}]},{"code":"2","display":"Emergent - High risk of deterioration, or signs of a time-critical problem","designation":[{"language":"en-US","use":{"system":"http://snomed.info/sct","code":"900000000000013009","display":"Synonym"},"value":"Emergent - High risk of deterioration, or signs of a time-critical problem"}],"property":[{"code":"status","valueCode":"active"},{"code":"effectiveDate","valueDateTime":"2015-03-03"}]},{"code":"3","display":"Urgent - Stable, with multiple types of resources needed to investigate or treat (such as lab tests plus X-ray imaging)","designation":[{"language":"en-US","use":{"system":"http://snomed.info/sct","code":"900000000000013009","display":"Synonym"},"value":"Urgent - Stable, with multiple types of resources needed to investigate or treat (such as lab tests plus X-ray imaging)"}],"property":[{"code":"status","valueCode":"active"},{"code":"effectiveDate","valueDateTime":"2015-03-03"}]},{"code":"4","display":"Less Urgent - Stable, with only one type of resource anticipated (such as only an X-ray, or only sutures)","designation":[{"language":"en-US","use":{"system":"http://snomed.info/sct","code":"900000000000013009","display":"Synonym"},"value":"Less Urgent - Stable, with only one type of resource anticipated (such as only an X-ray, or only sutures)"}],"property":[{"code":"status","valueCode":"active"},{"code":"effectiveDate","valueDateTime":"2015-03-03"}]},{"code":"5","display":"Nonurgent - Stable, with no resources anticipated except oral or topical medications, or prescriptions","designation":[{"language":"en-US","use":{"system":"http://snomed.info/sct","code":"900000000000013009","display":"Synonym"},"value":"Nonurgent - Stable, with no resources anticipated except oral or topical medications, or prescriptions"}],"property":[{"code":"status","valueCode":"active"},{"code":"effectiveDate","valueDateTime":"2015-03-03"}]}]}
+{
+    "resourceType": "CodeSystem",
+    "id": "aktin-cs-emergencyseverityindex",
+    "meta": {
+        "profile": ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+    },
+    "language": "de-DE",
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+            "valuePeriod": {"start": "2015-03-03T00:00:00+02:00"}
+        }
+    ],
+    "url": "http://aktin.org/fhir/CodeSystem/aktin-cs-emergencyseverityindex",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.2.276.0.76.5.437"
+        }
+    ],
+    "version": "2015-03-03T00:00:00",
+    "name": "Emergencyseverityindex",
+    "title": "Emergency Severity Index",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "AKTIN e. V.",
+    "contact": [
+        {
+            "name": "AKTIN e. V.",
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "Tel. +49 391 67 28186"
+                },
+                {
+                    "system": "email",
+                    "value": "office@aktin.org"
+                }
+            ]
+        }
+    ],
+    "description": "Emergency Severity Index",
+    "caseSensitive": false,
+    "content": "complete",
+    "count": 5,
+    "property": [
+        {
+            "code": "status",
+            "uri": "http://hl7.org/fhir/concept-properties",
+            "description": "A code that indicates the status of the concept. Values found in this version of the code system are: active",
+            "type": "code"
+        },
+        {
+            "code": "effectiveDate",
+            "uri": "http://hl7.org/fhir/concept-properties",
+            "description": "The date at which the concept was status was last changed. This is calculated based on the highest of 'creation date', 'expiration date', and 'official release date'",
+            "type": "dateTime"
+        }
+    ],
+    "concept": [
+        {
+            "code": "1",
+            "display": "Resuscitation - Immediate, life-saving intervention required without delay",
+            "designation": [
+                {
+                    "language": "en-US",
+                    "use": {
+                        "system": "http://snomed.info/sct",
+                        "code": "900000000000013009",
+                        "display": "Synonym"
+                    },
+                    "value": "Resuscitation - Immediate, life-saving intervention required without delay"
+                }
+            ],
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2015-03-03"
+                }
+            ]
+        },
+        {
+            "code": "2",
+            "display": "Emergent - High risk of deterioration, or signs of a time-critical problem",
+            "designation": [
+                {
+                    "language": "en-US",
+                    "use": {
+                        "system": "http://snomed.info/sct",
+                        "code": "900000000000013009",
+                        "display": "Synonym"
+                    },
+                    "value": "Emergent - High risk of deterioration, or signs of a time-critical problem"
+                }
+            ],
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2015-03-03"
+                }
+            ]
+        },
+        {
+            "code": "3",
+            "display": "Urgent - Stable, with multiple types of resources needed to investigate or treat (such as lab tests plus X-ray imaging)",
+            "designation": [
+                {
+                    "language": "en-US",
+                    "use": {
+                        "system": "http://snomed.info/sct",
+                        "code": "900000000000013009",
+                        "display": "Synonym"
+                    },
+                    "value": "Urgent - Stable, with multiple types of resources needed to investigate or treat (such as lab tests plus X-ray imaging)"
+                }
+            ],
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2015-03-03"
+                }
+            ]
+        },
+        {
+            "code": "4",
+            "display": "Less Urgent - Stable, with only one type of resource anticipated (such as only an X-ray, or only sutures)",
+            "designation": [
+                {
+                    "language": "en-US",
+                    "use": {
+                        "system": "http://snomed.info/sct",
+                        "code": "900000000000013009",
+                        "display": "Synonym"
+                    },
+                    "value": "Less Urgent - Stable, with only one type of resource anticipated (such as only an X-ray, or only sutures)"
+                }
+            ],
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2015-03-03"
+                }
+            ]
+        },
+        {
+            "code": "5",
+            "display": "Nonurgent - Stable, with no resources anticipated except oral or topical medications, or prescriptions",
+            "designation": [
+                {
+                    "language": "en-US",
+                    "use": {
+                        "system": "http://snomed.info/sct",
+                        "code": "900000000000013009",
+                        "display": "Synonym"
+                    },
+                    "value": "Nonurgent - Stable, with no resources anticipated except oral or topical medications, or prescriptions"
+                }
+            ],
+            "property": [
+                {
+                    "code": "status",
+                    "valueCode": "active"
+                },
+                {
+                    "code": "effectiveDate",
+                    "valueDateTime": "2015-03-03"
+                }
+            ]
+        }
+    ]
+}

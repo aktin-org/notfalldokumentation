@@ -1,32 +1,21 @@
 ### AKTIN Notfalldokumentation
 
-Diese Sammlung von FHIR-Artefakten ist im Rahmen des "AKTIN e.V. - Aktionsbündnis zur Verbesserung der Kommunikations- und Informationstechnologie in der Intensiv- und Notfallmedizin" (AKTIN) zusammengestellt.
+Dieser Implementierungsleitfaden und die Sammlung von weiteren FHIR-Artefakten ist im Rahmen des "AKTIN e.V. - Aktionsbündnis zur Verbesserung der Kommunikations- und Informationstechnologie in der Intensiv- und Notfallmedizin" (AKTIN) zusammengestellt. Das übergeordnete Ziel ist, für die Verbesserung der Dokumentation in der Notfallmedizin FHIR-Profile zur Verwendung im Versorgungskontext zur Verfügung zu stellen. Dieser Leitfaden fokussiert zunächst auf die **AKTIN Akte „Notfalldokumentation“**, die als Episodenzusammenfassung der Notfallbehandlung in der Notaufnahme fungiert und einen ersten Bestandteil der AKTIN Akte darstellt. Neben diesem ersten Dokument kann man sich in der AKTIN Akte in Zukunft weitere Dokumente, granulare Ressourcen-Netzwerke, Operatoren usw. vorstellen.
 
 Die [Einleitung](introduction.html) gibt Aufschluss über das Rationale der AKTIN-Initiative und zeigt einen Rückblick und die bisherigen Errungenschaften.
 
-Der [Technische Hintergrund](technicalbackground.html) erläutert die momentane Zielsetzung dieser Sammlung von FHIR-Artefakten.
+Der [Technische Hintergrund](technicalbackground.html) erläutert die momentane Zielsetzung dieses Implementierungsleitfadens und der Sammlung von weiteren FHIR-Artefakten.
 
-Schließlich finden sich die [Profile und Beispiele](profiles.html), [Extensions](extensions.html), [Registermeldungsbeispiele](registrymessages.html) und [Terminologien](terminology.html) auf weiteren zusammenfassenden Seiten.
+Schließlich finden sich die [Profile und Beispiele](profiles.html), [Extensions](extensions.html), [Registermeldungen nebst Beispielen](registrymessages.html) und [Terminologien](terminology.html) auf weiteren zusammenfassenden Seiten.
 
-<div class="new-content">bla blah new-content</div>
-
-<div class="modified-content">bla blah modified-content</div>
-
-<div class="feedback">bla blah feedback</div>
-
-<div class="note-to-balloters">bla blah note-to-balloters</div>
-
-<div class="dragon">bla blah dragon</div>
-
-```HTML
-<div class="mermaid">
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+<div class="note-to-balloters">
+Im Vorfeld dieses Kommentierungsverfahrens gab es zahlreichen Input von verschiedener Seite zu den "Previews" der AKTIN Akte Notfalldokumentation und FHIR Profilen sowie Terminologien. Dafür danken wir allen Kommentatoren. Die Diskussionen hierzu finden sich im Ballotportal von HL7 Deutschland.
+<p/>
+Dies ist das zweite Kommentierungsverfahren auf der Basis des komplett definierten FHIR Dokuments <strong>Episodenzusammenfassung Notfalldokumentation</strong> und den aufgeführten <strong>Registermeldungen</strong> <i>Ersteinschätzung</i> und <i>NoKeda</i>.
 </div>
-```
+
+
+
 
 ### Autoren
 
@@ -37,6 +26,8 @@ graph TD;
 {% include authors.html img="Dgina-logo.png" caption="Deutsche Gesellschaft Interdisziplinäre Notfall- und Akutmedizin e. V. (DGINA), Berlin" %}
 
 {% include authors.html img="Hl7neu-logo.png" caption="HL7 Deutschland e. V., Berlin, Köln" %}
+
+{% include authors.html img="Adot-logo.jpg" caption="ART-DECOR Open Tools GmbH, Berlin" %}
 
 ### Dependency Table
 

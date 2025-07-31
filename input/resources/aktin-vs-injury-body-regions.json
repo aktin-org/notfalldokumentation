@@ -1,1 +1,98 @@
-{"resourceType":"ValueSet","id":"1.2.276.0.76.11.81--20240724214339","meta":{"lastUpdated":"2024-07-24T21:43:39Z","source":"https://art-decor.org/fhir/4.0/aktin-","profile":["http://hl7.org/fhir/StructureDefinition/shareablevalueset"],"tag":[{"system":"http://hl7.org/fhir/FHIR-version","code":"4.0.1"}]},"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod","valuePeriod":{"start":"2024-07-24T21:43:39+02:00"}}],"url":"http://aktin.org/fhir/ValueSet/aktin-vs-injury-body-regions","identifier":[{"use":"official","system":"urn:ietf:rfc:3986","value":"urn:oid:1.2.276.0.76.11.81"}],"version":"2024-07-24T21:43:39","name":"Injury_body_regions","title":"Körperregionen der Verletzung","status":"draft","experimental":false,"publisher":"AKTIN e. V.","contact":[{"name":"AKTIN e. V.","telecom":[{"system":"phone","value":"Tel. +49 391 67 28186"},{"system":"email","value":"office@aktin.org"}]}],"description":"Körperregionen der Verletzung","immutable":false,"copyright":"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.","compose":{"include":[{"system":"http://snomed.info/sct","concept":[{"code":"89546000","display":"Bone structure of cranium (body structure)"},{"code":"89545001","display":"Face structure (body structure)"},{"code":"51185008","display":"Thoracic structure (body structure)"},{"code":"113345001","display":"Abdominal structure (body structure)"},{"code":"12921003","display":"Pelvic structure (body structure)"},{"code":"120574008","display":"Upper extremity part (body structure)"},{"code":"120575009","display":"Lower extremity part (body structure)"},{"code":"87784001","display":"Soft tissues (body structure)"},{"code":"44300000","display":"Entire vertebral column (body structure)"}]}]}}
+{
+    "resourceType": "ValueSet",
+    "id": "aktin-vs-injury-body-regions",
+    "meta": {
+        "lastUpdated": "2024-07-24T21:43:39Z",
+        "source": "https://art-decor.org/fhir/4.0/aktin-",
+        "profile": ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"],
+        "tag": [
+            {
+                "system": "http://hl7.org/fhir/FHIR-version",
+                "code": "4.0.1"
+            }
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+            "valuePeriod": {"start": "2024-07-24T21:43:39+02:00"}
+        }
+    ],
+    "url": "http://aktin.org/fhir/ValueSet/aktin-vs-injury-body-regions",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.2.276.0.76.11.81"
+        }
+    ],
+    "version": "2024-07-24T21:43:39",
+    "name": "Injury_body_regions",
+    "title": "Körperregionen der Verletzung",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "AKTIN e. V.",
+    "contact": [
+        {
+            "name": "AKTIN e. V.",
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "Tel. +49 391 67 28186"
+                },
+                {
+                    "system": "email",
+                    "value": "office@aktin.org"
+                }
+            ]
+        }
+    ],
+    "description": "Körperregionen der Verletzung",
+    "immutable": false,
+    "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "89546000",
+                        "display": "Bone structure of cranium (body structure)"
+                    },
+                    {
+                        "code": "89545001",
+                        "display": "Face structure (body structure)"
+                    },
+                    {
+                        "code": "51185008",
+                        "display": "Thoracic structure (body structure)"
+                    },
+                    {
+                        "code": "113345001",
+                        "display": "Abdominal structure (body structure)"
+                    },
+                    {
+                        "code": "12921003",
+                        "display": "Pelvic structure (body structure)"
+                    },
+                    {
+                        "code": "120574008",
+                        "display": "Upper extremity part (body structure)"
+                    },
+                    {
+                        "code": "120575009",
+                        "display": "Lower extremity part (body structure)"
+                    },
+                    {
+                        "code": "87784001",
+                        "display": "Soft tissues (body structure)"
+                    },
+                    {
+                        "code": "44300000",
+                        "display": "Entire vertebral column (body structure)"
+                    }
+                ]
+            }
+        ]
+    }
+}

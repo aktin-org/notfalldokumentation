@@ -9,7 +9,7 @@ Title:   "Sonographie angefordert (AKTIN)"
 Description: "Wurde eine Sonographie angefordert?"
 * . ^definition = "Wurde eine Sonographie angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-sonographie-angefordert"
-* insert Notaprofile ( ServiceRequest )
+* insert ProfileOnKnownProfile ( ServiceRequest, MII_PR_Bildgebung_Anforderung_Bildgebung )
 * insert Meta
 * insert Version
 * insert Publisher

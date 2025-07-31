@@ -24,7 +24,8 @@
         "id": "Bundle.identifier",
         "path": "Bundle.identifier",
         "short": "Instance identifier des Bundles",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Bundle.type",
@@ -35,7 +36,8 @@
         "id": "Bundle.timestamp",
         "path": "Bundle.timestamp",
         "short": "Zeitstempel der Erzeugung des Bundles",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Bundle.link",
@@ -66,12 +68,14 @@
       {
         "id": "Bundle.entry.fullUrl",
         "path": "Bundle.entry.fullUrl",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Bundle.entry.resource",
         "path": "Bundle.entry.resource",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Bundle.entry.search",
@@ -93,7 +97,8 @@
         "path": "Bundle.entry",
         "sliceName": "composition",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Bundle.entry:composition.resource",
@@ -112,7 +117,8 @@
         "path": "Bundle.entry",
         "sliceName": "patient",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Bundle.entry:patient.resource",

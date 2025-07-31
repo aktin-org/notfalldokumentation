@@ -6,5 +6,6 @@ Description: "MTS-Indikatoren ORANGE"
 * insert Version
 * insert Publisher
 * ^meta.profile = $shareablevalueset
+* ^experimental = false
 
 * include codes from system http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators where concept is-a #orange

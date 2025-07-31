@@ -9,7 +9,7 @@ Title:   "MRT durchgeführt (AKTIN)"
 Description: "Wurde ein MRT im Rahmen der Schockraumversorgung durchgeführt?"
 * . ^definition = "Wurde ein MRT im Rahmen der Schockraumversorgung durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-mrt-durchgefuhrt"
-* insert Notaprofile ( Procedure )
+* insert ProfileOnKnownProfile ( Procedure, ISiKProzedur )
 * insert Meta
 * insert Version
 * insert Publisher

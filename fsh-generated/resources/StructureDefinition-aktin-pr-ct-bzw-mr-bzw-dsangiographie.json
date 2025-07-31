@@ -6,7 +6,7 @@
   "name": "AKTIN_PR_ct_bzw_mr_bzw_dsangiographie",
   "title": "CT- bzw. MR- bzw. DS-Angiographie (AKTIN)",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2025-06-12",
   "publisher": "AKTIN e.V.",
   "contact": [
@@ -20,10 +20,10 @@
     }
   ],
   "description": "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?",
-  "purpose": "**Hinweis**: Diese Profile gehören noch nicht zu diesem\nImplementerungsleitfaden und sind nicht dazu gedacht,\nimplementiert zu werden. Sie machen deutlich, welche\nweiteren AKTIN-spezifischen Profile vorbereitet sind.\nSie fußen zum Teil auf den bekannten Bausteinen wie ISiKProzedur etc.).\n\nSie dienen dem Aufzeigen der semantischen Annotationen des\nzugrundeliegenden Konzepts und optional der Bindung der Valusets\nan Antwort-Auswahllisten, kodierten Zusatzinformationen und\nMaßeinheiten. Die Profile können in zukünftigen Leitfäden\nformal aufgenommen werden.",
+  "purpose": "Hinweise, bitte beachten\n\nDieses AKTIN-Profil zu 'Procedure' ist direkt abgeleitet vom Profil des bekannten Bausteins 'ISiKProzedur'.\nEs gibt die formalen Erfordernisse an, welche die AKTIN-spezifischen Eigenschaften\nzum existierendes Profil zusätzlich vorhanden sein müssen und welche Constraints gelten.\nDiese sind im 'Differential View' direkt ersichtlich.\n\nEs dient dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Konzepts und optional der Bindung\nder Valusets an Antwort-Auswahllisten, kodierten Zusatzinformationen und Maßeinheiten.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
-  "abstract": true,
+  "abstract": false,
   "type": "Procedure",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
   "derivation": "constraint",
@@ -33,7 +33,7 @@
         "id": "Procedure",
         "path": "Procedure",
         "definition": "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?",
-        "comment": "AKTIN-spezifisches Profil, für spätere Nutzung"
+        "comment": "Profil ist Übersicht über AKTIN-spezifische Gegebenheiten"
       },
       {
         "id": "Procedure.identifier",

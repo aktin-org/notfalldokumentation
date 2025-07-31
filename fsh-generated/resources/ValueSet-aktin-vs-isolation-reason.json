@@ -6,9 +6,9 @@
   "title": "Isolationsgrund",
   "description": "Isolationsgrund",
   "url": "http://aktin.org/fhir/ValueSet/aktin-vs-isolation-reason",
-  "version": "2024-02-19T12:55:34",
+  "version": "2025.0.3-ci",
   "date": "2025-05-26T15:59:54+02:00",
-  "publisher": "AKTIN e. V.",
+  "publisher": "AKTIN e.V.",
   "contact": [
     {
       "telecom": [
@@ -19,28 +19,7 @@
       ]
     }
   ],
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-    ]
-  },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
-      "valuePeriod": {
-        "start": "2024-02-19T12:55:34+02:00"
-      }
-    }
-  ],
-  "identifier": [
-    {
-      "use": "official",
-      "system": "urn:ietf:rfc:3986",
-      "value": "urn:oid:1.2.276.0.76.3.1.195.11.25"
-    }
-  ],
   "experimental": false,
-  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
   "compose": {
     "include": [
       {

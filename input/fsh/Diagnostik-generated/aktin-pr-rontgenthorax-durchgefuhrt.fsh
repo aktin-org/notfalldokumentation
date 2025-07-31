@@ -9,7 +9,7 @@ Title:   "Röntgen-Thorax durchgeführt (AKTIN)"
 Description: "Wurde ein Röntgen-Thorax durchgeführt?"
 * . ^definition = "Wurde ein Röntgen-Thorax durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-rontgenthorax-durchgefuhrt"
-* insert Notaprofile ( Procedure )
+* insert ProfileOnKnownProfile ( Procedure, ISiKProzedur )
 * insert Meta
 * insert Version
 * insert Publisher

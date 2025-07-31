@@ -9,16 +9,20 @@ Title:   "Laboruntersuchung angefordert (AKTIN)"
 Description: "Wurde eine Laboruntersuchung angefordert?"
 * . ^definition = "Wurde eine Laboruntersuchung angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-laboruntersuchung-angefordert"
-* insert Notaprofile ( ServiceRequest )
+* insert ProfileOnKnownProfile ( ServiceRequest, ServiceRequestLab )
 * insert Meta
 * insert Version
 * insert Publisher
-
 
 * identifier MS
 
 * intent 1..1 MS
 * intent = #order
+
+* status = #active
+
+* category 1..1 MS
+* category.coding = $SCT#108252007	"Laboratory procedure"
 
 * code 1..1 MS
 * code.coding MS

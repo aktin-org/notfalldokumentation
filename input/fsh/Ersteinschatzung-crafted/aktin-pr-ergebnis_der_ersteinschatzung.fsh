@@ -1,5 +1,5 @@
 // AKTIN Profil - Ergebnis der Ersteinschätzung
-// http://aktin.org/fhir/StructureDefinition/aktin-pr-ergebnis_der_ersteinschatzung
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-ergebnis-der-ersteinschatzung
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.21746
 Profile: AKTIN_PR_ergebnis_der_ersteinschatzung
@@ -11,7 +11,7 @@ Description: "Ergebnis der Ersteinschätzung in einem standardisierten 5-stufige
 * insert Version
 * insert Publisher
 
-* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ergebnis_der_ersteinschatzung"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ergebnis-der-ersteinschatzung"
 
 * identifier MS
 
@@ -29,7 +29,7 @@ Description: "Ergebnis der Ersteinschätzung in einem standardisierten 5-stufige
 * code.coding[LOINC] = $LOINC#75616-3 "Generic five level triage system"
 * code.text =  "Ergebnis der Ersteinschätzung"
 
-* value[x] MS
+* valueCodeableConcept MS
 * valueCodeableConcept from aktin-vs-generic-5level-triage-system (required)
 
 * subject 1..1 MS

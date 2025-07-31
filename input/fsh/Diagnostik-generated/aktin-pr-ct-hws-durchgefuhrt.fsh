@@ -9,7 +9,7 @@ Title:   "CT HWS durchgeführt (AKTIN)"
 Description: "Wurde ein selektives CT der Halswirbelsäule durchgeführt?"
 * . ^definition = "Wurde ein selektives CT der Halswirbelsäule durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ct-hws-durchgefuhrt"
-* insert Notaprofile ( Procedure )
+* insert ProfileOnKnownProfile ( Procedure, ISiKProzedur )
 * insert Meta
 * insert Version
 * insert Publisher

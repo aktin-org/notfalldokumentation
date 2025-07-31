@@ -9,7 +9,7 @@ Title:   "EKG angefordert (AKTIN)"
 Description: "Wurde ein 12-Kanal-EKG angefordert?"
 * . ^definition = "Wurde ein 12-Kanal-EKG angefordert?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ekg-angefordert"
-* insert Notaprofile ( ServiceRequest )
+* insert ProfileOnKnownProfile ( ServiceRequest, MII_PR_Bildgebung_Anforderung_Bildgebung )
 * insert Meta
 * insert Version
 * insert Publisher

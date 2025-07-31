@@ -1,5 +1,5 @@
 // AKTIN Profil - Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?
-// http://aktin.org/fhir/StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinflussq
+// http://aktin.org/fhir/StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss
 // FHIR Core Type: Observation
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.20365
 Profile: AKTIN_PR_verdacht_auf_alkohol_drogen_medikamenteneinfluss
@@ -8,7 +8,7 @@ Id:      aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss
 Title:   "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss? (AKTIN)"
 Description: "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?"
 * . ^definition = "Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?"
-* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinflussq"
+* ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-verdacht-auf-alkohol-drogen-medikamenteneinfluss"
 * insert Meta
 * insert Version
 * insert Publisher

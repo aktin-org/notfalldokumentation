@@ -9,7 +9,7 @@ Title:   "Ganzkörper-CT durchgeführt (AKTIN)"
 Description: "Wurde ein Ganzkörper-CT durchgeführt?"
 * . ^definition = "Wurde ein Ganzkörper-CT durchgeführt?"
 * ^url = "http://aktin.org/fhir/StructureDefinition/aktin-pr-ganzkorperct-durchgefuhrt"
-* insert Notaprofile ( Procedure )
+* insert ProfileOnKnownProfile ( Procedure, ISiKProzedur )
 * insert Meta
 * insert Version
 * insert Publisher

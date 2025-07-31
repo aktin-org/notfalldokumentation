@@ -117,7 +117,7 @@
           }
         ],
         "patternQuantity": {
-          "code": "Stunden",
+          "code": "h",
           "system": "http://unitsofmeasure.org"
         },
         "mustSupport": true

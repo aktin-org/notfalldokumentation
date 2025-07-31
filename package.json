@@ -8,7 +8,8 @@
         "AKTIN",
         "Notfalldokumentation",
         "DIVI",
-        "DGINA"
+        "DGINA",
+        "FHIR"
     ],
     "homepage": "https://aktin.org/",
     "maintainers": [

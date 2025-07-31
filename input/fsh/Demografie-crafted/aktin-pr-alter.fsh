@@ -31,7 +31,7 @@ Description: "Alter des Patienten zum Stichtag"
 * value[x] 1..1 MS
 * value[x] only Quantity
 * valueQuantity only Quantity
-* valueQuantity = http://unitsofmeasure.org#y
+* valueQuantity = http://unitsofmeasure.org#a
 // * valueCodeableConcept only CodeableConcept
 // * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 // * valueCodeableConcept from aktin-vs-age-in-categories

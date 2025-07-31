@@ -1,1 +1,97 @@
-{"resourceType":"ValueSet","id":"1.2.276.0.76.3.1.195.11.26--20240219130853","meta":{"lastUpdated":"2024-02-19T13:43:19Z","source":"https://art-decor.org/fhir/4.0/aktin-","profile":["http://hl7.org/fhir/StructureDefinition/shareablevalueset"],"tag":[{"system":"http://hl7.org/fhir/FHIR-version","code":"4.0.1"}]},"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod","valuePeriod":{"start":"2024-02-19T13:08:53+02:00"}}],"url":"http://aktin.org/fhir/ValueSet/aktin-vs-referral-actions","identifier":[{"use":"official","system":"urn:ietf:rfc:3986","value":"urn:oid:1.2.276.0.76.3.1.195.11.26"}],"version":"2024-02-19T13:08:53","name":"Referral_actions","title":"Typ Verlegung","status":"draft","experimental":false,"publisher":"AKTIN e. V.","contact":[{"name":"AKTIN e. V.","telecom":[{"system":"phone","value":"Tel. +49 391 67 28186"},{"system":"email","value":"office@aktin.org"}]}],"description":"Typ Verlegung","immutable":false,"copyright":"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.","compose":{"include":[{"system":"urn:oid:1.2.276.0.76.3.1.195.5.53","concept":[{"code":"1","display":"intern - OP / Intervention (z.B. Herzkatheter, Endoskopie, ...)"},{"code":"3","display":"intern - Überwachung (ICU / IMC / Chest-Pain-Unit / Stroke)"},{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-concept-comments","valueString":"Verlegung auf Beobachtungsstation des Integrierten Notfallzentrums bzw. der Notaufnahme Element wird auf TraumaRegister-Überwachung gemappt."}],"code":"7","display":"intern - Beobachtungsstation der Notaufnahme/INZ"},{"code":"5","display":"intern - Normalstation"}]},{"system":"http://snomed.info/sct","concept":[{"code":"37729005","display":"Patient transfer, in-hospital (procedure)"},{"code":"429202003","display":"Transfer of care to hospital (procedure)"}]}]}}
+{
+    "resourceType": "ValueSet",
+    "id": "aktin-vs-referral-actions",
+    "meta": {
+        "lastUpdated": "2024-02-19T13:43:19Z",
+        "source": "https://art-decor.org/fhir/4.0/aktin-",
+        "profile": ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"],
+        "tag": [
+            {
+                "system": "http://hl7.org/fhir/FHIR-version",
+                "code": "4.0.1"
+            }
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+            "valuePeriod": {"start": "2024-02-19T13:08:53+02:00"}
+        }
+    ],
+    "url": "http://aktin.org/fhir/ValueSet/aktin-vs-referral-actions",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.2.276.0.76.3.1.195.11.26"
+        }
+    ],
+    "version": "2024-02-19T13:08:53",
+    "name": "Referral_actions",
+    "title": "Typ Verlegung",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "AKTIN e. V.",
+    "contact": [
+        {
+            "name": "AKTIN e. V.",
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "Tel. +49 391 67 28186"
+                },
+                {
+                    "system": "email",
+                    "value": "office@aktin.org"
+                }
+            ]
+        }
+    ],
+    "description": "Typ Verlegung",
+    "immutable": false,
+    "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-referral-actions",
+                "concept": [
+                    {
+                        "code": "1",
+                        "display": "intern - OP / Intervention (z.B. Herzkatheter, Endoskopie, ...)"
+                    },
+                    {
+                        "code": "3",
+                        "display": "intern - Überwachung (ICU / IMC / Chest-Pain-Unit / Stroke)"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "Verlegung auf Beobachtungsstation des Integrierten Notfallzentrums bzw. der Notaufnahme Element wird auf TraumaRegister-Überwachung gemappt."
+                            }
+                        ],
+                        "code": "7",
+                        "display": "intern - Beobachtungsstation der Notaufnahme/INZ"
+                    },
+                    {
+                        "code": "5",
+                        "display": "intern - Normalstation"
+                    }
+                ]
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "37729005",
+                        "display": "Patient transfer, in-hospital (procedure)"
+                    },
+                    {
+                        "code": "429202003",
+                        "display": "Transfer of care to hospital (procedure)"
+                    }
+                ]
+            }
+        ]
+    }
+}

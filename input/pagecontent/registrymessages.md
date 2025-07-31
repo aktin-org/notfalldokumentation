@@ -1,8 +1,8 @@
-### Registermeldungen
+### Registermeldungen als Questionnaires 
 
-#### Questionnaires als Beispiele 
+Hier sind die für AKTIN definierten spezifischen Registerauszügen (Exports) gelistet. Deren technische Umsetzung wird in AKTIN grundsätzlich durch summarische, spezifische und agile **Fragebögen (Questionnaires)** bewerkstelligt. Sie werden aus den verfügbaren Daten der AKTIN-Akte Notfalldokumentation vorbefüllt (pre-populate) und könnten bei Bedarf interaktiv ergänzt werden.
 
-Hier sind Beispiele von AKTIN-spezifischen FHIR-Questionnaires gelistet.
+Zur Erläuterung des Prinzips der klassische Registermeldung in FHIR ist – neben den tatsächlichen Registermeldungen hier – auch ein kurzes Questionnaire-Beispiel "Ersteinschätzung" als Erläuterung aufgeführt, das für die Versorgung bzw. Register nicht implementiert wird.
 
 <table style="border-collapse: collapse; width: 100%" border="1" >
 <thead>

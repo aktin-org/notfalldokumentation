@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "aktin-pr-manchester-triage-system",
-  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-manchester_triage_system",
+  "url": "http://aktin.org/fhir/StructureDefinition/aktin-pr-manchester-triage-system",
   "version": "2025.0.3-ci",
   "name": "AKTIN_PR_manchester_triage_system",
   "title": "Manchester Triage System (AKTIN)",
@@ -144,7 +144,7 @@
           "coding": [
             {
               "code": "SCTPOCC-1269489004",
-              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
               "display": "MTS-Präsentationsdiagramm"
             }
           ]
@@ -194,7 +194,7 @@
           "coding": [
             {
               "code": "SCTPOCC-49499008",
-              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
               "display": "MTS-Indikatoren ROT"
             }
           ]
@@ -244,7 +244,7 @@
           "coding": [
             {
               "code": "SCTPOCC-25876001",
-              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
               "display": "MTS-Indikatoren ORANGE"
             }
           ]
@@ -294,7 +294,7 @@
           "coding": [
             {
               "code": "SCTPOCC-103391001",
-              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
               "display": "MTS-Indikatoren GELB"
             }
           ]
@@ -344,7 +344,7 @@
           "coding": [
             {
               "code": "SCTPOCC-394848005",
-              "system": "https://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
+              "system": "http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations",
               "display": "MTS-Indikatoren GRÜN"
             }
           ]
