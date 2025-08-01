@@ -1,21 +1,24 @@
 CodeSystem: AKTIN_CS_cedis30
 Id: aktin-cs-cedis30
 Title: "CEDIS Presenting Complaint List 3.0"
-Description: """CEDIS Presenting Complaint List 3.0 (URI 1.2.276.0.76.11.61--20160221000000)
-Leganda
+Description: """
+CEDIS Presenting Complaint List 3.0 (URI 1.2.276.0.76.11.61--20160221000000)
+Legenda
 * CEDIS = Canadian Emergency Department Information System;
 * ICD-10 = International Classification of Diseases and Related Health Problems, 10th revision;
 * ENT = ear, nose and throat;
 * URTI = upper respiratory tract infection;
 * NOS = not otherwise specified;
 * UTI = urinary tract infection;
-* CVA = congenital ventricular aneurysm."""
+* CVA = congenital ventricular aneurysm.
+"""
 * insert Meta
 * insert Publisher
 * ^meta.profile = $shareablecodesystem
 * ^version = "3.0.0"
 * ^status = #draft
 * ^experimental = false
+* ^url = "http://aktin.org/fhir/CodeSystem/aktin-cs-cedis30"
 * #CV "Kardiovaskulär"
 * #001 "Herzstillstand (nicht traumatisch)"
 * #002 "Herzstillstand (traumatisch)"
