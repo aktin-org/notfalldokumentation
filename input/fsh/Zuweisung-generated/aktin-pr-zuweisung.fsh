@@ -20,6 +20,7 @@ Description: "Art der Zuweisung des Patienten. Von welchem medizinischen Fachper
 
 * code MS
 * code.coding MS
+* code.coding = $LOINC#11293-8 "Type of Referral source"
 
 * value[x] MS
 * value[x] only CodeableConcept
