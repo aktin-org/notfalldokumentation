@@ -161,9 +161,9 @@ Sie dienen dem Aufzeigen der semantischen Annotationen des zugrundeliegenden Kon
 
 Timo Kicker, geboren am 31.05.1996 in Dankbor, wohnhaft München, (demografische Angaben sind in der Episodenzu-sammenfassung teilweise maskiert) stellt sich am 17. Januar 2024 um 16:03 Uhr in der Notaufnahme des Krankenhauses selbst vor.
 
-Er hat beim Training des Fußballvereins mit dem linken Fuß ein Distorsionstrauma erlitten und wird von seinem Vereinskollegen humpelnd in die Notaufnahme gebracht.In der Notaufnahme wird MTS als Ersteinschätzungssystem eingesetzt. Als Leitsymptom wird die Verletzung der unteren Extremität mit CEDIS-Code 557 erhoben.
+Er hat beim Training des Fußballvereins mit dem linken Fuß ein Distorsionstrauma erlitten und wird von seinem Vereinskollegen humpelnd in die Notaufnahme gebracht. In der Notaufnahme wird MTS als Ersteinschätzungssystem eingesetzt, Timo wird als "grün" eingestuft. Als Leitsymptom wird die Verletzung der unteren Extremität mit CEDIS-Code 557 erhoben.
 
-Die vom Unfallchirurgen um 16:32 Uhr erhobene Anamnese ergibt keine weiteren Vorerkrankungen und keine regelmäßigen Medikamenteneinnahmen. Es werden in Anbetracht der Verletzungsschwere nur wenige Vitalparameter wie Atemfrequenz, Herzfrequenz oder Blutdruck erhoben. An Diagnostik wird eine CT-Untersuchung des Sprunggelenks durchgeführt um 16:50 Uhr durchgeführt. Nach erfolgtem Ausschluss einer Fraktur wird um 17:14 als Therapie eine Sprunggelenkorthese angelegt. Er erhält Diclofenac und Ibuprofen.Der Patient wird um 17:35 in die hausärztliche Versorgung entlassen.
+Die vom Unfallchirurgen um 16:32 Uhr erhobene Anamnese ergibt keine weiteren Vorerkrankungen und keine regelmäßigen Medikamenteneinnahmen. Es werden in Anbetracht der Verletzungsschwere nur wenige Vitalparameter wie Atemfrequenz, Herzfrequenz oder Blutdruck erhoben. An Diagnostik wird eine CT-Untersuchung des Sprunggelenks durchgeführt um 16:50 Uhr durchgeführt. Nach erfolgtem Ausschluss einer Fraktur wird um 17:14 als Therapie eine Sprunggelenkorthese angelegt. Er erhält Diclofenac und Ibuprofen. Der Patient wird um 17:35 in die hausärztliche Versorgung entlassen.
 
 Als Entlassungsdiagnose wird die ICD-10 S93.40 „Distorsion oberes Sprunggelenk Ligamentum fibulotalare anterius in-komplett“ gestellt.
 
