@@ -92,7 +92,7 @@ Instance: aufnahme-kicker
 InstanceOf: AKTIN_PR_aufenthalt
 Usage: #inline
 * status = #final
-* class.code = http://terminology.hl7.org/CodeSystem/v3-ActCode#EMER
+* class.code = $v3-act-code#EMER
 * serviceType = $SCT#182813001 "Emergency treatment (procedure)"
 * subject = Reference(Patient/timo-kicker)
 * participant
@@ -114,7 +114,7 @@ Usage: #inline
 * category.coding = $SCT#1269489004 "Chief complaint (observable entity)"
 * subject = Reference(Patient/timo-kicker)
 * onsetDateTime = "2024-01-17T15:45:00Z"
-* code = http://aktin.org/fhir/CodeSystem/aktin-cs-cedis30#557 "Verletzung untere Extremität"
+* code = $CEDIS30#557 "Verletzung untere Extremität"
 * note.text = "Distorsionstrauma linker Fuß; keine Vorerkrankungen; keine Medikamente"
 
 
@@ -138,10 +138,10 @@ Usage: #inline
 * code = $SCT#1255867001 "Manchester Triage System (observable entity)"
 * subject = Reference(Patient/timo-kicker)
 * effectiveDateTime = "2024-01-17T16:32:00+01:00"
-* valueCodeableConcept = http://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem#3 "dringend - gelb - 30 Minuten"
-* component[aktin-pr-mtsprasentationsdiagramm].code = http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations#SCTPOCC-1269489004 "MTS-Präsentationsdiagramm"
+* valueCodeableConcept = $aktin-mts#3 "dringend - gelb - 30 Minuten"
+* component[aktin-pr-mtsprasentationsdiagramm].code = $SCTPOOC#SCTPOCC-1269489004 "MTS-Präsentationsdiagramm"
 * component[aktin-pr-mtsprasentationsdiagramm].valueCodeableConcept = #17 "Extremitätenprobleme"
-* component[aktin-pr-mtsindikatoren_gelb].code = http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations#SCTPOCC-103391001 "MTS-Indikatoren GELB"
+* component[aktin-pr-mtsindikatoren_gelb].code = $SCTPOOC#SCTPOCC-103391001 "MTS-Indikatoren GELB"
 * component[aktin-pr-mtsindikatoren_gelb].valueCodeableConcept = #143 "Schmerzen bei Bewegung im Gelenk"
 
 
@@ -166,7 +166,7 @@ InstanceOf: Location
 Usage: #inline
 * status = #active
 * name = "Städtisches Klinikum München GmbH"
-* type = http://terminology.hl7.org/CodeSystem/v3-RoleCode#ETU "Emergency trauma unit"
+* type = $v3-role-code#ETU "Emergency trauma unit"
 
 
 Instance: dr-martin-regensburger
@@ -180,11 +180,11 @@ Instance: atemfrequenz-kicker
 InstanceOf: AKTIN_PR_vitalsigns_atemfrequenz
 Usage: #inline
 * status = #final
-* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* category[VSCat] = $observation-category#vital-signs
 * code = $SCT#86290005 "Respiratory rate (observable entity)"
 * valueQuantity
   * value = 12
-  * unit = http://unitsofmeasure.org#/min
+  * unit = $UCUM#/min
 * effectiveDateTime = "2024-01-17T16:21:00Z"
 * subject = Reference(Patient/timo-kicker)
 
@@ -192,12 +192,12 @@ Instance: sauerstoffsattigung-kicker
 InstanceOf: AKTIN_PR_vitalsigns_pulsoximetrische_sauerstoffsattigung
 Usage: #inline
 * status = #final
-* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* category[VSCat] = $observation-category#vital-signs
 * code.coding[loinc] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
 * code.coding[snomed] = $SCT#442476006 "Arterial oxygen saturation (observable entity)"
 * valueQuantity
   * value = 98
-  * unit = http://unitsofmeasure.org#%
+  * unit = $UCUM#%
 * effectiveDateTime = "2024-01-17T16:21:00Z"
 * subject = Reference(Patient/timo-kicker)
 
@@ -206,7 +206,7 @@ Instance: bludruck-kicker
 InstanceOf: AKTIN_PR_vitalsigns_blutdruck
 Usage: #inline
 * status = #final
-* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* category[VSCat] = $observation-category#vital-signs
 * code.coding[loinc] = $LOINC#85354-9 "Blood pressure panel with all children optional"
 * code.coding[snomed] = $SCT#75367002 "Blood pressure"
 * effectiveDateTime = "2024-01-17T16:21:00Z"
@@ -215,35 +215,35 @@ Usage: #inline
   * code = $LOINC#8480-6
   * valueQuantity
     * value = 130
-    * unit = http://unitsofmeasure.org#mm[Hg]
+    * unit = $UCUM#mm[Hg]
 * component[DiastolicBP]
   * code = $LOINC#8462-4
   * valueQuantity
     * value = 89
-    * unit = http://unitsofmeasure.org#mm[Hg]
+    * unit = $UCUM#mm[Hg]
 
 Instance: pulsfrequenz-kicker
 InstanceOf: AKTIN_PR_vitalsigns_pulsfrequenz
 Usage: #inline
 * status = #final
-* category[thisCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
+* category[thisCat] = $observation-category#vital-signs "Vital Signs"
 * code.coding[LOINC] = $LOINC#8893-0 "Heart rate Peripheral artery by palpation"
 * code.coding[SNOMED-CT] = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)"
 * effectiveDateTime = "2024-01-17T16:21:00Z"
 * valueQuantity
   * value = 80
-  * unit = http://unitsofmeasure.org#/min
+  * unit = $UCUM#/min
 * subject = Reference(Patient/timo-kicker)
 
 Instance: schemrz-kicker
 InstanceOf: AKTIN_PR_vitalsigns_schmerz
 Usage: #inline
 * status = #final
-* category[thisCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
+* category[thisCat] = $observation-category#vital-signs "Vital Signs"
 * code.coding[LOINC] = $LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[SNOMED-CT] = $SCT#225908003 "Pain score (observable entity)"
 * effectiveDateTime = "2024-01-17T16:21:00Z"
 * valueQuantity
   * value = 4
-  * unit = http://unitsofmeasure.org#{score}
+  * unit = $UCUM#{score}
 * subject = Reference(Patient/timo-kicker)
