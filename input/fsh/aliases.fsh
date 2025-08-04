@@ -5,6 +5,7 @@
 // CodeSystems
 Alias: $SCTPOOC = http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations
 Alias: $FUTLN   = http://aktin.org/fhir/CodeSystem/aktin-cs-future-loincs
+Alias: $CEDIS30 = http://aktin.org/fhir/CodeSystem/aktin-cs-cedis30
 
 Alias: $aktin-vs-age-in-categories            = http://aktin.org/fhir/ValueSet/aktin-vs-age-in-categories
 Alias: $aktin-vs-generic-5level-triage-system = http://aktin.org/fhir/ValueSet/aktin-vs-generic-5level-triage-system
@@ -14,6 +15,7 @@ Alias: $aktin-vs-mts-indicators-red           = http://aktin.org/fhir/ValueSet/a
 Alias: $aktin-vs-mts-indicators-yellow        = http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-yellow
 Alias: $aktin-vs-mts-presenting-diagram       = http://aktin.org/fhir/ValueSet/aktin-vs-mts-presenting-diagram
 Alias: $aktin-vs-condition-category           = http://aktin.org/fhir/ValueSet/aktin-vs-condition-category
+Alias: $aktin-mts                             = http://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem
 
 // Extensions
 Alias: $kvfall = http://aktin.org/fhir/StructureDefinition/aktin-xt-kvfall
@@ -29,11 +31,14 @@ Alias: $FHIR-version = http://hl7.org/fhir/FHIR-version
 Alias: $ExpandedYesNoIndicator = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $v3-act-class = http://terminology.hl7.org/CodeSystem/v3-ActClass
+Alias: $v3-act-code = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-act-encounter-code = http://terminology.hl7.org/CodeSystem/v3-ActEncounterCode
 Alias: $service-type = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $shareablevalueset = http://hl7.org/fhir/StructureDefinition/shareablevalueset
 Alias: $shareablecodesystem = http://hl7.org/fhir/StructureDefinition/shareablecodesystem
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $v3-role-code = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 
 // DE Basisprofile
 Alias: $DeIcdSeitenlokalisation = http://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION
