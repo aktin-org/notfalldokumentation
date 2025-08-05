@@ -19,6 +19,9 @@ Description: "Wurde ein selektives CT des Abdomens durchgführt?"
 * status 1..1 MS
 * status = #completed
 
+* category 1..1 MS
+* category.coding = $SCT#363679005	"Imaging (procedure)"
+
 * code 1..1 MS
 * code.coding MS
 * code.coding = $SCT#169070004 "Computed tomography of abdomen (procedure)"

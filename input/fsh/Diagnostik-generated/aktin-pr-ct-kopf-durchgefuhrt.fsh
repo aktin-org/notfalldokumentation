@@ -20,6 +20,9 @@ Description: "Wurde ein selektives Kopf-CT durchgeführt?"
 * status 1..1 MS
 * status = #completed
 
+* category 1..1 MS
+* category.coding = $SCT#363679005	"Imaging (procedure)"
+
 * code 1..1 MS
 * code.coding MS
 * code.coding = $SCT#303653007 "Computed tomography of head (procedure)"

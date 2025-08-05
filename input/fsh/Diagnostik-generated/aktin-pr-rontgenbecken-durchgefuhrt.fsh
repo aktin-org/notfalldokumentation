@@ -20,6 +20,9 @@ Description: "Wurde ein Röntgen-Becken durchgeführt?"
 * status 1..1 MS
 * status = #completed
 
+* category 1..1 MS
+* category.coding = $SCT#363679005	"Imaging (procedure)"
+
 * code 1..1 MS
 * code.coding MS
 * code.coding = $SCT#268425006 "Pelvis X-ray (procedure)"

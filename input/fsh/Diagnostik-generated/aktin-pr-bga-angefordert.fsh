@@ -20,6 +20,9 @@ Description: "Wurde eine BGA angefordert?"
 * intent 1..1 MS
 * intent = #order
 
+* category 1..1 MS
+* category.coding = $SCT#108252007	"Laboratory procedure (procedure)"
+
 * code 1..1 MS
 * code.coding MS
 * code.coding = $SCT#278297009 "Blood gas analysis (procedure)"

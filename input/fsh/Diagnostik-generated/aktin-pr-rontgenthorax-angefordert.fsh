@@ -20,6 +20,9 @@ Description: "Wurde ein Röntgenthorax angefordert?"
 * intent 1..1 MS
 * intent = #order
 
+* category 1..1 MS
+* category.coding = $SCT#363679005	"Imaging (procedure)"
+
 * code 1..1 MS
 * code.coding MS
 * code.coding = $SCT#415232002 "Radiographic procedure of chest (procedure)"

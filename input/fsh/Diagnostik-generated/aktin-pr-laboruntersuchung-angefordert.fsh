@@ -22,7 +22,7 @@ Description: "Wurde eine Laboruntersuchung angefordert?"
 * status = #active
 
 * category 1..1 MS
-* category.coding = $SCT#108252007	"Laboratory procedure"
+* category.coding = $SCT#108252007	"Laboratory procedure (procedure)"
 
 * code 1..1 MS
 * code.coding MS

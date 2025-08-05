@@ -20,6 +20,9 @@ Description: "Wurde ein 12-Kanal-EKG angefordert?"
 * intent 1..1 MS
 * intent = #order
 
+* category 1..1 MS
+* category.coding = $SCT#118797008	"Procedure on heart (procedure)" 
+
 * code 1..1 MS
 * code.coding MS
 * code.coding = $SCT#29303009 "Electrocardiographic procedure (procedure)"

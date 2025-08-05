@@ -20,7 +20,7 @@ Description: "Wurde ein Röntgen der Wirbelsäule durchgeführt?"
 * status = #completed
 
 * category 1..1 MS
-* category.coding[SNOMED-CT] = $SCT#363679005	"Imaging"
+* category.coding = $SCT#363679005	"Imaging (procedure)"
 
 * code 1..1 MS
 * code.coding[SNOMED-CT] = $SCT#79760008 "Radiography of spine (procedure)"

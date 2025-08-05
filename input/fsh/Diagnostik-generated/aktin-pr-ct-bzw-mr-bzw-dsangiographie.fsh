@@ -20,9 +20,11 @@ Description: "Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich
 * status 1..1 MS
 * status = #completed
 
+* category 1..1 MS
+* category.coding = $SCT#363679005	"Imaging (procedure)"
+
 * code 1..1 MS
 * code.coding MS
-
 
 * subject 1..1 MS
 * subject only Reference(AKTIN_PR_patient)
