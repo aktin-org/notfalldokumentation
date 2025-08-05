@@ -1,8 +1,102 @@
+Instance: aktin-example-storyboard01-bundle
+InstanceOf: AKTIN_PR_bundle_episodenzusammenfassung_notaufnahmeregister
+Title: "AKTIN Beispiel-Bundle – Storyboard 01"
+Description: "Dokument-Bundle zur Episodenzusammenfassung gemäß AKTIN-Leitfaden, basierend auf Storyboard 01"
+Usage: #example
+
+* identifier[0].system = "urn:oid:1.2.276.0.76.4.8"
+* identifier[0].value = "87877655765765765"
+
+* type = #document
+* timestamp = "2024-01-17T17:35:00+01:00"
+
+* entry[composition].fullUrl = "urn:uuid:composition-sb01"
+* entry[composition].resource = aktin-example-composition-sb01
+
+* entry[patient].fullUrl = "urn:uuid:patient-timo"
+* entry[patient].resource = timo-kicker
+
+* entry[+].fullUrl = "urn:uuid:aufnahme-kicker-kicker"
+* entry[=].resource = aufnahme-kicker
+
+* entry[+].fullUrl = "urn:uuid:cedis-kicker"
+* entry[=].resource = cedis-kicker
+
+* entry[+].fullUrl = "urn:uuid:ersteinschatzung-kicker"
+* entry[=].resource = ersteinschatzung-kicker
+
+* entry[+].fullUrl = "urn:uuid:manchester-kicker"
+* entry[=].resource = manchester-kicker
+
+* entry[+].fullUrl = "urn:uuid:zuweisung-kicker"
+* entry[=].resource = zuweisung-kicker
+
+* entry[+].fullUrl = "urn:uuid:physician-kicker"
+* entry[=].resource = physician-kicker
+
+* entry[+].fullUrl = "urn:uuid:notaufnahme-harlaching"
+* entry[=].resource = notaufnahme-harlaching
+
+* entry[+].fullUrl = "urn:uuid:dr-martin-regensburger"
+* entry[=].resource = dr-martin-regensburger
+
+* entry[+].fullUrl = "urn:uuid:atemfrequenz-kicker"
+* entry[=].resource = atemfrequenz-kicker
+
+* entry[+].fullUrl = "urn:uuid:sauerstoffsattigung-kicker"
+* entry[=].resource = sauerstoffsattigung-kicker
+
+* entry[+].fullUrl = "urn:uuid:bludruck-kicker"
+* entry[=].resource = bludruck-kicker
+
+* entry[+].fullUrl = "urn:uuid:pulsfrequenz-kicker"
+* entry[=].resource = pulsfrequenz-kicker
+
+* entry[+].fullUrl = "urn:uuid:schmerz-kicker"
+* entry[=].resource = schmerz-kicker
+
+* entry[+].fullUrl = "urn:uuid:labor-anforderung-kicker"
+* entry[=].resource = labor-anforderung-kicker
+* entry[+].fullUrl = "urn:uuid:bga-kicker"
+* entry[=].resource = bga-kicker
+* entry[+].fullUrl = "urn:uuid:ct-sprunggelenk-kicker"
+* entry[=].resource = ct-sprunggelenk-kicker
+
+* entry[+].fullUrl = "urn:uuid:orthese-kicker"
+* entry[=].resource = orthese-kicker
+* entry[+].fullUrl = "urn:uuid:diclofenac-kicker"
+* entry[=].resource = diclofenac-kicker
+* entry[+].fullUrl = "urn:uuid:ibuprofen-kicker"
+* entry[=].resource = ibuprofen-kicker
+
+//
+//* entry[+].fullUrl = "urn:uuid:condition-distorsion"
+//* entry[=].resource = distorsion-s9340-kicker
+//
+//* entry[+].fullUrl = "urn:uuid:proc-labor"
+//* entry[=].resource = labor-anforderung-kicker
+//
+//* entry[+].fullUrl = "urn:uuid:proc-bga"
+//* entry[=].resource = bga-kicker
+//
+//* entry[+].fullUrl = "urn:uuid:proc-ct"
+//* entry[=].resource = ct-sprunggelenk-kicker
+//
+//* entry[+].fullUrl = "urn:uuid:proc-orthese"
+//* entry[=].resource = orthese-kicker
+//
+//* entry[+].fullUrl = "urn:uuid:med-diclofenac"
+//* entry[=].resource = diclofenac-kicker
+//
+//* entry[+].fullUrl = "urn:uuid:med-ibuprofen"
+//* entry[=].resource = ibuprofen-kicker
+
+
 Instance: aktin-example-composition-sb01
 InstanceOf: AKTIN_PR_episodenzusammenfassung_notaufnahmeregister
 Title: "Episodenzusammenfassung Notaufnahme – Distorsion Sprunggelenk"
 Description: "Beispiel für eine Composition nach dem AKTIN-Leitfaden auf Basis Storyboard 01"
-Usage: #example
+Usage: #inline
 * status = #final
 * type = $LOINC#97663-9 "Emergency medicine Emergency department Discharge summary"
 * subject = Reference(Patient/timo-kicker)
@@ -10,7 +104,9 @@ Usage: #example
 * date = "2024-01-17T17:35:00+01:00"
 * author[+] = Reference(Practitioner/dr-martin-regensburger)
 * title = "Entlassbericht Notaufnahme 17. Januar 2024 17:35 Uhr"
-
+// 
+// section
+//
 * section[sectionZuweisung]
   * text.status = #generated
   * text.div = """
@@ -19,7 +115,9 @@ Usage: #example
 </div>
 """
   * entry = Reference (Observation/zuweisung-kicker)
-
+// 
+// section
+//
 * section[sectionNotfallanamnese]
   * text.status = #generated
   * text.div = """
@@ -39,7 +137,7 @@ Anbetracht der Verletzungsschwere nur wenige Vitalparameter wie Atemfrequenz,
 Herzfrequenz oder Blutdruck erhoben. An Diagnostik wird eine CT-Untersuchung
 des Sprunggelenks durchgeführt um 16:50 Uhr durchgeführt. Nach erfolgtem
 Ausschluss einer Fraktur wird um 17:14 als Therapie eine Sprunggelenkorthese
-angelegt. Er erhält Diclofenac und Ibuprofen.Der Patient wird um 17:35 in die
+angelegt. Er erhält Diclofenac und Ibuprofen. Der Patient wird um 17:35 in die
 hausärztliche Versorgung entlassen.
 
 Als Entlassungsdiagnose wird die ICD-10 S93.40 „Distorsion oberes Sprunggelenk
@@ -47,8 +145,9 @@ Ligamentum fibulotalare anterius in-komplett“ gestellt.
 </div>
 """
   * entry = Reference (Condition/cedis-kicker)
-
-
+// 
+// section
+//
 * section[sectionErsteinschatzung]
   * text.status = #generated
   * text.div = """
@@ -63,8 +162,9 @@ Ligamentum fibulotalare anterius in-komplett“ gestellt.
 """
   * entry = Reference (Observation/ersteinschatzung-kicker)
   * entry = Reference (Observation/manchester-kicker)
-
-
+// 
+// section
+//
 * section[sectionVitalparameter]
   * text.status = #generated
   * text.div = """
@@ -77,6 +177,56 @@ Vitalparameter:
   * entry = Reference (Observation/blutdruck-kicker)
   * entry = Reference (Observation/pulsfrequenz-kicker)
   * entry = Reference (Observation/schmerz-kicker)
+// 
+// section
+//
+* section[sectionDiagnostik]
+  * text.status = #generated
+  * text.div = """
+<div xmlns="http://www.w3.org/1999/xhtml">
+Diagnostik:
+</div>
+"""
+  * entry = Reference (labor-anforderung-kicker)
+  * entry = Reference (bga-kicker)
+  * entry = Reference (ct-sprunggelenk-kicker)
+// 
+// section
+//
+* section[sectionMassnahmen]
+  * text.status = #generated
+  * text.div = """
+<div xmlns="http://www.w3.org/1999/xhtml">
+Maßnahmen:
+</div>
+"""
+  * entry = Reference (orthese-kicker)
+// 
+// section
+//
+* section[sectionPharmakotherapie]
+  * text.status = #generated
+  * text.div = """
+<div xmlns="http://www.w3.org/1999/xhtml">
+Pharmakotherapie:
+Diclofenac Salbe 3g
+Ibuprofen 400mg
+</div>
+"""
+  * entry = Reference (diclofenac-kicker)
+  * entry = Reference (ibuprofen-kicker)
+// 
+// section
+//
+* section[sectionAbschlussdiagnosen]
+  * text.status = #generated
+  * text.div = """
+<div xmlns="http://www.w3.org/1999/xhtml">
+Abschlussdiagnosen:
+</div>
+"""
+  * entry = Reference (distorsion-s9340-kicker)
+
 
 Instance: timo-kicker
 InstanceOf: Patient
@@ -113,6 +263,7 @@ InstanceOf: AKTIN_PR_beschwerden_bei_vorstellung_cedis
 Usage: #inline
 * category.coding = $SCT#1269489004 "Chief complaint (observable entity)"
 * subject = Reference(Patient/timo-kicker)
+* encounter = Reference(Encounter/aufnahme-kicker)
 * onsetDateTime = "2024-01-17T15:45:00Z"
 * code = $CEDIS30#557 "Verletzung untere Extremität"
 * note.text = "Distorsionstrauma linker Fuß; keine Vorerkrankungen; keine Medikamente"
@@ -125,6 +276,8 @@ Usage: #inline
 * code[+] = $SCT#273887006 "Triage index (assessment scale)"
 * code = $LOINC#75616-3 "Generic five level triage system"
 * subject = Reference(Patient/timo-kicker)
+* encounter = Reference(Encounter/aufnahme-kicker)
+* performer = Reference(Practitioner/attenting-physician-kicker)
 * effectiveDateTime = "2024-01-17T16:23:00+01:00"
 * valueCodeableConcept = $LOINC#LA21587-3 "Less urgent"
 * method = $SCT#713009001 "Manchester Triage System (assessment scale)"
@@ -150,6 +303,7 @@ InstanceOf: AKTIN_PR_zuweisung
 Usage: #inline
 * status = #final
 * subject = Reference(Patient/timo-kicker)
+* encounter = Reference(Encounter/aufnahme-kicker)
 * code = $LOINC#11293-8 "Type of Referral source"
 * valueCodeableConcept = $SCT#183877003 "Private referral"
 * effectiveDateTime = "2024-01-17T16:03:00Z"
@@ -161,12 +315,33 @@ Usage: #inline
 * code.coding = $SCT#309343006 "Physician"
 
 
-Instance: notaufnahme
+Instance: attenting-physician-kicker
+InstanceOf: PractitionerRole
+Usage: #inline
+* code.coding = $SCT#309343006 "Physician"
+* practitioner = Reference(Practitioner/dr-martin-regensburger)
+* organization = Reference(Organization/organization-hospital)
+
+
+Instance: organization-hospital
+InstanceOf: Organization
+Usage: #inline
+* name = "Städtisches Klinikum München GmbH" 
+* address.city = "München"
+* address.postalCode = "81737"
+* address.line = "Fritz-Erler-Straße 30"
+
+Instance: notaufnahme-harlaching
 InstanceOf: Location
 Usage: #inline
 * status = #active
-* name = "Städtisches Klinikum München GmbH"
+* name = "Notaufnahme Harlaching"
 * type = $v3-role-code#ETU "Emergency trauma unit"
+* managingOrganization = Reference(Organization/organization-hospital)
+* address.city = "München"
+* address.postalCode = "81545"
+* address.line = "Sanatoriumspl. 2"
+* telecom.value = "+49 89 6210-6666"
 
 
 Instance: dr-martin-regensburger
@@ -235,7 +410,7 @@ Usage: #inline
   * unit = $UCUM#/min
 * subject = Reference(Patient/timo-kicker)
 
-Instance: schemrz-kicker
+Instance: schmerz-kicker
 InstanceOf: AKTIN_PR_vitalsigns_schmerz
 Usage: #inline
 * status = #final
@@ -247,3 +422,83 @@ Usage: #inline
   * value = 4
   * unit = $UCUM#{score}
 * subject = Reference(Patient/timo-kicker)
+
+
+Instance: labor-anforderung-kicker
+InstanceOf: AKTIN_PR_laboruntersuchung_angefordert
+Usage: #inline
+* status = #active
+* category = $SCT#108252007 "Laboratory procedure (procedure)"
+* code = $SCT#15220000 "Laboratory test (procedure)"
+* subject = Reference(Patient/timo-kicker)
+* authoredOn = "2024-01-17T16:20:00+01:00"
+
+Instance: bga-kicker
+InstanceOf: AKTIN_PR_bga_angefordert
+Usage: #inline
+* status = #active
+* category = $SCT#108252007 "Laboratory procedure (procedure)"
+* code = $SCT#278297009 "Blood gas analysis (procedure)"
+* subject = Reference(Patient/timo-kicker)
+* authoredOn = "2024-01-17T16:20:00+01:00"
+
+Instance: ct-sprunggelenk-kicker
+InstanceOf: ISiKProzedur
+Usage: #inline
+* status = #completed
+* category = $SCT#363679005	"Imaging (procedure)"
+// * code = $SCT#303681001 "Computed tomography of limb regions (procedure)"
+* code = $SCT#426817008 "Computed tomography of left ankle (procedure)"
+* subject = Reference(Patient/timo-kicker)
+* performedDateTime = "2024-01-17T16:50:00+01:00"
+
+Instance: orthese-kicker
+InstanceOf: ISiKProzedur
+Usage: #inline
+* status = #completed
+* category = $SCT#223490009 "Appliance procedures (procedure)"
+* code = $SCT#128741000146104 "Application of static orthosis to ankle (procedure)"
+* subject = Reference(Patient/timo-kicker)
+* performedDateTime = "2024-01-17T17:14:00+01:00"
+
+Instance: diclofenac-kicker
+InstanceOf: ISiKMedikationsVerabreichung
+Usage: #inline
+* status = #completed
+* medicationCodeableConcept = $ATC_DE#M01AB05 "Diclofenac"
+* subject = Reference(Patient/timo-kicker)
+* effectiveDateTime = "2024-01-17T17:14:00+01:00"
+* dosage
+  * text = "Diclofenac Salbe 3g"
+  * route = $sct#73639000 "Topical route (qualifier value)"
+  * dose
+    * value = 3
+    * code = $UCUM#g
+    * unit = "g"
+
+Instance: ibuprofen-kicker
+InstanceOf: ISiKMedikationsVerabreichung
+Usage: #inline
+* status = #completed
+* medicationCodeableConcept = $ATC_DE#M01AE01 "Ibuprofen"
+* subject = Reference(Patient/timo-kicker)
+* effectiveDateTime = "2024-01-17T17:14:00+01:00"
+* dosage
+  * text = "Ibuprofen 400 mg"
+  * route = $sct#26643006 "Oral route (qualifier value)"
+  * dose
+    * value = 400
+    * code = $UCUM#mg
+    * unit = "mg"
+
+
+Instance: distorsion-s9340-kicker
+InstanceOf: ISiKDiagnose
+Usage: #example
+* clinicalStatus = $condition-clinical#active
+* code.coding[ICD-10-GM] = $ICD10GM#S93.40 "Distorsion oberes Sprunggelenk Ligamentum fibulotalare anterius inkomplett"
+* code.coding[ICD-10-GM].version = "2024"
+* code.coding[SNOMED-CT] = $SCT#11833791000119103 "Sprain of talofibular ligament of left ankle (disorder)"
+* subject = Reference(Patient/timo-kicker)
+* onsetDateTime = "2024-01-17"
+* recordedDate = "2024-01-17"
