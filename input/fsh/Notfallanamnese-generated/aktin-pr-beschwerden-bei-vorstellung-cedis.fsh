@@ -27,6 +27,10 @@ Description: "Die Beschwerden, die der Patient bei der Vorstellung in der Notauf
 * subject 1..1 MS
 * subject only Reference(AKTIN_PR_patient)
 
+* encounter 1..1 MS
+* encounter only Reference(AKTIN_PR_aufenthalt)
+  * ^short = "Aufenthalt in der Notaufnahme"
+  
 * onset[x] 1..1 MS
 * onset[x] only dateTime
 * . ^definition = "Genauer Zeitpunkt des Ereigniseintritts bzw. Symptombeginns bei Schlaganfall, Herzinfarkt, Unfall, Reanimation, etc. (minimal Angabe des Datums und der Uhrzeit) – oder – auf der Basis der Angabe einer Symptomdauer ausgerechnetes Datum (minimal Angabe des Datums)"

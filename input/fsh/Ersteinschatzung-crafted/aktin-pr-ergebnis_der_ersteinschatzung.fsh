@@ -34,7 +34,10 @@ Description: "Ergebnis der Ersteinschätzung in einem standardisierten 5-stufige
 
 * subject 1..1 MS
 * subject only Reference(AKTIN_PR_patient)
-  * ^short = "Nutzung von AKTIN_PR_patient"
+
+* encounter 1..1 MS
+* encounter only Reference(AKTIN_PR_aufenthalt)
+  * ^short = "Aufenthalt in der Notaufnahme"
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
@@ -42,5 +45,5 @@ Description: "Ergebnis der Ersteinschätzung in einem standardisierten 5-stufige
 
 * method 1..1 MS
 * method from aktin-vs-used-triage-system (required)
-* method.coding.version 1..1 MS
+* method.coding.version 0..1 MS
   * ^short = "Version Ersteinschätzungssystem"
