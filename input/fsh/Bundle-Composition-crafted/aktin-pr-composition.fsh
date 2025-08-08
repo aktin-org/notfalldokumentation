@@ -13,7 +13,7 @@ das eine einzige zusammenhängende Aussage enthält, seinen
 eigenen Kontext etabliert und über eine klinische Bestätigung
 hinsichtlich des Urhebers der Aussage verfügt.
 
-Eine Komposition definiert zwar die Struktur, enthält jedoch
+Eine Composition definiert zwar die Struktur, enthält jedoch
 nicht den Inhalt selbst: Der vollständige Inhalt eines Dokuments
 ist vielmehr in einem Bundle enthalten, dessen erste enthaltene
 Ressource die Composition ist.
