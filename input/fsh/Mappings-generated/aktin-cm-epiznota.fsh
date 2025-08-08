@@ -17,12 +17,15 @@ Usage: #definition
 * group[+].source = "http://aktin.org/fhir/StructureDefinition/aktin-lm-notaufnahmeregister"
 * group[=].target = "http://aktin.org/fhir/StructureDefinition/aktin-pr-episodenzusammenfassung-notaufnahmeregister"
 
-* group[=].element[+].code = #AKTIN_LM_Notaufnahmeregister.patient
-* group[=].element[=].display = "10002 Demografische Informationen zum Patienten"
-* group[=].element[=].target.code = #Composition.subject
-* group[=].element[=].target.display = ""
-* group[=].element[=].target.equivalence = #relatedto
-* group[=].element[=].target.comment = "Details in the Profile Map"
+* group[=]
+  * element[+]
+    * code = #AKTIN_LM_Notaufnahmeregister.patient
+    * display = "10002 Demografische Informationen zum Patienten"
+    * target
+      * code = #Composition.subject
+      * display = ""
+      * equivalence = #relatedto
+      * comment = "Details in the Profile Map"
 
 * group[=].element[+].code = #AKTIN_LM_Notaufnahmeregister.administrativeAufnahmeinformationen
 * group[=].element[=].display = "20099 Administrative Aufnahmeinformationen"

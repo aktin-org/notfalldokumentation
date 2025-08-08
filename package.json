@@ -1,27 +1,28 @@
 {
-    "name": "de.aktin-org.notfalldokumentation",
-    "version": "2024.0.0-ballot",
-    "description": "AKTIN - FHIR Artefakte für die Notfalldokumentation",
-    "author": "kaiheitmann",
-    "fhirVersions": ["4.0.1"],
-    "keywords": [
-        "AKTIN",
-        "Notfalldokumentation",
-        "DIVI",
-        "DGINA",
-        "FHIR"
-    ],
-    "homepage": "https://aktin.org/",
-    "maintainers": [
-        {
-            "name": "AKTIN e. V.",
-            "url": "https://aktin.org/"
-        }
-    ],
-    "title": "AKTIN - Notfalldokumentation",
-    "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
-    "dependencies": {
-        "de.basisprofil.r4": "1.4.0",
-        "de.gematik.isik-basismodul": "4.0.0-rc2"
+  "name": "de.aktin-org.notfalldokumentation",
+  "version": "2024.0.0-ballot",
+  "description": "AKTIN - FHIR Artefakte für die Notfalldokumentation",
+  "author": "kaiheitmann",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "keywords": [
+    "AKTIN",
+    "Notfalldokumentation",
+    "DIVI",
+    "DGINA",
+    "FHIR"
+  ],
+  "homepage": "https://aktin.org/",
+  "maintainers": [
+    {
+      "name": "AKTIN e. V."
     }
+  ],
+  "title": "AKTIN - Notfalldokumentation",
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
+  "dependencies": {
+    "de.basisprofil.r4": "1.5.3",
+    "de.gematik.isik-basismodul": "4.0.0-rc2"
+  }
 }

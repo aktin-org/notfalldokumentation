@@ -203,7 +203,7 @@ Unter der Diagnose einer nosokomialen Urosepsis A41.58 mit septischem Schock R57
 <table style="border-collapse: collapse; width: 100%" border="1" >
 <thead>
 <tr style="text-align: left;">
-  <td><strong>Name</strong></td>
+  <td><strong>Beispiel-Instanz (Ressourcentyp-Name)</strong></td>
   <td><strong>Beschreibung</strong></td>
   <td><strong>Instanz von</strong></td>
 </tr>

@@ -14,6 +14,7 @@ Description: "AKTIN LogicalModel Notaufnahmeregister, direkt abgeleitet aus ART-
 * administrativeAufnahmeinformationen 1..1 BackboneElement "20099 Administrative Aufnahmeinformationen"
 * ersteinschatzung 1..* BackboneElement "10029 Ersteinschätzung"
 * notfallanamnese 1..1 BackboneElement "10030 Notfallanamnese"
+* prozessinformationenVersorgung 0..1 BackboneElement "29222 Prozessinformationen der Versorgung"
 * vitalparameter 1..* BackboneElement "10006 Vitalparameter"
 * scores 1..1 BackboneElement "20207 Scores"
 * diagnostik 1..1 BackboneElement "10011 Diagnostik"

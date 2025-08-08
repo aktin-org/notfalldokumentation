@@ -1,19 +1,28 @@
-Instance: aktin-example-storyboard01-bundle
+Instance: aktin-example-storyboard01
 InstanceOf: AKTIN_PR_bundle_episodenzusammenfassung_notaufnahmeregister
 Title: "AKTIN Beispiel-Bundle – Storyboard 01"
-Description: "Dokument-Bundle zur Episodenzusammenfassung gemäß AKTIN-Leitfaden, basierend auf Storyboard 01"
+Description: """
+Dokument-Bundle zur Episodenzusammenfassung gemäß AKTIN-Leitfaden, basierend auf Storyboard 01\n\n
+Teil einer AKTIN Akte 'Notfalldokumentation': Episodenzusammenfassung Notaufnahmeregister\n\n
+Szenario mit Datenelementen aus dem Datensatz Notfalldokumentation (2025) zur Übermittlung der
+Episodenzusammenfassung Notaufnahmeregister als Teil der AKTIN Akte 'Notfalldokumentation'.\n\n
+Entwickelt durch die Sektion Notfalldokumentation der Deutschen Interdisziplinären
+Vereinigung\nfür Intensiv- und Notfallmedizin e.V. (DIVI), das Aktionsbündnis für
+Informations- und\nKommunikationstechnologie in Intensiv- und Notfallmedizin (AKTIN),
+die Universität Magdeburg\nund dem RWTH Aachen, dem Robert-Koch-Institut (RKI) und HL7 Deutschland.
+"""
 Usage: #example
 
 * identifier[0].system = "urn:oid:1.2.276.0.76.4.8"
-* identifier[0].value = "87877655765765765"
+* identifier[0].value = "6d5fd3ad-c6a8-4228-8f8a-feed01fc35c2"
 
 * type = #document
 * timestamp = "2024-01-17T17:35:00+01:00"
 
 * entry[0].fullUrl = "urn:uuid:composition-sb01"
-* entry[0].resource = aktin-example-composition-sb01
+* entry[0].resource = aktin-composition-sb01
 
-* entry[patient].fullUrl = "urn:uuid:patient-timo"
+* entry[patient].fullUrl = "urn:uuid:timo-kicker"
 * entry[patient].resource = timo-kicker
 
 * entry[+].fullUrl = "urn:uuid:aufnahme-kicker-kicker"
@@ -97,7 +106,7 @@ Usage: #example
 //* entry[=].resource = ibuprofen-kicker
 
 
-Instance: aktin-example-composition-sb01
+Instance: aktin-composition-sb01
 InstanceOf: AKTIN_PR_episodenzusammenfassung_notaufnahmeregister
 Title: "Episodenzusammenfassung Notaufnahme – Distorsion Sprunggelenk"
 Description: "Beispiel für eine Composition nach dem AKTIN-Leitfaden auf Basis Storyboard 01"
