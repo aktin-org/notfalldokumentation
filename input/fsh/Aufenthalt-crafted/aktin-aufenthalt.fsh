@@ -2,7 +2,7 @@
 // http://aktin.org/fhir/StructureDefinition/aktin-pr-aufenthalt
 // ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.10002
 Profile: AKTIN_PR_aufenthalt
-Parent:  Encounter
+Parent:  ISiKKontaktGesundheitseinrichtung
 Id:      aktin-pr-aufenthalt
 Title:   "Aufenthalt (AKTIN)"
 Description: "Aufenthalt in der Notaufnahme."
@@ -13,7 +13,7 @@ Description: "Aufenthalt in der Notaufnahme."
 
 * id 0..1 MS
 
-* identifier 0..* MS
+* identifier[Aufnahmenummer] MS
   * ^short = "Aufenthalts-Identifikation"
 
 * status MS
@@ -45,18 +45,19 @@ Description: "Aufenthalt in der Notaufnahme."
   * ^short = "Ende Patientenkontakt (Datum und Zeit) = Zeitpunkt der Verlegung/Entlassung"
 
 * hospitalization MS
-* hospitalization.dischargeDisposition from http://aktin.org/fhir/ValueSet/aktin-vs-referral-discharge
+  * admitSource = http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass#N "Notfall"
+  * dischargeDisposition from http://aktin.org/fhir/ValueSet/aktin-vs-referral-discharge
 
 * location 1.. MS
-  * ^short = "Liste der Aufenthaltsorte"
+  * ^short = "Liste der Aufenthaltsorte, z. B. Schockraum"
   * status MS
     * ^short = "active | completed"
   * physicalType MS 
   * physicalType.coding from http://aktin.org/fhir/ValueSet/aktin-vs-aufenthaltsorte
   * period 1..1 MS
     * ^short = "Zeitraum (Start, ggf. Ende) des Aufenthalts des Patienten an diesem Ort"
-    * start 1.. MS
-    * end MS
+    * start 1..1 MS
+    * end 0..1 MS
 
 // AKTIN Profil - Aufenthalt
 // http://aktin.org/fhir/StructureDefinition/aktin-pr-practitioner-role-physician
