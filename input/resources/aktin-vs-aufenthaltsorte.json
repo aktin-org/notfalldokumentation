@@ -1,8 +1,8 @@
 {
     "resourceType": "ValueSet",
-    "id": "aktin-vs-aufenthaltsorte",
+    "id": "1.2.276.0.76.3.1.195.5.11.28--20240916152134",
     "meta": {
-        "lastUpdated": "2024-09-16T15:28:03Z",
+        "lastUpdated": "2025-08-08T16:16:05Z",
         "source": "https://art-decor.org/fhir/4.0/aktin-",
         "profile": ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"],
         "tag": [
@@ -31,6 +31,7 @@
     "title": "Aufenthaltsorte",
     "status": "draft",
     "experimental": false,
+    "date": "2025-08-08T16:16:05+02:00",
     "publisher": "AKTIN e. V.",
     "contact": [
         {
@@ -56,6 +57,10 @@
                 "system": "http://snomed.info/sct",
                 "concept": [
                     {
+                        "code": "224884006",
+                        "display": "Location within hospital premises (environment)"
+                    },
+                    {
                         "code": "224890005",
                         "display": "Hospital reception area (environment)"
                     },
@@ -68,6 +73,10 @@
                         "display": "Treatment room (environment)"
                     },
                     {
+                        "code": "224886008:116682006=706643005",
+                        "display": "Treatment room:Uses equipment=Patient monitoring system module"
+                    },
+                    {
                         "code": "224887004",
                         "display": "Hospital waiting room (environment)"
                     },
@@ -76,12 +85,20 @@
                         "display": "Ward (environment)"
                     },
                     {
-                        "code": "74964007",
-                        "display": "Other (qualifier value)"
+                        "code": "224880002",
+                        "display": "Location within general practice premises (environment)"
+                    },
+                    {
+                        "code": "288569007",
+                        "display": "General practice reception area (environment)"
                     },
                     {
                         "code": "288570008",
                         "display": "General practice waiting room (environment)"
+                    },
+                    {
+                        "code": "288567009",
+                        "display": "General practice treatment room (environment)"
                     }
                 ]
             }
