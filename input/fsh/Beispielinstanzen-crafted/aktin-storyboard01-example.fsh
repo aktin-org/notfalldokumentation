@@ -10,8 +10,8 @@ Usage: #example
 * type = #document
 * timestamp = "2024-01-17T17:35:00+01:00"
 
-* entry[composition].fullUrl = "urn:uuid:composition-sb01"
-* entry[composition].resource = aktin-example-composition-sb01
+* entry[0].fullUrl = "urn:uuid:composition-sb01"
+* entry[0].resource = aktin-example-composition-sb01
 
 * entry[patient].fullUrl = "urn:uuid:patient-timo"
 * entry[patient].resource = timo-kicker
@@ -68,6 +68,11 @@ Usage: #example
 * entry[=].resource = diclofenac-kicker
 * entry[+].fullUrl = "urn:uuid:ibuprofen-kicker"
 * entry[=].resource = ibuprofen-kicker
+
+* entry[+].fullUrl = "urn:uuid:distorsion-s9340-kicker"
+* entry[=].resource = distorsion-s9340-kicker
+
+
 
 //
 //* entry[+].fullUrl = "urn:uuid:condition-distorsion"
@@ -232,7 +237,7 @@ Instance: timo-kicker
 InstanceOf: Patient
 Usage: #inline
 * identifier[0].system = "urn:oid:1.2.276.0.76.4.8"
-* identifier[0].value = "1234567890"
+* identifier[0].value = "8f60c507-a8c5-492d-8b45-760a200a80d6"
 * gender = #male
 * birthDate = "1996-05-31"
 * address.postalCode = "80636"
@@ -241,6 +246,8 @@ Usage: #inline
 Instance: aufnahme-kicker
 InstanceOf: AKTIN_PR_aufenthalt
 Usage: #inline
+* identifier[Aufnahmenummer].system = "urn:oid:1.2.276.0.76.4.8" 
+* identifier[Aufnahmenummer].value = "5de6679a-dbed-4e24-91b5-632d2613b331" 
 * status = #final
 * class.code = $v3-act-code#EMER
 * serviceType = $SCT#182813001 "Emergency treatment (procedure)"
@@ -255,7 +262,9 @@ Usage: #inline
   * period.end = "2024-01-17T17:35:00Z"
 * period.start = "2024-01-17T16:03:00Z"
 * period.end = "2024-01-17T17:35:00Z"
-* hospitalization.dischargeDisposition = $SCT#183515008 "Referral to physician (procedure)"
+* hospitalization
+  * dischargeDisposition = $SCT#183515008 "Referral to physician (procedure)"
+  * admitSource = http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass#N "Notfall"
 
 
 Instance: cedis-kicker
@@ -494,7 +503,7 @@ Usage: #inline
 
 Instance: distorsion-s9340-kicker
 InstanceOf: ISiKDiagnose
-Usage: #example
+Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code.coding[ICD-10-GM] = $ICD10GM#S93.40 "Distorsion oberes Sprunggelenk Ligamentum fibulotalare anterius inkomplett"
 * code.coding[ICD-10-GM].version = "2024"
