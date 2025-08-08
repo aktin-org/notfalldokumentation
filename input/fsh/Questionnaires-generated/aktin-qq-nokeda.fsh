@@ -22,7 +22,14 @@ Usage: #example
   * value = "urn:oid:2.16.840.1.113883.2.6.60.3.26.3"
 * name = "AKTIN_Registermeldung_NoKeda"
 * title = "AKTIN Registermeldung als Questionnaire: NoKeda"
-* description = "AKTIN Registermeldung als Questionnaire: NoKeda.\n\nSzenario mit Datenelementen aus dem Datensatz Notfalldokumentation (2025) zur Übermittlung der Daten für NoKeda.\n\nEntwickelt durch die Sektion Notfalldokumentation der Deutschen Interdisziplinären Vereinigung\nfür Intensiv- und Notfallmedizin e.V. (DIVI), das Aktionsbündnis für Informations- und\nKommunikationstechnologie in Intensiv- und Notfallmedizin (AKTIN), die Universität Magdeburg\nund dem RWTH Aachen, dem Robert-Koch-Institut (RKI) und HL7 Deutschland."
+* description = """
+AKTIN Registermeldung als Questionnaire: NoKeda.\n\nSzenario mit Datenelementen
+aus dem Datensatz Notfalldokumentation (2025) zur Übermittlung der Daten für NoKeda.\n\n
+Entwickelt durch die Sektion Notfalldokumentation der Deutschen Interdisziplinären
+Vereinigung\nfür Intensiv- und Notfallmedizin e.V. (DIVI), das Aktionsbündnis für
+Informations- und\nKommunikationstechnologie in Intensiv- und Notfallmedizin (AKTIN),
+die Universität Magdeburg\nund dem RWTH Aachen, dem Robert-Koch-Institut (RKI) und HL7 Deutschland.
+"""
 * status = #draft
 * experimental = false
 * date = "2025-07-31T10:12:34Z"
@@ -1363,7 +1370,7 @@ Usage: #example
     * required = false
     * repeats = false
     * readOnly = false
-    * answerValueSet = "http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel"
+    * answerValueSet = "http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert"
     * item
       * extension
         * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
