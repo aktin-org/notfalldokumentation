@@ -16,12 +16,12 @@ Description: "Name der lokal verwendeten Software zur primären Datenerfassung (
 
 * manufacturer 0..1 MS
 * deviceName 1..* MS
-* . ^definition = "Name des EDIS; wenn keine ED-Spezialanwendung verwendet wird: KIS."
+* . ^definition = "Name des EDIS; im Fall dass keine ED-Spezialanwendung verwendet wird 'KIS' verwenden."
 * deviceName.name 1..1 MS
 * deviceName.type 1..1 MS
 * deviceName.type = #manufacturer-name
 * version 1..* MS
-* . ^definition = "Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS; wenn keine ED-Spezialanwendung verwendet wird: KIS."
+* . ^definition = "Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS; im Fall dass keine ED-Spezialanwendung verwendet wird 'KIS' verwenden."
 * version.type 1..1 MS
 * version.type = #software
 * version.value 1..1 MS
