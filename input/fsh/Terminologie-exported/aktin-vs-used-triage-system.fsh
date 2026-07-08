@@ -23,8 +23,8 @@ Description: "Used Triage System"
 
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
 
-* SNOMED_CT#713009001 "Manchester Triage System (assessment scale)"
-* SNOMED_CT#713010006 "Emergency Severity Index (assessment scale)"
-* SNOMED_CT#74964007 "Other (qualifier value)"
-* SNOMED_CT#260413007 "None (qualifier value)"
+* $SCT#713009001 "Manchester Triage System (assessment scale)"
+* $SCT#713010006 "Emergency Severity Index (assessment scale)"
+* $SCT#74964007 "Other (qualifier value)"
+* $SCT#260413007 "None (qualifier value)"
 * $aktin-cs-other-triage-systems#smed "SmED"
