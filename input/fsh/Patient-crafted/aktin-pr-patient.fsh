@@ -7,7 +7,7 @@ Id:      aktin-pr-patient
 Title:   "Patient (AKTIN)"
 Description: "Demografische Informationen zum Patienten"
 * . ^definition = "Demografische Informationen zum Patienten"
-* insert ProfileOnKnownProfile ( Patient, ISiKPatient )
+// * insert ProfileOnKnownProfile ( Patient, ISiKPatient )
 * insert Meta
 * insert Version
 * insert Publisher
